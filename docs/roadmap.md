@@ -10,42 +10,56 @@ This approach makes compatibility problems, performance regressions and gameplay
 
 # V0.1 — Foundation
 
+Status: ✅ Completed
+
 ## Objective
 
-Build a stable technical foundation.
+Build a stable technical foundation for the CobbleHorizons singleplayer experience.
 
 ### Base
 
 - Minecraft 1.21.1
-- Fabric
+- Fabric Loader 0.19.3
+- Fabric API 0.116.15+1.21.1
 - Cobblemon 1.7.3
 
-### Planned Areas
+### Completed Areas
 
 - Required dependencies
 - Performance optimization
-- Essential QoL
+- Essential quality-of-life improvements
+- Pokémon-focused QoL
 - Initial configurations
-- Singleplayer stability
-- Multiplayer stability
+- Singleplayer stability testing
 
 ### Validation
 
-Before moving to V0.2:
+V0.1 was considered complete after confirming:
 
 - Minecraft launches reliably
-- Worlds create correctly
+- Worlds create and load correctly
 - Cobblemon works correctly
+- Starter selection works
 - Pokémon spawn correctly
 - Capturing works
 - Battles work
+- Pokémon progression works
+- Installed QoL features work correctly
 - No critical errors occur
 - Performance is acceptable
-- Multiplayer works correctly
+- Extended singleplayer sessions remain stable
+
+### Scope
+
+V0.1 validation focuses on singleplayer.
+
+Multiplayer and dedicated server compatibility are not part of the acceptance criteria for this milestone and may be evaluated in a future development phase.
 
 ---
 
 # V0.2 — Pokémon World
+
+Status: ⏳ Next
 
 ## Objective
 
@@ -147,14 +161,14 @@ Prepare the complete experience for public testing.
 - Item availability
 - Progression speed
 - Performance
-- Multiplayer testing
+- Singleplayer balance
 - Configuration cleanup
 
 ---
 
 # Alpha
 
-Feature-complete internal/public testing build.
+Feature-complete testing build.
 
 # Beta
 

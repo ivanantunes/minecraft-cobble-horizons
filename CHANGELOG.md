@@ -18,7 +18,7 @@ All notable changes to CobbleHorizons will be documented in this file.
 
 ## V0.1 — Foundation
 
-Status: In Development
+Status: ✅ Completed
 
 ### Added
 
@@ -60,10 +60,12 @@ Status: In Development
 - Natural Pokémon spawning
 - Pokémon battles
 - Pokémon capturing
+- Pokémon progression
 - Exploration
 - Performance stack
 - General QoL stack
 - Pokémon QoL stack
+- Extended singleplayer gameplay
 
 ### Rejected
 
@@ -78,3 +80,9 @@ Reason:
 - Removing/disabling the mod resolved the issue.
 
 The mod may be reevaluated in a future version if a stable compatible release becomes available.
+
+### Result
+
+✅ V0.1 Foundation completed.
+
+This version establishes the stable singleplayer foundation for future CobbleHorizons development.

@@ -8,11 +8,30 @@ The goal is not to create a generic modded Minecraft pack that happens to contai
 
 ## Project Status
 
-🚧 **Currently in development**
+✅ **V0.1 — Foundation completed**
 
-Current milestone:
+CobbleHorizons currently has a stable singleplayer foundation built around:
 
-**V0.1 — Foundation**
+| Component | Version |
+|---|---|
+| Minecraft | 1.21.1 |
+| Fabric Loader | 0.19.3 |
+| Fabric API | 0.116.15+1.21.1 |
+| Cobblemon | 1.7.3 |
+
+The V0.1 milestone established:
+
+- Core Cobblemon functionality
+- Performance optimization
+- General quality-of-life improvements
+- Pokémon-focused quality-of-life improvements
+- Stable singleplayer gameplay baseline
+
+Multiplayer is not currently part of the validation scope.
+
+The next milestone is:
+
+**V0.2 — Pokémon World**
 
 ### Technical Base
 
