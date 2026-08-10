@@ -1,0 +1,45 @@
+# Minecraft
+.minecraft/
+saves/
+logs/
+crash-reports/
+screenshots/
+server-resource-packs/
+
+# Runtime
+run/
+runtime/
+
+# Modrinth
+.modrinth/
+
+# CurseForge
+.curseforge/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Java
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backups
+backups/
+*.bak
+*.zip
+
+# Local development
+local/
+instance/
