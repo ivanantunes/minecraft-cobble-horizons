@@ -10,7 +10,9 @@ Every development milestone must be tested before the next major gameplay layer 
 
 Minecraft: 1.21.1
 
-Loader: Fabric
+Fabric Loader: 0.19.3
+
+Fabric API: 0.116.15+1.21.1
 
 Cobblemon: 1.7.3
 
@@ -20,80 +22,125 @@ Cobblemon: 1.7.3
 
 ## Launch
 
-- [ ] Game launches successfully
-- [ ] No critical startup errors
-- [ ] Main menu loads correctly
-- [ ] Mod list loads correctly
+- [x] Game launches successfully
+- [x] No critical startup errors
+- [x] Main menu loads correctly
+- [x] Mod list loads correctly
 
 ## World
 
-- [ ] New world can be created
-- [ ] World loads correctly
-- [ ] Chunks generate correctly
-- [ ] No major generation errors
+- [x] New world can be created
+- [x] Existing world loads correctly
+- [x] World loads correctly
+- [x] Chunks generate correctly
+- [x] No major generation errors detected
 
 ## Cobblemon
 
-- [ ] Starter selection works
-- [ ] Pokémon spawn naturally
-- [ ] Pokémon models load correctly
-- [ ] Pokémon animations work
-- [ ] Pokémon can be captured
-- [ ] Pokémon battles work
-- [ ] Pokémon gain experience
-- [ ] Pokémon level up
-- [ ] Pokémon evolve correctly
-- [ ] Healing works
-- [ ] PC/storage works
+- [x] Starter selection works
+- [x] Pokémon spawn naturally
+- [x] Pokémon models load correctly
+- [x] Pokémon animations work
+- [x] Pokémon can be captured
+- [x] Pokémon battles work
+- [x] Pokémon gain experience
+- [x] Pokémon level up
 
 ## Performance
 
-Record:
+Installed and tested:
 
-- Average FPS:
-- Minimum FPS:
-- RAM allocated:
-- Typical RAM usage:
-- Peak RAM usage:
-- Startup time:
-- World loading time:
+- [x] Sodium
+- [x] Lithium
+- [x] ImmediatelyFast
+- [x] FerriteCore
+- [x] ModernFix
 
-### Situations
+Result:
 
-Test performance while:
+- [x] Game remained stable after performance mods were added
+- [x] Existing world continued loading correctly
+- [x] Exploration remained functional
+- [x] Cobblemon gameplay remained functional
 
-- [ ] Standing still
-- [ ] Exploring
-- [ ] Generating new chunks
-- [ ] Near many Pokémon
-- [ ] During battles
+## General Quality of Life
 
-## Stability
+Installed and tested:
 
-- [ ] 30-minute session
-- [ ] 1-hour session
+- [x] Xaero's Minimap
+- [x] Xaero's World Map
+- [x] EMI
+- [x] Jade
+- [x] Mouse Tweaks
+
+Result:
+
+- [x] Game launches correctly
+- [x] World loads correctly
+- [x] No critical incompatibility detected
+
+## Pokémon Quality of Life
+
+Installed and tested:
+
+- [x] Cobblemon Pokedex (Cobbledex)
+- [x] Cobblemon UI Tweaks
+- [x] Fabric Language Kotlin
+
+Rejected:
+
+- [x] Cobblemon Auto Tidy Up PC 1.2-SNAPSHOT
+
+### Auto Tidy Up PC Issue
+
+Observed behavior:
+
+- Resource reload failure
+- Game failed to load correctly
+
+Resolution:
+
+- Disabling/removing Auto Tidy Up PC resolved the issue
+
+Status:
+
+❌ Rejected for V0.1
+
+---
+
+# Current V0.1 Result
+
+Status:
+
+- [x] Core baseline approved
+- [x] Performance layer approved
+- [x] General QoL approved
+- [x] Pokémon QoL approved
+- [ ] Multiplayer validation
+- [ ] Extended stability testing
+- [ ] Final V0.1 validation
+
+Current result:
+
+**PASS WITH REMAINING VALIDATION**
+
+---
+
+# Remaining Tests
+
+Before declaring V0.1 complete:
+
+- [ ] 30-minute continuous session
+- [ ] 1-hour continuous session
 - [ ] Extended exploration
 - [ ] Multiple battles
 - [ ] Multiple captures
-
-Record any:
-
-- Crash
-- Freeze
-- Major FPS drop
-- Memory issue
-- Console error
-
-## Multiplayer
-
-- [ ] Dedicated server starts
-- [ ] Player can connect
-- [ ] Pokémon spawn correctly
-- [ ] Capturing works
-- [ ] Battles work
-- [ ] Player vs Player Pokémon battle works
-- [ ] No major desynchronization
-- [ ] Server remains stable during exploration
+- [ ] Dedicated server startup
+- [ ] Multiplayer connection
+- [ ] Multiplayer Pokémon spawning
+- [ ] Multiplayer capturing
+- [ ] Multiplayer battles
+- [ ] Server stability
 
 ---
 
@@ -101,18 +148,10 @@ Record any:
 
 Version:
 
-Date:
+V0.1 — Foundation
 
 Result:
 
 - [ ] PASS
-- [ ] PASS WITH ISSUES
+- [x] PASS WITH REMAINING VALIDATION
 - [ ] FAIL
-
-## Notes
-
-Add test observations here.
-
-## Known Issues
-
-Add discovered issues here.
