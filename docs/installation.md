@@ -11,13 +11,13 @@ Use 8 GB when running BSL, high shader presets or long sessions. Allocating subs
 
 ## Fresh installation
 
-1. Download [CobbleHorizons 1.0.0](../releases/CobbleHorizons-1.0.0.mrpack).
+1. Download [CobbleHorizons 1.1.0 RC1](../releases/CobbleHorizons-1.1.0-rc1.mrpack).
 2. Open the file with the Modrinth App.
 3. Confirm the new instance name and start the import.
 4. Open the instance settings and allocate 6 GB of memory.
 5. Start the game.
 
-A fresh import automatically applies English (US), the official resource-pack order, balanced graphics, curated controls and disabled-by-default shaders.
+A fresh import automatically applies English (US), the official resource-pack order, balanced graphics, curated controls, the in-game Adventure Guide and disabled-by-default shaders.
 
 ## Updating
 
@@ -51,4 +51,4 @@ The official MRPack stores the internal CobbleHorizons Branding ZIP without reco
 
 SHA-256:
 
-`27229ba11e8a2f3f651cbffcfdbea50af3036901b796a67fcce0c9cb4e49218f`
+`72fb88e5017c4eafdfa25c75b4705cb9a7ed9d3ccd7abe334447a4e91fa40b42`
