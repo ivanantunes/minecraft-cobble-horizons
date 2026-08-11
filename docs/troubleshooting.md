@@ -20,6 +20,16 @@ A clean instance should enable CobbleHorizons Branding, Battle Tracks and Cobbre
 
 Faithful 32x is intentionally disabled by default.
 
+## The Adventure Guide does not open
+
+Press `J` in a world, not from the title screen. Confirm `JustQuests-fabric-1.21.1-0.2.3.jar` is installed and that no personal key binding has replaced `J`.
+
+## The campaign is missing or a quest did not update
+
+Confirm `datapacks/CobbleHorizons-Adventure-Guide.zip` exists and that Global Packs is installed. The guide is designed for a fresh world and each stage must be accepted before its advancement is earned.
+
+For badge collection objectives, drop the relevant badges and pick them up again after accepting the quest. Run `/datapack list` to confirm the CobbleHorizons guide and RCT Badges packs are enabled.
+
 ## Vanilla mobs still exist
 
 The pack prevents new world-generated vanilla mobs. Entities already saved in an older world remain present. Villagers, wandering traders, golems, the Ender Dragon and the Wither are intentional exceptions.
