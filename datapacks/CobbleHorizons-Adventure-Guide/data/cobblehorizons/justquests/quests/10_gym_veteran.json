@@ -1,0 +1,20 @@
+{
+  "title": "Gym Veteran",
+  "description": "Collect eight gym badges and prove that your team can overcome a wide range of battle styles.",
+  "category": "CobbleHorizons Adventure",
+  "requires": ["cobblehorizons:09_rising_challenger"],
+  "objectives": [
+    {
+      "type": "justquests:collect_item",
+      "item": "#cobblehorizons:gym_badges",
+      "count": 8
+    }
+  ],
+  "rewards": [
+    {
+      "type": "justquests:give_item",
+      "item": "cobblemon:exp_candy_l",
+      "count": 2
+    }
+  ]
+}
