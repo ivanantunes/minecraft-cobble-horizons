@@ -1,4 +1,10 @@
 type = customizablemenus
 
+title_screen {
+}
+
+options_screen {
+}
+
 de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
