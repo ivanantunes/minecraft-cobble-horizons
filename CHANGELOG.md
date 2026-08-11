@@ -4,6 +4,105 @@ All notable changes to CobbleHorizons are documented in this file.
 
 ---
 
+## V0.5.0 — Pokémon Mechanics
+
+Status: ✅ Completed
+
+### Added
+
+#### TMs and TRs
+
+- SimpleTMs 2.3.3
+- TM system
+- TR system
+- Expanded Pokémon moveset progression
+
+#### Breeding
+
+- Cobbreeding 2.2.2
+- Pokémon breeding
+- Egg generation
+- Pasture-based breeding mechanics
+
+#### Pokémon Training
+
+- Cobblemon Utility+ 1.7.4
+- IV utilities
+- EV utilities
+- Pokémon training tools
+- Additional Pokémon management functionality
+
+#### Advanced Battle Mechanics
+
+- Cobblemon: Mega Showdown 1.9.3+1.7.3+1.21.1
+- Mega Evolution
+- Z-Moves
+- Terastallization
+- Dynamax
+- Additional battle gimmicks and forms
+
+#### Legendary and Mythical Pokémon
+
+- Myths and Legends 1.9.0
+- Cobblemon: Legendary Monuments 8.1-Love-for-All
+- Legendary structures
+- Legendary encounters
+- Mythical encounters
+- Special encounter mechanics
+- Rare Pokémon exploration
+
+#### Dependencies
+
+- Cloth Config API 15.0.140+fabric
+- owo-lib 0.13.0-alpha.15+1.21
+- Accessories 1.1.0-beta.53+1.21.1
+- Resourceful Lib 3.0.12
+- Chipped 4.0.2
+
+### Development
+
+Changed the development validation workflow.
+
+Previous workflow:
+
+- Install small group
+- Test
+- Install next group
+- Test again
+
+New workflow:
+
+- Research milestone
+- Install compatible systems in batches
+- Start game
+- Collect logs
+- Resolve critical issues
+- Document non-critical warnings
+
+This allows faster development while maintaining visibility into compatibility problems.
+
+### Known Issues
+
+#### Cobblemon Trainer Structures
+
+A trophy model references an invalid development/local resource path.
+
+No game crash has been observed.
+
+#### Cobblemon: Extra Structures
+
+The Sprout Tower advancement references an unavailable Bellsprout statue registry entry.
+
+No game crash has been observed.
+
+Both issues are scheduled for later cleanup unless they become gameplay-breaking.
+
+### Result
+
+✅ V0.5 Pokémon Mechanics completed.
+
+---
+
 ## V0.4.0 — Progression
 
 Status: ✅ Completed
@@ -41,37 +140,6 @@ Status: ✅ Completed
 - CobbleFurnies 1.2
 - Athena 4.0.6
 
-### Progression Architecture
-
-CobbleHorizons now provides a structured Pokémon progression loop:
-
-- Capture and train Pokémon
-- Battle trainers
-- Defeat progression trainers
-- Challenge Gym Leaders
-- Earn badges
-- Increase progression limits
-- Challenge increasingly difficult opponents
-- Complete the Gym challenge
-- Reach the Pokémon League
-- Challenge the Elite Four
-- Challenge the Champion
-
-### Testing
-
-Validated:
-
-- Gym structures
-- Gym-related NPCs
-- RCT trainer compatibility
-- Trainer Card
-- Capture Cap
-- Pokémon badges
-- RCT badge integration
-- Existing Pokémon gameplay
-- Existing world compatibility
-- Singleplayer stability
-
 ### Result
 
 ✅ V0.4 Progression completed.
@@ -84,43 +152,20 @@ Status: ✅ Completed
 
 ### Added
 
-#### Trainers
-
 - Radical Cobblemon Trainers 0.18.1-beta
 - Radical Cobblemon Trainers API 0.15.2-beta
 - Cobblemon Trainer Structures 1.7.1
-
-#### Dependencies
-
 - Architectury API 13.0.11+fabric
-
-#### Battle Improvements
-
 - Fix Cobblemon Pokemon Experience 1.1.1+1.21.1-fabric
 
-### Trainer Gameplay
+### Features
 
-- Added NPC Pokémon trainers throughout the world.
-- Added trainer battle encounters.
-- Added trainer-related structures.
-- Added varied trainer teams.
-- Added trainer rewards and battle locations.
-
-### Experience
-
-- Improved Pokémon experience gain during trainer battles.
-
-### Testing
-
-Validated:
-
-- Trainer spawning
+- NPC Pokémon trainers
 - Trainer battles
 - Trainer structures
-- Pokémon battle compatibility
-- Experience gain
-- Existing world compatibility
-- Singleplayer stability
+- Varied trainer teams
+- Trainer rewards
+- Improved experience gain during trainer battles
 
 ### Result
 
@@ -156,38 +201,15 @@ Status: ✅ Completed
 - Balm 21.0.64+fabric-1.21.1
 - Forge Config API Port v21.1.6-1.21.1-Fabric
 
-### World
-
-- Expanded world generation and biome variety.
-- Added Pokémon-related structures.
-- Added PokéCenters and PokéMarts.
-- Added Pokémon nests and dens.
-
-### Exploration
-
-- Added Pokémon spawn information through PokéNav.
-- Added fast travel through Waystones.
-- Added Pokémon Repel functionality.
-
-### Economy
-
-- Added CobbleDollars.
-- Added Pokémon-related merchants and economy functionality.
-
 ### Compatibility
 
-#### Removed Cobblemon UI Tweaks 1.0.7
+#### Cobblemon Auto Tidy Up PC
 
-Reason:
+Rejected due to resource reload failure.
 
-- Crashed when opening Pokémon Stats/EV screen.
-- Incompatible with Cobblemon 1.7.3 Stats UI implementation.
+#### Cobblemon UI Tweaks
 
-#### Cobblemon Auto Tidy Up PC rejected
-
-Reason:
-
-- Resource reload failure.
+Removed due to crash when opening the Pokémon Stats/EV interface.
 
 ### Result
 
@@ -228,20 +250,6 @@ Status: ✅ Completed
 #### Pokémon Quality of Life
 
 - Cobbledex
-
-### Testing
-
-Validated:
-
-- Game startup
-- World creation
-- Cobblemon startup
-- Starter selection
-- Pokémon spawning
-- Pokémon capturing
-- Pokémon battles
-- Performance
-- Singleplayer stability
 
 ### Result
 

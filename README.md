@@ -4,17 +4,17 @@
 
 CobbleHorizons is an immersive Pokémon-focused Minecraft modpack built around Cobblemon.
 
-The goal is not to create a generic modded Minecraft pack that happens to contain Pokémon. CobbleHorizons aims to transform Minecraft into an open-world Pokémon adventure where exploration, capturing, training, trainer battles, gyms and progression are the core experience.
+The goal is not to create a generic modded Minecraft pack that happens to contain Pokémon. CobbleHorizons aims to transform Minecraft into an open-world Pokémon adventure where exploration, capturing, training, trainer battles, gyms, progression and advanced Pokémon mechanics form the core experience.
 
 ---
 
 ## Project Status
 
-✅ **V0.4 — Progression completed**
+✅ **V0.5 — Pokémon Mechanics completed**
 
 Current development version:
 
-**v0.4.0**
+**v0.5.0**
 
 ### Technical Base
 
@@ -37,6 +37,22 @@ Current development version:
 - Cobbledex
 - Pokémon spawn information through PokéNav
 - Pokémon nests and dens
+- TMs and TRs
+- Breeding
+- IV/EV training utilities
+- Advanced evolution and battle mechanics
+- Legendary and Mythical Pokémon encounters
+
+### Battle Mechanics
+
+- Trainer battles
+- Gym battles
+- Mega Evolution
+- Z-Moves
+- Terastallization
+- Dynamax
+- Additional battle gimmicks provided by Mega Showdown
+- Expanded Pokémon training options
 
 ### World
 
@@ -48,6 +64,7 @@ Current development version:
 - Trainer structures
 - Gym structures
 - Pokémon League structures
+- Legendary Pokémon structures and monuments
 
 ### Trainers
 
@@ -79,7 +96,10 @@ Current development version:
 - Waystones
 - Pokémon spawn information
 - Repel system
-- Pokémon structures and exploration locations
+- Pokémon structures
+- Legendary structures
+- Rare Pokémon encounters
+- Exploration locations
 
 ### Economy
 
@@ -104,8 +124,10 @@ The project prioritizes:
 - Pokémon exploration
 - Capturing and collecting
 - Pokémon training
+- Team building
 - Trainer battles
 - Gyms and progression
+- Legendary encounters
 - Exploration and discovery
 - Performance and stability
 
@@ -119,8 +141,8 @@ Large technology, industrial, automation and unrelated magic systems are intenti
 - ✅ **V0.2 — Pokémon World**
 - ✅ **V0.3 — Trainers**
 - ✅ **V0.4 — Progression**
-- ⏳ **V0.5 — Pokémon Mechanics**
-- **V0.6 — Immersion**
+- ✅ **V0.5 — Pokémon Mechanics**
+- ⏳ **V0.6 — Immersion**
 - **V0.7 — Balance**
 - **Alpha**
 - **Beta**
@@ -135,6 +157,10 @@ See [docs/roadmap.md](docs/roadmap.md) for more information.
 Current development and validation focus on the singleplayer experience.
 
 Multiplayer and dedicated server compatibility are not currently part of the acceptance criteria.
+
+Starting with V0.5, development uses batch integration followed by runtime and log analysis instead of validating every mod individually.
+
+Critical crashes and gameplay-breaking incompatibilities block a milestone. Non-critical warnings and known issues are documented for later cleanup.
 
 ---
 

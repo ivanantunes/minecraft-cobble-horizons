@@ -2,7 +2,7 @@
 
 CobbleHorizons is developed incrementally.
 
-Each milestone introduces and validates one major layer of the modpack before development continues.
+Each milestone introduces a major gameplay layer before development continues toward a complete Pokémon-focused Minecraft experience.
 
 ---
 
@@ -69,19 +69,6 @@ Introduce meaningful NPC Pokémon battles throughout the world.
 - Trainer team variety
 - Improved trainer battle experience gain
 
-### Validation
-
-V0.3 was considered complete after confirming:
-
-- Trainers appear correctly
-- Trainer battles start correctly
-- Trainer battles finish correctly
-- Pokémon battle mechanics remain functional
-- Trainer structures generate correctly
-- Trainer-related dependencies load correctly
-- Experience gain works correctly during trainer battles
-- No critical crashes or incompatibilities remain
-
 ---
 
 # V0.4 — Progression
@@ -92,34 +79,22 @@ Status: ✅ Completed
 
 Create structured player progression through gyms, badges, level restrictions and increasingly difficult Pokémon challenges.
 
-### Gym System
+### Completed
 
 - Rad Gyms
 - Radical Gyms & Structures
 - Gym structures
 - Gym Leaders
-- Themed trainer challenges
-- Gym rewards
-
-### Player Progression
-
 - RCT Trainer Card progression
 - Level caps
 - Capture caps
-- Progressive trainer challenges
-- Physical Pokémon badges
-- RCT Gym Leader badge integration
-
-### Pokémon League
-
+- Pokémon badges
+- RCT badge integration
 - Kanto League
 - Elite Four
 - Champion
-- Endgame progression
 
 ### Progression Loop
-
-The intended progression structure is:
 
 Player begins journey
 
@@ -163,91 +138,189 @@ Elite Four
 
 Champion
 
-### Validation
-
-V0.4 was considered complete after confirming:
-
-- Existing worlds continue loading
-- Pokémon spawning remains functional
-- RCT trainers continue functioning
-- Gym structures generate correctly
-- Gym-related NPCs load correctly
-- Rad Gyms loads correctly
-- Radical Gyms & Structures loads correctly
-- Capture Cap loads correctly
-- Cobblemon Pokemon Badges loads correctly
-- RCT badge integration loads correctly
-- Existing Cobblemon systems remain functional
-- No critical progression-related crashes were detected
-
 ---
 
 # V0.5 — Pokémon Mechanics
 
-Status: ⏳ Next
+Status: ✅ Completed
 
 ## Objective
 
-Expand the depth of Pokémon training, team building and advanced Pokémon mechanics.
+Expand Pokémon training, team building, battle mechanics and rare Pokémon encounters.
 
-### Planned Areas
+---
 
-- TMs and TRs
-- Breeding
-- IV systems
-- EV systems
-- Evolution systems
-- Evolution items
+## Moves
+
+### SimpleTMs
+
+Added a dedicated TM/TR system.
+
+Features:
+
+- TMs
+- TRs
+- Move acquisition
+- Expanded moveset progression
+- Additional exploration and battle rewards
+
+---
+
+## Breeding
+
+### Cobbreeding
+
+Introduced Pokémon breeding mechanics integrated into the Cobblemon ecosystem.
+
+Features:
+
+- Pokémon breeding
+- Egg generation
+- Pasture-based breeding
+- Additional team-building progression
+
+---
+
+## IV / EV and Training
+
+### Cobblemon Utility+
+
+Expanded Pokémon management and competitive training.
+
+Features include:
+
+- IV utilities
+- EV utilities
+- Training items
+- Stat management
+- Friendship utilities
+- Additional Pokémon management tools
+
+Availability and balance of powerful utility items will be reviewed during V0.7.
+
+---
+
+## Advanced Battle Mechanics
+
+### Cobblemon: Mega Showdown
+
+Introduced major Pokémon battle gimmicks.
+
+Features include:
+
 - Mega Evolution
-- Regional mechanics
-- Battle gimmicks
+- Z-Moves
+- Terastallization
+- Dynamax
+- Additional forms
+- Additional battle mechanics
+
+Mega Showdown is the primary advanced battle-mechanics platform for CobbleHorizons.
+
+Separate addons duplicating these systems should generally be avoided.
+
+---
+
+## Legendary and Mythical Pokémon
+
+### Myths and Legends
+
+Introduced additional Legendary and Mythical Pokémon encounter mechanics.
+
+Features include:
+
+- Legendary Pokémon progression
+- Mythical Pokémon progression
+- Special items
+- Special encounter requirements
+- Rare Pokémon exploration
+
+### Legendary Monuments
+
+Expanded the world with Legendary Pokémon content.
+
+Features include:
+
+- Legendary structures
+- Monuments
+- Special encounters
+- Legendary Pokémon progression
+- Exploration-driven rare encounters
+
+---
+
+## Result
+
+V0.5 establishes the major Pokémon mechanics required for the intended CobbleHorizons experience:
+
+- Moveset progression
+- Breeding
+- IV/EV training
+- Advanced battle gimmicks
 - Legendary Pokémon
+- Mythical Pokémon
 - Rare encounters
-- Pokémon training improvements
+
+V0.5 is considered complete.
 
 ---
 
 # V0.6 — Immersion
 
-Status: Planned
+Status: ⏳ Next
 
 ## Objective
 
-Improve the feeling of living inside the Pokémon world.
+Improve the feeling of actually living and traveling inside a Pokémon world.
 
 ### Planned Areas
 
-- Interface
+- Interface improvements
+- Pokémon battle interface
 - Music
+- Pokémon battle music
 - Ambient sounds
+- Environmental audio
 - Visual improvements
 - Animations
 - Pokémon interaction
-- Environmental immersion
+- World atmosphere
+- Immersive exploration
+- Optional visual enhancements
+
+The V0.6 phase should prioritize immersion without substantially changing the progression systems established in V0.1–V0.5.
 
 ---
 
-# V0.7 — Balance
+# V0.7 — Balance & Cleanup
 
 Status: Planned
 
 ## Objective
 
-Prepare the complete experience for public testing.
+Balance and clean the complete CobbleHorizons gameplay experience before Alpha.
 
 ### Planned Areas
 
 - Spawn rates
+- Legendary spawn rates
 - Trainer difficulty
 - Gym difficulty
 - Economy
 - Item availability
+- TM/TR availability
+- Utility+ item balance
 - Progression speed
 - Level caps
 - Capture caps
+- Waystone balance
+- Legendary progression
+- Mega Showdown progression
 - Performance
-- Singleplayer balance
 - Configuration cleanup
+- Log cleanup
+- Known issue review
+- Singleplayer balance
 
 ---
 
@@ -257,8 +330,12 @@ Feature-complete testing build.
 
 Main goals:
 
-- Full playthrough testing
-- Progression testing
+- Full survival playthrough
+- Full Pokémon progression playthrough
+- Gym progression testing
+- League testing
+- Legendary progression testing
+- Battle gimmick testing
 - Compatibility testing
 - Major bug fixing
 
@@ -275,6 +352,7 @@ Main goals:
 - Configuration cleanup
 - Mod compatibility verification
 - Distribution preparation
+- Modrinth packaging
 
 ---
 

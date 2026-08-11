@@ -8,7 +8,7 @@ This document tracks the mods evaluated and approved for CobbleHorizons.
 - 🧪 Testing
 - ✅ Approved
 - ❌ Rejected
-- ⚠️ Issue
+- ⚠️ Known Issue
 
 ---
 
@@ -60,7 +60,7 @@ This document tracks the mods evaluated and approved for CobbleHorizons.
 | Mod | Version | Status | Purpose |
 |---|---|---|---|
 | Terralith | 2.6.2 | ✅ | World generation and biome variety |
-| Cobblemon: Extra Structures | 1.21.1-1.3.0 | ✅ | Pokémon structures |
+| Cobblemon: Extra Structures | 1.21.1-1.3.0 | ⚠️ | Pokémon structures |
 | Cobblemon: Nests & Dens | 1.3.3 | ✅ | Pokémon nests and dens |
 | Lithostitched | 1.7.13-fabric-21.1 | ✅ | World generation dependency |
 
@@ -87,7 +87,7 @@ This document tracks the mods evaluated and approved for CobbleHorizons.
 |---|---|---|---|
 | Radical Cobblemon Trainers | 0.18.1-beta | ✅ | Main trainer system |
 | Radical Cobblemon Trainers API | 0.15.2-beta | ✅ | Trainer battle engine and API |
-| Cobblemon Trainer Structures | 1.7.1 | ✅ | Trainer structures and battle locations |
+| Cobblemon Trainer Structures | 1.7.1 | ⚠️ | Trainer structures and battle locations |
 | Architectury API | 13.0.11+fabric | ✅ | Required dependency |
 | Fix Cobblemon Pokemon Experience | 1.1.1+1.21.1-fabric | ✅ | Improved experience gain during trainer battles |
 
@@ -104,6 +104,31 @@ This document tracks the mods evaluated and approved for CobbleHorizons.
 | Athena | 4.0.6 | ✅ | Required dependency |
 | Cobblemon Pokemon Badges | 0.1.1 | ✅ | Physical Pokémon badge system |
 | RCT Badges - Cobblemon Pokemon Badges | 1.1.2 | ✅ | RCT Gym Leader badge integration |
+
+---
+
+# Pokémon Mechanics
+
+| Mod | Version | Status | Purpose |
+|---|---|---|---|
+| SimpleTMs: TMs and TRs for Cobblemon | 2.3.3 | ✅ | TM and TR system |
+| Cobbreeding | 2.2.2 | ✅ | Pokémon breeding |
+| Cobblemon Utility+ | 1.7.4 | ✅ | IV, EV and Pokémon training utilities |
+| Cobblemon: Mega Showdown | 1.9.3+1.7.3+1.21.1 | ✅ | Mega Evolution and advanced battle gimmicks |
+| Myths and Legends | 1.9.0 | ✅ | Legendary and Mythical encounter mechanics |
+| Cobblemon: Legendary Monuments | 8.1-Love-for-All | ✅ | Legendary structures and encounters |
+
+---
+
+# V0.5 Dependencies
+
+| Mod | Version | Status | Purpose |
+|---|---|---|---|
+| Cloth Config API | 15.0.140+fabric | ✅ | Configuration dependency |
+| owo-lib | 0.13.0-alpha.15+1.21 | ✅ | Mega Showdown dependency |
+| Accessories | 1.1.0-beta.53+1.21.1 | ✅ | Mega Showdown accessory system |
+| Resourceful Lib | 3.0.12 | ✅ | Required library |
+| Chipped | 4.0.2 | ✅ | Required content/dependency |
 
 ---
 
@@ -140,8 +165,62 @@ Status:
 Reason:
 
 - Client crashed when opening the Pokémon Stats/EV screen.
-- The mod attempted to inject into a field incompatible with Cobblemon 1.7.3.
+- Incompatible with the current Cobblemon Stats UI.
 - Removing the mod resolved the crash.
+
+---
+
+# Known Issues
+
+## Cobblemon Trainer Structures
+
+Status:
+
+⚠️ Non-critical resource/model issue
+
+Observed:
+
+The mod attempts to load:
+
+`cobblemonopponents:models/block/pokeball_trophy_java.json`
+
+The model contains an invalid resource location referencing a development/local path.
+
+Current impact:
+
+- No observed game crash
+- World continues loading
+- Trainer gameplay continues functioning
+
+Planned action:
+
+Review during V0.7 cleanup.
+
+---
+
+## Cobblemon: Extra Structures
+
+Status:
+
+⚠️ Non-critical advancement/resource issue
+
+Observed:
+
+The Sprout Tower advancement references:
+
+`cobblemonextrastructures:bellsprout_statue`
+
+The referenced registry item was not available during advancement loading.
+
+Current impact:
+
+- No observed game crash
+- World continues loading
+- Structure generation remains usable
+
+Planned action:
+
+Review during V0.7 cleanup.
 
 ---
 
@@ -149,42 +228,19 @@ Reason:
 
 ## Alternative Gym Systems
 
-Alternative gym and progression systems are intentionally avoided while Rad Gyms, RCT and Radical Gyms & Structures provide the primary progression architecture.
+Alternative gym/progression systems are intentionally avoided while Rad Gyms, RCT and Radical Gyms & Structures provide the primary progression architecture.
 
-Using multiple independent progression systems could create conflicting Gym Leaders, badges, level restrictions and progression rules.
+## Duplicate Battle Gimmick Systems
 
-## Archived RCT Badge Systems
+Mega Showdown is the primary platform for advanced Pokémon battle gimmicks.
 
-Older archived Radical Trainers badge integrations are not used.
+Separate addons implementing overlapping Mega Evolution, Z-Move, Terastallization or Dynamax systems should generally be avoided.
 
-RCT Badges - Cobblemon Pokemon Badges is used as the current integration layer.
+## Excess Legendary Systems
 
----
+Myths and Legends and Legendary Monuments currently provide the primary expansion for Legendary and Mythical Pokémon.
 
-# Future Candidates
-
-## Pokémon Mechanics — V0.5
-
-Potential systems:
-
-- SimpleTMs
-- Breeding
-- IV/EV utilities
-- Mega Evolution
-- Evolution improvements
-- Pokémon battle gimmicks
-- Legendary systems
-- Rare encounter systems
-
-## Immersion — V0.6
-
-Potential systems:
-
-- Pokémon music
-- Ambient audio
-- Visual improvements
-- Interface improvements
-- Pokémon interaction improvements
+Additional large legendary systems should only be introduced if they provide substantial unique value without excessive duplication.
 
 ---
 
@@ -202,4 +258,5 @@ Before approving a mod:
 8. Singleplayer stability
 9. License
 10. Contribution to the Pokémon experience
-11. Compatibility with the existing progression architecture
+11. Compatibility with existing progression
+12. Avoid unnecessary mechanic duplication
