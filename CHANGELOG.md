@@ -1,3 +1,37 @@
+# CobbleHorizons Changelog
+
+## [Unreleased]
+
+- Regenerar o MRPack após o teste limpo.
+- Preparar a v0.9.0 Release Candidate.
+
+## [0.8.0] — Configuration & Identity
+
+Status: aguardando validação.
+
+### Added
+
+- FancyMenu, Drippy Loading Screen e Default Options.
+- Wallpaper, logo, ícones e texturas de botões.
+- Layout dedicado ao menu principal.
+- Padrões de vídeo, áudio, idioma e resource packs.
+
+### Fixed
+
+- Caminhos globais dos assets do FancyMenu.
+- Estados normal, hover e inativo dos botões.
+- Nine-slicing de 8 px.
+- Cores globais de texto.
+- Ordem de renderização do title screen.
+
+### Validation
+
+- Boot, menu principal e menus internos.
+- Mundo, captura, batalha, áudio e shaders.
+- Logs sem exceções fatais ou assets ausentes.
+
+---
+
 # Changelog
 
 All notable changes to CobbleHorizons are documented in this file.
