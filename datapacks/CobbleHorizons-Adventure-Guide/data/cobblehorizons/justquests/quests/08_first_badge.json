@@ -1,0 +1,20 @@
+{
+  "title": "Your First Gym Badge",
+  "description": "Explore until you find a gym, study its specialty, prepare suitable counters, and defeat its leader. Any gym may begin your journey.",
+  "category": "CobbleHorizons Adventure",
+  "requires": ["cobblehorizons:07_recovery_routine"],
+  "objectives": [
+    {
+      "type": "justquests:collect_item",
+      "item": "#cobblehorizons:gym_badges",
+      "count": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "justquests:give_item",
+      "item": "cobblemon:exp_candy_m",
+      "count": 2
+    }
+  ]
+}
