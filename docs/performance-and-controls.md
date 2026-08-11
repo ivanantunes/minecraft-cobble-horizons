@@ -20,11 +20,14 @@ Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use stable, conserva
 | Send selected Pokémon | `R` |
 | Xaero's World Map | `M` |
 | Cobblemon Summary | `V` |
+| CobbleHorizons Adventure Guide | `J` |
 | Iris shader selection | `F7` |
 | Iris shader reload | `F8` |
 | Iris shader toggle | `F9` |
 
 EMI and Jade retain their context-sensitive recipe and usage shortcuts. These operate inside inventory or overlay contexts.
+
+The Adventure Guide key does not conflict with the curated defaults. Accept a stage before completing its objective so advancement events are recorded by the quest tracker.
 
 ## Shader profiles
 
