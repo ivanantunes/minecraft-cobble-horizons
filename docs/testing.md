@@ -1,307 +1,270 @@
-# CobbleHorizons Testing
+# CobbleHorizons — Testing
 
-This document tracks technical validation, compatibility issues and the testing strategy used during CobbleHorizons development.
+Testing history and compatibility notes for CobbleHorizons.
 
----
-
-# Test Environment
-
-Minecraft: 1.21.1
-
-Fabric Loader: 0.19.3
-
-Fabric API: 0.116.15+1.21.1
-
-Cobblemon: 1.7.3
-
-Primary validation target:
-
-**Singleplayer**
+> Primary test environment: Singleplayer  
+> Minecraft: 1.21.1  
+> Loader: Fabric  
+> Cobblemon: 1.7.3
 
 ---
 
 # Testing Strategy
 
-## V0.1 – V0.4
+CobbleHorizons is currently under active development.
 
-Early development used incremental testing.
+During early development, mods are installed in development batches.
 
-Mods were installed in small groups and manually validated before additional systems were introduced.
+The game is then launched and basic functionality is verified.
 
-This helped establish a stable technical baseline.
+If the game:
 
-## V0.5+
+- launches successfully;
+- loads a world;
+- keeps the core Cobblemon gameplay functional;
+- and does not produce a critical crash;
 
-Starting with V0.5, development moved to a faster batch-integration strategy.
+the development batch is considered provisionally approved.
 
-Workflow:
-
-1. Research compatible mods.
-2. Install the planned milestone group.
-3. Resolve required dependencies.
-4. Start Minecraft.
-5. Load the development world.
-6. Confirm core gameplay remains operational.
-7. Collect runtime logs.
-8. Investigate crashes and gameplay-breaking errors.
-9. Document non-critical warnings.
-10. Continue development.
-
-Non-critical log warnings do not automatically block a milestone.
-
-Critical crashes, corrupted worlds or gameplay-breaking incompatibilities must be resolved before release.
+Warnings and non-critical errors are documented and reviewed during cleanup and stabilization.
 
 ---
 
-# V0.1 — Foundation
+# v0.1.0 — Foundation
 
-Status: ✅ PASS
+Status: PASSED
 
-Validated:
+Tested:
 
-- Game startup
-- World creation
-- World loading
-- Cobblemon startup
+- Minecraft startup
+- Fabric
+- Cobblemon
 - Starter selection
-- Pokémon spawning
-- Pokémon capturing
-- Pokémon battles
-- Pokémon progression
-- Performance stack
-- General QoL
-- Pokémon QoL
-- Singleplayer stability
+- World loading
+- Basic Pokémon functionality
+- Performance mods
 
 Result:
 
-✅ PASS
-
-Release:
-
-`v0.1.0`
+Core environment functional.
 
 ---
 
-# V0.2 — Pokémon World
+# v0.2.0 — World & Exploration
 
-Status: ✅ PASS
+Status: PASSED
 
-Validated:
+Tested:
 
-- Terralith world generation
-- Terrain generation
-- Biome generation
-- Pokémon structures
-- PokéCenters
-- PokéMarts
-- Nests & Dens
-- CobbleDollars
-- Pokémon merchants
-- PokéNav
+- World generation
+- Terralith
+- Cobblemon structures
+- Maps
 - Waystones
-- Repel
-- Cobblemon Integrations
-- Existing Pokémon gameplay
+- Pokémon structures
+- Nests and dens
+- Singleplayer gameplay
 
 Result:
 
-✅ PASS
-
-Release:
-
-`v0.2.0`
+World generation and exploration systems functional.
 
 ---
 
-# V0.3 — Trainers
+# v0.3.0 — Trainers & Battles
 
-Status: ✅ PASS
+Status: PASSED
 
-Validated:
+Tested:
 
-- Radical Cobblemon Trainers
-- RCT API
-- Trainer NPCs
-- Trainer battles
-- Trainer teams
 - Trainer structures
-- Trainer rewards
-- Pokémon experience during trainer battles
-- Existing world compatibility
-- Existing Pokémon gameplay
-
-Result:
-
-✅ PASS
-
-Release:
-
-`v0.3.0`
-
----
-
-# V0.4 — Progression
-
-Status: ✅ PASS
-
-Validated:
-
-- Rad Gyms
-- Radical Gyms & Structures
-- Gym structures
-- Gym-related NPCs
-- RCT Trainer Card
-- Capture Cap
-- Pokémon badges
-- RCT badge integration
+- Radical Cobblemon Trainers
 - Trainer battles
-- Pokémon League content
-- Existing world compatibility
-- Existing Pokémon gameplay
+- Pokémon battles
+- Pokémon experience
+- Existing world functionality
 
 Result:
 
-✅ PASS
-
-Release:
-
-`v0.4.0`
+Trainer and battle systems functional.
 
 ---
 
-# V0.5 — Pokémon Mechanics
+# v0.4.0 — Gyms & Progression
 
-Status: ✅ PASS — Initial Integration
+Status: PASSED
 
-## Installed
+Tested:
 
-### Moves
-
-- SimpleTMs 2.3.3
-
-### Breeding
-
-- Cobbreeding 2.2.2
-
-### Pokémon Training
-
-- Cobblemon Utility+ 1.7.4
-
-### Battle Mechanics
-
-- Cobblemon: Mega Showdown 1.9.3+1.7.3+1.21.1
-
-### Legendary / Mythical
-
-- Myths and Legends 1.9.0
-- Cobblemon: Legendary Monuments 8.1-Love-for-All
-
-### Dependencies
-
-- Cloth Config API 15.0.140+fabric
-- owo-lib 0.13.0-alpha.15+1.21
-- Accessories 1.1.0-beta.53+1.21.1
-- Resourceful Lib 3.0.12
-- Chipped 4.0.2
-
----
-
-# V0.5 Integration Validation
-
-Observed after installation:
-
-- [x] Minecraft starts
-- [x] Resource packs enabled
-- [x] Existing world loads
-- [x] Pokémon continue spawning
-- [x] Core Cobblemon gameplay remains operational
-- [x] No startup crash observed
-- [x] No world-loading crash observed
-- [x] New V0.5 mods load
-- [x] Runtime logs collected
-
-Full mechanic-by-mechanic validation is intentionally deferred to later full-playthrough testing.
-
----
-
-# Known Runtime Issues
-
-## Cobblemon Trainer Structures
-
-Observed error:
-
-`Failed to load model cobblemonopponents:models/block/pokeball_trophy_java.json`
-
-Cause indicated by runtime log:
-
-Invalid resource location referencing:
-
-`OneDrive/Desktop/test_trophy/pedesta`
-
-Severity:
-
-⚠️ Non-critical
-
-Observed impact:
-
-No game crash.
-
-Action:
-
-Deferred to V0.7 cleanup unless gameplay impact is discovered earlier.
-
----
-
-## Cobblemon: Extra Structures
-
-Observed error:
-
-Sprout Tower advancement references an unknown registry item:
-
-`cobblemonextrastructures:bellsprout_statue`
-
-Severity:
-
-⚠️ Non-critical
-
-Observed impact:
-
-No game crash.
-
-Action:
-
-Deferred to V0.7 cleanup unless gameplay impact is discovered earlier.
-
----
-
-# V0.5 Result
-
-The Pokémon Mechanics integration is considered sufficiently stable to continue development.
+- Gym structures
+- Radical Gyms & Structures
+- Rad Gyms
+- Capture Cap
+- Badge system
+- RCT badge integration
+- Pokémon battles
 
 Result:
 
-✅ **PASS — INITIAL INTEGRATION**
-
-Release:
-
-`v0.5.0`
-
-More extensive gameplay validation will occur during later balancing, Alpha and full-playthrough testing.
+Gym and initial progression systems functional.
 
 ---
 
-# Next Test Phase
+# v0.5.0 — Expanded Pokémon Gameplay
 
-## V0.6 — Immersion
+Status: PASSED
 
-Focus:
+Tested:
 
-- Interface
-- Music
-- Audio
-- Visual improvements
-- Pokémon interaction
-- World atmosphere
+- Mega Showdown
+- Pokémon utilities
+- Breeding
+- TMs/TRs
+- Legendary content
+- Legendary monuments
+- Decorative content
+- Resource packs
+- Existing worlds
 
-Testing continues using the batch-integration and log-analysis workflow.
+Result:
+
+Expanded Pokémon gameplay loaded successfully without critical crashes.
+
+---
+
+# v0.6.0 — Immersion & Visuals
+
+Status: PASSED
+
+Tested:
+
+- World startup
+- Existing Pokémon
+- Environmental audio
+- Battle audio
+- Battle music
+- Cobblemon Intros
+- Environmental interactions
+- Iris
+- Complementary Reimagined
+- Entity Model Features
+- Entity Texture Features
+- Shader rendering
+
+Result:
+
+All primary V0.6 features loaded and operated without a game crash.
+
+---
+
+# Known Non-Critical Issues
+
+The following issues were observed during development but currently do not prevent gameplay.
+
+## Iris / Complementary
+
+An Iris shader exception involving:
+
+`Unknown variable: endFlashIntensity`
+
+was observed in logs.
+
+Complementary Reimagined nevertheless loaded and rendered successfully during gameplay.
+
+Status:
+
+MONITOR
+
+---
+
+## MAmbience
+
+MAmbience reports missing footstep definitions for some blocks from mods including:
+
+- Cobblemon
+- Chipped
+- Another Furniture
+
+No crash or significant gameplay issue was observed.
+
+Status:
+
+NON-CRITICAL
+
+---
+
+## Cobblemon Extra Structures
+
+A missing/invalid advancement related to:
+
+`bellsprout_statue`
+
+was observed.
+
+No critical gameplay issue was observed.
+
+Status:
+
+MONITOR
+
+---
+
+## Spawn Presets
+
+Some unknown spawn presets have appeared in logs, including:
+
+- water_surface
+- freshwater
+- underwater
+- flowers
+- river
+
+No critical crash was associated with these warnings during testing.
+
+Status:
+
+MONITOR
+
+---
+
+# Known Incompatibilities
+
+## Cobblemon Auto Tidy Up PC
+
+Result:
+
+FAILED
+
+Reason:
+
+Caused resource reload failure.
+
+Action:
+
+Removed from CobbleHorizons.
+
+---
+
+## Cobblemon UI
+
+Result:
+
+FAILED
+
+Reason:
+
+Game crashed when opening Pokémon EV/stat information.
+
+Action:
+
+Removed from CobbleHorizons.
+
+---
+
+# Multiplayer
+
+Multiplayer testing is currently outside the development scope.
+
+CobbleHorizons is being developed and validated primarily for singleplayer during the pre-alpha development cycle.
+
+Multiplayer compatibility may be evaluated in a later development phase.

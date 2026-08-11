@@ -1,262 +1,162 @@
-# CobbleHorizons Mod List
+# CobbleHorizons — Mod List
 
-This document tracks the mods evaluated and approved for CobbleHorizons.
+Lista oficial de mods utilizados no CobbleHorizons.
 
-## Status
-
-- 🔎 Researching
-- 🧪 Testing
-- ✅ Approved
-- ❌ Rejected
-- ⚠️ Known Issue
+> Minecraft: 1.21.1  
+> Mod Loader: Fabric  
+> Cobblemon: 1.7.3
 
 ---
 
-# Core
+## Core
 
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Cobblemon | 1.7.3 | ✅ | Core Pokémon gameplay |
-| Fabric API | 0.116.15+1.21.1 | ✅ | Fabric dependency |
-| Fabric Language Kotlin | 1.13.13+kotlin.2.4.10 | ✅ | Mod dependency |
-
----
-
-# Performance
-
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Sodium | 0.8.13-beta.2 | ✅ | Rendering optimization |
-| Lithium | 0.15.4 | ✅ | Game logic optimization |
-| ImmediatelyFast | 1.6.11+1.21.1 | ✅ | Rendering optimization |
-| FerriteCore | 7.0.3 | ✅ | Memory optimization |
-| ModernFix | 5.25.1+mc1.21.1 | ✅ | Memory, loading and stability |
+| Mod | Version | Purpose |
+|---|---|---|
+| Cobblemon | 1.7.3 | Core Pokémon gameplay |
+| Fabric API | 0.116.15+1.21.1 | Fabric API |
 
 ---
 
-# General Quality of Life
+## Performance
 
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Xaero's Minimap | 26.4.2 | ✅ | Navigation |
-| Xaero's World Map | 1.44.2 | ✅ | World exploration |
-| EMI | 1.1.24 | ✅ | Recipes and items |
-| Jade | 15.10.6 | ✅ | Contextual information |
-| Mouse Tweaks | 2.26 | ✅ | Inventory controls |
-
----
-
-# Pokémon Quality of Life
-
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Cobblemon Pokedex (Cobbledex) | 1.2.0 | ✅ | Pokémon information |
-| Cobblemon Integrations | 1.1.6 | ✅ | Integration with Jade and other systems |
+| Mod | Version | Purpose |
+|---|---|---|
+| Sodium | 0.8.13-beta.2 | Rendering performance |
+| Lithium | 0.15.4 | Game logic optimization |
+| ImmediatelyFast | 1.6.11 | Rendering optimization |
+| FerriteCore | 7.0.3 | Memory optimization |
+| ModernFix | 5.25.1 | Performance and bug fixes |
 
 ---
 
-# World Generation
+## Interface & Quality of Life
 
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Terralith | 2.6.2 | ✅ | World generation and biome variety |
-| Cobblemon: Extra Structures | 1.21.1-1.3.0 | ⚠️ | Pokémon structures |
-| Cobblemon: Nests & Dens | 1.3.3 | ✅ | Pokémon nests and dens |
-| Lithostitched | 1.7.13-fabric-21.1 | ✅ | World generation dependency |
-
----
-
-# Pokémon World
-
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| CobbleStructures | 1.1.0+mod | ✅ | PokéCenters, PokéMarts and Pokémon structures |
-| CobbleDollars | 2.0.0+Beta-6.1 | ✅ | Pokémon economy |
-| Another Furniture | 4.0.2 | ✅ | Furniture and structure content |
-| Cobblemon PokéNav | 2.3.3 | ✅ | Pokémon spawn information |
-| Cobblemon Repel | 1.7-1.4 | ✅ | Pokémon spawn control |
-| Waystones | 21.1.40+fabric-1.21.1 | ✅ | Fast travel |
-| Balm | 21.0.64+fabric-1.21.1 | ✅ | Waystones dependency |
-| Forge Config API Port | v21.1.6-1.21.1-Fabric | ✅ | Configuration dependency |
+| Mod | Version | Purpose |
+|---|---|---|
+| Jade | 15.10.6 | Block/entity information |
+| EMI | 1.1.24 | Item and recipe viewer |
+| Mouse Tweaks | 2.26 | Inventory improvements |
+| Xaero's Minimap | 26.4.2 | Minimap |
+| Xaero's World Map | 1.44.2 | World map |
+| Cobblemon Pokenav | 2.3.3 | Pokémon navigation and information |
+| Cobblemon Repel | 1.7-1.4 | Repel mechanics |
+| Cobblemon Pokedex (Cobbledex) | 1.2.0 | Pokédex |
+| Cobblemon UI Tweaks | 1.0.7 | Cobblemon UI improvements |
 
 ---
 
-# Trainers
+## World Generation & Structures
 
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Radical Cobblemon Trainers | 0.18.1-beta | ✅ | Main trainer system |
-| Radical Cobblemon Trainers API | 0.15.2-beta | ✅ | Trainer battle engine and API |
-| Cobblemon Trainer Structures | 1.7.1 | ⚠️ | Trainer structures and battle locations |
-| Architectury API | 13.0.11+fabric | ✅ | Required dependency |
-| Fix Cobblemon Pokemon Experience | 1.1.1+1.21.1-fabric | ✅ | Improved experience gain during trainer battles |
-
----
-
-# Progression
-
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Rad Gyms | 1.7.3_0.4.4 | ✅ | Gym system and gym challenges |
-| Radical Gyms & Structures | 0.6 | ✅ | Gym structures, Gym Leaders and Pokémon League |
-| Capture Cap - RCT Version | 1.2.0 | ✅ | Capture restrictions integrated with RCT progression |
-| CobbleFurnies | 1.2 | ✅ | Structure/content dependency |
-| Athena | 4.0.6 | ✅ | Required dependency |
-| Cobblemon Pokemon Badges | 0.1.1 | ✅ | Physical Pokémon badge system |
-| RCT Badges - Cobblemon Pokemon Badges | 1.1.2 | ✅ | RCT Gym Leader badge integration |
+| Mod | Version | Purpose |
+|---|---|---|
+| Terralith | 2.6.2 | Overworld terrain generation |
+| Lithostitched | 1.7.13 | World generation library |
+| Cobblemon: Extra Structures | 1.3.0 | Additional Cobblemon structures |
+| CobbleStructures | 1.1.0 | Pokémon-themed structures |
+| Cobblemon Trainer Structures | 1.7.1 | Trainer structures |
+| Radical Gyms & Structures | 0.6 | Gyms and Pokémon structures |
+| Rad Gyms | 0.4.4 | Gym system and content |
+| Cobblemon: Nests & Dens | 1.3.3 | Pokémon nests and dens |
+| Cobblemon: Legendary Monuments | 8.1 | Legendary Pokémon monuments |
 
 ---
 
-# Pokémon Mechanics
+## Pokémon Gameplay
 
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| SimpleTMs: TMs and TRs for Cobblemon | 2.3.3 | ✅ | TM and TR system |
-| Cobbreeding | 2.2.2 | ✅ | Pokémon breeding |
-| Cobblemon Utility+ | 1.7.4 | ✅ | IV, EV and Pokémon training utilities |
-| Cobblemon: Mega Showdown | 1.9.3+1.7.3+1.21.1 | ✅ | Mega Evolution and advanced battle gimmicks |
-| Myths and Legends | 1.9.0 | ✅ | Legendary and Mythical encounter mechanics |
-| Cobblemon: Legendary Monuments | 8.1-Love-for-All | ✅ | Legendary structures and encounters |
-
----
-
-# V0.5 Dependencies
-
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Cloth Config API | 15.0.140+fabric | ✅ | Configuration dependency |
-| owo-lib | 0.13.0-alpha.15+1.21 | ✅ | Mega Showdown dependency |
-| Accessories | 1.1.0-beta.53+1.21.1 | ✅ | Mega Showdown accessory system |
-| Resourceful Lib | 3.0.12 | ✅ | Required library |
-| Chipped | 4.0.2 | ✅ | Required content/dependency |
+| Mod | Version | Purpose |
+|---|---|---|
+| Radical Cobblemon Trainers | 0.18.1-beta | NPC Pokémon trainers |
+| Radical Cobblemon Trainers API | 0.15.2-beta | Trainer API |
+| Fix Cobblemon Pokemon Experience | 1.1.1 | Pokémon experience fixes |
+| Capture Cap - RCT Version | 1.2.0 | Capture progression |
+| Cobblemon Pokemon Badges | 0.1.1 | Gym badges |
+| RCT Badges - Cobblemon Pokemon Badges | 1.1.2 | RCT badge integration |
+| Cobblemon: Mega Showdown | 1.9.3 | Mega Evolution and additional battle mechanics |
+| Cobblemon Utility+ | 1.7.4 | IVs, EVs and Pokémon utilities |
+| Cobbreeding | 2.2.2 | Pokémon breeding |
+| SimpleTMs: TMs and TRs for Cobblemon | 2.3.3 | TM/TR system |
+| Myths and Legends | 1.9.0 | Legendary and mythical Pokémon content |
+| Cobblemon Integrations | 1.1.6 | Cobblemon integrations |
+| Cobblemon Environment Interactions | 3.1.0 | Pokémon environmental interactions |
 
 ---
 
-# Rejected Mods
+## Economy & Exploration
 
-## Cobblemon Auto Tidy Up PC
-
-Version:
-
-`1.2-SNAPSHOT`
-
-Status:
-
-❌ Rejected
-
-Reason:
-
-- Caused resource reload failure.
-- Game failed to load correctly.
-- Removing the mod resolved the issue.
+| Mod | Version | Purpose |
+|---|---|---|
+| CobbleDollars | 2.0.0 Beta 6.1 | Pokémon economy |
+| Waystones | 21.1.40 | Fast travel |
 
 ---
 
-## Cobblemon UI Tweaks
+## Building & Decoration
 
-Version:
-
-`1.0.7`
-
-Status:
-
-❌ Rejected
-
-Reason:
-
-- Client crashed when opening the Pokémon Stats/EV screen.
-- Incompatible with the current Cobblemon Stats UI.
-- Removing the mod resolved the crash.
+| Mod | Version | Purpose |
+|---|---|---|
+| Another Furniture | 4.0.2 | Furniture and decoration |
+| CobbleFurnies | 1.2 | Cobblemon-themed furniture |
+| Chipped | 4.0.2 | Decorative block variants |
 
 ---
 
-# Known Issues
+## Immersion & Audio
 
-## Cobblemon Trainer Structures
-
-Status:
-
-⚠️ Non-critical resource/model issue
-
-Observed:
-
-The mod attempts to load:
-
-`cobblemonopponents:models/block/pokeball_trophy_java.json`
-
-The model contains an invalid resource location referencing a development/local path.
-
-Current impact:
-
-- No observed game crash
-- World continues loading
-- Trainer gameplay continues functioning
-
-Planned action:
-
-Review during V0.7 cleanup.
+| Mod / Pack | Version | Purpose |
+|---|---|---|
+| MAmbience | 5.5.1 | Dynamic environmental ambience |
+| Sounds | 2.4.22 | Additional game sounds |
+| Ambient Environment | 18.0.0.2 | Environmental visual variation |
+| Cobblemon Battle Tracks | 1.2 | Pokémon battle music |
+| Cobblemon Intros | 1.0.0 | Battle music intros |
 
 ---
 
-## Cobblemon: Extra Structures
+## Graphics
 
-Status:
-
-⚠️ Non-critical advancement/resource issue
-
-Observed:
-
-The Sprout Tower advancement references:
-
-`cobblemonextrastructures:bellsprout_statue`
-
-The referenced registry item was not available during advancement loading.
-
-Current impact:
-
-- No observed game crash
-- World continues loading
-- Structure generation remains usable
-
-Planned action:
-
-Review during V0.7 cleanup.
+| Mod / Pack | Version | Purpose |
+|---|---|---|
+| Iris Shaders | 1.8.14-beta.1 | Shader support |
+| Complementary Shaders - Reimagined | r5.8.1 | Recommended shader pack |
+| Entity Model Features (EMF) | 3.2.4 | Custom entity model support |
+| Entity Texture Features (ETF) | 7.1 | Custom entity texture support |
 
 ---
 
-# Intentionally Excluded
+## Libraries & Dependencies
 
-## Alternative Gym Systems
+The following mods are installed primarily as dependencies for other mods.
 
-Alternative gym/progression systems are intentionally avoided while Rad Gyms, RCT and Radical Gyms & Structures provide the primary progression architecture.
-
-## Duplicate Battle Gimmick Systems
-
-Mega Showdown is the primary platform for advanced Pokémon battle gimmicks.
-
-Separate addons implementing overlapping Mega Evolution, Z-Move, Terastallization or Dynamax systems should generally be avoided.
-
-## Excess Legendary Systems
-
-Myths and Legends and Legendary Monuments currently provide the primary expansion for Legendary and Mythical Pokémon.
-
-Additional large legendary systems should only be introduced if they provide substantial unique value without excessive duplication.
+| Mod | Version |
+|---|---|
+| Fabric Language Kotlin | 1.13.13+kotlin.2.4.10 |
+| Balm | 21.0.64 |
+| Forge Config API Port | 21.1.6 |
+| Architectury API | 13.0.11 |
+| Athena | 4.0.6 |
+| Cloth Config API | 15.0.140 |
+| oωo (owo-lib) | 0.13.0-alpha.15 |
+| Accessories | 1.1.0-beta.53 |
+| Resourceful Lib | 3.0.12 |
+| MRU | 1.0.19+LTS |
+| YetAnotherConfigLib (YACL) | 3.8.2 |
 
 ---
 
-# Evaluation Rules
+## Removed / Rejected
 
-Before approving a mod:
+### Cobblemon Auto Tidy Up PC
 
-1. Minecraft 1.21.1 compatibility
-2. Fabric compatibility
-3. Cobblemon 1.7.3 compatibility
-4. Required dependencies
-5. Maintenance status
-6. Known incompatibilities
-7. Performance impact
-8. Singleplayer stability
-9. License
-10. Contribution to the Pokémon experience
-11. Compatibility with existing progression
-12. Avoid unnecessary mechanic duplication
+Removed because it caused resource reload failure during startup.
+
+### Cobblemon UI
+
+Removed after causing a crash when accessing Pokémon EV/stat information.
+
+---
+
+## Notes
+
+Versions listed here represent the tested CobbleHorizons development environment.
+
+Mods may be updated before the first stable release after compatibility testing.

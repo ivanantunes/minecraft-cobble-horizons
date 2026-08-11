@@ -4,253 +4,188 @@ All notable changes to CobbleHorizons are documented in this file.
 
 ---
 
-## V0.5.0 — Pokémon Mechanics
+## [Unreleased]
 
-Status: ✅ Completed
+### Planned
+
+- Balance and cleanup
+- Configuration review
+- Progression balancing
+- Compatibility cleanup
+
+---
+
+## [0.6.0] - 2026-08-10
 
 ### Added
 
-#### TMs and TRs
+- Cobblemon Environment Interactions
+- MAmbience
+- Ambient Environment
+- Sounds
+- Cobblemon Intros
+- Cobblemon Battle Tracks
+- Iris Shaders
+- Complementary Shaders - Reimagined
+- Entity Model Features (EMF)
+- Entity Texture Features (ETF)
 
-- SimpleTMs 2.3.3
-- TM system
-- TR system
-- Expanded Pokémon moveset progression
+### Dependencies
 
-#### Breeding
+- MRU
+- YetAnotherConfigLib (YACL)
 
-- Cobbreeding 2.2.2
-- Pokémon breeding
-- Egg generation
-- Pasture-based breeding mechanics
+### Changed
 
-#### Pokémon Training
+- Expanded environmental ambience
+- Added dynamic environmental sounds
+- Added Pokémon battle music
+- Added battle music intros
+- Added Pokémon environmental interactions
+- Added shader support
+- Added enhanced entity model support
+- Added enhanced entity texture support
 
-- Cobblemon Utility+ 1.7.4
-- IV utilities
-- EV utilities
-- Pokémon training tools
-- Additional Pokémon management functionality
+### Testing
 
-#### Advanced Battle Mechanics
-
-- Cobblemon: Mega Showdown 1.9.3+1.7.3+1.21.1
-- Mega Evolution
-- Z-Moves
-- Terastallization
-- Dynamax
-- Additional battle gimmicks and forms
-
-#### Legendary and Mythical Pokémon
-
-- Myths and Legends 1.9.0
-- Cobblemon: Legendary Monuments 8.1-Love-for-All
-- Legendary structures
-- Legendary encounters
-- Mythical encounters
-- Special encounter mechanics
-- Rare Pokémon exploration
-
-#### Dependencies
-
-- Cloth Config API 15.0.140+fabric
-- owo-lib 0.13.0-alpha.15+1.21
-- Accessories 1.1.0-beta.53+1.21.1
-- Resourceful Lib 3.0.12
-- Chipped 4.0.2
-
-### Development
-
-Changed the development validation workflow.
-
-Previous workflow:
-
-- Install small group
-- Test
-- Install next group
-- Test again
-
-New workflow:
-
-- Research milestone
-- Install compatible systems in batches
-- Start game
-- Collect logs
-- Resolve critical issues
-- Document non-critical warnings
-
-This allows faster development while maintaining visibility into compatibility problems.
+- Minecraft startup successful
+- World loading successful
+- Cobblemon gameplay functional
+- Environmental audio functional
+- Battle audio functional
+- Battle music functional
+- Iris functional
+- Complementary Reimagined functional
+- EMF/ETF loaded successfully
+- No critical crash observed
 
 ### Known Issues
 
-#### Cobblemon Trainer Structures
-
-A trophy model references an invalid development/local resource path.
-
-No game crash has been observed.
-
-#### Cobblemon: Extra Structures
-
-The Sprout Tower advancement references an unavailable Bellsprout statue registry entry.
-
-No game crash has been observed.
-
-Both issues are scheduled for later cleanup unless they become gameplay-breaking.
-
-### Result
-
-✅ V0.5 Pokémon Mechanics completed.
+- Iris may log an `endFlashIntensity` shader exception with Complementary Reimagined
+- MAmbience reports missing footstep definitions for some modded blocks
+- Cobblemon Extra Structures contains an invalid/missing `bellsprout_statue` advancement reference
+- Some unknown Cobblemon spawn presets are reported in logs
 
 ---
 
-## V0.4.0 — Progression
-
-Status: ✅ Completed
+## [0.5.0]
 
 ### Added
 
-#### Gyms
+- Cobblemon: Mega Showdown
+- Cobblemon Utility+
+- Cobbreeding
+- SimpleTMs
+- Myths and Legends
+- Cobblemon: Legendary Monuments
+- Chipped
+- Resourceful Lib
+- Required dependencies
 
-- Rad Gyms 1.7.3_0.4.4
-- Radical Gyms & Structures 0.6
+### Changed
 
-#### Progression
-
-- Capture Cap - RCT Version 1.2.0
-- Gym progression
-- Gym Leader challenges
-- Level-based progression
-- Capture restrictions integrated with RCT
-
-#### Badges
-
-- Cobblemon Pokemon Badges 0.1.1
-- RCT Badges - Cobblemon Pokemon Badges 1.1.2
-- Physical Pokémon badges
-- RCT Gym Leader badge integration
-
-#### Pokémon League
-
-- Kanto League content
-- Elite Four progression
-- Champion progression
-
-#### Dependencies
-
-- CobbleFurnies 1.2
-- Athena 4.0.6
-
-### Result
-
-✅ V0.4 Progression completed.
+- Expanded Pokémon progression
+- Added Mega Evolution support
+- Added breeding mechanics
+- Added TM/TR mechanics
+- Expanded legendary Pokémon content
+- Expanded decorative building options
 
 ---
 
-## V0.3.0 — Trainers
-
-Status: ✅ Completed
+## [0.4.0]
 
 ### Added
 
-- Radical Cobblemon Trainers 0.18.1-beta
-- Radical Cobblemon Trainers API 0.15.2-beta
-- Cobblemon Trainer Structures 1.7.1
-- Architectury API 13.0.11+fabric
-- Fix Cobblemon Pokemon Experience 1.1.1+1.21.1-fabric
+- Capture Cap - RCT Version
+- CobbleFurnies
+- Radical Gyms & Structures
+- Rad Gyms
+- Cobblemon Pokemon Badges
+- RCT Badges - Cobblemon Pokemon Badges
+- Required dependencies
 
-### Features
+### Changed
 
-- NPC Pokémon trainers
-- Trainer battles
-- Trainer structures
-- Varied trainer teams
-- Trainer rewards
-- Improved experience gain during trainer battles
-
-### Result
-
-✅ V0.3 Trainers completed.
+- Added gym progression
+- Added badge progression
+- Added capture progression
 
 ---
 
-## V0.2.0 — Pokémon World
-
-Status: ✅ Completed
+## [0.3.0]
 
 ### Added
 
-#### World Generation
+- Cobblemon Trainer Structures
+- Radical Cobblemon Trainers API
+- Radical Cobblemon Trainers
+- Fix Cobblemon Pokemon Experience
+- Architectury API
 
-- Terralith 2.6.2
-- Cobblemon: Extra Structures 1.21.1-1.3.0
-- Cobblemon: Nests & Dens 1.3.3
-- Lithostitched 1.7.13-fabric-21.1
+### Changed
 
-#### Pokémon World
-
-- CobbleStructures 1.1.0+mod
-- CobbleDollars 2.0.0+Beta-6.1
-- Another Furniture 4.0.2
-- Cobblemon PokéNav 2.3.3
-- Cobblemon Repel 1.7-1.4
-- Waystones 21.1.40+fabric-1.21.1
-- Cobblemon Integrations 1.1.6
-
-#### Dependencies
-
-- Balm 21.0.64+fabric-1.21.1
-- Forge Config API Port v21.1.6-1.21.1-Fabric
-
-### Compatibility
-
-#### Cobblemon Auto Tidy Up PC
-
-Rejected due to resource reload failure.
-
-#### Cobblemon UI Tweaks
-
-Removed due to crash when opening the Pokémon Stats/EV interface.
-
-### Result
-
-✅ V0.2 Pokémon World completed.
+- Added trainer battles
+- Added trainer structures
+- Improved Pokémon experience behavior
 
 ---
 
-## V0.1.0 — Foundation
-
-Status: ✅ Completed
+## [0.2.0]
 
 ### Added
 
-#### Core
+- Terralith
+- Lithostitched
+- Cobblemon: Extra Structures
+- CobbleStructures
+- CobbleDollars
+- Another Furniture
+- Cobblemon Pokenav
+- Cobblemon Repel
+- Waystones
+- Cobblemon: Nests & Dens
+- Cobblemon Integrations
+- Required dependencies
 
-- Minecraft 1.21.1
-- Fabric
+### Changed
+
+- Expanded world generation
+- Expanded exploration
+- Added Pokémon structures
+- Added economy systems
+- Added fast travel
+
+---
+
+## [0.1.0]
+
+### Added
+
+- Cobblemon
 - Fabric API
-- Fabric Language Kotlin
-- Cobblemon 1.7.3
-
-#### Performance
-
 - Sodium
 - Lithium
 - ImmediatelyFast
 - FerriteCore
 - ModernFix
-
-#### Quality of Life
-
+- Jade
+- EMI
+- Mouse Tweaks
 - Xaero's Minimap
 - Xaero's World Map
-- EMI
-- Jade
-- Mouse Tweaks
+- Cobblemon Pokedex
+- Cobblemon UI Tweaks
+- Initial dependencies
 
-#### Pokémon Quality of Life
+### Removed
 
-- Cobbledex
+- Cobblemon Auto Tidy Up PC due to resource reload failure
+- Cobblemon UI due to crash when accessing Pokémon EV/stat information
 
-### Result
+### Initial
 
-✅ V0.1 Foundation completed.
+- CobbleHorizons development environment established
+- Minecraft 1.21.1 selected
+- Fabric selected
+- Cobblemon 1.7.3 selected

@@ -1,361 +1,173 @@
-# CobbleHorizons Roadmap
+# CobbleHorizons — Roadmap
 
-CobbleHorizons is developed incrementally.
+CobbleHorizons is a Minecraft 1.21.1 Fabric modpack focused on creating a complete Pokémon adventure using Cobblemon.
 
-Each milestone introduces a major gameplay layer before development continues toward a complete Pokémon-focused Minecraft experience.
+The project is currently in pre-alpha development.
 
 ---
 
-# V0.1 — Foundation
+# v0.1.0 — Foundation
 
-Status: ✅ Completed
+Status: COMPLETE
 
-## Objective
+Goals:
 
-Build a stable technical foundation for the CobbleHorizons singleplayer experience.
-
-### Completed
-
-- Minecraft 1.21.1
-- Fabric
-- Cobblemon 1.7.3
+- Cobblemon core
+- Fabric environment
 - Performance optimization
-- General quality-of-life improvements
-- Pokémon quality-of-life improvements
-- Singleplayer stability baseline
+- Basic UI
+- Maps
+- Essential quality-of-life features
 
 ---
 
-# V0.2 — Pokémon World
+# v0.2.0 — World & Exploration
 
-Status: ✅ Completed
+Status: COMPLETE
 
-## Objective
+Goals:
 
-Transform the Minecraft world into an environment that encourages Pokémon exploration and discovery.
-
-### Completed
-
-- Terralith world generation
-- Expanded terrain and biome variety
-- Pokémon-related structures
-- PokéCenters
-- PokéMarts
-- CobbleDollars economy
-- Pokémon merchants
-- PokéNav
-- Waystones
-- Repel system
+- Expanded world generation
+- Terralith
+- Pokémon structures
+- Exploration improvements
+- Fast travel
 - Nests and dens
-- Cobblemon integrations
+- Economy foundations
+- Additional world content
 
 ---
 
-# V0.3 — Trainers
+# v0.3.0 — Trainers & Battles
 
-Status: ✅ Completed
+Status: COMPLETE
 
-## Objective
+Goals:
 
-Introduce meaningful NPC Pokémon battles throughout the world.
-
-### Completed
-
-- Radical Cobblemon Trainers
-- Radical Cobblemon Trainers API
+- NPC Pokémon trainers
 - Trainer structures
 - Trainer battles
-- Trainer rewards
-- Trainer team variety
-- Improved trainer battle experience gain
+- Battle progression
+- Pokémon experience improvements
 
 ---
 
-# V0.4 — Progression
+# v0.4.0 — Gyms & Progression
 
-Status: ✅ Completed
+Status: COMPLETE
 
-## Objective
+Goals:
 
-Create structured player progression through gyms, badges, level restrictions and increasingly difficult Pokémon challenges.
-
-### Completed
-
-- Rad Gyms
-- Radical Gyms & Structures
+- Pokémon gyms
 - Gym structures
-- Gym Leaders
-- RCT Trainer Card progression
-- Level caps
-- Capture caps
-- Pokémon badges
-- RCT badge integration
-- Kanto League
-- Elite Four
-- Champion
-
-### Progression Loop
-
-Player begins journey
-
-↓
-
-Captures and trains Pokémon
-
-↓
-
-Battles trainers
-
-↓
-
-Defeats progression trainers and Gym Leaders
-
-↓
-
-Earns badges
-
-↓
-
-Increases progression limits
-
-↓
-
-Challenges increasingly difficult opponents
-
-↓
-
-Completes the Gym challenge
-
-↓
-
-Challenges the Pokémon League
-
-↓
-
-Elite Four
-
-↓
-
-Champion
+- Badge progression
+- Capture progression
+- RCT integration
 
 ---
 
-# V0.5 — Pokémon Mechanics
+# v0.5.0 — Expanded Pokémon Gameplay
 
-Status: ✅ Completed
+Status: COMPLETE
 
-## Objective
-
-Expand Pokémon training, team building, battle mechanics and rare Pokémon encounters.
-
----
-
-## Moves
-
-### SimpleTMs
-
-Added a dedicated TM/TR system.
-
-Features:
-
-- TMs
-- TRs
-- Move acquisition
-- Expanded moveset progression
-- Additional exploration and battle rewards
-
----
-
-## Breeding
-
-### Cobbreeding
-
-Introduced Pokémon breeding mechanics integrated into the Cobblemon ecosystem.
-
-Features:
-
-- Pokémon breeding
-- Egg generation
-- Pasture-based breeding
-- Additional team-building progression
-
----
-
-## IV / EV and Training
-
-### Cobblemon Utility+
-
-Expanded Pokémon management and competitive training.
-
-Features include:
-
-- IV utilities
-- EV utilities
-- Training items
-- Stat management
-- Friendship utilities
-- Additional Pokémon management tools
-
-Availability and balance of powerful utility items will be reviewed during V0.7.
-
----
-
-## Advanced Battle Mechanics
-
-### Cobblemon: Mega Showdown
-
-Introduced major Pokémon battle gimmicks.
-
-Features include:
+Goals:
 
 - Mega Evolution
-- Z-Moves
-- Terastallization
-- Dynamax
-- Additional forms
-- Additional battle mechanics
-
-Mega Showdown is the primary advanced battle-mechanics platform for CobbleHorizons.
-
-Separate addons duplicating these systems should generally be avoided.
+- IV/EV utilities
+- Pokémon breeding
+- TMs and TRs
+- Legendary Pokémon content
+- Legendary monuments
+- Expanded building and decoration
 
 ---
 
-## Legendary and Mythical Pokémon
+# v0.6.0 — Immersion & Visuals
 
-### Myths and Legends
+Status: COMPLETE
 
-Introduced additional Legendary and Mythical Pokémon encounter mechanics.
+Goals:
 
-Features include:
-
-- Legendary Pokémon progression
-- Mythical Pokémon progression
-- Special items
-- Special encounter requirements
-- Rare Pokémon exploration
-
-### Legendary Monuments
-
-Expanded the world with Legendary Pokémon content.
-
-Features include:
-
-- Legendary structures
-- Monuments
-- Special encounters
-- Legendary Pokémon progression
-- Exploration-driven rare encounters
-
----
-
-## Result
-
-V0.5 establishes the major Pokémon mechanics required for the intended CobbleHorizons experience:
-
-- Moveset progression
-- Breeding
-- IV/EV training
-- Advanced battle gimmicks
-- Legendary Pokémon
-- Mythical Pokémon
-- Rare encounters
-
-V0.5 is considered complete.
-
----
-
-# V0.6 — Immersion
-
-Status: ⏳ Next
-
-## Objective
-
-Improve the feeling of actually living and traveling inside a Pokémon world.
-
-### Planned Areas
-
-- Interface improvements
-- Pokémon battle interface
-- Music
+- Environmental ambience
+- Improved soundscape
 - Pokémon battle music
-- Ambient sounds
-- Environmental audio
-- Visual improvements
-- Animations
-- Pokémon interaction
-- World atmosphere
-- Immersive exploration
-- Optional visual enhancements
-
-The V0.6 phase should prioritize immersion without substantially changing the progression systems established in V0.1–V0.5.
+- Battle intros
+- Pokémon environmental interactions
+- Shader support
+- Recommended shader preset
+- Enhanced entity model support
+- Enhanced entity texture support
 
 ---
 
-# V0.7 — Balance & Cleanup
+# v0.7.0 — Balance & Cleanup
 
-Status: Planned
+Status: NEXT
 
-## Objective
+Goals:
 
-Balance and clean the complete CobbleHorizons gameplay experience before Alpha.
-
-### Planned Areas
-
-- Spawn rates
-- Legendary spawn rates
-- Trainer difficulty
-- Gym difficulty
-- Economy
-- Item availability
-- TM/TR availability
-- Utility+ item balance
-- Progression speed
-- Level caps
-- Capture caps
-- Waystone balance
-- Legendary progression
-- Mega Showdown progression
-- Performance
-- Configuration cleanup
-- Log cleanup
-- Known issue review
-- Singleplayer balance
+- Review complete mod list
+- Remove redundant mods
+- Review overlapping systems
+- Review log warnings
+- Resolve important compatibility issues
+- Configure gameplay balance
+- Configure progression
+- Review spawn behavior
+- Review economy
+- Review gyms
+- Review trainer difficulty
+- Review capture progression
+- Review legendary progression
+- Performance cleanup
 
 ---
 
-# Alpha
+# v0.8.0 — Configuration & Identity
 
-Feature-complete testing build.
+Status: PLANNED
 
-Main goals:
+Goals:
 
-- Full survival playthrough
-- Full Pokémon progression playthrough
-- Gym progression testing
-- League testing
-- Legendary progression testing
-- Battle gimmick testing
-- Compatibility testing
-- Major bug fixing
-
----
-
-# Beta
-
-Stability and balancing phase.
-
-Main goals:
-
-- Balance adjustments
-- Performance improvements
-- Configuration cleanup
-- Mod compatibility verification
-- Distribution preparation
-- Modrinth packaging
+- CobbleHorizons default configuration
+- Default keybind review
+- Resource pack configuration
+- Shader defaults
+- UI configuration
+- Audio configuration
+- Mod configuration
+- Pack identity improvements
+- Menu/branding evaluation
 
 ---
 
-# Release
+# v0.9.0 — Release Candidate
 
-First stable public release of CobbleHorizons.
+Status: PLANNED
+
+Goals:
+
+- Fresh world test
+- Full progression test
+- Compatibility review
+- Performance review
+- Final mod cleanup
+- Documentation review
+- Modrinth export
+- Release packaging
+
+---
+
+# v1.0.0 — First Stable Release
+
+Status: PLANNED
+
+Goals:
+
+- Stable singleplayer experience
+- Complete Pokémon progression
+- Stable world generation
+- Stable trainer and gym systems
+- Stable legendary progression
+- Polished visual and audio experience
+- Public Modrinth release
