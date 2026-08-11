@@ -43,3 +43,9 @@ backups/
 # Local development
 local/
 instance/
+# Generated release artifacts
+*.mrpack
+
+# Superseded patch notes
+*-PATCH-NOTES.txt
+*-FINAL-FIX.txt
