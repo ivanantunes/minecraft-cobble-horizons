@@ -43,7 +43,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"fancy"
-resourcePacks:["vanilla","fabric","file/CobbleHorizons-Branding.zip","file/Battle Tracks v1.2.zip"]
+resourcePacks:["vanilla","fabric","file/CobbleHorizons-Branding.zip","file/Battle Tracks v1.2.zip","cobbreeding:pasturefix"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:pt_br

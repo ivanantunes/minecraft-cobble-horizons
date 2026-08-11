@@ -19,6 +19,8 @@
 
 ## Design system
 
+- fundo1 é o wallpaper oficial do menu principal;
+- o logo e o splash vanilla ficam ocultos;
 - base escura para legibilidade;
 - azul e verde como cores de destaque;
 - texto principal branco;
@@ -29,7 +31,17 @@
 
 ## Architecture
 
-O menu principal usa um layout dedicado. As demais telas usam Global Customizations, evitando overrides frágeis de telas complexas. Custom GUIs só devem ser usados quando um fluxo realmente exigir substituição completa.
+O menu principal usa o identificador universal `title_screen` fornecido pelo FancyMenu. Ele não deve ser redeclarado em `customizablemenus.txt`; esse arquivo fica reservado para telas customizadas externas. As demais telas usam Global Customizations, evitando overrides frágeis de telas complexas.
+
+## Resource packs padrão
+
+Instalações novas ativam automaticamente:
+
+- CobbleHorizons Branding;
+- Battle Tracks;
+- Cobbreeding Pasture Fix.
+
+O Modrinth pode exibir o Branding como recurso desconhecido porque ele é distribuído privadamente dentro do MRPack, sem uma página própria no catálogo. Isso não afeta seu funcionamento.
 
 ## Validation
 

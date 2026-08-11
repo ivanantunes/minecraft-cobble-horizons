@@ -1,7 +1,4 @@
 type = customizablemenus
 
-title_screen {
-}
-
 de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
