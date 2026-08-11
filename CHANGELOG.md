@@ -2,6 +2,15 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0-rc2] — 2026-08-11
+
+### Interface isolation correction
+
+- Restricted the CobbleHorizons wallpaper to the title screen, Options screen and loading screen.
+- Removed global FancyMenu backgrounds and button overrides from gameplay and mod interaction screens.
+- Added the missing JustQuests 0.2.3 and Global Packs 21.0.6 entries to the MRPack manifest.
+- Rebuilt the release candidate after the quest interface failed to load in RC1.
+
 ## [1.1.0-rc1] — 2026-08-11
 
 ### Adventure Guide release candidate
