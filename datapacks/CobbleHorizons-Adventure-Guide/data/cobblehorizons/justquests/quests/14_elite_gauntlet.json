@@ -1,0 +1,19 @@
+{
+  "title": "The Elite Gauntlet",
+  "description": "Defeat every Elite Four-class trainer tracked by Radical Cobblemon Trainers. Bring healing items and multiple battle plans.",
+  "category": "CobbleHorizons Adventure",
+  "requires": ["cobblehorizons:13_legendary_encounter"],
+  "objectives": [
+    {
+      "type": "justquests:gain_advancement",
+      "advancement": "rctmod:trainers/defeat_all_elite_four"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "justquests:give_item",
+      "item": "cobblemon:rare_candy",
+      "count": 3
+    }
+  ]
+}
