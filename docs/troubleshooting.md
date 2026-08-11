@@ -14,6 +14,10 @@ Confirm these files exist:
 
 Do not edit FancyMenu layouts while Minecraft is running.
 
+## Background appears behind gameplay interfaces
+
+RC1 incorrectly applied the FancyMenu wallpaper globally. RC2 restricts it to the title screen, the main Options screen and loading. Import RC2 into a clean instance; copying only options.txt does not replace FancyMenu layouts.
+
 ## Resource packs are not enabled
 
 A clean instance should enable CobbleHorizons Branding, Battle Tracks and Cobbreeding Pasture Fix. Existing profiles keep their previous `options.txt`; import a new instance to verify release defaults.
