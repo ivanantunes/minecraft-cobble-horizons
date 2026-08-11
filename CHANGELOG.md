@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Repository
+
+- Removed obsolete development MRPack and superseded patch notes.
+- Removed unused FancyMenu editor themes and redundant icon sizes.
+- Release artifacts are now excluded from the development branch.
+
+
 - Regenerar o MRPack após o teste limpo.
 - Preparar a v0.9.0 Release Candidate.
 
