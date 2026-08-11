@@ -15,6 +15,55 @@ All notable changes to CobbleHorizons will be documented in this file.
 - Testing structure.
 
 ---
+## V0.3.0 — Trainers
+
+Status: ✅ Completed
+
+### Added
+
+#### Trainers
+
+- Radical Cobblemon Trainers 0.18.1-beta
+- Radical Cobblemon Trainers API 0.15.2-beta
+- Cobblemon Trainer Structures 1.7.1
+
+#### Dependencies
+
+- Architectury API 13.0.11+fabric
+
+#### Battle Improvements
+
+- Fix Cobblemon Pokemon Experience 1.1.1+1.21.1-fabric
+
+### Trainer Gameplay
+
+- Added NPC Pokémon trainers throughout the world.
+- Added trainer battle encounters.
+- Added trainer-related structures.
+- Added varied trainer teams.
+- Added trainer rewards and battle locations.
+
+### Experience
+
+- Improved Pokémon experience gain during trainer battles.
+- Pokémon now receive experience correctly during multi-Pokémon trainer battles.
+
+### Testing
+
+Validated:
+
+- Trainer spawning
+- Trainer battles
+- Trainer structures
+- Trainer rewards
+- Pokémon battle compatibility
+- Experience gain
+- Existing world compatibility
+- Singleplayer stability
+
+### Result
+
+✅ V0.3 Trainers completed.
 
 ## V0.2.0 — Pokémon World
 

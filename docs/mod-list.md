@@ -119,11 +119,38 @@ Reason:
 
 ---
 
+# Trainers
+
+| Mod | Version | Status | Purpose |
+|---|---|---|---|
+| Radical Cobblemon Trainers | 0.18.1-beta | ✅ | Main trainer system |
+| Radical Cobblemon Trainers API | 0.15.2-beta | ✅ | Trainer battle engine and API |
+| Cobblemon Trainer Structures | 1.7.1 | ✅ | Trainer structures and battle locations |
+| Architectury API | 13.0.11+fabric | ✅ | Required dependency |
+| Fix Cobblemon Pokemon Experience | 1.1.1+1.21.1-fabric | ✅ | Gives Pokémon experience correctly during trainer battles |
+
 # Future Candidates
 
-## Trainers
+## Progression
 
-To be evaluated during V0.3.
+To be evaluated during V0.4:
+
+- Rad Gyms
+- Radical Gyms & Structures
+- Badge systems
+- Level cap systems
+- Elite Four / League systems
+
+## Pokémon Mechanics
+
+Potential future systems:
+
+- Breeding
+- SimpleTMs
+- IV/EV utilities
+- Mega Evolution
+- Pokémon gimmicks
+- Legendary systems
 
 ## Progression
 

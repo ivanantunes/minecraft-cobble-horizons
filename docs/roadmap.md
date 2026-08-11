@@ -34,92 +34,74 @@ Status: ✅ Completed
 
 Transform the Minecraft world into an environment that encourages Pokémon exploration and discovery.
 
-### World Generation
+### Completed
 
-- Terralith
-- Expanded terrain and biome variety
+- Terralith world generation
 - Pokémon-related structures
-- Nests and dens
-
-### Pokémon Civilization
-
 - PokéCenters
 - PokéMarts
-- Pokémon-related structures
 - CobbleDollars economy
-- Pokémon merchants
-
-### Exploration
-
 - PokéNav
 - Waystones
 - Repel system
-- Minimap and world map integration
-- Pokémon spawn information
 - Nests and dens
-
-### Integration
-
-- Cobblemon integration with Jade
-- Cobblemon integration with Waystones
-- Improved information for Pokémon-related blocks and systems
-
-### Validation
-
-V0.2 was considered complete after confirming:
-
-- New worlds generate correctly
-- Terralith terrain generates correctly
-- Pokémon continue spawning normally
-- Cobblemon gameplay remains functional
-- Pokémon structures generate correctly
-- PokéCenters and PokéMarts work
-- CobbleDollars works
-- PokéNav works
-- Waystones work
-- Repel works
-- Nests & Dens loads correctly
-- Cobblemon Integrations works
-- No critical crashes remain after incompatible mods were removed
+- Cobblemon integrations
 
 ---
 
 # V0.3 — Trainers
 
-Status: ⏳ Next
+Status: ✅ Completed
 
 ## Objective
 
 Introduce meaningful NPC Pokémon battles throughout the world.
 
-### Planned Areas
+### Completed
 
-- Pokémon trainers
-- Trainer spawning
+- Radical Cobblemon Trainers
+- Radical Cobblemon Trainers API
 - Trainer structures
-- Trainer difficulty
-- Trainer teams
+- Trainer battles
 - Trainer rewards
-- Trainer progression
-- Battle balancing
+- Trainer team variety
+- Improved trainer battle experience gain
+
+### Validation
+
+V0.3 was considered complete after confirming:
+
+- Trainers appear correctly
+- Trainer battles start correctly
+- Trainer battles finish correctly
+- Pokémon battle mechanics remain functional
+- Trainer structures generate correctly
+- Trainer-related dependencies load correctly
+- Experience gain works correctly during trainer battles
+- No critical crashes or incompatibilities remain
 
 ---
 
 # V0.4 — Progression
 
+Status: ⏳ Next
+
 ## Objective
 
-Create structured player progression.
+Create structured player progression through gyms, badges and increasingly difficult challenges.
 
-### Areas
+### Planned Areas
 
 - Gyms
 - Gym Leaders
 - Badges
 - Progression requirements
+- Level caps
 - Rewards
 - Elite Four
+- Champion
 - Pokémon League
+- Progression balancing
 
 ---
 

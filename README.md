@@ -8,11 +8,11 @@ The goal is not to create a generic modded Minecraft pack that happens to contai
 
 ## Project Status
 
-✅ **V0.2 — Pokémon World completed**
+✅ **V0.3 — Trainers completed**
 
 Current development version:
 
-**v0.2.0**
+**v0.3.0**
 
 ### Technical Base
 
@@ -40,8 +40,17 @@ Current development version:
 - Pokémon-related structures
 - PokéCenters
 - PokéMarts
-- Pokémon exploration locations
 - Nests and dens
+- Pokémon exploration locations
+
+### Trainers
+
+- Large pool of NPC Pokémon trainers
+- Trainer battles throughout the world
+- Trainer structures
+- Trainer rewards
+- Trainer teams based on biome and context
+- Improved trainer battle experience gain
 
 ### Exploration
 
@@ -83,8 +92,8 @@ Large technology, industrial, automation and unrelated magic systems are intenti
 
 - ✅ **V0.1 — Foundation**
 - ✅ **V0.2 — Pokémon World**
-- ⏳ **V0.3 — Trainers**
-- **V0.4 — Progression**
+- ✅ **V0.3 — Trainers**
+- ⏳ **V0.4 — Progression**
 - **V0.5 — Pokémon Mechanics**
 - **V0.6 — Immersion**
 - **V0.7 — Balance**
