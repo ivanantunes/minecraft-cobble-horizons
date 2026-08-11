@@ -43,6 +43,10 @@
 ### Gameplay
 
 - [ ] A new world loads.
+- [ ] Naturally generated vanilla animals and monsters do not spawn.
+- [ ] Vanilla spawners, patrols, reinforcements, jockeys, and trial spawners do not create mobs.
+- [ ] Villagers, wandering traders, golems, Ender Dragon, and Wither remain available.
+- [ ] Cobblemon Pokémon, trainers, and modded NPCs continue spawning.
 - [ ] An existing test world loads.
 - [ ] Starter selection, catching, battles, and Pokémon status screens work.
 - [ ] Trainers, gyms, breeding, audio, maps, and shaders work.

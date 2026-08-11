@@ -42,6 +42,7 @@ Official list of mods used by CobbleHorizons.
 | Cobblemon Repel | 1.7-1.4 | Repel mechanics |
 | Cobblemon Pokedex (Cobbledex) | 1.2.0 | Pokédex |
 | Cobblemon UI Tweaks | 1.0.7 | Cobblemon UI improvements |
+| Mob Filter | 0.11.2+1.21.1 | Pokémon-first vanilla mob spawn policy |
 
 ---
 

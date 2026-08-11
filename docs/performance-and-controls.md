@@ -56,3 +56,9 @@ Faithful 32x is installed but not enabled by default. If enabled, keep CobbleHor
 ## Memory guidance
 
 Allocate 6 GB for the normal profile and 8 GB when using shaders, high-resolution resource packs, or long sessions. Avoid allocating excessive memory because larger heaps can produce longer garbage-collection pauses.
+
+## Pokémon-first spawn policy
+
+Mob Filter prevents vanilla mobs from spawning through natural generation, chunk generation, mob spawners, patrols, reinforcements, jockeys, and trial spawners. This keeps Pokémon visually and mechanically dominant without disabling Cobblemon's independent spawning system.
+
+Villagers, wandering traders, iron and snow golems, the Ender Dragon, and the Wither are explicit exceptions. Spawn eggs and administrative commands remain usable for testing or custom maps.

@@ -25,7 +25,7 @@ CobbleHorizons is not a generic collection of Pokémon mods. Every mod, configur
 
 | Item | Value |
 |---|---|
-| Release stage | Release Candidate 1.0.2 |
+| Release stage | Release Candidate 1.0.3 |
 | Minecraft | 1.21.1 |
 | Fabric Loader | 0.19.x |
 | Cobblemon | 1.7.3 |
@@ -34,7 +34,8 @@ CobbleHorizons is not a generic collection of Pokémon mods. Every mod, configur
 
 ## Highlights
 
-- open-world exploration, structures, trainers, and gyms;
+- Pokémon-first open-world exploration, structures, trainers, and gyms;
+- vanilla world-generated mobs disabled while progression NPCs and bosses remain available;
 - Mega Evolution, breeding, TMs/TRs, and Pokédex support;
 - maps, waystones, economy, and quality-of-life features;
 - environmental audio, battle tracks, three optional shader profiles, and Faithful 32x;

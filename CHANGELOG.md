@@ -6,6 +6,8 @@ All notable project changes are documented here.
 
 ### Added
 
+- Mob Filter 0.11.2 for deterministic vanilla spawn control.
+- A Pokémon-first world rule that suppresses naturally generated vanilla mobs while preserving progression entities.
 - MakeUp Ultra Fast 9.0c as the performance shader profile.
 - BSL 8.3 as the cinematic shader profile.
 - Faithful 32x for Minecraft 1.21.1 as an optional resource pack.
@@ -30,6 +32,12 @@ All notable project changes are documented here.
 - The title screen uses English labels and hides vanilla title branding and splash text.
 - Shaders remain disabled by default for maximum hardware compatibility.
 - Faithful 32x is installed but remains optional so the CobbleHorizons branding and Cobblemon assets retain priority.
+
+### Spawn policy
+
+- Disabled vanilla mobs from natural, chunk-generation, spawner, patrol, reinforcement, jockey, and trial-spawner origins.
+- Preserved villagers, wandering traders, iron golems, snow golems, the Ender Dragon, and the Wither.
+- Kept Cobblemon Pokémon and modded trainer/NPC spawning untouched.
 
 ### Validation
 
