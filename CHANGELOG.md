@@ -2,6 +2,19 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0-rc1] — 2026-08-11
+
+### Adventure Guide release candidate
+
+- Added a 15-stage in-game CobbleHorizons campaign, opened with `J`.
+- Added guided objectives for Poké Ball crafting, catching, Pokédex research, trainer battles, team building, evolution, healing, gym badges, Mega Evolution, legendary monuments, the Elite Four and Champions.
+- Added balanced automatic rewards intended to support progression without replacing exploration or training.
+- Added JustQuests 0.2.3 as the lightweight datapack-driven quest interface.
+- Added Global Packs 21.0.6 so the Adventure Guide and RCT badge datapacks load automatically in every world.
+- Suppressed JustQuests' generic built-in quest set so only the curated CobbleHorizons campaign is presented.
+- Added the external Adventure Guide documentation and RC testing checklist.
+- Kept Minecraft 1.21.1, Fabric Loader 0.19.3, Cobblemon 1.7.3 and all 1.0.0 gameplay defaults unchanged.
+
 ## [1.0.0] — 2026-08-11
 
 ### First public release
