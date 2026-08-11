@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Poké Balls",
+    "offers": [
+      {
+        "item": "cobblemon:poke_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:citrine_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:verdant_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:azure_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:roseate_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:slate_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:premier_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:great_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:ultra_ball",
+        "price": "8000"
+      },
+      {
+        "item": "cobblemon:safari_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:fast_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:level_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:lure_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:heavy_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:love_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:friend_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:moon_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:sport_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:park_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:net_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:dive_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:nest_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:repeat_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:timer_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:luxury_ball",
+        "price": "30000"
+      },
+      {
+        "item": "cobblemon:dusk_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:heal_ball",
+        "price": "3000"
+      },
+      {
+        "item": "cobblemon:quick_ball",
+        "price": "10000"
+      },
+      {
+        "item": "cobblemon:dream_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:beast_ball",
+        "price": "50000"
+      },
+      {
+        "item": "cobblemon:cherish_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_poke_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_citrine_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_verdant_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_azure_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_roseate_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_slate_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_ivory_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_great_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:ancient_ultra_ball",
+        "price": "8000"
+      },
+      {
+        "item": "cobblemon:ancient_feather_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_wing_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:ancient_jet_ball",
+        "price": "8000"
+      },
+      {
+        "item": "cobblemon:ancient_heavy_ball",
+        "price": "2000"
+      },
+      {
+        "item": "cobblemon:ancient_leaden_ball",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:ancient_gigaton_ball",
+        "price": "8000"
+      }
+    ]
+  },
+  {
+    "name": "Exp",
+    "offers": [
+      {
+        "item": "cobblemon:exp_candy_xs",
+        "price": "500"
+      },
+      {
+        "item": "cobblemon:exp_candy_s",
+        "price": "4000"
+      },
+      {
+        "item": "cobblemon:exp_candy_m",
+        "price": "15000"
+      },
+      {
+        "item": "cobblemon:exp_candy_l",
+        "price": "50000"
+      },
+      {
+        "item": "cobblemon:exp_candy_xl",
+        "price": "150000"
+      },
+      {
+        "item": "cobblemon:rare_candy",
+        "price": "100000"
+      },
+      {
+        "item": "cobblemon:exp_share",
+        "price": "250000"
+      }
+    ]
+  }
+]

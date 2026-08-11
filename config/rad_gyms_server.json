@@ -1,0 +1,32 @@
+{
+  "debug": false,
+  "maxEntranceUses": 3,
+  "shardRewards": true,
+  "lapisBoostAmount": 1,
+  "ignoredSpecies": [
+    "mega",
+    "mega-x",
+    "mega-y",
+    "gmax"
+  ],
+  "minLevel": 15,
+  "maxLevel": 100,
+  "deriveAverageGymLevel": true,
+  "pokeCachePools": {
+    "common": [
+      "common"
+    ],
+    "uncommon": [
+      "uncommon",
+      "common"
+    ],
+    "rare": [
+      "rare",
+      "uncommon"
+    ],
+    "epic": [
+      "epic",
+      "rare"
+    ]
+  }
+}

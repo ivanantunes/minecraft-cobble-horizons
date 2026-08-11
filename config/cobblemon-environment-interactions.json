@@ -1,0 +1,295 @@
+{
+  "typeVisuals": {
+    "normal": {
+      "mode": "cobblemon",
+      "move": "quickattack",
+      "particle": "minecraft:crit",
+      "block": "",
+      "sound": "minecraft:entity.player.attack.strong",
+      "soundCooldownTicks": 12
+    },
+    "fire": {
+      "mode": "cobblemon",
+      "move": "flamethrower",
+      "particle": "minecraft:flame",
+      "block": "",
+      "sound": "minecraft:entity.blaze.shoot",
+      "soundCooldownTicks": 20
+    },
+    "water": {
+      "mode": "cobblemon",
+      "move": "watergun",
+      "particle": "minecraft:bubble",
+      "block": "",
+      "sound": "minecraft:entity.player.splash.high_speed",
+      "soundCooldownTicks": 20
+    },
+    "electric": {
+      "mode": "cobblemon",
+      "move": "thunderbolt",
+      "particle": "minecraft:electric_spark",
+      "block": "",
+      "sound": "minecraft:entity.lightning_bolt.thunder",
+      "soundCooldownTicks": 40
+    },
+    "grass": {
+      "mode": "cobblemon",
+      "move": "leechseed",
+      "particle": "minecraft:falling_spore_blossom",
+      "block": "",
+      "sound": "minecraft:block.grass.break",
+      "soundCooldownTicks": 12
+    },
+    "ice": {
+      "mode": "cobblemon",
+      "move": "icebeam",
+      "particle": "minecraft:snowflake",
+      "block": "",
+      "sound": "minecraft:block.snow.break",
+      "soundCooldownTicks": 12
+    },
+    "fighting": {
+      "mode": "cobblemon",
+      "move": "closecombat",
+      "particle": "minecraft:crit",
+      "block": "",
+      "sound": "minecraft:entity.player.attack.sweep",
+      "soundCooldownTicks": 12
+    },
+    "poison": {
+      "mode": "cobblemon",
+      "move": "sludgebomb",
+      "particle": "minecraft:raid_omen",
+      "block": "",
+      "sound": "minecraft:block.lava.ambient",
+      "soundCooldownTicks": 30
+    },
+    "ground": {
+      "mode": "cobblemon",
+      "move": "bulldoze",
+      "particle": "minecraft:block",
+      "block": "minecraft:sand",
+      "sound": "minecraft:block.gravel.hit",
+      "soundCooldownTicks": 12
+    },
+    "flying": {
+      "mode": "cobblemon",
+      "move": "aerialace",
+      "particle": "minecraft:small_gust",
+      "block": "",
+      "sound": "minecraft:entity.phantom.flap",
+      "soundCooldownTicks": 12
+    },
+    "psychic": {
+      "mode": "cobblemon",
+      "move": "psybeam",
+      "particle": "minecraft:flash",
+      "block": "",
+      "sound": "minecraft:block.amethyst_block.chime",
+      "soundCooldownTicks": 30
+    },
+    "bug": {
+      "mode": "cobblemon",
+      "move": "infestation",
+      "particle": "minecraft:spore_blossom_air",
+      "block": "",
+      "sound": "minecraft:entity.silverfish.ambient",
+      "soundCooldownTicks": 20
+    },
+    "rock": {
+      "mode": "cobblemon",
+      "move": "hornattack",
+      "particle": "minecraft:block",
+      "block": "minecraft:stone",
+      "sound": "minecraft:block.tuff_bricks.break",
+      "soundCooldownTicks": 12
+    },
+    "ghost": {
+      "mode": "cobblemon",
+      "move": "shadowball",
+      "particle": "minecraft:witch",
+      "block": "",
+      "sound": "minecraft:entity.blaze.ambient",
+      "soundCooldownTicks": 30
+    },
+    "dragon": {
+      "mode": "cobblemon",
+      "move": "willowisp",
+      "particle": "minecraft:sonic_boom",
+      "block": "",
+      "sound": "minecraft:entity.ender_dragon.shoot",
+      "soundCooldownTicks": 30
+    },
+    "dark": {
+      "mode": "cobblemon",
+      "move": "scaryface",
+      "particle": "minecraft:soul",
+      "block": "",
+      "sound": "minecraft:block.soul_sand.break",
+      "soundCooldownTicks": 20
+    },
+    "steel": {
+      "mode": "cobblemon",
+      "move": "hornattack",
+      "particle": "minecraft:block",
+      "block": "minecraft:iron_block",
+      "sound": "minecraft:block.anvil.land",
+      "soundCooldownTicks": 25
+    },
+    "fairy": {
+      "mode": "cobblemon",
+      "move": "sing",
+      "particle": "minecraft:cherry_leaves",
+      "block": "",
+      "sound": "minecraft:block.amethyst_block.chime",
+      "soundCooldownTicks": 30
+    }
+  },
+  "utilityInteractions": {
+    "minCooldownTicks": 0,
+    "maxCooldownTicks": 200,
+    "droppedItemRadius": 2.5,
+    "companionActionRange": 12.0,
+    "companionStatusRange": 64.0,
+    "failureMessageCooldownTicks": 20,
+    "visualTargetMaxAgeTicks": 60,
+    "fairyAppleCost": 1,
+    "fairyGoldIngotCost": 9,
+    "dragonGlassPerEnderPearl": 64,
+    "beaconWeatherInteractions": false,
+    "softTargetExtraDistance": 0.05,
+    "softTargetStepDistance": 0.125,
+    "projectileOriginHeightMultiplier": 0.72,
+    "range": {
+      "base": 0.0,
+      "smallLimit": 50,
+      "small": 5.0,
+      "largeLimit": 150,
+      "large": 10.0,
+      "maxLimit": 300,
+      "max": 15.0
+    },
+    "itemLimit": {
+      "base": 8,
+      "smallLimit": 50,
+      "small": 16,
+      "largeLimit": 150,
+      "large": 32,
+      "maxLimit": 300,
+      "max": 64
+    },
+    "rockTunnelSize": {
+      "base": 1,
+      "smallLimit": 50,
+      "small": 3,
+      "largeLimit": 150,
+      "large": 5,
+      "maxLimit": 300,
+      "max": 5
+    },
+    "rockTunnelDepth": {
+      "base": 3,
+      "smallLimit": 50,
+      "small": 8,
+      "largeLimit": 150,
+      "large": 13,
+      "maxLimit": 300,
+      "max": 18
+    },
+    "repairBudget": {
+      "base": 64,
+      "smallLimit": 50,
+      "small": 128,
+      "largeLimit": 150,
+      "large": 512,
+      "maxLimit": 300,
+      "max": 1024
+    },
+    "enchantmentLimit": {
+      "base": 1,
+      "smallLimit": 50,
+      "small": 1,
+      "largeLimit": 150,
+      "large": 3,
+      "maxLimit": 300,
+      "max": 4
+    },
+    "blockAoeRadius": {
+      "baseRadius": 0,
+      "smallLimit": 50,
+      "smallRadius": 1,
+      "largeLimit": 150,
+      "largeRadius": 2,
+      "maxLimit": 300,
+      "maxRadius": 3
+    },
+    "poisonNetherWartChance": {
+      "lowCurveChance": 0.001,
+      "highCurveChance": 0.1
+    },
+    "steelProspectingChance": {
+      "lowCurveChance": 0.02,
+      "highCurveChance": 0.12
+    },
+    "ghostPumpkinChance": {
+      "baseChance": 0.025,
+      "tier1Limit": 1,
+      "tier1Chance": 0.05,
+      "tier2Limit": 2,
+      "tier2Chance": 0.075,
+      "tier3Limit": 3,
+      "tier3Chance": 0.1
+    }
+  },
+  "miningInteraction": {
+    "minCooldownTicks": 8,
+    "maxCooldownTicks": 42,
+    "cooldownSpeedDivisor": 4,
+    "cursorTargetRange": 128.0,
+    "impactRadius": {
+      "base": 0,
+      "smallLimit": 50,
+      "small": 1,
+      "largeLimit": 150,
+      "large": 2,
+      "maxLimit": 300,
+      "max": 2
+    },
+    "range": {
+      "base": 8.0,
+      "smallLimit": 50,
+      "small": 11.0,
+      "largeLimit": 150,
+      "large": 15.0,
+      "maxLimit": 300,
+      "max": 15.0
+    },
+    "projectileOriginHeightMultiplier": 0.72,
+    "projectileGravity": 0.045,
+    "projectileDrag": 1.0,
+    "projectileSpeedBase": 0.65,
+    "projectileSpeedMin": 0.65,
+    "projectileSpeedMax": 1.9,
+    "projectileSpeedSpeedDivisor": 180.0,
+    "projectileSpeedOffensiveStatDivisor": 320.0,
+    "projectileAgeExtraTicks": 12,
+    "projectileAgeMinTicks": 12,
+    "projectileAgeMaxTicks": 48,
+    "targetMinTicks": 3,
+    "farTargetSpeedLimitRangeMultiplier": 0.75,
+    "cobblemonVisualBreakTimeoutTicks": 45,
+    "cobblemonVisualStartDelayTicks": 1
+  },
+  "blockBreakingSafety": {
+    "skipBlockEntities": true,
+    "skipContainers": true,
+    "applyToMining": true,
+    "applyToRockTunnels": true,
+    "applyToSteelProspecting": true,
+    "preserveOresForRockTunnels": true,
+    "preserveOresForSteelProspecting": true,
+    "allowlistedBlocks": [],
+    "denylistedBlocks": []
+  },
+  "autoDisableInteractionsOnRecall": true
+}

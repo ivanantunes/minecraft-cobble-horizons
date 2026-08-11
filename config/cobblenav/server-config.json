@@ -1,0 +1,48 @@
+{
+  "hideUnknownPokemon": true,
+  "hideConditionsOfUnknownSpawns": true,
+  "hideNaturalBlockConditions": true,
+  "percentageForKnownHerd": 0.5,
+  "syncLabelsWithClient": true,
+  "syncEvYieldWithClient": true,
+  "searchAreaWidth": 96.0,
+  "searchAreaHeight": 96.0,
+  "pokemonFeatureWeights": {
+    "shiny": 10.0,
+    "perfectIvsRates": {
+      "1": 1.0,
+      "2": 2.0,
+      "3": 3.0,
+      "4": 4.0,
+      "5": 5.0,
+      "6": 6.0
+    },
+    "hiddenAbility": 1.0,
+    "eggMove": 1.0
+  },
+  "collectableConditions": {
+    "biomes": true,
+    "moon_phase": true,
+    "under_open_sky": true,
+    "y_height": true,
+    "coordinates": true,
+    "light": true,
+    "sky_light": true,
+    "weather": true,
+    "time_range": true,
+    "structures": true,
+    "slime_chunk": true,
+    "fluid_surface": true,
+    "depth_surface": true,
+    "fluid_submerged": true,
+    "depth_submerged": true,
+    "bait": true,
+    "lure_level": true,
+    "rod": true,
+    "rod_type": true,
+    "area_type_block": true,
+    "grounded_type_block": true,
+    "seafloor_type_block": true,
+    "fishing_block": true
+  }
+}

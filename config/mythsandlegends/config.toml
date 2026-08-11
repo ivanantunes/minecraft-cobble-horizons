@@ -1,0 +1,269 @@
+# === Inventory Check Settings ===
+
+# Interval in Minecraft ticks for checking player inventories. Default: 3600 (3 minutes).
+inventory_check_interval = 3600
+
+# Controls how items are consumed during spawning events. Default: 1.
+# Modes:
+# 0: No items consumed.
+# 1: Legacy Mode - Consumes Key Items, Zygarde items, and CustomItems marked 'consume: true' on regular spawns.
+# 2: Force Spawn Only - Consumes triggering item + required items ONLY on successful force spawns.
+# 3: Always Consume - Consumes required items on both regular and force spawns, ignoring 'consume' flag.
+# 4: Consume Flag Only - Consumes CustomItems marked 'consume: true' on regular/force spawns. Key/Zygarde items only consumed if used as force spawn trigger.
+item_consumption_mode = 1
+
+# Scan shulker boxes during inventory checks? Default: true.
+inventory_check_shulker_boxes = true
+
+# Scan bundles during inventory checks? Default: true.
+inventory_check_bundles = true
+
+# === Broadcasting Settings ===
+
+# Master switch to enable/disable all broadcast messages from this mod. Default: false
+isBroadcastEnabled = false
+
+# Specific settings for broadcast messages when certain Pokemon spawn.
+# Format: { settingName = "Name", settingValue = true/false }
+broadcast_settings = [
+  { settingName = "BroadcastToAll", settingValue = true }, # Broadcast to all players? Default: true.
+  { settingName = "DisplayName", settingValue = true },  # Show Pokemon name? Default: true.
+  { settingName = "Legendarys", settingValue = true }, # Broadcast Legendary spawns? Default: true.
+  { settingName = "Mythicals", settingValue = true }, # Broadcast Mythical spawns? Default: true.
+  { settingName = "UltraBeasts", settingValue = false }, # Broadcast Ultra Beast spawns? Default: false.
+  { settingName = "Location", settingValue = true }, # Include spawn location? Default: true.
+  { settingName = "Shiny", settingValue = false }, # Announce if shiny? Default: false.
+  { settingName = "Level", settingValue = true }, # Include Pokemon level? Default: true.
+  { settingName = "XaerosMinimapSupport", settingValue = false } # Add Xaero's Minimap waypoint format if Location is true? Default: false.
+]
+
+# === Force Spawning Settings ===
+
+# Allow players to force spawn Pokemon by right-clicking specific 'key items'? Default: true
+enable_force_spawning = true
+
+# Which spawn pool rarity to check when attempting a force spawn (e.g., common, rare, ultra-rare). Default: ultra-rare
+# Note: This influences WHICH Pokemon are considered, not their inherent rarity defined in datapacks.
+force_spawning_spawn_pool = "ultra-rare"
+
+# --- Voucher & Cooldown Settings (for Force Spawning) ---
+
+# Master switch for the voucher/cooldown system for force spawning. If false, items can be used limitlessly. Default: false
+enable_vouchers = false
+
+# Cooldown (in seconds) after using a key item for force spawning (only if enable_vouchers=true). Default: 20
+force_spawn_item_cooldown = 20
+
+# Apply cooldown globally? If true, using *any* key item puts *all* key items on cooldown (only if enable_vouchers=true). Default: false
+global_item_cooldown = false
+
+# Max number of uses ('vouchers') before a key item goes on cooldown (only if enable_vouchers=true). Default: 1
+force_spawning_vouchers = 1
+
+# Share voucher limit globally? If true, players have a total pool of uses across all key items (only if enable_vouchers=true). Default: false
+global_item_vouchers = false
+
+# === Spawning Area Settings (for Force Spawning) ===
+
+# Width (X/Z diameter) around player to check for valid spawn locations during force spawn. Default: 100
+# Set to -1 to use Cobblemon's default worldSliceDiameter. Larger values may increase lag.
+force_spawn_check_width = 100
+
+# Height (Y range) around player to check for valid spawn locations during force spawn. Default: 50
+# Set to -1 to use Cobblemon's default worldSliceHeight. Larger values may increase lag.
+force_spawn_check_height = 50
+
+# === Item Rarity Lists ===
+
+# Lists of item IDs used to categorize items by rarity for various mod functions (e.g., potential spawn triggers).
+ULTRA_RARE_ITEMS = [
+  "mythsandlegends:aurora_ticket",
+  "mythsandlegends:azure_flute",
+  "mythsandlegends:eon_ticket",
+  "mythsandlegends:gs_ball",
+  "mythsandlegends:liberty_pass",
+  "mythsandlegends:member_card",
+  "mythsandlegends:oaks_letter",
+  "mythsandlegends:old_sea_map",
+  "mythsandlegends:dr_fujis_diary",
+  "mythsandlegends:mystery_box",
+  "mythsandlegends:reveal_glass",
+  "mythsandlegends:dna_splicer",
+  "mythsandlegends:lunar_feather",
+  "mythsandlegends:magma_stone",
+  "mythsandlegends:diancies_crown",
+  "mythsandlegends:genesect_drive",
+  "mythsandlegends:hoopa_ring",
+  "mythsandlegends:meloetta_headset",
+  "mythsandlegends:necro_prism",
+  "mythsandlegends:prison_bottle",
+  "mythsandlegends:sacred_sword",
+  "mythsandlegends:type_null_mask",
+  "mythsandlegends:antique_pokeball",
+  "mythsandlegends:marshadow_hood",
+  "mythsandlegends:scroll_of_water",
+  "mythsandlegends:soul_heart",
+  "mythsandlegends:zarudes_cape",
+  "mythsandlegends:zeraoras_thunderclaw",
+  "mythsandlegends:ancient_tablet",
+  "mythsandlegends:mythical_pecha_berry",
+  "mythsandlegends:scroll_of_darkness",
+  "mythsandlegends:cavern_shield",
+  "mythsandlegends:binding_mochi",
+  "mythsandlegends:clear_bell",
+  "mythsandlegends:steam_valve",
+  "mythsandlegends:zygarde_cube"
+]
+
+RARE_ITEMS = [
+  "mythsandlegends:adamant_orb",
+  "mythsandlegends:lustrous_orb",
+  "mythsandlegends:griseous_orb",
+  "mythsandlegends:blue_orb",
+  "mythsandlegends:red_orb",
+  "mythsandlegends:rusted_shield",
+  "mythsandlegends:rusted_sword",
+  "mythsandlegends:dark_stone",
+  "mythsandlegends:light_stone",
+  "mythsandlegends:sun_flute",
+  "mythsandlegends:moon_flute",
+  "mythsandlegends:rainbow_wing",
+  "mythsandlegends:silver_wing",
+  "mythsandlegends:jade_orb",
+  "mythsandlegends:eternatus_core",
+  "mythsandlegends:reins_of_unity",
+  "mythsandlegends:iceroot_carrot",
+  "mythsandlegends:shaderoot_carrot",
+  "mythsandlegends:scarlet_book",
+  "mythsandlegends:violet_book",
+  "mythsandlegends:cocoon_of_destruction",
+  "mythsandlegends:sapling_of_life",
+  "mythsandlegends:tidal_bell",
+  "mythsandlegends:lillies_bag",
+  "mythsandlegends:zygarde_core",
+  "mythsandlegends:prismatic_shell",
+  "mythsandlegends:kubfus_band"
+]
+
+COMMON_ITEMS = [
+  "mythsandlegends:azelf_fang",
+  "mythsandlegends:mesprit_plume",
+  "mythsandlegends:uxie_claw",
+  "mythsandlegends:ironwill_sword",
+  "mythsandlegends:grassland_blade",
+  "mythsandlegends:koko_totem",
+  "mythsandlegends:lele_totem",
+  "mythsandlegends:bulu_totem",
+  "mythsandlegends:fini_totem",
+  "mythsandlegends:teal_mask",
+  "mythsandlegends:cornerstone_mask",
+  "mythsandlegends:hearthflame_mask",
+  "mythsandlegends:wellspring_mask",
+  "mythsandlegends:plasma_tablet",
+  "mythsandlegends:scaly_tablet",
+  "mythsandlegends:stone_tablet",
+  "mythsandlegends:ice_tablet",
+  "mythsandlegends:steel_tablet",
+  "mythsandlegends:zygarde_cell"
+]
+
+# === Loot Chest Configuration ===
+
+# Defines chances (0.0 to 1.0) to attempt injecting this mod's loot
+# into specific vanilla/modded loot tables (identified by their ID string).
+
+# Settings for common chests/loot sources.
+[common_chest_chances]
+  "minecraft:chests/village/village_weaponsmith" = 0.04
+  "minecraft:chests/ruined_portal" = 0.05
+  "minecraft:chests/shipwreck_supply" = 0.07
+  "minecraft:gameplay/hero_of_the_village/fisherman_gift" = 0.04
+  "minecraft:chests/village/village_fletcher" = 0.04
+  "minecraft:chests/village/village_desert_house" = 0.04
+  "minecraft:gameplay/hero_of_the_village/farmer_gift" = 0.04
+  "minecraft:chests/village/village_cartographer" = 0.04
+  "minecraft:chests/simple_dungeon" = 0.08
+  "minecraft:chests/pillager_outpost" = 0.07
+  "minecraft:gameplay/hero_of_the_village/butcher_gift" = 0.04
+  "minecraft:archaeology/desert_well" = 0.04
+  "minecraft:chests/village/village_savanna_house" = 0.04
+  "minecraft:chests/village/village_plains_house" = 0.04
+  "minecraft:chests/village/village_taiga_house" = 0.04
+  "minecraft:chests/shipwreck_map" = 0.07
+  "minecraft:chests/underwater_ruin_big" = 0.06
+  "minecraft:archaeology/ocean_ruin_warm" = 0.05
+  "minecraft:chests/nether_bridge" = 0.08
+  "minecraft:chests/village/village_shepherd" = 0.04
+  "minecraft:archaeology/ocean_ruin_cold" = 0.05
+  "minecraft:chests/underwater_ruin_small" = 0.05
+  "minecraft:chests/igloo_chest" = 0.05
+  "minecraft:gameplay/hero_of_the_village/shepherd_gift" = 0.04
+  "minecraft:chests/village/village_armorer" = 0.04
+  "minecraft:chests/village/village_mason" = 0.04
+  "minecraft:chests/buried_treasure" = 0.1
+  "minecraft:chests/village/village_snowy_house" = 0.04
+  "minecraft:chests/abandoned_mineshaft" = 0.06
+  "minecraft:chests/village/village_fisher" = 0.04
+  "minecraft:chests/village/village_butcher" = 0.04
+  "minecraft:gameplay/cat_morning_gift" = 0.04
+  "minecraft:chests/village/village_tannery" = 0.04
+  "minecraft:chests/shipwreck_treasure" = 0.08
+  "minecraft:chests/village/village_temple" = 0.04
+  "minecraft:chests/village/village_toolsmith" = 0.04
+  "minecraft:chests/jungle_temple" = 0.06
+  "minecraft:chests/desert_pyramid" = 0.07
+
+# Settings for rare chests/loot sources.
+[rare_chest_chances]
+  "minecraft:chests/bastion_treasure" = 0.18
+  "minecraft:archaeology/desert_pyramid" = 0.12
+  "minecraft:chests/trial_chambers/reward_ominous_rare" = 0.22
+  "minecraft:chests/stronghold_corridor" = 0.1
+  "minecraft:chests/bastion_other" = 0.13
+  "cobblemon:pink_gilded_chest" = 0.16
+  "cobblemon:white_gilded_chest" = 0.16
+  "minecraft:chests/ancient_city_ice_box" = 0.22
+  "minecraft:gameplay/hero_of_the_village/fletcher_gift" = 0.06
+  "cobblemon:green_gilded_chest" = 0.16
+  "minecraft:archaeology/trail_ruins_rare" = 0.18
+  "minecraft:chests/stronghold_library" = 0.12
+  "minecraft:pots/trial_chambers/corridor" = 0.1
+  "minecraft:gameplay/hero_of_the_village/toolsmith_gift" = 0.06
+  "cobblemon:yellow_gilded_chest" = 0.16
+  "minecraft:chests/woodland_mansion" = 0.18
+  "minecraft:gameplay/hero_of_the_village/cartographer_gift" = 0.06
+  "minecraft:gameplay/hero_of_the_village/mason_gift" = 0.06
+  "minecraft:archaeology/trail_ruins_common" = 0.15
+  "minecraft:gameplay/hero_of_the_village/weaponsmith_gift" = 0.06
+  "cobblemon:blue_gilded_chest" = 0.16
+  "minecraft:chests/ancient_city" = 0.25
+  "minecraft:chests/bastion_hoglin_stable" = 0.14
+  "cobblemon:gilded_chest" = 0.16
+  "minecraft:gameplay/hero_of_the_village/armorer_gift" = 0.06
+  "minecraft:chests/stronghold_crossing" = 0.1
+  "minecraft:chests/end_city_treasure" = 0.2
+  "minecraft:chests/bastion_bridge" = 0.15
+  "minecraft:gameplay/hero_of_the_village/cleric_gift" = 0.06
+  "cobblemon:black_gilded_chest" = 0.16
+  "minecraft:gameplay/hero_of_the_village/leatherworker_gift" = 0.06
+  "minecraft:chests/trial_chambers/reward_rare" = 0.2
+  "minecraft:gameplay/hero_of_the_village/librarian_gift" = 0.06
+
+# === Zygarde Cell/Core Counts ===
+
+# Minimum and maximum count for Zygarde Cells when generated/dropped.
+zygarde_cell_min_count = 1
+zygarde_cell_max_count = 16
+
+# Minimum and maximum count for Zygarde Cores when generated/dropped.
+zygarde_core_min_count = 1
+zygarde_core_max_count = 3
+
+# === Other Settings ===
+
+# Enable form changes triggered by items (e.g., DNA Splicers, Griseous Orb)? Default: true
+form_changes = true
+
+# Enable extensive debug logging? Only intended for development. LEAVE FALSE. Default: false
+debug_mode = false
+

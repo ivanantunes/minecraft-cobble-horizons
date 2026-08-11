@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "debugLogging": false,
+  "scanner": {
+    "sizeX": 11,
+    "sizeY": 9,
+    "sizeZ": 11,
+    "interval": 20,
+    "entitySizeX": 33,
+    "entitySizeY": 17,
+    "entitySizeZ": 33
+  },
+  "ambientEvents": {
+    "enabled": true,
+    "volume": 0.4,
+    "stopSounds": false,
+    "disableWind": false,
+    "triggerAttackSounds": true,
+    "triggerUseSounds": true,
+    "triggerHeldItemSounds": true
+  },
+  "effects": {
+    "enabled": true,
+    "sizeX": 36,
+    "sizeY": 18,
+    "sizeZ": 36,
+    "randomTicks": 384
+  },
+  "footsteps": {
+    "footstepsEnabled": false,
+    "armorEnabled": true,
+    "volume": 0.3
+  }
+}

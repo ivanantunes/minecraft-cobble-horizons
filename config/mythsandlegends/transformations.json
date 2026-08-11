@@ -1,0 +1,96 @@
+{
+  "heldItemChanges": [
+    {
+      "pokemon": "dialga",
+      "item": "mythsandlegends:adamant_orb",
+      "targetForm": "origin",
+      "playAnimation": true,
+      "isTradable": true
+    },
+    {
+      "pokemon": "palkia",
+      "item": "mythsandlegends:lustrous_orb",
+      "targetForm": "origin",
+      "playAnimation": true,
+      "isTradable": true
+    },
+    {
+      "pokemon": "giratina",
+      "item": "mythsandlegends:griseous_orb",
+      "targetForm": "origin",
+      "playAnimation": true,
+      "isTradable": true
+    }
+  ],
+  "interactionChanges": [
+    {
+      "pokemon": "hoopa",
+      "item": "mythsandlegends:prison_bottle",
+      "targetForm": "unbound",
+      "playAnimation": true,
+      "isTradable": true
+    },
+    {
+      "pokemon": "tornadus",
+      "item": "mythsandlegends:reveal_glass",
+      "targetForm": "therian",
+      "playAnimation": true,
+      "isTradable": true
+    },
+    {
+      "pokemon": "thundurus",
+      "item": "mythsandlegends:reveal_glass",
+      "targetForm": "therian",
+      "playAnimation": true,
+      "isTradable": true
+    },
+    {
+      "pokemon": "landorus",
+      "item": "mythsandlegends:reveal_glass",
+      "targetForm": "therian",
+      "playAnimation": true,
+      "isTradable": true
+    },
+    {
+      "pokemon": "enamorus",
+      "item": "mythsandlegends:reveal_glass",
+      "targetForm": "therian",
+      "playAnimation": true,
+      "isTradable": true
+    }
+  ],
+  "fusions": [
+    {
+      "basePokemon": "calyrex",
+      "partnerPokemon": "spectrier",
+      "item": "mythsandlegends:reins_of_unity",
+      "resultingForm": "shadow",
+      "playAnimation": true,
+      "isTradable": false
+    },
+    {
+      "basePokemon": "calyrex",
+      "partnerPokemon": "glastrier",
+      "item": "mythsandlegends:reins_of_unity",
+      "resultingForm": "ice",
+      "playAnimation": true,
+      "isTradable": false
+    },
+    {
+      "basePokemon": "kyurem",
+      "partnerPokemon": "reshiram",
+      "item": "mythsandlegends:dna_splicer",
+      "resultingForm": "white",
+      "playAnimation": true,
+      "isTradable": false
+    },
+    {
+      "basePokemon": "kyurem",
+      "partnerPokemon": "zekrom",
+      "item": "mythsandlegends:dna_splicer",
+      "resultingForm": "black",
+      "playAnimation": true,
+      "isTradable": false
+    }
+  ]
+}
