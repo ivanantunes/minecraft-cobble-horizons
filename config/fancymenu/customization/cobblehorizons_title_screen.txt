@@ -2,7 +2,7 @@ type = fancymenu_layout
 
 layout-meta {
  identifier = title_screen
- render_custom_elements_behind_vanilla = true
+ render_custom_elements_behind_vanilla = false
  last_edited_time = 1786414400532
  is_enabled = true
  randommode = false
@@ -16,6 +16,10 @@ menu_background {
  image_path = [source:local]/config/fancymenu/assets/menu_background.png
  slide = false
  repeat_texture = false
+ fallback_path = [source:local]/config/fancymenu/assets/menu_background.png
+ parallax = false
+ parallax_intensity = 0.02
+ invert_parallax = false
  background_type = image
 }
 
@@ -31,6 +35,11 @@ scroll_list_customization {
  show_scroll_list_header_footer_preview_in_editor = false
  repeat_scroll_list_header_texture = false
  repeat_scroll_list_footer_texture = false
+ show_screen_background_overlay_on_custom_background = false
+ apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
 }
 
 vanilla_button {
@@ -44,7 +53,7 @@ vanilla_button {
  nine_slice_custom_background = true
  nine_slice_border_x = 8
  nine_slice_border_y = 8
- label = §fContinuar Jornada
+ label = §fSingleplayer
  navigatable = true
  widget_active_state_requirement_container_identifier = 0ced4f77-9b69-4366-84fb-a4f3e80a2d98-1786414400533
  [loading_requirement_container_meta:0ced4f77-9b69-4366-84fb-a4f3e80a2d98-1786414400533] = [groups:][instances:]
@@ -89,7 +98,7 @@ vanilla_button {
  nine_slice_custom_background = true
  nine_slice_border_x = 8
  nine_slice_border_y = 8
- label = §fMultijogador
+ label = §fMultiplayer
  navigatable = true
  widget_active_state_requirement_container_identifier = 011086a9-1226-4682-92d6-0629ffd99cb7-1786414400533
  [loading_requirement_container_meta:011086a9-1226-4682-92d6-0629ffd99cb7-1786414400533] = [groups:][instances:]
@@ -134,7 +143,7 @@ vanilla_button {
  nine_slice_custom_background = true
  nine_slice_border_x = 8
  nine_slice_border_y = 8
- label = §fConfigurações
+ label = §fOptions...
  navigatable = true
  widget_active_state_requirement_container_identifier = b8c742e4-5420-4aac-aa5d-064bfcf4d33a-1786414400533
  [loading_requirement_container_meta:b8c742e4-5420-4aac-aa5d-064bfcf4d33a-1786414400533] = [groups:][instances:]
@@ -179,7 +188,7 @@ vanilla_button {
  nine_slice_custom_background = true
  nine_slice_border_x = 8
  nine_slice_border_y = 8
- label = §fSair
+ label = §fQuit Game
  navigatable = true
  widget_active_state_requirement_container_identifier = f45202c3-1613-481e-aa11-c64c4d1cd262-1786414400533
  [loading_requirement_container_meta:f45202c3-1613-481e-aa11-c64c4d1cd262-1786414400533] = [groups:][instances:]

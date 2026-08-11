@@ -1,6 +1,6 @@
 # CobbleHorizons — Mod List
 
-Lista oficial de mods utilizados no CobbleHorizons.
+Official list of mods used by CobbleHorizons.
 
 > Minecraft: 1.21.1  
 > Mod Loader: Fabric  
@@ -167,10 +167,10 @@ Mods may be updated before the first stable release after compatibility testing.
 
 | Component | Target | Purpose |
 |---|---|---|
-| FancyMenu | Fabric / 1.21.1 | Menu e identidade global |
-| Konkrete | Dependência correspondente | Biblioteca de UI |
-| Drippy Loading Screen | Fabric / 1.21.1 | Tela de boot |
-| Default Options | Fabric / 1.21.1 | Padrões para instalações novas |
-| CobbleHorizons Branding | Resource pack interno | Branding |
+| FancyMenu | Fabric / 1.21.1 | Menu and global identity |
+| Konkrete | Matching dependency | UI library |
+| Drippy Loading Screen | Fabric / 1.21.1 | Startup screen |
+| Default Options | Fabric / 1.21.1 | Clean-install defaults |
+| CobbleHorizons Branding | Internal resource pack | Branding |
 
-> As versões exatas serão copiadas do novo manifesto Modrinth após o teste limpo.
+> Exact versions will be synchronized with the validated Modrinth manifest after the clean-install test.

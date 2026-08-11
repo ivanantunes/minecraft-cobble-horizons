@@ -42,11 +42,10 @@ graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
-renderClouds:"fancy"
 resourcePacks:["vanilla","fabric","file/CobbleHorizons-Branding.zip","file/Battle Tracks v1.2.zip","cobbreeding:pasturefix"]
 incompatibleResourcePacks:[]
 lastServer:
-lang:pt_br
+lang:en_us
 soundDevice:""
 chatVisibility:0
 chatOpacity:1.0

@@ -1,34 +1,34 @@
 # CobbleHorizons Roadmap
 
-## V0.8 — Configuration & Identity
+## Configuration and Identity
 
-- [x] Configs balanceados e Default Options
+- [x] Balanced configuration and clean-install defaults
 - [x] Drippy Loading Screen
-- [x] Assets e layout do menu principal
-- [x] Estilos globais de interface
-- [x] Documentação comunitária
-- [ ] Teste em instalação limpa
-- [ ] Regeneração do MRPack
-- [ ] Tag v0.8.0
+- [x] Custom title-screen assets
+- [x] Global interface styling
+- [x] English project documentation
+- [ ] Final clean-install UI validation
+- [ ] Regenerate the release MRPack
+- [ ] Create the release tag
 
-## V0.9 — Release Candidate
+## Release Candidate
 
-- [ ] Auditoria de mods, licenças e dependências
-- [ ] Teste completo de progressão
-- [ ] Compatibilidade e desempenho
-- [ ] Revisão do pacote distribuível
+- [ ] Audit mods, licenses, and dependencies
+- [ ] Complete progression testing
+- [ ] Review compatibility and performance
+- [ ] Validate the distributable package on Windows and macOS
 
-## V1.0 — Stable Release
+## Stable Release
 
-- [ ] Teste final
-- [ ] Congelamento da lista de mods
-- [ ] Documentação da versão
-- [ ] Publicação comunitária
+- [ ] Freeze the mod list
+- [ ] Complete final regression testing
+- [ ] Publish release documentation
+- [ ] Community launch
 
-## Princípios
+## Principles
 
-- Pokémon é o centro da experiência.
-- Conteúdo novo precisa justificar seu impacto.
-- Desempenho e estabilidade têm prioridade.
-- Shaders permanecem opcionais.
-- Toda versão passa por checklist e análise de logs.
+- Pokémon is the center of the experience.
+- New content must justify its gameplay impact.
+- Performance and stability take priority.
+- Shaders remain optional.
+- Every release requires a clean-install test and log review.

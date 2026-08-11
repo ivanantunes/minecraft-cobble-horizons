@@ -1,25 +1,32 @@
 # Troubleshooting
 
-## Menu principal continua vanilla
+## The title screen still shows the vanilla panorama
 
-1. Confirme se config/fancymenu foi copiado para a raiz correta.
-2. Confirme modpack_mode = true.
-3. Verifique erros de layout no latest.log.
-4. Confirme que os assets existem nos caminhos registrados.
-5. Não edite o layout com o jogo aberto.
+1. Confirm `config/fancymenu/customization/cobblehorizons_title_screen.txt` exists.
+2. Confirm `config/fancymenu/assets/menu_background.png` exists.
+3. Verify `render_custom_elements_behind_vanilla = false`.
+4. Search `latest.log` for `FANCYMENU`, `illegal`, and `title_screen`.
+5. Do not edit layouts while the game is running.
 
-## Loading funciona, mas menus não
+## Resource packs are not enabled on first launch
 
-Drippy e FancyMenu usam configurações diferentes. O funcionamento do boot não confirma que o layout do title screen foi carregado.
+1. Confirm the instance root contains the distributed `options.txt`.
+2. Confirm it lists Branding, Battle Tracks, and `cobbreeding:pasturefix`.
+3. Confirm both ZIP resource packs exist in `resourcepacks`.
+4. Test with a newly imported instance. Existing player options are not overwritten.
 
-## Texturas rosa/preto ou ausentes
+## Loading screen works but the title screen does not
 
-Verifique nomes, extensão PNG, maiúsculas/minúsculas e caminhos source:local.
+Drippy and FancyMenu use separate layouts. A working boot screen does not prove that the `title_screen` layout was packaged.
 
-## Layout fora da tela
+## Pink, black, or missing textures
 
-Teste GUI Scale 3, resolução 1920x1080 e modo janela. Registre resolução e escala usadas.
+Check file names, PNG extensions, capitalization, and `[source:local]` paths. Paths are case-sensitive on some systems.
 
-## Crash
+## Layout is outside the screen
 
-Preserve latest.log e crash-reports. Informe a ação exata que causou o problema. Não remova mods aleatoriamente da instância principal; reproduza em uma cópia.
+Test GUI scale 3 at 1920×1080 first, then verify other resolutions. Include resolution and scale in bug reports.
+
+## Crash or severe error
+
+Preserve `latest.log` and `crash-reports`. Record the exact action that caused the failure and reproduce it in a copy of the instance.

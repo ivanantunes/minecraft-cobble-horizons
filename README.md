@@ -6,82 +6,77 @@
 
 **Minecraft is the world. Pokémon is the game.**
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge) ![Fabric](https://img.shields.io/badge/Fabric-0.19.x-D6B98C?style=for-the-badge) ![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge) ![Status](https://img.shields.io/badge/status-v0.8_testing-F2B84B?style=for-the-badge)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge)
+![Fabric](https://img.shields.io/badge/Fabric-0.19.x-D6B98C?style=for-the-badge)
+![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-release_testing-F2B84B?style=for-the-badge)
 
 </div>
 
 ![CobbleHorizons wallpaper](imgs/fundo2.png)
 
-CobbleHorizons é um modpack Fabric para Minecraft 1.21.1 que transforma o Minecraft em uma aventura Pokémon completa. Exploração, captura, treinamento, batalhas, ginásios, progressão e imersão formam uma única experiência.
+CobbleHorizons is a Fabric modpack for Minecraft 1.21.1 that turns Minecraft into a complete open-world Pokémon adventure. Exploration, catching, training, battles, gyms, progression, and immersion are designed as one cohesive experience.
 
-## Visão
+## Project vision
 
-Não é um modpack genérico que apenas contém Pokémon. Cada mod, configuração e resource pack deve contribuir para uma jornada Pokémon em mundo aberto, preservando desempenho, estabilidade e identidade própria.
+CobbleHorizons is not a generic collection of Pokémon mods. Every mod, configuration, and resource pack must support the core experience while preserving performance, stability, and a consistent visual identity.
 
-## Estado atual
+## Current status
 
-| Item | Estado |
+| Item | Value |
 |---|---|
-| Versão | v0.8.0 — Configuration & Identity |
-| Validação | Aguardando teste em instalação limpa |
+| Release stage | Clean-install validation |
 | Minecraft | 1.21.1 |
-| Loader | Fabric 0.19.x |
+| Fabric Loader | 0.19.x |
 | Cobblemon | 1.7.3 |
-| Próximo marco | v0.9.0 — Release Candidate |
+| Default language | English (US) |
+| Next milestone | Release Candidate |
 
-> O repositório contém a fonte de configuração do modpack. Pacotes MRPack são artefatos de release e serão publicados somente após validação.
+## Highlights
 
-## Destaques
+- open-world exploration, structures, trainers, and gyms;
+- Mega Evolution, breeding, TMs/TRs, and Pokédex support;
+- maps, waystones, economy, and quality-of-life features;
+- environmental audio, battle tracks, and optional shaders;
+- rendering, memory, and game-logic optimizations;
+- custom boot screen, title screen, icons, and UI styling.
 
-- exploração, estruturas, treinadores e ginásios;
-- Mega Evolution, breeding, TMs/TRs e Pokédex;
-- mapas, waystones, economia e qualidade de vida;
-- áudio ambiente, battle tracks e shaders opcionais;
-- otimizações de renderização, memória e lógica;
-- interface própria com logo, wallpapers, ícones e botões.
+## Visual identity
 
-## Identidade visual
-
-Drippy Loading Screen personaliza o boot. FancyMenu controla o menu principal e os estilos globais das telas compatíveis.
+Drippy Loading Screen customizes startup. FancyMenu controls the title screen and compatible menus. CobbleHorizons Branding provides the packaged visual assets.
 
 ![CobbleHorizons portal](imgs/fundo1.png)
 
-## Como testar a v0.8
+## Documentation
 
-1. Importe sua última exportação de desenvolvimento no Modrinth.
-2. Copie os arquivos atuais do repositório para a raiz da instância.
-3. Substitua os configs existentes.
-4. Execute docs/testing.md.
-5. Analise logs/latest.log.
-6. Após aprovação, exporte um novo MRPack.
-
-## Documentação
-
-| Documento | Conteúdo |
+| Document | Purpose |
 |---|---|
-| docs/installation.md | Instalação e atualização |
-| docs/ui-branding.md | Interface e identidade |
-| docs/mod-list.md | Mods e versões |
-| docs/roadmap.md | Planejamento |
-| docs/testing.md | Checklists |
-| docs/troubleshooting.md | Diagnóstico |
-| CONTRIBUTING.md | Contribuições |
-| CHANGELOG.md | Histórico |
+| [Installation](docs/installation.md) | Installation, update, and export workflow |
+| [UI and branding](docs/ui-branding.md) | Visual architecture and assets |
+| [Mod list](docs/mod-list.md) | Included mods and versions |
+| [Roadmap](docs/roadmap.md) | Release milestones |
+| [Testing](docs/testing.md) | Clean-install validation |
+| [Troubleshooting](docs/troubleshooting.md) | Known problems and diagnostics |
+| [Contributing](CONTRIBUTING.md) | Contribution standards |
+| [Changelog](CHANGELOG.md) | Project history |
 
-## Estrutura
+## Repository structure
 
-    config/        Configurações distribuídas
-    docs/          Documentação
-    imgs/          Artes originais
-    resourcepacks/ Resource packs
-    shaderpacks/   Shaders recomendados
+    config/        Distributed mod and UI configuration
+    docs/          Project documentation
+    imgs/          Original visual assets
+    resourcepacks/ Packaged resource packs
+    shaderpacks/   Recommended shader packs
+    options.txt    Clean-install Minecraft defaults
 
-## Créditos e direitos
+## Credits
 
-CobbleHorizons é um projeto independente da comunidade. Minecraft pertence à Mojang Studios/Microsoft. Pokémon pertence à Nintendo, Game Freak e The Pokémon Company. Cobblemon e os demais mods pertencem aos seus respectivos autores.
+CobbleHorizons is an independent community project. Minecraft belongs to Mojang Studios and Microsoft. Pokémon belongs to Nintendo, Game Freak, and The Pokémon Company. Cobblemon and all other mods belong to their respective authors.
 
 ---
 
 <div align="center">
+
 **Explore. Capture. Battle. Build your journey.**
+
 </div>

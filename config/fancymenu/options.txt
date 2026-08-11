@@ -9,7 +9,7 @@ B:play_vanilla_menu_music = 'false';
 
 B:modpack_mode = 'true';
 B:show_customization_overlay = 'false';
-B:advanced_customization_mode = 'false';
+B:advanced_customization_mode = 'true';
 
 
 ##[loading]
@@ -28,7 +28,7 @@ S:custom_game_intro_skip_text = '';
 B:show_custom_window_icon = 'true';
 S:custom_window_icon_macos = '';
 S:custom_window_icon_32 = '/config/fancymenu/assets/icon_32.png';
-S:custom_window_title = 'CobbleHorizons v0.8.0';
+S:custom_window_title = 'CobbleHorizons';
 S:custom_window_icon_16 = '/config/fancymenu/assets/icon_16.png';
 
 
