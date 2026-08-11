@@ -1,85 +1,105 @@
 <div align="center">
 
-![CobbleHorizons](imgs/logo.png)
+<img src="imgs/logo.png" alt="CobbleHorizons" width="460">
 
 # CobbleHorizons
 
-**Minecraft is the world. Pokémon is the game.**
+### Minecraft is the world. Pokémon is the game.
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge)
-![Fabric](https://img.shields.io/badge/Fabric-0.19.x-D6B98C?style=for-the-badge)
-![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-release_candidate-42B8C6?style=for-the-badge)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge&logo=minecraft)](https://www.minecraft.net/)
+[![Fabric](https://img.shields.io/badge/Fabric-0.19.3-D6B98C?style=for-the-badge)](https://fabricmc.net/)
+[![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge)](https://modrinth.com/mod/cobblemon)
+[![Release](https://img.shields.io/badge/release-1.0.0-20C997?style=for-the-badge)](releases/CobbleHorizons-1.0.0.mrpack)
+
+[**Download 1.0.0**](releases/CobbleHorizons-1.0.0.mrpack) · [Installation](docs/installation.md) · [Mod list](docs/mod-list.md) · [Troubleshooting](docs/troubleshooting.md)
 
 </div>
 
-![CobbleHorizons wallpaper](imgs/fundo2.png)
+![CobbleHorizons world](imgs/fundo2.png)
 
-CobbleHorizons is a Fabric modpack for Minecraft 1.21.1 that turns Minecraft into a complete open-world Pokémon adventure. Exploration, catching, training, battles, gyms, progression, and immersion are designed as one cohesive experience.
+## Welcome to CobbleHorizons
 
-## Project vision
+CobbleHorizons is a polished Pokémon-first adventure modpack for Minecraft 1.21.1. Explore a transformed open world, build your team, challenge trainers and gyms, discover structures, breed Pokémon, master battle mechanics, and shape your own journey.
 
-CobbleHorizons is not a generic collection of Pokémon mods. Every mod, configuration, and resource pack must support the core experience while preserving performance, stability, and a consistent visual identity.
+Every included mod and default has been curated around three principles: a cohesive Pokémon experience, stable plug-and-play installation, and strong performance across Windows and macOS.
 
-## Current status
+## Release 1.0.0
 
-| Item | Value |
+| Component | Version |
 |---|---|
-| Release stage | Release Candidate 1.0.3 |
 | Minecraft | 1.21.1 |
-| Fabric Loader | 0.19.x |
+| Fabric Loader | 0.19.3 |
 | Cobblemon | 1.7.3 |
+| Java | 21 |
 | Default language | English (US) |
-| Next milestone | Community release |
+| Included content | 65 mods, 1 datapack, 2 resource packs, 3 shaders |
 
 ## Highlights
 
-- Pokémon-first open-world exploration, structures, trainers, and gyms;
-- vanilla world-generated mobs disabled while progression NPCs and bosses remain available;
-- Mega Evolution, breeding, TMs/TRs, and Pokédex support;
-- maps, waystones, economy, and quality-of-life features;
-- environmental audio, battle tracks, three optional shader profiles, and Faithful 32x;
-- conflict-free Cobblemon, map, and Iris control defaults;
-- rendering, memory, and game-logic optimizations;
-- custom boot screen, title screen, icons, and UI styling.
+| Experience | What is included |
+|---|---|
+| Pokémon adventure | Catching, training, battles, Pokédex, breeding, TMs/TRs, Mega Evolution, legends and badges |
+| Living world | Terralith terrain, themed structures, nests, dens, trainers, gyms and monuments |
+| Pokémon-first design | Naturally generated vanilla mobs are suppressed while villagers, golems and progression bosses remain |
+| Exploration | Xaero's Minimap, World Map, Waystones and Pokémon navigation |
+| Presentation | Custom loading screen, title screen, menus, music, sounds and CobbleHorizons branding |
+| Performance | Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix |
+| Visual options | MakeUp Ultra Fast, Complementary Reimagined, BSL and optional Faithful 32x |
 
-## Visual identity
+## Install in three steps
 
-Drippy Loading Screen customizes startup. FancyMenu controls the title screen and compatible menus. CobbleHorizons Branding provides the packaged visual assets.
+1. Download [CobbleHorizons 1.0.0](releases/CobbleHorizons-1.0.0.mrpack).
+2. Open the file with the Modrinth App and create a new instance.
+3. Allocate 6 GB of memory and press **Play**.
+
+Shaders are disabled on first launch for maximum compatibility. The interface, resource-pack stack, language, performance profile and controls are already configured.
+
+> Existing instances retain their own `options.txt`. Use a fresh import to validate the official defaults.
+
+## Default controls
+
+| Action | Key |
+|---|---|
+| Send selected Pokémon | `R` |
+| Xaero's World Map | `M` |
+| Cobblemon Summary | `V` |
+| Select shader | `F7` |
+| Reload shader | `F8` |
+| Toggle shader | `F9` |
+
+## Visual profiles
+
+- **MakeUp Ultra Fast** — recommended for integrated and entry-level graphics.
+- **Complementary Reimagined** — recommended balance of quality and performance.
+- **BSL** — cinematic lighting for stronger GPUs.
+- **Faithful 32x** — optional vanilla-style texture upgrade.
 
 ![CobbleHorizons portal](imgs/fundo1.png)
 
 ## Documentation
 
-| Document | Purpose |
-|---|---|
-| [Installation](docs/installation.md) | Installation, update, and export workflow |
-| [UI and branding](docs/ui-branding.md) | Visual architecture and assets |
-| [Mod list](docs/mod-list.md) | Included mods and versions |
-| [Roadmap](docs/roadmap.md) | Release milestones |
-| [Testing](docs/testing.md) | Clean-install validation |
-| [Performance and controls](docs/performance-and-controls.md) | Defaults, key map, and visual profiles |
-| [Troubleshooting](docs/troubleshooting.md) | Known problems and diagnostics |
-| [Contributing](CONTRIBUTING.md) | Contribution standards |
-| [Changelog](CHANGELOG.md) | Project history |
+- [Installation and updates](docs/installation.md)
+- [Complete mod and content list](docs/mod-list.md)
+- [Performance, controls and visual profiles](docs/performance-and-controls.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Contributing](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [Project license](LICENSE.md)
 
-## Repository structure
+## Support
 
-    config/        Distributed mod and UI configuration
-    docs/          Project documentation
-    imgs/          Original visual assets
-    resourcepacks/ Packaged resource packs
-    shaderpacks/   Recommended shader packs
-    options.txt    Clean-install Minecraft defaults
+When reporting a problem, include the pack version, operating system, reproduction steps, screenshots when relevant, and a link to `latest.log` uploaded through [mclo.gs](https://mclo.gs/).
 
-## Credits
+## Credits and legal notice
 
-CobbleHorizons is an independent community project. Minecraft belongs to Mojang Studios and Microsoft. Pokémon belongs to Nintendo, Game Freak, and The Pokémon Company. Cobblemon and all other mods belong to their respective authors.
+CobbleHorizons is an independent community project and is not affiliated with Mojang Studios, Microsoft, Nintendo, Game Freak, The Pokémon Company, Cobblemon, or Modrinth.
+
+Minecraft, Pokémon, Cobblemon, all included mods, resource packs and shaders belong to their respective owners and authors. CobbleHorizons branding and original project assets are covered by the [project license](LICENSE.md).
 
 ---
 
 <div align="center">
 
-**Explore. Capture. Battle. Build your journey.**
+### Explore. Capture. Battle. Build your journey.
 
 </div>

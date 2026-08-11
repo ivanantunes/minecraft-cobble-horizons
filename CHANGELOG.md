@@ -1,59 +1,26 @@
-# CobbleHorizons Changelog
+# Changelog
 
-All notable project changes are documented here.
+All notable changes to CobbleHorizons are documented here.
 
-## [Unreleased]
+## [1.0.0] — 2026-08-11
 
-### Added
+### First public release
 
-- Mob Filter 0.11.2 for deterministic vanilla spawn control.
-- A Pokémon-first world rule that suppresses naturally generated vanilla mobs while preserving progression entities.
-- MakeUp Ultra Fast 9.0c as the performance shader profile.
-- BSL 8.3 as the cinematic shader profile.
-- Faithful 32x for Minecraft 1.21.1 as an optional resource pack.
-- A documented plug-and-play performance and controls profile.
+- Released the complete CobbleHorizons experience for Minecraft 1.21.1, Fabric Loader 0.19.3 and Cobblemon 1.7.3.
+- Curated 65 compatible mods covering Pokémon gameplay, progression, exploration, structures, economy, decoration, audio, interface and performance.
+- Added a Pokémon-first spawn policy that suppresses world-generated vanilla mobs while preserving villagers, wandering traders, golems, the Ender Dragon and the Wither.
+- Added custom CobbleHorizons loading, title-screen, menu, button and resource-pack branding.
+- Added three optional shader profiles: MakeUp Ultra Fast 9.0c, Complementary Reimagined r5.8.1 and BSL 8.3.
+- Added Faithful 32x as an optional resource pack.
+- Enabled CobbleHorizons Branding, Battle Tracks and Cobbreeding Pasture Fix by default.
+- Set English (US), balanced video defaults and conflict-free controls for clean installations.
+- Added Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix with conservative compatibility-first settings.
+- Validated MRPack extraction, indexed hashes, macOS installation and the uncompressed nested branding archive.
 
-### Fixed
+### Default controls
 
-- Moved Cobblemon Summary from `M` to `V`, leaving `M` available for Xaero's World Map.
-- Moved Iris shortcuts to `F7` (shader selection), `F8` (reload), and `F9` (toggle), preventing collisions with Cobblemon's `R` action.
-- Made English (US) the clean-install default language.
-- Added an explicit root `options.txt` so Modrinth exports preserve resource-pack defaults.
-- Enabled CobbleHorizons Branding, Battle Tracks, and Cobbreeding Pasture Fix by default.
-- Updated the FancyMenu title-screen layout to render its custom background above the vanilla panorama.
-- Added current FancyMenu background and scroll-layer properties.
-- Removed the invalid universal `title_screen` declaration from `customizablemenus.txt`.
-- Removed the invalid quoted cloud option that generated a parsing error.
-
-### Changed
-
-- `fundo1` is the official title-screen background.
-- The project documentation is now fully maintained in English.
-- The title screen uses English labels and hides vanilla title branding and splash text.
-- Shaders remain disabled by default for maximum hardware compatibility.
-- Faithful 32x is installed but remains optional so the CobbleHorizons branding and Cobblemon assets retain priority.
-
-### Spawn policy
-
-- Disabled vanilla mobs from natural, chunk-generation, spawner, patrol, reinforcement, jockey, and trial-spawner origins.
-- Preserved villagers, wandering traders, iron golems, snow golems, the Ender Dragon, and the Wither.
-- Kept Cobblemon Pokémon and modded trainer/NPC spawning untouched.
-
-### Validation
-
-- Version 1.0.1 clean import, English defaults, resource packs, loading screen, and title screen validated on macOS.
-- Version 1.0.2 MRPack structure, hashes, nested branding archive, and clean-install defaults validated.
-
-## [0.8.0] — Configuration and Identity
-
-### Added
-
-- FancyMenu, Drippy Loading Screen, and Default Options integration.
-- Custom wallpaper, logo, icons, button textures, and loading assets.
-- A dedicated title-screen layout and global UI styling.
-
-### Fixed
-
-- Local FancyMenu asset paths.
-- Button normal, hover, and inactive states.
-- Nine-slice borders and global text colors.
+- Cobblemon Summary: `V`
+- Xaero's World Map: `M`
+- Iris shader selection: `F7`
+- Iris shader reload: `F8`
+- Iris shader toggle: `F9`

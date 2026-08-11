@@ -1,32 +1,46 @@
 # Troubleshooting
 
-## The title screen still shows the vanilla panorama
+## Start with a clean instance
 
-1. Confirm `config/fancymenu/customization/cobblehorizons_title_screen.txt` exists.
-2. Confirm `config/fancymenu/assets/menu_background.png` exists.
-3. Verify `render_custom_elements_behind_vanilla = false`.
-4. Search `latest.log` for `FANCYMENU`, `illegal`, and `title_screen`.
-5. Do not edit layouts while the game is running.
+Most default-setting problems come from updating an existing profile. Import the current MRPack as a new Modrinth instance before reporting a problem.
 
-## Resource packs are not enabled on first launch
+## The title screen is not customized
 
-1. Confirm the instance root contains the distributed `options.txt`.
-2. Confirm it lists Branding, Battle Tracks, and `cobbreeding:pasturefix`.
-3. Confirm both ZIP resource packs exist in `resourcepacks`.
-4. Test with a newly imported instance. Existing player options are not overwritten.
+Confirm these files exist:
 
-## Loading screen works but the title screen does not
+- `config/fancymenu/customization/cobblehorizons_title_screen.txt`
+- `config/fancymenu/assets/menu_background.png`
+- `resourcepacks/CobbleHorizons-Branding.zip`
 
-Drippy and FancyMenu use separate layouts. A working boot screen does not prove that the `title_screen` layout was packaged.
+Do not edit FancyMenu layouts while Minecraft is running.
 
-## Pink, black, or missing textures
+## Resource packs are not enabled
 
-Check file names, PNG extensions, capitalization, and `[source:local]` paths. Paths are case-sensitive on some systems.
+A clean instance should enable CobbleHorizons Branding, Battle Tracks and Cobbreeding Pasture Fix. Existing profiles keep their previous `options.txt`; import a new instance to verify release defaults.
 
-## Layout is outside the screen
+Faithful 32x is intentionally disabled by default.
 
-Test GUI scale 3 at 1920×1080 first, then verify other resolutions. Include resolution and scale in bug reports.
+## Vanilla mobs still exist
+
+The pack prevents new world-generated vanilla mobs. Entities already saved in an older world remain present. Villagers, wandering traders, golems, the Ender Dragon and the Wither are intentional exceptions.
+
+## Low frame rate
+
+1. Confirm shaders are disabled with `F9`.
+2. Keep render distance at 12 chunks or reduce it to 10.
+3. Try MakeUp Ultra Fast before Complementary or BSL.
+4. Allocate 6 GB of memory.
+5. Update graphics drivers and avoid running multiple overlays.
+
+## macOS `unexpected BufError`
+
+Use the official release MRPack. It packages the internal branding archive without recompression specifically to avoid this extraction failure.
 
 ## Crash or severe error
 
-Preserve `latest.log` and `crash-reports`. Record the exact action that caused the failure and reproduce it in a copy of the instance.
+Do not remove random mods from the main instance.
+
+1. Reproduce the issue in a copy or clean instance.
+2. Save the exact action that triggered it.
+3. Upload `latest.log` to [mclo.gs](https://mclo.gs/).
+4. Include operating system, hardware, pack version and screenshots.

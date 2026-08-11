@@ -6,46 +6,33 @@ crash-reports/
 screenshots/
 server-resource-packs/
 
-# Runtime
+# Launchers and runtime
+.modrinth/
+.curseforge/
 run/
 runtime/
+instance/
+local/
 
-# Modrinth
-.modrinth/
-
-# CurseForge
-.curseforge/
-
-# Temporary files
+# Temporary and generated files
 *.tmp
 *.temp
 *.log
-
-# Java
 *.class
 *.jar
+*.bak
+*.zip
+*.mrpack
+!releases/CobbleHorizons-*.mrpack
 
-# IDE
+# Editors and operating systems
 .idea/
 .vscode/
 *.iml
-
-# Operating System
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Backups
-backups/
-*.bak
-*.zip
-
-# Local development
-local/
-instance/
-# Generated release artifacts
-*.mrpack
-
-# Superseded patch notes
+# Superseded notes
 *-PATCH-NOTES.txt
 *-FINAL-FIX.txt

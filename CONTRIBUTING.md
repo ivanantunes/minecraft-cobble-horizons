@@ -1,27 +1,43 @@
 # Contributing to CobbleHorizons
 
-Thank you for helping improve the project.
+Thank you for helping improve CobbleHorizons.
 
-## Before contributing
+## Project standards
 
-- Use Minecraft 1.21.1 and Fabric Loader 0.19.x.
-- Do not update mods without compatibility testing.
-- Do not add content that weakens the open-world Pokémon experience.
-- Preserve third-party credits, licenses, and distribution rules.
-- Keep player-facing defaults and documentation in English.
+- Target Minecraft 1.21.1, Fabric Loader 0.19.3 and Java 21.
+- Keep Pokémon at the center of the experience.
+- Prefer stability and compatibility over aggressive optimization.
+- Keep all player-facing defaults and documentation in English.
+- Respect every third-party project's license and distribution requirements.
+- Never commit worlds, accounts, logs, screenshots, caches or crash reports.
 
 ## Bug reports
 
-Include the pack version, reproduction steps, the action that triggered the issue, `latest.log`, screenshots, operating system, resolution, and GUI scale when relevant.
+Include:
 
-## Changes
+- CobbleHorizons version;
+- operating system and hardware;
+- clear reproduction steps;
+- expected and actual behavior;
+- screenshots when relevant;
+- a sanitized `latest.log` link from [mclo.gs](https://mclo.gs/).
 
-Document mod and version changes, update the changelog, and complete the testing checklist. A change is complete only after a successful clean-instance import.
+## Proposed changes
+
+Before submitting a change:
+
+1. Import the built MRPack into a completely new Modrinth instance.
+2. Confirm startup, title screen, resource-pack defaults and English language.
+3. Create and load a world.
+4. Test the affected gameplay or interface flow.
+5. Review `latest.log` for new errors.
+6. Update documentation and the changelog when necessary.
 
 ## Commit style
 
 - `feat:` new functionality
 - `fix:` bug fix
-- `config:` gameplay, UI, or performance configuration
+- `config:` gameplay, UI or performance configuration
 - `docs:` documentation
 - `chore:` maintenance
+- `release:` release preparation

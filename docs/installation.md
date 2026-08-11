@@ -1,46 +1,54 @@
-# Installation and Distribution
+# Installation and Updates
 
 ## Requirements
 
 - Modrinth App
-- Minecraft 1.21.1
 - Java 21
-- 6–8 GB of memory allocated to the instance
+- 6 GB of allocated memory
+- A legitimate Minecraft: Java Edition account
 
-## Development update
+Use 8 GB when running BSL, high shader presets or long sessions. Allocating substantially more memory is not recommended.
 
-1. Download the repository's `master` branch.
-2. Close Minecraft.
-3. Open the Modrinth instance folder.
-4. Copy `config`, `resourcepacks`, `shaderpacks`, and the root `options.txt` into the instance.
-5. Replace existing files when prompted.
-6. Start the game without shaders for the first validation.
-7. Complete [testing.md](testing.md).
+## Fresh installation
 
-The root `options.txt` is required for export builds. It guarantees the default language, resource-pack selection, and curated controls even when the launcher creates the file before Default Options runs.
+1. Download [CobbleHorizons 1.0.0](../releases/CobbleHorizons-1.0.0.mrpack).
+2. Open the file with the Modrinth App.
+3. Confirm the new instance name and start the import.
+4. Open the instance settings and allocate 6 GB of memory.
+5. Start the game.
+
+A fresh import automatically applies English (US), the official resource-pack order, balanced graphics, curated controls and disabled-by-default shaders.
+
+## Updating
+
+Worlds are not stored inside the MRPack.
+
+1. Back up the `saves` folder from your current instance.
+2. Import the new MRPack as a separate instance.
+3. Start it once and reach the title screen.
+4. Close the game and copy only your backed-up worlds into the new instance.
+5. Keep the new instance's `config`, `options.txt`, mods and packs.
+
+Do not copy an old `options.txt` when testing a release because it overrides the official defaults.
 
 ## Visual profiles
 
-Shaders are deliberately disabled on first launch. Press `F7` to choose one:
+Press `F7` to open Iris shader selection.
 
-- **MakeUp Ultra Fast 9.0c** — best starting point for integrated graphics and lower-end systems;
-- **Complementary Reimagined r5.8.1** — balanced recommended profile;
-- **BSL 8.3** — cinematic profile for stronger GPUs.
+| Profile | Recommendation |
+|---|---|
+| MakeUp Ultra Fast 9.0c | Integrated graphics and lower-end systems |
+| Complementary Reimagined r5.8.1 | Recommended balanced profile |
+| BSL 8.3 | Stronger GPUs and screenshots |
 
-Faithful 32x is installed as an optional resource pack. Enable it below CobbleHorizons Branding when desired; leaving it disabled preserves the tested visual baseline.
+Faithful 32x is installed but disabled by default. If enabled, keep CobbleHorizons Branding above it in the resource-pack list.
 
-## Exporting an MRPack
+## macOS installation note
 
-1. Confirm the updated instance passes the UI smoke test.
-2. Choose **Export modpack** in the Modrinth instance menu.
-3. Include `config`, `mods`, `resourcepacks`, `shaderpacks`, `datapacks`, and `options.txt`.
-4. Exclude worlds, logs, crash reports, screenshots, caches, and account data.
-5. Import the exported MRPack into a new instance before publishing it.
+The official MRPack stores the internal CobbleHorizons Branding ZIP without recompression to avoid the Modrinth App `unexpected BufError` extraction failure previously observed on macOS.
 
-## Updating an existing installation
+## Verifying the download
 
-Back up worlds before replacing an instance. Personal controls and video settings may be preserved separately, but release validation must always use the distributed `options.txt`.
+SHA-256:
 
-## Repository policy
-
-Generated MRPack files are release artifacts. They are attached only to validated releases and are not kept in the development branch.
+`27229ba11e8a2f3f651cbffcfdbea50af3036901b796a67fcce0c9cb4e49218f`
