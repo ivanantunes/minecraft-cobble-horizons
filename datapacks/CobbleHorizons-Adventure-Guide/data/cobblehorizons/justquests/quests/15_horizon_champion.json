@@ -1,0 +1,23 @@
+{
+  "title": "Champion of the Horizon",
+  "description": "Defeat every Champion-class trainer and complete the main CobbleHorizons adventure. Your world remains open for research, collecting, building, and future challenges.",
+  "category": "CobbleHorizons Adventure",
+  "requires": ["cobblehorizons:14_elite_gauntlet"],
+  "objectives": [
+    {
+      "type": "justquests:gain_advancement",
+      "advancement": "rctmod:trainers/defeat_all_champion"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "justquests:give_item",
+      "item": "cobblemon:exp_candy_xl",
+      "count": 3
+    },
+    {
+      "type": "justquests:message",
+      "message": "You are a CobbleHorizons Champion. Keep exploring, researching, and building your story."
+    }
+  ]
+}
