@@ -4,15 +4,17 @@
 
 CobbleHorizons is an immersive Pokémon-focused Minecraft modpack built around Cobblemon.
 
-The goal is not to create a generic modded Minecraft pack that happens to contain Pokémon. CobbleHorizons aims to transform Minecraft into an open-world Pokémon adventure where exploration, capturing, training, battles and progression are the core experience.
+The goal is not to create a generic modded Minecraft pack that happens to contain Pokémon. CobbleHorizons aims to transform Minecraft into an open-world Pokémon adventure where exploration, capturing, training, trainer battles, gyms and progression are the core experience.
+
+---
 
 ## Project Status
 
-✅ **V0.3 — Trainers completed**
+✅ **V0.4 — Progression completed**
 
 Current development version:
 
-**v0.3.0**
+**v0.4.0**
 
 ### Technical Base
 
@@ -22,6 +24,8 @@ Current development version:
 | Fabric Loader | 0.19.3 |
 | Fabric API | 0.116.15+1.21.1 |
 | Cobblemon | 1.7.3 |
+
+---
 
 ## Current Features
 
@@ -40,8 +44,10 @@ Current development version:
 - Pokémon-related structures
 - PokéCenters
 - PokéMarts
-- Nests and dens
-- Pokémon exploration locations
+- Pokémon nests and dens
+- Trainer structures
+- Gym structures
+- Pokémon League structures
 
 ### Trainers
 
@@ -49,8 +55,22 @@ Current development version:
 - Trainer battles throughout the world
 - Trainer structures
 - Trainer rewards
-- Trainer teams based on biome and context
+- Trainer team variety
 - Improved trainer battle experience gain
+- RCT Trainer Card progression
+
+### Progression
+
+- Gym Leaders
+- Gym structures
+- Pokémon badges
+- Trainer Card progression
+- Level caps
+- Capture caps
+- Progressive trainer difficulty
+- Elite Four
+- Champion
+- Kanto Pokémon League
 
 ### Exploration
 
@@ -59,6 +79,7 @@ Current development version:
 - Waystones
 - Pokémon spawn information
 - Repel system
+- Pokémon structures and exploration locations
 
 ### Economy
 
@@ -69,6 +90,8 @@ Current development version:
 ### Performance
 
 CobbleHorizons includes a curated performance stack focused on maintaining stable gameplay while exploring large worlds.
+
+---
 
 ## Core Philosophy
 
@@ -88,13 +111,15 @@ The project prioritizes:
 
 Large technology, industrial, automation and unrelated magic systems are intentionally avoided unless they directly improve the Pokémon experience.
 
+---
+
 ## Development Roadmap
 
 - ✅ **V0.1 — Foundation**
 - ✅ **V0.2 — Pokémon World**
 - ✅ **V0.3 — Trainers**
-- ⏳ **V0.4 — Progression**
-- **V0.5 — Pokémon Mechanics**
+- ✅ **V0.4 — Progression**
+- ⏳ **V0.5 — Pokémon Mechanics**
 - **V0.6 — Immersion**
 - **V0.7 — Balance**
 - **Alpha**
@@ -103,17 +128,23 @@ Large technology, industrial, automation and unrelated magic systems are intenti
 
 See [docs/roadmap.md](docs/roadmap.md) for more information.
 
+---
+
 ## Development Scope
 
 Current development and validation focus on the singleplayer experience.
 
 Multiplayer and dedicated server compatibility are not currently part of the acceptance criteria.
 
+---
+
 ## Distribution
 
 CobbleHorizons is being developed with future public distribution through Modrinth in mind.
 
 Third-party mod `.jar` files should not be committed directly to this repository unless their respective licenses explicitly allow redistribution.
+
+---
 
 ## License
 

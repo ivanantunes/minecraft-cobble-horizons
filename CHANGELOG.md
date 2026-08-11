@@ -1,20 +1,83 @@
-# CobbleHorizons Changelog
+# Changelog
 
-All notable changes to CobbleHorizons will be documented in this file.
+All notable changes to CobbleHorizons are documented in this file.
 
 ---
 
-## [Unreleased]
+## V0.4.0 — Progression
+
+Status: ✅ Completed
 
 ### Added
 
-- Initial project repository.
-- Project documentation.
-- Development roadmap.
-- Mod tracking structure.
-- Testing structure.
+#### Gyms
+
+- Rad Gyms 1.7.3_0.4.4
+- Radical Gyms & Structures 0.6
+
+#### Progression
+
+- Capture Cap - RCT Version 1.2.0
+- Gym progression
+- Gym Leader challenges
+- Level-based progression
+- Capture restrictions integrated with RCT
+
+#### Badges
+
+- Cobblemon Pokemon Badges 0.1.1
+- RCT Badges - Cobblemon Pokemon Badges 1.1.2
+- Physical Pokémon badges
+- RCT Gym Leader badge integration
+
+#### Pokémon League
+
+- Kanto League content
+- Elite Four progression
+- Champion progression
+
+#### Dependencies
+
+- CobbleFurnies 1.2
+- Athena 4.0.6
+
+### Progression Architecture
+
+CobbleHorizons now provides a structured Pokémon progression loop:
+
+- Capture and train Pokémon
+- Battle trainers
+- Defeat progression trainers
+- Challenge Gym Leaders
+- Earn badges
+- Increase progression limits
+- Challenge increasingly difficult opponents
+- Complete the Gym challenge
+- Reach the Pokémon League
+- Challenge the Elite Four
+- Challenge the Champion
+
+### Testing
+
+Validated:
+
+- Gym structures
+- Gym-related NPCs
+- RCT trainer compatibility
+- Trainer Card
+- Capture Cap
+- Pokémon badges
+- RCT badge integration
+- Existing Pokémon gameplay
+- Existing world compatibility
+- Singleplayer stability
+
+### Result
+
+✅ V0.4 Progression completed.
 
 ---
+
 ## V0.3.0 — Trainers
 
 Status: ✅ Completed
@@ -46,7 +109,6 @@ Status: ✅ Completed
 ### Experience
 
 - Improved Pokémon experience gain during trainer battles.
-- Pokémon now receive experience correctly during multi-Pokémon trainer battles.
 
 ### Testing
 
@@ -55,7 +117,6 @@ Validated:
 - Trainer spawning
 - Trainer battles
 - Trainer structures
-- Trainer rewards
 - Pokémon battle compatibility
 - Experience gain
 - Existing world compatibility
@@ -64,6 +125,8 @@ Validated:
 ### Result
 
 ✅ V0.3 Trainers completed.
+
+---
 
 ## V0.2.0 — Pokémon World
 
@@ -99,14 +162,12 @@ Status: ✅ Completed
 - Added Pokémon-related structures.
 - Added PokéCenters and PokéMarts.
 - Added Pokémon nests and dens.
-- Added additional exploration locations.
 
 ### Exploration
 
 - Added Pokémon spawn information through PokéNav.
 - Added fast travel through Waystones.
 - Added Pokémon Repel functionality.
-- Added improved Cobblemon integration with existing systems.
 
 ### Economy
 
@@ -120,38 +181,21 @@ Status: ✅ Completed
 Reason:
 
 - Crashed when opening Pokémon Stats/EV screen.
-- Incompatible with the Cobblemon 1.7.3 Stats UI implementation.
+- Incompatible with Cobblemon 1.7.3 Stats UI implementation.
 
-#### Cobblemon Auto Tidy Up PC remains rejected
+#### Cobblemon Auto Tidy Up PC rejected
 
 Reason:
 
 - Resource reload failure.
 
-### Testing
-
-Validated:
-
-- World generation
-- Biomes
-- Pokémon spawning
-- Pokémon structures
-- PokéCenters
-- PokéMarts
-- Economy
-- PokéNav
-- Waystones
-- Repel
-- Nests & Dens
-- Cobblemon integrations
-- Existing Cobblemon gameplay
-- Singleplayer stability
-
 ### Result
 
 ✅ V0.2 Pokémon World completed.
 
-## V0.1 — Foundation
+---
+
+## V0.1.0 — Foundation
 
 Status: ✅ Completed
 
@@ -160,64 +204,45 @@ Status: ✅ Completed
 #### Core
 
 - Minecraft 1.21.1
-- Fabric Loader 0.19.3
-- Fabric API 0.116.15+1.21.1
+- Fabric
+- Fabric API
+- Fabric Language Kotlin
 - Cobblemon 1.7.3
 
 #### Performance
 
-- Sodium 0.8.13-beta.2
-- Lithium 0.15.4
-- ImmediatelyFast 1.6.11+1.21.1
-- FerriteCore 7.0.3
-- ModernFix 5.25.1+mc1.21.1
+- Sodium
+- Lithium
+- ImmediatelyFast
+- FerriteCore
+- ModernFix
 
-#### General Quality of Life
+#### Quality of Life
 
-- Xaero's Minimap 26.4.2
-- Xaero's World Map 1.44.2
-- EMI 1.1.24
-- Jade 15.10.6
-- Mouse Tweaks 2.26
+- Xaero's Minimap
+- Xaero's World Map
+- EMI
+- Jade
+- Mouse Tweaks
 
 #### Pokémon Quality of Life
 
-- Cobblemon Pokedex (Cobbledex) 1.2.0
-- Cobblemon UI Tweaks 1.0.7
-- Fabric Language Kotlin 1.13.13+kotlin.2.4.10
+- Cobbledex
 
-### Tested
+### Testing
+
+Validated:
 
 - Game startup
 - World creation
-- Existing world loading
+- Cobblemon startup
 - Starter selection
-- Natural Pokémon spawning
-- Pokémon battles
+- Pokémon spawning
 - Pokémon capturing
-- Pokémon progression
-- Exploration
-- Performance stack
-- General QoL stack
-- Pokémon QoL stack
-- Extended singleplayer gameplay
-
-### Rejected
-
-#### Cobblemon Auto Tidy Up PC 1.2-SNAPSHOT
-
-Rejected during V0.1 testing.
-
-Reason:
-
-- Caused a resource reload failure on Minecraft 1.21.1 with Cobblemon 1.7.3.
-- Game failed to load correctly while the mod was enabled.
-- Removing/disabling the mod resolved the issue.
-
-The mod may be reevaluated in a future version if a stable compatible release becomes available.
+- Pokémon battles
+- Performance
+- Singleplayer stability
 
 ### Result
 
 ✅ V0.1 Foundation completed.
-
-This version establishes the stable singleplayer foundation for future CobbleHorizons development.

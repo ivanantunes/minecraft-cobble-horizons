@@ -37,10 +37,12 @@ Transform the Minecraft world into an environment that encourages Pokémon explo
 ### Completed
 
 - Terralith world generation
+- Expanded terrain and biome variety
 - Pokémon-related structures
 - PokéCenters
 - PokéMarts
 - CobbleDollars economy
+- Pokémon merchants
 - PokéNav
 - Waystones
 - Repel system
@@ -84,53 +86,136 @@ V0.3 was considered complete after confirming:
 
 # V0.4 — Progression
 
-Status: ⏳ Next
+Status: ✅ Completed
 
 ## Objective
 
-Create structured player progression through gyms, badges and increasingly difficult challenges.
+Create structured player progression through gyms, badges, level restrictions and increasingly difficult Pokémon challenges.
 
-### Planned Areas
+### Gym System
 
-- Gyms
+- Rad Gyms
+- Radical Gyms & Structures
+- Gym structures
 - Gym Leaders
-- Badges
-- Progression requirements
+- Themed trainer challenges
+- Gym rewards
+
+### Player Progression
+
+- RCT Trainer Card progression
 - Level caps
-- Rewards
+- Capture caps
+- Progressive trainer challenges
+- Physical Pokémon badges
+- RCT Gym Leader badge integration
+
+### Pokémon League
+
+- Kanto League
 - Elite Four
 - Champion
-- Pokémon League
-- Progression balancing
+- Endgame progression
+
+### Progression Loop
+
+The intended progression structure is:
+
+Player begins journey
+
+↓
+
+Captures and trains Pokémon
+
+↓
+
+Battles trainers
+
+↓
+
+Defeats progression trainers and Gym Leaders
+
+↓
+
+Earns badges
+
+↓
+
+Increases progression limits
+
+↓
+
+Challenges increasingly difficult opponents
+
+↓
+
+Completes the Gym challenge
+
+↓
+
+Challenges the Pokémon League
+
+↓
+
+Elite Four
+
+↓
+
+Champion
+
+### Validation
+
+V0.4 was considered complete after confirming:
+
+- Existing worlds continue loading
+- Pokémon spawning remains functional
+- RCT trainers continue functioning
+- Gym structures generate correctly
+- Gym-related NPCs load correctly
+- Rad Gyms loads correctly
+- Radical Gyms & Structures loads correctly
+- Capture Cap loads correctly
+- Cobblemon Pokemon Badges loads correctly
+- RCT badge integration loads correctly
+- Existing Cobblemon systems remain functional
+- No critical progression-related crashes were detected
 
 ---
 
 # V0.5 — Pokémon Mechanics
 
+Status: ⏳ Next
+
 ## Objective
 
-Expand Pokémon gameplay systems.
+Expand the depth of Pokémon training, team building and advanced Pokémon mechanics.
 
-### Areas
+### Planned Areas
 
-- Breeding
 - TMs and TRs
-- IV and EV systems
+- Breeding
+- IV systems
+- EV systems
 - Evolution systems
+- Evolution items
 - Mega Evolution
 - Regional mechanics
+- Battle gimmicks
 - Legendary Pokémon
 - Rare encounters
+- Pokémon training improvements
 
 ---
 
 # V0.6 — Immersion
 
+Status: Planned
+
 ## Objective
 
 Improve the feeling of living inside the Pokémon world.
 
-### Areas
+### Planned Areas
 
 - Interface
 - Music
@@ -144,17 +229,22 @@ Improve the feeling of living inside the Pokémon world.
 
 # V0.7 — Balance
 
+Status: Planned
+
 ## Objective
 
 Prepare the complete experience for public testing.
 
-### Areas
+### Planned Areas
 
 - Spawn rates
 - Trainer difficulty
+- Gym difficulty
 - Economy
 - Item availability
 - Progression speed
+- Level caps
+- Capture caps
 - Performance
 - Singleplayer balance
 - Configuration cleanup
@@ -165,9 +255,28 @@ Prepare the complete experience for public testing.
 
 Feature-complete testing build.
 
+Main goals:
+
+- Full playthrough testing
+- Progression testing
+- Compatibility testing
+- Major bug fixing
+
+---
+
 # Beta
 
-Stability, balancing and compatibility testing.
+Stability and balancing phase.
+
+Main goals:
+
+- Balance adjustments
+- Performance improvements
+- Configuration cleanup
+- Mod compatibility verification
+- Distribution preparation
+
+---
 
 # Release
 

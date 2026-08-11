@@ -87,64 +87,11 @@ Status: ✅ PASS
 - [x] Waystones remain functional
 - [x] Cobblemon remains functional
 
----
-
-# Compatibility Issues Found
-
-## Cobblemon Auto Tidy Up PC
-
-Status:
-
-❌ Rejected
-
-Issue:
-
-Resource reload failure.
-
-Resolution:
-
-Mod removed.
-
----
-
-## Cobblemon UI Tweaks
-
-Status:
-
-❌ Rejected
-
-Issue:
-
-Client crash when opening Pokémon Stats/EV screen.
-
-Cause:
-
-Incompatible Mixin targeting Cobblemon's StatWidget implementation.
-
-Resolution:
-
-Mod removed.
-
-After removal, the game returned to normal operation.
-
----
-
-# V0.2 Final Result
-
-- [x] World generation approved
-- [x] Pokémon structures approved
-- [x] Pokémon civilization systems approved
-- [x] Economy approved
-- [x] Exploration systems approved
-- [x] Integrations approved
-- [x] Critical compatibility issues resolved
-- [x] Singleplayer validation completed
-
-Result:
+## Result
 
 ✅ **PASS**
 
-V0.2 — Pokémon World is considered complete.
+V0.2 — Pokémon World completed.
 
 Release:
 
@@ -177,31 +124,149 @@ Status: ✅ PASS
 
 - [x] Fix Cobblemon Pokemon Experience loads
 - [x] Pokémon receive experience correctly during trainer battles
-- [x] Experience gain no longer depends only on battle completion
 
 ## Stability
 
-- [x] Existing world loads correctly
+- [x] Existing worlds load correctly
 - [x] Pokémon spawning remains functional
 - [x] Existing Cobblemon systems remain functional
 - [x] No critical trainer-related crashes detected
 
+## Result
+
+✅ **PASS**
+
+V0.3 — Trainers completed.
+
+Release:
+
+`v0.3.0`
+
 ---
 
-# V0.3 Final Result
+# V0.4 — Progression
 
-- [x] Trainer system approved
-- [x] Trainer structures approved
-- [x] Trainer battle functionality approved
-- [x] Trainer experience gain approved
+Status: ✅ PASS
+
+## Gym System
+
+- [x] Rad Gyms loads correctly
+- [x] Radical Gyms & Structures loads correctly
+- [x] Gym structures generate correctly
+- [x] Gym-related NPCs load
+- [x] Existing trainer system remains functional
+- [x] Gym content coexists with Terralith world generation
+
+## Progression
+
+- [x] RCT Trainer Card remains functional
+- [x] RCT progression remains functional
+- [x] Capture Cap - RCT Version loads correctly
+- [x] Level progression systems remain functional
+- [x] Existing trainer battles remain functional
+
+## Badges
+
+- [x] Cobblemon Pokemon Badges 0.1.1 loads correctly
+- [x] RCT Badges - Cobblemon Pokemon Badges 1.1.2 loads correctly
+- [x] Badge integration does not prevent world loading
+- [x] RCT remains functional with badge integration
+
+## Pokémon League
+
+- [x] Radical Gyms & Structures League content loads
+- [x] Elite Four content is available through the progression system
+- [x] Champion content is available through the progression system
+
+## Dependencies
+
+- [x] CobbleFurnies 1.2 loads correctly
+- [x] Athena 4.0.6 loads correctly
+- [x] Existing Architectury API remains functional
+- [x] Existing RCT API remains functional
+
+## Regression Testing
+
+- [x] Existing world loads
+- [x] New chunks generate
+- [x] Pokémon spawn normally
+- [x] Pokémon battles work
+- [x] Trainer battles work
+- [x] PokéNav works
+- [x] Maps work
+- [x] Waystones remain functional
+- [x] Existing structures remain functional
+- [x] No critical progression-related crashes detected
+
+---
+
+# V0.4 Final Result
+
+- [x] Gym system approved
+- [x] Gym structures approved
+- [x] RCT progression approved
+- [x] Capture Cap approved
+- [x] Badge system approved
+- [x] Badge/RCT integration approved
+- [x] Pokémon League content approved
 - [x] Singleplayer validation completed
 
 Result:
 
 ✅ **PASS**
 
-V0.3 — Trainers is considered complete.
+V0.4 — Progression is considered complete.
 
 Release:
 
-`v0.3.0`
+`v0.4.0`
+
+---
+
+# Known Rejected Mods
+
+## Cobblemon Auto Tidy Up PC
+
+Status: ❌ Rejected
+
+Issue:
+
+Resource reload failure.
+
+Resolution:
+
+Mod removed.
+
+---
+
+## Cobblemon UI Tweaks
+
+Status: ❌ Rejected
+
+Issue:
+
+Client crash when opening the Pokémon Stats/EV screen.
+
+Resolution:
+
+Mod removed.
+
+After removal, normal gameplay was restored.
+
+---
+
+# Next Test Phase
+
+## V0.5 — Pokémon Mechanics
+
+Planned testing areas:
+
+- TMs and TRs
+- Breeding
+- IV/EV systems
+- Evolution systems
+- Mega Evolution
+- Battle gimmicks
+- Legendary Pokémon
+- Rare encounters
+- Pokémon training mechanics

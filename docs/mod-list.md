@@ -72,12 +72,38 @@ This document tracks the mods evaluated and approved for CobbleHorizons.
 |---|---|---|---|
 | CobbleStructures | 1.1.0+mod | ✅ | PokéCenters, PokéMarts and Pokémon structures |
 | CobbleDollars | 2.0.0+Beta-6.1 | ✅ | Pokémon economy |
-| Another Furniture | 4.0.2 | ✅ | CobbleStructures dependency/content |
+| Another Furniture | 4.0.2 | ✅ | Furniture and structure content |
 | Cobblemon PokéNav | 2.3.3 | ✅ | Pokémon spawn information |
 | Cobblemon Repel | 1.7-1.4 | ✅ | Pokémon spawn control |
 | Waystones | 21.1.40+fabric-1.21.1 | ✅ | Fast travel |
 | Balm | 21.0.64+fabric-1.21.1 | ✅ | Waystones dependency |
-| Forge Config API Port | v21.1.6-1.21.1-Fabric | ✅ | Mod configuration dependency |
+| Forge Config API Port | v21.1.6-1.21.1-Fabric | ✅ | Configuration dependency |
+
+---
+
+# Trainers
+
+| Mod | Version | Status | Purpose |
+|---|---|---|---|
+| Radical Cobblemon Trainers | 0.18.1-beta | ✅ | Main trainer system |
+| Radical Cobblemon Trainers API | 0.15.2-beta | ✅ | Trainer battle engine and API |
+| Cobblemon Trainer Structures | 1.7.1 | ✅ | Trainer structures and battle locations |
+| Architectury API | 13.0.11+fabric | ✅ | Required dependency |
+| Fix Cobblemon Pokemon Experience | 1.1.1+1.21.1-fabric | ✅ | Improved experience gain during trainer battles |
+
+---
+
+# Progression
+
+| Mod | Version | Status | Purpose |
+|---|---|---|---|
+| Rad Gyms | 1.7.3_0.4.4 | ✅ | Gym system and gym challenges |
+| Radical Gyms & Structures | 0.6 | ✅ | Gym structures, Gym Leaders and Pokémon League |
+| Capture Cap - RCT Version | 1.2.0 | ✅ | Capture restrictions integrated with RCT progression |
+| CobbleFurnies | 1.2 | ✅ | Structure/content dependency |
+| Athena | 4.0.6 | ✅ | Required dependency |
+| Cobblemon Pokemon Badges | 0.1.1 | ✅ | Physical Pokémon badge system |
+| RCT Badges - Cobblemon Pokemon Badges | 1.1.2 | ✅ | RCT Gym Leader badge integration |
 
 ---
 
@@ -114,58 +140,51 @@ Status:
 Reason:
 
 - Client crashed when opening the Pokémon Stats/EV screen.
-- The mod attempted to inject into a field that is incompatible with Cobblemon 1.7.3.
+- The mod attempted to inject into a field incompatible with Cobblemon 1.7.3.
 - Removing the mod resolved the crash.
 
 ---
 
-# Trainers
+# Intentionally Excluded
 
-| Mod | Version | Status | Purpose |
-|---|---|---|---|
-| Radical Cobblemon Trainers | 0.18.1-beta | ✅ | Main trainer system |
-| Radical Cobblemon Trainers API | 0.15.2-beta | ✅ | Trainer battle engine and API |
-| Cobblemon Trainer Structures | 1.7.1 | ✅ | Trainer structures and battle locations |
-| Architectury API | 13.0.11+fabric | ✅ | Required dependency |
-| Fix Cobblemon Pokemon Experience | 1.1.1+1.21.1-fabric | ✅ | Gives Pokémon experience correctly during trainer battles |
+## Alternative Gym Systems
+
+Alternative gym and progression systems are intentionally avoided while Rad Gyms, RCT and Radical Gyms & Structures provide the primary progression architecture.
+
+Using multiple independent progression systems could create conflicting Gym Leaders, badges, level restrictions and progression rules.
+
+## Archived RCT Badge Systems
+
+Older archived Radical Trainers badge integrations are not used.
+
+RCT Badges - Cobblemon Pokemon Badges is used as the current integration layer.
+
+---
 
 # Future Candidates
 
-## Progression
+## Pokémon Mechanics — V0.5
 
-To be evaluated during V0.4:
+Potential systems:
 
-- Rad Gyms
-- Radical Gyms & Structures
-- Badge systems
-- Level cap systems
-- Elite Four / League systems
-
-## Pokémon Mechanics
-
-Potential future systems:
-
-- Breeding
 - SimpleTMs
+- Breeding
 - IV/EV utilities
 - Mega Evolution
-- Pokémon gimmicks
+- Evolution improvements
+- Pokémon battle gimmicks
 - Legendary systems
+- Rare encounter systems
 
-## Progression
+## Immersion — V0.6
 
-To be evaluated during V0.4.
+Potential systems:
 
-## Pokémon Mechanics
-
-Potential future systems:
-
-- Breeding
-- SimpleTMs
-- IV/EV utilities
-- Mega Evolution
-- Pokémon gimmicks
-- Legendary systems
+- Pokémon music
+- Ambient audio
+- Visual improvements
+- Interface improvements
+- Pokémon interaction improvements
 
 ---
 
@@ -173,9 +192,9 @@ Potential future systems:
 
 Before approving a mod:
 
-1. Minecraft compatibility
+1. Minecraft 1.21.1 compatibility
 2. Fabric compatibility
-3. Cobblemon compatibility
+3. Cobblemon 1.7.3 compatibility
 4. Required dependencies
 5. Maintenance status
 6. Known incompatibilities
@@ -183,3 +202,4 @@ Before approving a mod:
 8. Singleplayer stability
 9. License
 10. Contribution to the Pokémon experience
+11. Compatibility with the existing progression architecture
