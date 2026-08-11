@@ -160,3 +160,17 @@ Removed after causing a crash when accessing Pokémon EV/stat information.
 Versions listed here represent the tested CobbleHorizons development environment.
 
 Mods may be updated before the first stable release after compatibility testing.
+
+---
+
+## Configuration & Identity
+
+| Component | Target | Purpose |
+|---|---|---|
+| FancyMenu | Fabric / 1.21.1 | Menu e identidade global |
+| Konkrete | Dependência correspondente | Biblioteca de UI |
+| Drippy Loading Screen | Fabric / 1.21.1 | Tela de boot |
+| Default Options | Fabric / 1.21.1 | Padrões para instalações novas |
+| CobbleHorizons Branding | Resource pack interno | Branding |
+
+> As versões exatas serão copiadas do novo manifesto Modrinth após o teste limpo.
