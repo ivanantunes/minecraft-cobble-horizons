@@ -1,0 +1,33 @@
+CobbleHorizons v0.8.0
+
+IDENTITY
+- CobbleHorizons menu background
+- Transparent logo/icon
+- Custom window title
+- Custom loading screen
+- Branded loading bar
+- Vanilla Minecraft title graphic hidden by branding resource pack
+
+DEFAULTS
+- Render distance: 12
+- Simulation distance: 8
+- Max FPS: 120
+- VSync: OFF
+- Fancy graphics
+- 5x5 biome blend
+- Mipmap: 4
+- Auto Jump: OFF
+- Tutorial hints: OFF
+- PT-BR language default
+- Balanced audio profile
+
+PERFORMANCE
+- Sodium culling/occlusion enabled
+- Automatic chunk threads
+- CPU render ahead reduced to 2
+- Iris shaders OFF by default
+
+DISTRIBUTION
+- Removed Jade username cache
+- Removed Sodium fingerprint
+- Removed Xaero Patreon local file

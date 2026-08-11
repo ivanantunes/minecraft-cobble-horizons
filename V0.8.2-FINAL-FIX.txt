@@ -1,0 +1,18 @@
+CobbleHorizons v0.8.2 final UI fix
+
+This patch adds a REAL FancyMenu title_screen layout.
+
+Changes:
+- Custom title_screen background using CobbleHorizons artwork
+- Vanilla title logo/splash/branding hidden
+- Custom styled buttons placed on the dark left side
+- Singleplayer label: Continuar Jornada
+- Multiplayer / Configurações / Sair
+- Realms, language, accessibility and copyright clutter hidden on title screen
+- FancyMenu GUI scale default set to 3
+- Fullscreen enabled by default
+- Battle Tracks v1.2 resource pack enabled by default
+- Drippy customization screen receives CobbleHorizons background layout
+- Branding resource pack now also contains a CobbleHorizons replacement for the Mojang splash logo
+
+Apply the zip to the ROOT of the Modrinth instance and overwrite files.

@@ -1,0 +1,10 @@
+CobbleHorizons v0.8.1 patch
+
+Changes:
+- Title screen now uses the CobbleHorizons logo via the branding resource pack
+- Yellow splash text hidden by default
+- Keeps the rest of the v0.8 configuration intact
+
+Important:
+Drippy Loading Screen does not always replace the very first Mojang splash on every startup phase.
+If you still see the Mojang loading screen at the earliest boot stage, that is expected behavior here.
