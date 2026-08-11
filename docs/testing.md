@@ -268,3 +268,36 @@ Multiplayer testing is currently outside the development scope.
 CobbleHorizons is being developed and validated primarily for singleplayer during the pre-alpha development cycle.
 
 Multiplayer compatibility may be evaluated in a later development phase.
+
+---
+
+## V0.8 — Clean Instance UI Validation
+
+### Boot
+
+- [ ] Título, ícone, wallpaper, logo e barra corretos.
+- [ ] Jogo chega ao menu sem crash.
+
+### Main menu
+
+- [ ] Wallpaper e botões personalizados aparecem.
+- [ ] Logo vanilla e splash amarelo estão ocultos.
+- [ ] Hover, clique e navegação funcionam.
+- [ ] Layout permanece legível em GUI Scale 3.
+
+### Internal menus
+
+- [ ] Background e estilos globais aparecem onde compatíveis.
+- [ ] Sliders, listas e datasource continuam utilizáveis.
+- [ ] Vídeo, áudio, controles e resource packs abrem.
+
+### Gameplay
+
+- [ ] Mundo novo e existente carregam.
+- [ ] Captura, batalha e EV/status funcionam.
+- [ ] Trainers, ginásios, áudio e shaders funcionam.
+
+### Logs
+
+- [ ] Nenhuma exceção fatal.
+- [ ] Nenhum erro de layout ou textura ausente.
