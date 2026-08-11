@@ -16,6 +16,92 @@ All notable changes to CobbleHorizons will be documented in this file.
 
 ---
 
+## V0.2.0 — Pokémon World
+
+Status: ✅ Completed
+
+### Added
+
+#### World Generation
+
+- Terralith 2.6.2
+- Cobblemon: Extra Structures 1.21.1-1.3.0
+- Cobblemon: Nests & Dens 1.3.3
+- Lithostitched 1.7.13-fabric-21.1
+
+#### Pokémon World
+
+- CobbleStructures 1.1.0+mod
+- CobbleDollars 2.0.0+Beta-6.1
+- Another Furniture 4.0.2
+- Cobblemon PokéNav 2.3.3
+- Cobblemon Repel 1.7-1.4
+- Waystones 21.1.40+fabric-1.21.1
+- Cobblemon Integrations 1.1.6
+
+#### Dependencies
+
+- Balm 21.0.64+fabric-1.21.1
+- Forge Config API Port v21.1.6-1.21.1-Fabric
+
+### World
+
+- Expanded world generation and biome variety.
+- Added Pokémon-related structures.
+- Added PokéCenters and PokéMarts.
+- Added Pokémon nests and dens.
+- Added additional exploration locations.
+
+### Exploration
+
+- Added Pokémon spawn information through PokéNav.
+- Added fast travel through Waystones.
+- Added Pokémon Repel functionality.
+- Added improved Cobblemon integration with existing systems.
+
+### Economy
+
+- Added CobbleDollars.
+- Added Pokémon-related merchants and economy functionality.
+
+### Compatibility
+
+#### Removed Cobblemon UI Tweaks 1.0.7
+
+Reason:
+
+- Crashed when opening Pokémon Stats/EV screen.
+- Incompatible with the Cobblemon 1.7.3 Stats UI implementation.
+
+#### Cobblemon Auto Tidy Up PC remains rejected
+
+Reason:
+
+- Resource reload failure.
+
+### Testing
+
+Validated:
+
+- World generation
+- Biomes
+- Pokémon spawning
+- Pokémon structures
+- PokéCenters
+- PokéMarts
+- Economy
+- PokéNav
+- Waystones
+- Repel
+- Nests & Dens
+- Cobblemon integrations
+- Existing Cobblemon gameplay
+- Singleplayer stability
+
+### Result
+
+✅ V0.2 Pokémon World completed.
+
 ## V0.1 — Foundation
 
 Status: ✅ Completed

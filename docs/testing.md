@@ -6,8 +6,6 @@ Every development milestone must be tested before the next major gameplay layer 
 
 # Test Environment
 
-## Game
-
 Minecraft: 1.21.1
 
 Fabric Loader: 0.19.3
@@ -16,124 +14,138 @@ Fabric API: 0.116.15+1.21.1
 
 Cobblemon: 1.7.3
 
+Primary validation target:
+
+**Singleplayer**
+
 ---
 
-# V0.1 — Foundation Testing
+# V0.1 — Foundation
 
-Status: ✅ Completed
+Status: ✅ PASS
 
-## Launch
+Validated:
 
-- [x] Game launches successfully
-- [x] No critical startup errors
-- [x] Main menu loads correctly
-- [x] Mod list loads correctly
+- Game startup
+- World creation
+- World loading
+- Cobblemon startup
+- Starter selection
+- Pokémon spawning
+- Pokémon capturing
+- Pokémon battles
+- Pokémon progression
+- Performance stack
+- General QoL
+- Pokémon QoL
+- Singleplayer stability
 
-## World
+---
 
-- [x] New world can be created
-- [x] Existing world loads correctly
-- [x] World loads correctly
-- [x] Chunks generate correctly
-- [x] No major generation errors detected
+# V0.2 — Pokémon World
 
-## Cobblemon
+Status: ✅ PASS
 
-- [x] Starter selection works
-- [x] Pokémon spawn naturally
-- [x] Pokémon models load correctly
-- [x] Pokémon animations work
-- [x] Pokémon can be captured
-- [x] Pokémon battles work
-- [x] Pokémon gain experience
-- [x] Pokémon level up
-- [x] Pokémon progression works correctly
+## World Generation
 
-## Performance
+- [x] New world creation
+- [x] Terralith world generation
+- [x] Terrain generation
+- [x] Biome generation
+- [x] Chunk generation
+- [x] Pokémon continue spawning
+- [x] Cobblemon gameplay remains functional
 
-Installed and tested:
+## Structures
 
-- [x] Sodium
-- [x] Lithium
-- [x] ImmediatelyFast
-- [x] FerriteCore
-- [x] ModernFix
+- [x] Cobblemon Extra Structures loads
+- [x] CobbleStructures loads
+- [x] Pokémon structures generate
+- [x] PokéCenter functionality
+- [x] PokéMart functionality
+- [x] Nests & Dens loads correctly
 
-Result:
+## Economy
 
-- [x] Game remained stable after performance mods were added
-- [x] Existing world continued loading correctly
-- [x] Exploration remained functional
-- [x] Cobblemon gameplay remained functional
+- [x] CobbleDollars loads
+- [x] Pokémon merchants load
+- [x] Economy functionality works
 
-## General Quality of Life
+## Exploration
 
-Installed and tested:
+- [x] PokéNav loads and works
+- [x] Pokémon spawn information works
+- [x] Waystones load
+- [x] Waystone teleportation works
+- [x] Repel loads
+- [x] World exploration remains stable
 
-- [x] Xaero's Minimap
-- [x] Xaero's World Map
-- [x] EMI
-- [x] Jade
-- [x] Mouse Tweaks
+## Integrations
 
-Result:
+- [x] Cobblemon Integrations loads
+- [x] Jade remains functional
+- [x] Waystones remain functional
+- [x] Cobblemon remains functional
 
-- [x] Game launches correctly
-- [x] World loads correctly
-- [x] No critical incompatibility detected
+---
 
-## Pokémon Quality of Life
+# Compatibility Issues Found
 
-Installed and tested:
-
-- [x] Cobblemon Pokedex (Cobbledex)
-- [x] Cobblemon UI Tweaks
-- [x] Fabric Language Kotlin
-
-Rejected:
-
-- [x] Cobblemon Auto Tidy Up PC 1.2-SNAPSHOT
-
-### Auto Tidy Up PC Issue
-
-Observed behavior:
-
-- Resource reload failure
-- Game failed to load correctly
-
-Resolution:
-
-- Disabling/removing Auto Tidy Up PC resolved the issue
+## Cobblemon Auto Tidy Up PC
 
 Status:
 
-❌ Rejected for V0.1
+❌ Rejected
+
+Issue:
+
+Resource reload failure.
+
+Resolution:
+
+Mod removed.
 
 ---
 
-# V0.1 Scope
+## Cobblemon UI Tweaks
 
-V0.1 validation focuses on singleplayer.
+Status:
 
-Multiplayer and dedicated server compatibility are not part of the acceptance criteria for this milestone.
+❌ Rejected
 
-They may be evaluated in a future development phase.
+Issue:
+
+Client crash when opening Pokémon Stats/EV screen.
+
+Cause:
+
+Incompatible Mixin targeting Cobblemon's StatWidget implementation.
+
+Resolution:
+
+Mod removed.
+
+After removal, the game returned to normal operation.
 
 ---
 
-# Final V0.1 Result
+# V0.2 Final Result
 
-- [x] Core baseline approved
-- [x] Performance layer approved
-- [x] General QoL approved
-- [x] Pokémon QoL approved
-- [x] Extended singleplayer stability testing
-- [x] Final V0.1 validation
+- [x] World generation approved
+- [x] Pokémon structures approved
+- [x] Pokémon civilization systems approved
+- [x] Economy approved
+- [x] Exploration systems approved
+- [x] Integrations approved
+- [x] Critical compatibility issues resolved
+- [x] Singleplayer validation completed
 
 Result:
 
 ✅ **PASS**
 
-V0.1 — Foundation is considered complete and ready to be tagged as:
+V0.2 — Pokémon World is considered complete.
 
-`v0.1.0`
+Release:
+
+`v0.2.0`

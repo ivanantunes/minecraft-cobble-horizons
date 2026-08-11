@@ -4,8 +4,6 @@ CobbleHorizons is developed incrementally.
 
 Each milestone introduces and validates one major layer of the modpack before development continues.
 
-This approach makes compatibility problems, performance regressions and gameplay issues easier to identify.
-
 ---
 
 # V0.1 — Foundation
@@ -16,80 +14,93 @@ Status: ✅ Completed
 
 Build a stable technical foundation for the CobbleHorizons singleplayer experience.
 
-### Base
+### Completed
 
 - Minecraft 1.21.1
-- Fabric Loader 0.19.3
-- Fabric API 0.116.15+1.21.1
+- Fabric
 - Cobblemon 1.7.3
-
-### Completed Areas
-
-- Required dependencies
 - Performance optimization
-- Essential quality-of-life improvements
-- Pokémon-focused QoL
-- Initial configurations
-- Singleplayer stability testing
-
-### Validation
-
-V0.1 was considered complete after confirming:
-
-- Minecraft launches reliably
-- Worlds create and load correctly
-- Cobblemon works correctly
-- Starter selection works
-- Pokémon spawn correctly
-- Capturing works
-- Battles work
-- Pokémon progression works
-- Installed QoL features work correctly
-- No critical errors occur
-- Performance is acceptable
-- Extended singleplayer sessions remain stable
-
-### Scope
-
-V0.1 validation focuses on singleplayer.
-
-Multiplayer and dedicated server compatibility are not part of the acceptance criteria for this milestone and may be evaluated in a future development phase.
+- General quality-of-life improvements
+- Pokémon quality-of-life improvements
+- Singleplayer stability baseline
 
 ---
 
 # V0.2 — Pokémon World
 
-Status: ⏳ Next
+Status: ✅ Completed
 
 ## Objective
 
-Make exploration feel like travelling through a Pokémon world.
+Transform the Minecraft world into an environment that encourages Pokémon exploration and discovery.
 
-### Areas
+### World Generation
 
-- World generation
-- Biomes
-- Pokémon structures
-- Villages
-- Pokémon Centers
-- Poké Marts
-- Exploration content
+- Terralith
+- Expanded terrain and biome variety
+- Pokémon-related structures
+- Nests and dens
+
+### Pokémon Civilization
+
+- PokéCenters
+- PokéMarts
+- Pokémon-related structures
+- CobbleDollars economy
+- Pokémon merchants
+
+### Exploration
+
+- PokéNav
+- Waystones
+- Repel system
+- Minimap and world map integration
+- Pokémon spawn information
+- Nests and dens
+
+### Integration
+
+- Cobblemon integration with Jade
+- Cobblemon integration with Waystones
+- Improved information for Pokémon-related blocks and systems
+
+### Validation
+
+V0.2 was considered complete after confirming:
+
+- New worlds generate correctly
+- Terralith terrain generates correctly
+- Pokémon continue spawning normally
+- Cobblemon gameplay remains functional
+- Pokémon structures generate correctly
+- PokéCenters and PokéMarts work
+- CobbleDollars works
+- PokéNav works
+- Waystones work
+- Repel works
+- Nests & Dens loads correctly
+- Cobblemon Integrations works
+- No critical crashes remain after incompatible mods were removed
 
 ---
 
 # V0.3 — Trainers
 
+Status: ⏳ Next
+
 ## Objective
 
-Introduce meaningful NPC Pokémon battles.
+Introduce meaningful NPC Pokémon battles throughout the world.
 
-### Areas
+### Planned Areas
 
-- Trainers
-- Trainer difficulty
-- Trainer progression
-- Trainer rewards
+- Pokémon trainers
+- Trainer spawning
 - Trainer structures
+- Trainer difficulty
+- Trainer teams
+- Trainer rewards
+- Trainer progression
 - Battle balancing
 
 ---
@@ -107,7 +118,8 @@ Create structured player progression.
 - Badges
 - Progression requirements
 - Rewards
-- Elite Four / League investigation
+- Elite Four
+- Pokémon League
 
 ---
 
@@ -120,6 +132,8 @@ Expand Pokémon gameplay systems.
 ### Areas
 
 - Breeding
+- TMs and TRs
+- IV and EV systems
 - Evolution systems
 - Mega Evolution
 - Regional mechanics
@@ -137,13 +151,12 @@ Improve the feeling of living inside the Pokémon world.
 ### Areas
 
 - Interface
-- Map
-- Pokédex improvements
 - Music
 - Ambient sounds
 - Visual improvements
 - Animations
 - Pokémon interaction
+- Environmental immersion
 
 ---
 

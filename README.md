@@ -8,9 +8,13 @@ The goal is not to create a generic modded Minecraft pack that happens to contai
 
 ## Project Status
 
-✅ **V0.1 — Foundation completed**
+✅ **V0.2 — Pokémon World completed**
 
-CobbleHorizons currently has a stable singleplayer foundation built around:
+Current development version:
+
+**v0.2.0**
+
+### Technical Base
 
 | Component | Version |
 |---|---|
@@ -19,30 +23,43 @@ CobbleHorizons currently has a stable singleplayer foundation built around:
 | Fabric API | 0.116.15+1.21.1 |
 | Cobblemon | 1.7.3 |
 
-The V0.1 milestone established:
+## Current Features
 
-- Core Cobblemon functionality
-- Performance optimization
-- General quality-of-life improvements
-- Pokémon-focused quality-of-life improvements
-- Stable singleplayer gameplay baseline
+### Pokémon
 
-Multiplayer is not currently part of the validation scope.
+- Cobblemon core gameplay
+- Pokémon capturing and battles
+- Pokémon progression
+- Cobbledex
+- Pokémon spawn information through PokéNav
+- Pokémon nests and dens
 
-The next milestone is:
+### World
 
-**V0.2 — Pokémon World**
+- Enhanced world generation with Terralith
+- Pokémon-related structures
+- PokéCenters
+- PokéMarts
+- Pokémon exploration locations
+- Nests and dens
 
-### Technical Base
+### Exploration
 
-| Component | Version |
-|---|---|
-| Minecraft | 1.21.1 |
-| Mod Loader | Fabric |
-| Cobblemon | 1.7.3 |
-| Development Launcher | Modrinth App |
+- Minimap
+- World map
+- Waystones
+- Pokémon spawn information
+- Repel system
 
-Versions may change when compatibility, stability or ecosystem research justifies an update.
+### Economy
+
+- CobbleDollars
+- Pokémon-related merchants
+- PokéMart integration
+
+### Performance
+
+CobbleHorizons includes a curated performance stack focused on maintaining stable gameplay while exploring large worlds.
 
 ## Core Philosophy
 
@@ -58,18 +75,15 @@ The project prioritizes:
 - Trainer battles
 - Gyms and progression
 - Exploration and discovery
-- Multiplayer compatibility
 - Performance and stability
 
 Large technology, industrial, automation and unrelated magic systems are intentionally avoided unless they directly improve the Pokémon experience.
 
 ## Development Roadmap
 
-CobbleHorizons is being developed incrementally.
-
-- **V0.1 — Foundation**
-- **V0.2 — Pokémon World**
-- **V0.3 — Trainers**
+- ✅ **V0.1 — Foundation**
+- ✅ **V0.2 — Pokémon World**
+- ⏳ **V0.3 — Trainers**
 - **V0.4 — Progression**
 - **V0.5 — Pokémon Mechanics**
 - **V0.6 — Immersion**
@@ -80,9 +94,15 @@ CobbleHorizons is being developed incrementally.
 
 See [docs/roadmap.md](docs/roadmap.md) for more information.
 
+## Development Scope
+
+Current development and validation focus on the singleplayer experience.
+
+Multiplayer and dedicated server compatibility are not currently part of the acceptance criteria.
+
 ## Distribution
 
-CobbleHorizons is being developed with future distribution through Modrinth in mind.
+CobbleHorizons is being developed with future public distribution through Modrinth in mind.
 
 Third-party mod `.jar` files should not be committed directly to this repository unless their respective licenses explicitly allow redistribution.
 
