@@ -29,7 +29,7 @@ Não é um modpack genérico que apenas contém Pokémon. Cada mod, configuraç�
 | Cobblemon | 1.7.3 |
 | Próximo marco | v0.9.0 — Release Candidate |
 
-> O MRPack atual é uma exportação de trabalho. Um novo pacote será gerado após a validação dos configs da v0.8.
+> O repositório contém a fonte de configuração do modpack. Pacotes MRPack são artefatos de release e serão publicados somente após validação.
 
 ## Destaques
 
@@ -48,7 +48,7 @@ Drippy Loading Screen personaliza o boot. FancyMenu controla o menu principal e 
 
 ## Como testar a v0.8
 
-1. Importe a base MRPack no Modrinth.
+1. Importe sua última exportação de desenvolvimento no Modrinth.
 2. Copie os arquivos atuais do repositório para a raiz da instância.
 3. Substitua os configs existentes.
 4. Execute docs/testing.md.
