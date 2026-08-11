@@ -1,0 +1,19 @@
+{
+  "title": "A Stronger Form",
+  "description": "Train one of your partners until it evolves. Evolution is an important step toward gym-ready strength.",
+  "category": "CobbleHorizons Adventure",
+  "requires": ["cobblehorizons:05_balanced_team"],
+  "objectives": [
+    {
+      "type": "justquests:gain_advancement",
+      "advancement": "cobblemon:first_evolution"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "justquests:give_item",
+      "item": "cobblemon:rare_candy",
+      "count": 1
+    }
+  ]
+}
