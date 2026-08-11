@@ -37,6 +37,8 @@
 - [ ] Battle Tracks is enabled.
 - [ ] Cobbreeding Pasture Fix is enabled.
 - [ ] A second launch preserves the same selection.
+- [ ] Faithful 32x is available but not enabled by default.
+- [ ] Shaders are disabled by default; Complementary, MakeUp Ultra Fast, and BSL are selectable.
 
 ### Gameplay
 
@@ -44,13 +46,16 @@
 - [ ] An existing test world loads.
 - [ ] Starter selection, catching, battles, and Pokémon status screens work.
 - [ ] Trainers, gyms, breeding, audio, maps, and shaders work.
+- [ ] `M` opens Xaero's World Map and `V` opens the Cobblemon Summary.
+- [ ] Iris uses `F7` for selection, `F8` for reload, and `F9` for toggle.
+- [ ] `R` still sends the selected Pokémon without triggering a shader reload.
 
 ### Logs
 
 - [ ] No fatal exception occurs.
 - [ ] No FancyMenu illegal identifier is reported.
 - [ ] No missing FancyMenu background or button texture is reported.
-- [ ] Resource manager lists the three expected resource packs.
+- [ ] Resource manager lists the three default packs plus optional Faithful 32x.
 
 ## Known non-critical log noise
 

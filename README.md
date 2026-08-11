@@ -9,7 +9,7 @@
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge)
 ![Fabric](https://img.shields.io/badge/Fabric-0.19.x-D6B98C?style=for-the-badge)
 ![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-release_testing-F2B84B?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-release_candidate-42B8C6?style=for-the-badge)
 
 </div>
 
@@ -25,19 +25,20 @@ CobbleHorizons is not a generic collection of Pokémon mods. Every mod, configur
 
 | Item | Value |
 |---|---|
-| Release stage | Clean-install validation |
+| Release stage | Release Candidate 1.0.2 |
 | Minecraft | 1.21.1 |
 | Fabric Loader | 0.19.x |
 | Cobblemon | 1.7.3 |
 | Default language | English (US) |
-| Next milestone | Release Candidate |
+| Next milestone | Community release |
 
 ## Highlights
 
 - open-world exploration, structures, trainers, and gyms;
 - Mega Evolution, breeding, TMs/TRs, and Pokédex support;
 - maps, waystones, economy, and quality-of-life features;
-- environmental audio, battle tracks, and optional shaders;
+- environmental audio, battle tracks, three optional shader profiles, and Faithful 32x;
+- conflict-free Cobblemon, map, and Iris control defaults;
 - rendering, memory, and game-logic optimizations;
 - custom boot screen, title screen, icons, and UI styling.
 
@@ -56,6 +57,7 @@ Drippy Loading Screen customizes startup. FancyMenu controls the title screen an
 | [Mod list](docs/mod-list.md) | Included mods and versions |
 | [Roadmap](docs/roadmap.md) | Release milestones |
 | [Testing](docs/testing.md) | Clean-install validation |
+| [Performance and controls](docs/performance-and-controls.md) | Defaults, key map, and visual profiles |
 | [Troubleshooting](docs/troubleshooting.md) | Known problems and diagnostics |
 | [Contributing](CONTRIBUTING.md) | Contribution standards |
 | [Changelog](CHANGELOG.md) | Project history |

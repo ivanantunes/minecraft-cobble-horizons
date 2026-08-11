@@ -117,7 +117,10 @@ Official list of mods used by CobbleHorizons.
 | Mod / Pack | Version | Purpose |
 |---|---|---|
 | Iris Shaders | 1.8.14-beta.1 | Shader support |
-| Complementary Shaders - Reimagined | r5.8.1 | Recommended shader pack |
+| Complementary Shaders - Reimagined | r5.8.1 | Balanced recommended shader profile |
+| MakeUp - Ultra Fast | 9.0c | Performance shader profile |
+| BSL Shaders | 8.3 | Cinematic shader profile |
+| Faithful 32x | June 2026 / 1.21.1 | Optional vanilla-style 32x resource pack |
 | Entity Model Features (EMF) | 3.2.4 | Custom entity model support |
 | Entity Texture Features (ETF) | 7.1 | Custom entity texture support |
 

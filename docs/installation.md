@@ -17,7 +17,17 @@
 6. Start the game without shaders for the first validation.
 7. Complete [testing.md](testing.md).
 
-The root `options.txt` is required for export builds. It guarantees the default language and resource-pack selection even when the launcher creates the file before Default Options runs.
+The root `options.txt` is required for export builds. It guarantees the default language, resource-pack selection, and curated controls even when the launcher creates the file before Default Options runs.
+
+## Visual profiles
+
+Shaders are deliberately disabled on first launch. Press `F7` to choose one:
+
+- **MakeUp Ultra Fast 9.0c** — best starting point for integrated graphics and lower-end systems;
+- **Complementary Reimagined r5.8.1** — balanced recommended profile;
+- **BSL 8.3** — cinematic profile for stronger GPUs.
+
+Faithful 32x is installed as an optional resource pack. Enable it below CobbleHorizons Branding when desired; leaving it disabled preserves the tested visual baseline.
 
 ## Exporting an MRPack
 
