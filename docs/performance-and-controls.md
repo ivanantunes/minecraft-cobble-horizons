@@ -27,7 +27,7 @@ Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use stable, conserva
 
 EMI and Jade retain their context-sensitive recipe and usage shortcuts. These operate inside inventory or overlay contexts.
 
-The Adventure Guide key does not conflict with the curated defaults. Accept a stage before completing its objective so advancement events are recorded by the quest tracker.
+The Adventure Guide key does not conflict with the curated defaults. FTB Quests checks existing advancement progress, so completed milestones remain detectable after opening the guide.
 
 ## Shader profiles
 

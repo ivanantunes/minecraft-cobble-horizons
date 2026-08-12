@@ -2,13 +2,26 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0-rc3] — 2026-08-11
+
+### Stable quest migration and menu polish
+
+- Removed JustQuests 0.2.3 after its player mixin prevented Minecraft 1.21.1 from starting.
+- Migrated the complete 15-stage Adventure Guide to FTB Quests 2101.1.20.
+- Added the matching FTB Library 2101.1.29 and FTB Teams 2101.1.8 dependencies.
+- Replaced badge inventory checks with reliable RCT gym-leader milestones for one, three and eight victories.
+- Kept Global Packs 21.0.6 because it loads the RCT badge and CobbleHorizons milestone datapacks in every world.
+- Added layout-scoped FancyMenu button templates to the title and Options screens.
+- Kept global FancyMenu backgrounds and button styles disabled so gameplay and Cobblemon interfaces remain clean.
+- Rebuilt and validated the release candidate as `CobbleHorizons-1.1.0-rc3.mrpack`.
+
 ## [1.1.0-rc2] — 2026-08-11
 
 ### Interface isolation correction
 
 - Restricted the CobbleHorizons wallpaper to the title screen, Options screen and loading screen.
 - Removed global FancyMenu backgrounds and button overrides from gameplay and mod interaction screens.
-- Added the missing JustQuests 0.2.3 and Global Packs 21.0.6 entries to the MRPack manifest.
+- Added JustQuests 0.2.3 and Global Packs 21.0.6 to the RC2 manifest. JustQuests was removed again in RC3 after startup testing exposed an incompatible mixin.
 - Rebuilt the release candidate after the quest interface failed to load in RC1.
 
 ## [1.1.0-rc1] — 2026-08-11

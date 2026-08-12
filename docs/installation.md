@@ -11,7 +11,7 @@ Use 8 GB when running BSL, high shader presets or long sessions. Allocating subs
 
 ## Fresh installation
 
-1. Download [CobbleHorizons 1.1.0 RC1](../releases/CobbleHorizons-1.1.0-rc1.mrpack).
+1. Download [CobbleHorizons 1.1.0 RC3](../releases/CobbleHorizons-1.1.0-rc3.mrpack).
 2. Open the file with the Modrinth App.
 3. Confirm the new instance name and start the import.
 4. Open the instance settings and allocate 6 GB of memory.

@@ -2,7 +2,7 @@
 
 CobbleHorizons 1.1.0 introduces a curated in-game campaign that gives players direction without turning the open world into a fixed linear map.
 
-Press **J** after entering a world, open the **CobbleHorizons Adventure** category, and accept the first available objective. Accept each new stage before completing its requirement so the quest tracker can record the event.
+Press **J** after entering a world or use the FTB sidebar button in the inventory. Open **CobbleHorizons Adventure** and follow the unlocked path. Rewards are claimed directly from completed quest nodes.
 
 ## Campaign
 
@@ -36,14 +36,14 @@ Press **J** after entering a world, open the **CobbleHorizons Adventure** catego
 
 Quest progression is saved per world. A fresh world is recommended when validating a new release candidate.
 
-If a badge objective was accepted after the badge entered your inventory, drop the badge and pick it up again to refresh the collection event. Advancement-based objectives should be accepted before earning the corresponding advancement.
+RC3 uses FTB Quests advancement tasks. Existing advancements can be detected automatically. Gym stages track actual victories against the included RCT gym leaders rather than counting badge items in the inventory.
 
 ## RC testing checklist
 
 1. Import the MRPack as a new Modrinth instance.
 2. Create a new world and confirm that the Adventure Guide opens with `J`.
-3. Confirm that only the **CobbleHorizons Adventure** campaign appears as the primary quest path.
-4. Accept **Field Essentials**, obtain a Poké Ball, and verify completion and reward delivery.
+3. Confirm that **CobbleHorizons Adventure** contains 15 connected quest nodes.
+4. Complete **Field Essentials**, obtain a Poké Ball, and verify completion and reward delivery.
 5. Continue through **Your First Catch** and **Begin Field Research**.
 6. Confirm that the RCT Badges datapack appears under the world's datapack list.
 7. Report the pack version, operating system, reproduction steps and a `latest.log` link for any failure.

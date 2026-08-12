@@ -1,0 +1,54 @@
+{
+  "criteria": {
+    "defeat_gym_leaders": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 8,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "gym_leader_byron_0399",
+          "gym_leader_byron_0590",
+          "gym_leader_candice_03da",
+          "gym_leader_candice_058f",
+          "gym_leader_fantina_03d9",
+          "gym_leader_fantina_058e",
+          "gym_leader_gardenia_03d6",
+          "gym_leader_gardenia_058b",
+          "gym_leader_maylene_03d8",
+          "gym_leader_maylene_058d",
+          "gym_leader_roark_0395",
+          "gym_leader_roark_058a",
+          "gym_leader_volkner_03db",
+          "gym_leader_volkner_0591",
+          "gym_leader_wake_03d7",
+          "gym_leader_wake_058c",
+          "leader_alice_05ac",
+          "leader_benjamin_05b2",
+          "leader_big_mo_05b0",
+          "leader_blaine_01a3",
+          "leader_brock_019e",
+          "leader_clair_004a",
+          "leader_erika_01a1",
+          "leader_galavan_05af",
+          "leader_giovanni_015e",
+          "leader_koga_01a2",
+          "leader_lt_surge_01a0",
+          "leader_mel_05ad",
+          "leader_mirskle_05aa",
+          "leader_misty_019f",
+          "leader_sabrina_01a4",
+          "leader_tessy_05b1",
+          "leader_vega_05ab"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_gym_leaders"
+    ]
+  ]
+}

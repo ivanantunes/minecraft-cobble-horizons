@@ -42,6 +42,72 @@ scroll_list_customization {
 layout_action_executable_blocks {
 }
 
+element {
+ button_element_executable_block_identifier = cobblehorizons-title-button-template-action
+ [executable_block:cobblehorizons-title-button-template-action][type:generic] = [executables:]
+ backgroundnormal = [source:local]/config/fancymenu/assets/button_normal.png
+ backgroundhovered = [source:local]/config/fancymenu/assets/button_hover.png
+ background_texture_inactive = [source:local]/config/fancymenu/assets/button_inactive.png
+ restartbackgroundanimations = true
+ loopbackgroundanimations = true
+ nine_slice_custom_background = false
+ nine_slice_border_x = 5
+ nine_slice_border_y = 5
+ label = CobbleHorizons
+ navigatable = true
+ widget_active_state_requirement_container_identifier = cobblehorizons-title-button-template-active
+ [loading_requirement_container_meta:cobblehorizons-title-button-template-active] = [groups:][instances:]
+ is_template = true
+ template_apply_width = false
+ template_apply_height = false
+ template_apply_posx = false
+ template_apply_posy = false
+ template_apply_opacity = false
+ template_apply_visibility = false
+ template_apply_label = false
+ template_share_with = buttons
+ nine_slice_slider_handle = false
+ nine_slice_slider_handle_border_x = 5
+ nine_slice_slider_handle_border_y = 5
+ element_type = custom_button
+ instance_identifier = cobblehorizons-title-button-template
+ appearance_delay = no_delay
+ appearance_delay_seconds = 1.0
+ fade_in_v2 = no_fading
+ fade_in_speed = 1.0
+ fade_out = no_fading
+ fade_out_speed = 1.0
+ base_opacity = 1.0
+ auto_sizing = false
+ auto_sizing_base_screen_width = 1920
+ auto_sizing_base_screen_height = 1080
+ sticky_anchor = false
+ anchor_point = mid-centered
+ x = -100
+ y = 0
+ width = 200
+ height = 20
+ stretch_x = false
+ stretch_y = false
+ stay_on_screen = true
+ element_loading_requirement_container_identifier = cobblehorizons-title-button-template-load
+ [loading_requirement_container_meta:cobblehorizons-title-button-template-load] = [groups:][instances:]
+ enable_parallax = false
+ parallax_intensity_v2 = 0.5
+ invert_parallax = false
+ animated_offset_x = 0
+ animated_offset_y = 0
+ load_once_per_session = false
+ in_editor_color = #23D5D5FF
+ layer_hidden_in_editor = false
+ rotation_degrees = 0.0
+ advanced_rotation_mode = false
+ vertical_tilt_degrees = 0.0
+ advanced_vertical_tilt_mode = false
+ horizontal_tilt_degrees = 0.0
+ advanced_horizontal_tilt_mode = false
+}
+
 vanilla_button {
  button_element_executable_block_identifier = bb3af5ec-12e3-409d-9515-ad5a736351ca-1786414400533
  [executable_block:bb3af5ec-12e3-409d-9515-ad5a736351ca-1786414400533][type:generic] = [executables:]
@@ -509,4 +575,3 @@ deep_element {
  [loading_requirement_container_meta:f89aae5a-8af9-40f3-9c56-51c20dcba8fa-1786414400533] = [groups:][instances:]
  is_hidden = true
 }
-

@@ -9,9 +9,9 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge&logo=minecraft)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-0.19.3-D6B98C?style=for-the-badge)](https://fabricmc.net/)
 [![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge)](https://modrinth.com/mod/cobblemon)
-[![Release](https://img.shields.io/badge/release-1.1.0--RC1-F4A261?style=for-the-badge)](releases/CobbleHorizons-1.1.0-rc1.mrpack)
+[![Release](https://img.shields.io/badge/release-1.1.0--RC3-F4A261?style=for-the-badge)](releases/CobbleHorizons-1.1.0-rc3.mrpack)
 
-[**Download 1.1.0 RC1**](releases/CobbleHorizons-1.1.0-rc1.mrpack) · [Adventure guide](docs/adventure-guide.md) · [Installation](docs/installation.md) · [Mod list](docs/mod-list.md) · [Troubleshooting](docs/troubleshooting.md)
+[**Download 1.1.0 RC3**](releases/CobbleHorizons-1.1.0-rc3.mrpack) · [Adventure guide](docs/adventure-guide.md) · [Installation](docs/installation.md) · [Mod list](docs/mod-list.md) · [Troubleshooting](docs/troubleshooting.md)
 
 </div>
 
@@ -23,7 +23,7 @@ CobbleHorizons is a polished Pokémon-first adventure modpack for Minecraft 1.21
 
 Every included mod and default has been curated around three principles: a cohesive Pokémon experience, stable plug-and-play installation, and strong performance across Windows and macOS.
 
-## Version 1.1.0 RC1
+## Version 1.1.0 RC3
 
 | Component | Version |
 |---|---|
@@ -32,7 +32,7 @@ Every included mod and default has been curated around three principles: a cohes
 | Cobblemon | 1.7.3 |
 | Java | 21 |
 | Default language | English (US) |
-| Included content | 67 mods, 2 datapacks, 2 resource packs, 3 shaders |
+| Included content | 69 mods, 2 datapacks, 2 resource packs, 3 shaders |
 
 ## Highlights
 
@@ -49,7 +49,7 @@ Every included mod and default has been curated around three principles: a cohes
 
 ## Install in three steps
 
-1. Download [CobbleHorizons 1.1.0 RC1](releases/CobbleHorizons-1.1.0-rc1.mrpack).
+1. Download [CobbleHorizons 1.1.0 RC3](releases/CobbleHorizons-1.1.0-rc3.mrpack).
 2. Open the file with the Modrinth App and create a new instance.
 3. Allocate 6 GB of memory and press **Play**.
 

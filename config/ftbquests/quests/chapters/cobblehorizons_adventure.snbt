@@ -1,0 +1,329 @@
+{
+ default_hide_dependency_lines: false
+ default_quest_shape: "circle"
+ filename: "cobblehorizons_adventure"
+ group: ""
+ hide_quest_until_deps_visible: false
+ icon: "cobblemon:poke_ball"
+ id: "C0BB1E0000000001"
+ order_index: 0
+ quest_links: [ ]
+ quests: [
+  {
+   id: "C0BB1E0000000101"
+   rewards: [{
+    count: 4
+    id: "C0BB1E0000001101"
+    item: {count: 1, id: "cobblemon:poke_ball"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblemon:craft_poke_ball"
+    criterion: ""
+    id: "C0BB1E0000002101"
+    type: "advancement"
+   }]
+   x: 0.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000101"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000102"
+   rewards: [{
+    count: 4
+    id: "C0BB1E0000001102"
+    item: {count: 1, id: "cobblemon:potion"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblemon:first_catch"
+    criterion: ""
+    id: "C0BB1E0000002102"
+    type: "advancement"
+   }]
+   x: 2.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000102"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000103"
+   rewards: [{
+    id: "C0BB1E0000001103"
+    type: "xp"
+    xp: 50
+   }]
+   tasks: [{
+    advancement: "cobblemon:craft_pokedex"
+    criterion: ""
+    id: "C0BB1E0000002103"
+    type: "advancement"
+   }]
+   x: 5.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000103"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000104"
+   rewards: [{
+    count: 4
+    id: "C0BB1E0000001104"
+    item: {count: 1, id: "cobblemon:exp_candy_s"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "rctmod:trainers/defeat_any"
+    criterion: ""
+    id: "C0BB1E0000002104"
+    type: "advancement"
+   }]
+   x: 7.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000104"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000105"
+   rewards: [{
+    count: 5
+    id: "C0BB1E0000001105"
+    item: {count: 1, id: "cobblemon:great_ball"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblemon:full_party"
+    criterion: ""
+    id: "C0BB1E0000002105"
+    type: "advancement"
+   }]
+   x: 10.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000105"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000106"
+   rewards: [{
+    id: "C0BB1E0000001106"
+    item: {count: 1, id: "cobblemon:rare_candy"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblemon:first_evolution"
+    criterion: ""
+    id: "C0BB1E0000002106"
+    type: "advancement"
+   }]
+   x: 12.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000106"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000107"
+   rewards: [{
+    count: 2
+    id: "C0BB1E0000001107"
+    item: {count: 1, id: "cobblemon:full_heal"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblemon:healing_machine"
+    criterion: ""
+    id: "C0BB1E0000002107"
+    type: "advancement"
+   }]
+   x: 15.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000107"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000108"
+   rewards: [{
+    count: 2
+    id: "C0BB1E0000001108"
+    item: {count: 1, id: "cobblemon:exp_candy_m"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblehorizons:quests/first_gym_badge"
+    criterion: ""
+    id: "C0BB1E0000002108"
+    type: "advancement"
+   }]
+   x: 17.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000108"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000109"
+   rewards: [{
+    count: 5
+    id: "C0BB1E0000001109"
+    item: {count: 1, id: "cobblemon:ultra_ball"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblehorizons:quests/three_gym_badges"
+    criterion: ""
+    id: "C0BB1E0000002109"
+    type: "advancement"
+   }]
+   x: 20.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000109"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000110"
+   rewards: [{
+    count: 2
+    id: "C0BB1E0000001110"
+    item: {count: 1, id: "cobblemon:exp_candy_l"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "cobblehorizons:quests/eight_gym_badges"
+    criterion: ""
+    id: "C0BB1E0000002110"
+    type: "advancement"
+   }]
+   x: 22.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000110"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000111"
+   rewards: [{
+    id: "C0BB1E0000001111"
+    item: {count: 1, id: "cobblemon:max_revive"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "mega_showdown:mega_showdown/mega/mega_evolve"
+    criterion: ""
+    id: "C0BB1E0000002111"
+    type: "advancement"
+   }]
+   x: 25.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000111"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000112"
+   rewards: [{
+    id: "C0BB1E0000001112"
+    type: "xp"
+    xp: 250
+   }]
+   tasks: [{
+    advancement: "legendarymonuments:root"
+    criterion: ""
+    id: "C0BB1E0000002112"
+    type: "advancement"
+   }]
+   x: 27.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000112"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000113"
+   rewards: [{
+    id: "C0BB1E0000001113"
+    item: {count: 1, id: "cobblemon:master_ball"}
+    type: "item"
+   }]
+   tasks: [
+    {
+     advancement: "legendarymonuments:small_victory"
+     criterion: ""
+     id: "C0BB1E0000002113"
+     optional_task: true
+     type: "advancement"
+    }
+    {
+     advancement: "legendarymonuments:fantastic_beasts_and_you_found_them"
+     criterion: ""
+     id: "C0BB1E0000002114"
+     optional_task: true
+     type: "advancement"
+    }
+    {
+     advancement: "legendarymonuments:gotta_save_em_all"
+     criterion: ""
+     id: "C0BB1E0000002115"
+     optional_task: true
+     type: "advancement"
+    }
+    {
+     advancement: "legendarymonuments:xerneas"
+     criterion: ""
+     id: "C0BB1E0000002116"
+     optional_task: true
+     type: "advancement"
+    }
+    {
+     advancement: "legendarymonuments:yveltal"
+     criterion: ""
+     id: "C0BB1E0000002117"
+     optional_task: true
+     type: "advancement"
+    }
+   ]
+   x: 30.0d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000113"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000114"
+   rewards: [{
+    count: 3
+    id: "C0BB1E0000001114"
+    item: {count: 1, id: "cobblemon:rare_candy"}
+    type: "item"
+   }]
+   tasks: [{
+    advancement: "rctmod:trainers/defeat_all_elite_four"
+    criterion: ""
+    id: "C0BB1E0000002118"
+    type: "advancement"
+   }]
+   x: 32.5d
+   y: 0.0d
+  }
+  {
+   dependencies: ["C0BB1E0000000114"]
+   hide_until_deps_complete: true
+   id: "C0BB1E0000000115"
+   rewards: [
+    {
+     count: 3
+     id: "C0BB1E0000001115"
+     item: {count: 1, id: "cobblemon:exp_candy_xl"}
+     type: "item"
+    }
+    {
+     command: "tellraw @s {\"text\":\"You are a CobbleHorizons Champion. Keep exploring, researching, and building your story.\",\"color\":\"aqua\"}"
+     id: "C0BB1E0000001116"
+     type: "command"
+    }
+   ]
+   tasks: [{
+    advancement: "rctmod:trainers/defeat_all_champion"
+    criterion: ""
+    id: "C0BB1E0000002119"
+    type: "advancement"
+   }]
+   x: 35.0d
+   y: 0.0d
+  }
+ ]
+}

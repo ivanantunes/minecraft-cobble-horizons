@@ -16,7 +16,7 @@ Do not edit FancyMenu layouts while Minecraft is running.
 
 ## Background appears behind gameplay interfaces
 
-RC1 incorrectly applied the FancyMenu wallpaper globally. RC2 restricts it to the title screen, the main Options screen and loading. Import RC2 into a clean instance; copying only options.txt does not replace FancyMenu layouts.
+RC1 incorrectly applied the FancyMenu wallpaper globally. RC3 restricts it and the custom button theme to the title screen and main Options screen. The loading wallpaper remains controlled by Drippy Loading Screen. Import RC3 into a clean instance; copying only `options.txt` does not replace FancyMenu layouts.
 
 ## Resource packs are not enabled
 
@@ -26,13 +26,13 @@ Faithful 32x is intentionally disabled by default.
 
 ## The Adventure Guide does not open
 
-Press `J` in a world, not from the title screen. Confirm `JustQuests-fabric-1.21.1-0.2.3.jar` is installed and that no personal key binding has replaced `J`.
+Press `J` in a world, not from the title screen. Confirm FTB Quests, FTB Library and FTB Teams are installed and that no personal key binding has replaced `J`. The guide is also available from the FTB sidebar in the inventory.
 
 ## The campaign is missing or a quest did not update
 
-Confirm `datapacks/CobbleHorizons-Adventure-Guide.zip` exists and that Global Packs is installed. The guide is designed for a fresh world and each stage must be accepted before its advancement is earned.
+Confirm `config/ftbquests/quests/chapters/cobblehorizons_adventure.snbt` exists and that Global Packs is installed. Run `/datapack list` to confirm the CobbleHorizons milestone and RCT badge packs are enabled.
 
-For badge collection objectives, drop the relevant badges and pick them up again after accepting the quest. Run `/datapack list` to confirm the CobbleHorizons guide and RCT Badges packs are enabled.
+RC3 tracks actual RCT gym-leader victories rather than badge items. Existing completed advancements are detected automatically, but a fresh world remains the recommended RC validation environment.
 
 ## Vanilla mobs still exist
 

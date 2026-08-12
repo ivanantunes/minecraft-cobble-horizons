@@ -1,2 +1,2 @@
 27229ba11e8a2f3f651cbffcfdbea50af3036901b796a67fcce0c9cb4e49218f  CobbleHorizons-1.0.0.mrpack
-72fb88e5017c4eafdfa25c75b4705cb9a7ed9d3ccd7abe334447a4e91fa40b42  CobbleHorizons-1.1.0-rc1.mrpack
+d50b929424a2fcb6344ac637fc0e4320fef1c536e5a6dd2dfef2a41f6ce60135  CobbleHorizons-1.1.0-rc3.mrpack
