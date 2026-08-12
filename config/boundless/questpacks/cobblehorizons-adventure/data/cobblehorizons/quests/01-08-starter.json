@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_08",
-  "name": "08. Captura em cavernas",
+  "name": "08. Cave Capture Kit",
   "icon": "cobblemon:dusk_ball",
-  "description": "Etapa da jornada Pokémon: Captura em cavernas. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Carry two Dusk Balls before searching caves and other dark habitats.",
   "dependencies": "starter_07",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_01",
-  "name": "01. Doces de experiência S",
+  "name": "01. Small Candy Stockpile",
   "icon": "cobblemon:exp_candy_s",
-  "description": "Etapa da jornada Pokémon: Doces de experiência S. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Collect twelve Small Exp. Candies to support newly caught Pokemon.",
   "dependencies": "capture_12",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

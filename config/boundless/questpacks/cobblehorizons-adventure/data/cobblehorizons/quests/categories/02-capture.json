@@ -1,7 +1,7 @@
 {
   "id": "capture",
   "icon": "cobblemon:great_ball",
-  "name": "Captura e Pesquisa",
+  "name": "Capture and Research",
   "order": 2,
   "dependency": ""
 }

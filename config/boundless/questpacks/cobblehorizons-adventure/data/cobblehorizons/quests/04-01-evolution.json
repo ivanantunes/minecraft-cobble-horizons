@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_01",
-  "name": "01. Pedra de fogo",
+  "name": "01. Fire Stone Evolution",
   "icon": "cobblemon:fire_stone",
-  "description": "Etapa da jornada Pokémon: Pedra de fogo. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Fire Stone for a compatible Fire-linked evolution.",
   "dependencies": "training_12",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

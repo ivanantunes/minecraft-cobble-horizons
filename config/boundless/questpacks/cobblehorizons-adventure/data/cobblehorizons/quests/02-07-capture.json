@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_07",
-  "name": "07. Captura noturna",
+  "name": "07. Moonlit Capture",
   "icon": "cobblemon:moon_ball",
-  "description": "Etapa da jornada Pokémon: Captura noturna. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Prepare two Moon Balls for Pokemon connected to Moon Stone evolution.",
   "dependencies": "capture_06",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

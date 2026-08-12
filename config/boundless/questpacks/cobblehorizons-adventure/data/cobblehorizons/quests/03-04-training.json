@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_04",
-  "name": "04. Doce raro",
+  "name": "04. Rare Candy Reserve",
   "icon": "cobblemon:rare_candy",
-  "description": "Etapa da jornada Pokémon: Doce raro. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Secure two Rare Candies for important level thresholds and evolutions.",
   "dependencies": "training_03",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

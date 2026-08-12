@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_04",
-  "name": "04. Remédio de status",
+  "name": "04. Status Treatment",
   "icon": "cobblemon:antidote",
-  "description": "Etapa da jornada Pokémon: Remédio de status. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Keep two Antidotes ready so poison cannot end an early expedition.",
   "dependencies": "starter_03",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

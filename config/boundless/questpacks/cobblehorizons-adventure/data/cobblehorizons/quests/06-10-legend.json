@@ -2,13 +2,13 @@
   "category": "legend",
   "sub-category": "legend",
   "id": "legend_10",
-  "name": "10. Campeão CobbleHorizons",
+  "name": "10. Champion of the Horizon",
   "icon": "cobblemon:master_ball",
-  "description": "Etapa da jornada Pokémon: Campeão CobbleHorizons. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Hold two Master Balls as proof that your team is ready for the pack's legendary endgame.",
   "dependencies": "legend_09",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_06",
-  "name": "06. Parceiro bem cuidado",
+  "name": "06. Partner Care",
   "icon": "cobblemon:super_potion",
-  "description": "Etapa da jornada Pokémon: Parceiro bem cuidado. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Stock two Super Potions for longer routes and tougher trainer battles.",
   "dependencies": "starter_05",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

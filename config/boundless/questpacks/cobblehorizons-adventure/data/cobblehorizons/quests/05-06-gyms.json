@@ -2,13 +2,13 @@
   "category": "gyms",
   "sub-category": "gyms",
   "id": "gyms_06",
-  "name": "06. Primeira insígnia",
+  "name": "06. First Gym Badge",
   "icon": "cobblemon:assault_vest",
-  "description": "Etapa da jornada Pokémon: Primeira insígnia. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Defeat your first tracked gym leader and prove your team can win an official challenge.",
   "dependencies": "gyms_05",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

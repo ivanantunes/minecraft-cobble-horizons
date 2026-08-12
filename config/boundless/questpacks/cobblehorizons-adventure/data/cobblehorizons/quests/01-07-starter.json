@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_07",
-  "name": "07. Bola para capturas rápidas",
+  "name": "07. Quick Encounter",
   "icon": "cobblemon:quick_ball",
-  "description": "Etapa da jornada Pokémon: Bola para capturas rápidas. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Prepare two Quick Balls for wild Pokemon that are best caught on the first turn.",
   "dependencies": "starter_06",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

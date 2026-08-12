@@ -2,13 +2,13 @@
   "category": "legend",
   "sub-category": "legend",
   "id": "legend_02",
-  "name": "02. Evolução incomum",
+  "name": "02. Dragon Scale Relic",
   "icon": "cobblemon:dragon_scale",
-  "description": "Etapa da jornada Pokémon: Evolução incomum. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Find a Dragon Scale while researching rare item-based evolutions.",
   "dependencies": "legend_01",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

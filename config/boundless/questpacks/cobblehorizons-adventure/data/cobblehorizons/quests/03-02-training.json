@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_02",
-  "name": "02. Doces de experiência M",
+  "name": "02. Medium Candy Stockpile",
   "icon": "cobblemon:exp_candy_m",
-  "description": "Etapa da jornada Pokémon: Doces de experiência M. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Collect eight Medium Exp. Candies for the core members of your team.",
   "dependencies": "training_01",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

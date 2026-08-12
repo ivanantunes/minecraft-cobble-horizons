@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_09",
-  "name": "09. Pedra brilhante",
+  "name": "09. Shiny Stone Evolution",
   "icon": "cobblemon:shiny_stone",
-  "description": "Etapa da jornada Pokémon: Pedra brilhante. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Shiny Stone for a Pokemon that evolves through radiant energy.",
   "dependencies": "evolution_08",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

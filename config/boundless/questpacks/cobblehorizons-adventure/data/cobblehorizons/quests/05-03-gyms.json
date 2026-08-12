@@ -2,13 +2,13 @@
   "category": "gyms",
   "sub-category": "gyms",
   "id": "gyms_03",
-  "name": "03. Velocidade tática",
+  "name": "03. Speed Control",
   "icon": "cobblemon:choice_scarf",
-  "description": "Etapa da jornada Pokémon: Velocidade tática. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Choice Scarf for a Pokemon that must move before dangerous opponents.",
   "dependencies": "gyms_02",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

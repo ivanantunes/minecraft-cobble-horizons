@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_12",
-  "name": "12. Bola de luxo",
+  "name": "12. Luxury Partner",
   "icon": "cobblemon:luxury_ball",
-  "description": "Etapa da jornada Pokémon: Bola de luxo. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Prepare two Luxury Balls for future partners whose friendship matters.",
   "dependencies": "capture_11",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

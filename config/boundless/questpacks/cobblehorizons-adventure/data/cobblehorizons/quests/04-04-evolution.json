@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_04",
-  "name": "04. Pedra da folha",
+  "name": "04. Leaf Stone Evolution",
   "icon": "cobblemon:leaf_stone",
-  "description": "Etapa da jornada Pokémon: Pedra da folha. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Leaf Stone for a compatible Grass-linked evolution.",
   "dependencies": "evolution_03",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

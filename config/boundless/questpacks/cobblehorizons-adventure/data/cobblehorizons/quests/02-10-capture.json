@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_10",
-  "name": "10. Captura de pesca",
+  "name": "10. Fishing Specialist",
   "icon": "cobblemon:lure_ball",
-  "description": "Etapa da jornada Pokémon: Captura de pesca. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain two Lure Balls before searching for Pokemon with a Poke Rod.",
   "dependencies": "capture_09",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

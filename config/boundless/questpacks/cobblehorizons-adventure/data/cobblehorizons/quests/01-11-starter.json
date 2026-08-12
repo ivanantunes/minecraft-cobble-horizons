@@ -2,27 +2,27 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_11",
-  "name": "11. Alquimia simples",
-  "icon": "minecraft:glass_bottle",
-  "description": "Objetivo difícil: tenha 3x minecraft:glass_bottle. Complete a etapa para avançar na Jornada CobbleHorizons.",
+  "name": "11. Begin the Pokedex",
+  "icon": "cobblemon:pokedex_red",
+  "description": "Obtain a red Pokedex and start documenting the species you meet across the horizon.",
   "dependencies": "starter_10",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [
       {
-        "collect": "minecraft:glass_bottle",
-        "count": 3
+        "collect": "cobblemon:pokedex_red",
+        "count": 1
       }
     ]
   },
   "reward": {
     "items": [
       {
-        "item": "minecraft:experience_bottle",
-        "count": 4
+        "item": "cobblemon:poke_ball",
+        "count": 5
       }
     ],
     "exp": "points",

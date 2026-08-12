@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_01",
-  "name": "01. Great Balls",
+  "name": "01. Great Ball Supply",
   "icon": "cobblemon:great_ball",
-  "description": "Etapa da jornada Pokémon: Great Balls. Prepare seu time e complete este objetivo para avançar.",
-  "dependencies": "starter_10",
+  "description": "Prepare six Great Balls for species that regularly escape standard Poke Balls.",
+  "dependencies": "starter_12",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

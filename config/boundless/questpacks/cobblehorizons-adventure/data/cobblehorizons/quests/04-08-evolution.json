@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_08",
-  "name": "08. Pedra do crepúsculo",
+  "name": "08. Dusk Stone Evolution",
   "icon": "cobblemon:dusk_stone",
-  "description": "Etapa da jornada Pokémon: Pedra do crepúsculo. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Dusk Stone for one of its dark evolution paths.",
   "dependencies": "evolution_07",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

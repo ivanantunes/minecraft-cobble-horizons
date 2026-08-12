@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_01",
-  "name": "01. Apricorns para Poké Bolas",
+  "name": "01. Apricorn Fieldwork",
   "icon": "cobblemon:red_apricorn",
-  "description": "Etapa da jornada Pokémon: Apricorns para Poké Bolas. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Gather eight Red Apricorns, the basic material for a trainer's first supply of Poke Balls.",
   "dependencies": "",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

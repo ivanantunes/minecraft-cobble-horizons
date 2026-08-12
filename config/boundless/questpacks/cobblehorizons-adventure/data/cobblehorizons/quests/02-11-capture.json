@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_11",
-  "name": "11. Caçador de raros",
+  "name": "11. Rare Species Hunt",
   "icon": "cobblemon:ultra_ball",
-  "description": "Etapa da jornada Pokémon: Caçador de raros. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Stock four Ultra Balls for rare, powerful, and low-catch-rate Pokemon.",
   "dependencies": "capture_10",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

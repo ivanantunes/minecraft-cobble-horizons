@@ -1,7 +1,7 @@
 {
   "id": "gyms",
   "icon": "cobblemon:assault_vest",
-  "name": "Ginásios e Competição",
+  "name": "Gyms and Competition",
   "order": 5,
   "dependency": ""
 }

@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_02",
-  "name": "02. Pedra de água",
+  "name": "02. Water Stone Evolution",
   "icon": "cobblemon:water_stone",
-  "description": "Etapa da jornada Pokémon: Pedra de água. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Water Stone for a compatible Water-linked evolution.",
   "dependencies": "evolution_01",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

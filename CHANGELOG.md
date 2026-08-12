@@ -2,6 +2,19 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0-rc5] — 2026-08-12
+
+### Stable inventory, English campaign and scoped button theme
+
+- Disabled Boundless' broken inventory widget integration on Fabric 1.21.1, preventing the `addRenderableWidget` reflection crash when opening the player inventory.
+- Kept the standalone Quest Book available through the `[` key and the supplied Quest Book item.
+- Rewrote all 66 quests and all six category names in English.
+- Replaced the last two vanilla starter objectives with a Pokédex and Healing Machine progression step; every quest objective is now Pokémon/Cobblemon-focused.
+- Made dependent quests visible while keeping them locked until their prerequisites are complete.
+- Corrected the title-screen render order so custom button textures render above the vanilla button background.
+- Hardened the screen-local Options button template without applying it to gameplay or Cobblemon interfaces.
+- Added a reproducible campaign normalization tool and rebuilt the release as `CobbleHorizons-1.1.0-rc5.mrpack`.
+
 ## [1.1.0-rc4] — 2026-08-11
 
 ### Modrinth-native quest campaign and title-screen cleanup

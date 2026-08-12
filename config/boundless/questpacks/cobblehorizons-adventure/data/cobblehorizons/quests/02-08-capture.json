@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_08",
-  "name": "08. Captura de peso",
+  "name": "08. Heavyweight Target",
   "icon": "cobblemon:heavy_ball",
-  "description": "Etapa da jornada Pokémon: Captura de peso. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Carry two Heavy Balls when hunting large and exceptionally heavy Pokemon.",
   "dependencies": "capture_07",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_05",
-  "name": "05. Primeira Poké Bola especial",
+  "name": "05. Premier Capture",
   "icon": "cobblemon:premier_ball",
-  "description": "Etapa da jornada Pokémon: Primeira Poké Bola especial. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain two Premier Balls and begin a collection of specialized capture tools.",
   "dependencies": "starter_04",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

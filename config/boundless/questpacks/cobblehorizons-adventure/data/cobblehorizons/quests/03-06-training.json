@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_06",
-  "name": "06. Retorno à batalha",
+  "name": "06. Return to Battle",
   "icon": "cobblemon:revive",
-  "description": "Etapa da jornada Pokémon: Retorno à batalha. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Prepare two Revives so a fainted partner can return during a long challenge.",
   "dependencies": "training_05",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

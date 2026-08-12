@@ -2,13 +2,13 @@
   "category": "legend",
   "sub-category": "legend",
   "id": "legend_07",
-  "name": "07. Escama preciosa",
+  "name": "07. Prism Scale Relic",
   "icon": "cobblemon:prism_scale",
-  "description": "Etapa da jornada Pokémon: Escama preciosa. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Find a Prism Scale for a rare and beautiful evolution.",
   "dependencies": "legend_06",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

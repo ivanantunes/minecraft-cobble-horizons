@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_02",
-  "name": "02. Poké Bolas iniciais",
+  "name": "02. First Poke Ball Kit",
   "icon": "cobblemon:poke_ball",
-  "description": "Etapa da jornada Pokémon: Poké Bolas iniciais. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Carry five Poke Balls so you are ready when the right wild Pokemon appears.",
   "dependencies": "starter_01",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

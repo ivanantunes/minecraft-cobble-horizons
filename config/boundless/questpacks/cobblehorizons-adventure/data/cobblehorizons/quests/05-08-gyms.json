@@ -2,13 +2,13 @@
   "category": "gyms",
   "sub-category": "gyms",
   "id": "gyms_08",
-  "name": "08. Veterano dos ginásios",
+  "name": "08. Gym Veteran",
   "icon": "cobblemon:assault_vest",
-  "description": "Etapa da jornada Pokémon: Veterano dos ginásios. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Defeat eight tracked gym leaders and complete the full badge campaign.",
   "dependencies": "gyms_07",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

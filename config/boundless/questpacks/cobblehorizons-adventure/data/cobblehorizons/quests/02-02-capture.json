@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_02",
-  "name": "02. Caça aquática",
+  "name": "02. Aquatic Specialist",
   "icon": "cobblemon:dive_ball",
-  "description": "Etapa da jornada Pokémon: Caça aquática. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Carry four Dive Balls while researching Pokemon found in rivers, lakes, and oceans.",
   "dependencies": "capture_01",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

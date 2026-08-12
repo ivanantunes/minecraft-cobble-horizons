@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_07",
-  "name": "07. Recuperação total",
+  "name": "07. Complete Recovery",
   "icon": "cobblemon:full_restore",
-  "description": "Etapa da jornada Pokémon: Recuperação total. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Full Restore for endgame battles that combine damage and status effects.",
   "dependencies": "training_06",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

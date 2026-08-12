@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_08",
-  "name": "08. Ovo da sorte",
+  "name": "08. Lucky Egg Training",
   "icon": "cobblemon:lucky_egg",
-  "description": "Etapa da jornada Pokémon: Ovo da sorte. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Find a Lucky Egg and use it to accelerate the growth of a chosen partner.",
   "dependencies": "training_07",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

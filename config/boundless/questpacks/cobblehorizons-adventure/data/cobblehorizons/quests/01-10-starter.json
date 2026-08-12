@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_10",
-  "name": "10. Laço de amizade",
+  "name": "10. Friendship Training",
   "icon": "cobblemon:soothe_bell",
-  "description": "Etapa da jornada Pokémon: Laço de amizade. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Find a Soothe Bell and prepare a Pokemon whose growth depends on friendship.",
   "dependencies": "starter_09",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

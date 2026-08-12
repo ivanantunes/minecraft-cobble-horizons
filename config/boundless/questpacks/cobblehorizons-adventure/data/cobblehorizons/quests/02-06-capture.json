@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_06",
-  "name": "06. Área selvagem",
+  "name": "06. Safari Expedition",
   "icon": "cobblemon:safari_ball",
-  "description": "Etapa da jornada Pokémon: Área selvagem. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Carry three Safari Balls before exploring broad wild habitats.",
   "dependencies": "capture_05",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

@@ -2,13 +2,13 @@
   "category": "gyms",
   "sub-category": "gyms",
   "id": "gyms_09",
-  "name": "09. Elite de captura",
+  "name": "09. Ultra Beast Preparation",
   "icon": "cobblemon:beast_ball",
-  "description": "Etapa da jornada Pokémon: Elite de captura. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Secure a Beast Ball for the rarest extradimensional capture opportunities.",
   "dependencies": "gyms_08",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

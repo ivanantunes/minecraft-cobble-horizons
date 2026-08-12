@@ -27,7 +27,7 @@ Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use stable, conserva
 
 EMI and Jade retain their context-sensitive recipe and usage shortcuts. These operate inside inventory or overlay contexts.
 
-The Quest Book key does not conflict with the curated defaults. Boundless loads the bundled CobbleHorizons campaign on first launch; the inventory button is also enabled by default.
+The Quest Book key does not conflict with the curated defaults. Boundless loads the bundled CobbleHorizons campaign on first launch. RC5 disables only the inventory-side widget because its Fabric 1.21.1 implementation crashes; the `[` key and Quest Book item remain available.
 
 ## Shader profiles
 

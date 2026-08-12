@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_04",
-  "name": "04. Captura recorrente",
+  "name": "04. Repeat Research",
   "icon": "cobblemon:repeat_ball",
-  "description": "Etapa da jornada Pokémon: Captura recorrente. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain four Repeat Balls for species already registered in your collection.",
   "dependencies": "capture_03",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

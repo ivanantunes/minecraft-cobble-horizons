@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_03",
-  "name": "03. Bolsa de cura",
+  "name": "03. Field Medicine",
   "icon": "cobblemon:potion",
-  "description": "Etapa da jornada Pokémon: Bolsa de cura. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Prepare three Potions before traveling far from your first healing station.",
   "dependencies": "starter_02",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

@@ -2,13 +2,13 @@
   "category": "starter",
   "sub-category": "starter",
   "id": "starter_09",
-  "name": "09. Reserva de treinamento",
+  "name": "09. Training Reserve",
   "icon": "cobblemon:exp_candy_s",
-  "description": "Etapa da jornada Pokémon: Reserva de treinamento. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Collect four Small Exp. Candies to help a new team member catch up.",
   "dependencies": "starter_08",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

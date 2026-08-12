@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_05",
-  "name": "05. Pedra lunar",
+  "name": "05. Moon Stone Evolution",
   "icon": "cobblemon:moon_stone",
-  "description": "Etapa da jornada Pokémon: Pedra lunar. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Moon Stone for a Pokemon influenced by moonlight.",
   "dependencies": "evolution_04",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

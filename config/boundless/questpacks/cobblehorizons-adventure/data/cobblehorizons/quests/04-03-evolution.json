@@ -2,13 +2,13 @@
   "category": "evolution",
   "sub-category": "evolution",
   "id": "evolution_03",
-  "name": "03. Pedra do trovão",
+  "name": "03. Thunder Stone Evolution",
   "icon": "cobblemon:thunder_stone",
-  "description": "Etapa da jornada Pokémon: Pedra do trovão. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Thunder Stone for a compatible Electric-linked evolution.",
   "dependencies": "evolution_02",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

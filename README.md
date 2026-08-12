@@ -9,9 +9,9 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge&logo=minecraft)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-0.19.3-D6B98C?style=for-the-badge)](https://fabricmc.net/)
 [![Cobblemon](https://img.shields.io/badge/Cobblemon-1.7.3-42B8C6?style=for-the-badge)](https://modrinth.com/mod/cobblemon)
-[![Release](https://img.shields.io/badge/release-1.1.0--RC4-F4A261?style=for-the-badge)](releases/CobbleHorizons-1.1.0-rc4.mrpack)
+[![Release](https://img.shields.io/badge/release-1.1.0--RC5-F4A261?style=for-the-badge)](releases/CobbleHorizons-1.1.0-rc5.mrpack)
 
-[**Download 1.1.0 RC4**](releases/CobbleHorizons-1.1.0-rc4.mrpack) · [Adventure guide](docs/adventure-guide.md) · [Installation](docs/installation.md) · [Mod list](docs/mod-list.md) · [Troubleshooting](docs/troubleshooting.md)
+[**Download 1.1.0 RC5**](releases/CobbleHorizons-1.1.0-rc5.mrpack) · [Adventure guide](docs/adventure-guide.md) · [Installation](docs/installation.md) · [Mod list](docs/mod-list.md) · [Troubleshooting](docs/troubleshooting.md)
 
 </div>
 
@@ -23,7 +23,7 @@ CobbleHorizons is a polished Pokémon-first adventure modpack for Minecraft 1.21
 
 Every included mod and default has been curated around three principles: a cohesive Pokémon experience, stable plug-and-play installation, and strong performance across Windows and macOS.
 
-## Version 1.1.0 RC4
+## Version 1.1.0 RC5
 
 | Component | Version |
 |---|---|
@@ -39,7 +39,7 @@ Every included mod and default has been curated around three principles: a cohes
 | Experience | What is included |
 |---|---|
 | Pokémon adventure | Catching, training, battles, Pokédex, breeding, TMs/TRs, Mega Evolution, legends and badges |
-| Guided progression | 66 connected in-game quests: easy, medium, difficult and hardcore Pokémon goals from first captures to endgame |
+| Guided progression | 66 visible, connected and English in-game quests: easy, medium, difficult and hardcore Pokémon goals from first captures to endgame |
 | Living world | Terralith terrain, themed structures, nests, dens, trainers, gyms and monuments |
 | Pokémon-first design | Naturally generated vanilla mobs are suppressed while villagers, golems and progression bosses remain |
 | Exploration | Xaero's Minimap, World Map, Waystones and Pokémon navigation |
@@ -49,7 +49,7 @@ Every included mod and default has been curated around three principles: a cohes
 
 ## Install in three steps
 
-1. Download [CobbleHorizons 1.1.0 RC4](releases/CobbleHorizons-1.1.0-rc4.mrpack).
+1. Download [CobbleHorizons 1.1.0 RC5](releases/CobbleHorizons-1.1.0-rc5.mrpack).
 2. Open the file with the Modrinth App and create a new instance.
 3. Allocate 6 GB of memory and press **Play**.
 

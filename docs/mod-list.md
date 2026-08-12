@@ -1,4 +1,4 @@
-# Included Content — CobbleHorizons 1.1.0 RC4
+# Included Content — CobbleHorizons 1.1.0 RC5
 
 The release manifest contains **67 mods, 2 datapacks, 2 resource packs and 3 shader packs** for Minecraft 1.21.1 and Fabric Loader 0.19.3.
 
@@ -110,7 +110,7 @@ The release manifest contains **67 mods, 2 datapacks, 2 resource packs and 3 sha
 | Type | Project | Version | Default |
 |---|---|---|---|
 | Datapack | RCT Badges — Cobblemon Pokémon Badges | 1.1.2 | Included |
-| Quest pack | CobbleHorizons Adventure (Boundless) | 1.1.0 RC4 / 66 quests | Enabled |
+| Quest pack | CobbleHorizons Adventure (Boundless) | 1.1.0 RC5 / 66 English Pokémon quests | Enabled |
 | Resource pack | Cobblemon Battle Tracks | 1.2 | Enabled |
 | Resource pack | Faithful 32x | June 2026 / 1.21.1 | Optional |
 | Internal branding | CobbleHorizons Branding | 1.0.0 | Enabled |

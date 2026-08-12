@@ -2,13 +2,13 @@
   "category": "training",
   "sub-category": "training",
   "id": "training_10",
-  "name": "10. Domínio de PP",
+  "name": "10. Maximum Move Endurance",
   "icon": "cobblemon:pp_max",
-  "description": "Etapa da jornada Pokémon: Domínio de PP. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a PP Max for a signature move in your competitive team.",
   "dependencies": "training_09",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

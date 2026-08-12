@@ -2,13 +2,13 @@
   "category": "gyms",
   "sub-category": "gyms",
   "id": "gyms_07",
-  "name": "07. Desafiante em ascensão",
+  "name": "07. Rising Challenger",
   "icon": "cobblemon:assault_vest",
-  "description": "Etapa da jornada Pokémon: Desafiante em ascensão. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Defeat three tracked gym leaders using a team that can answer different types.",
   "dependencies": "gyms_06",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

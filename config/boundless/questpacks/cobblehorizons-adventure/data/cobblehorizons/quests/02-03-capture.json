@@ -2,13 +2,13 @@
   "category": "capture",
   "sub-category": "capture",
   "id": "capture_03",
-  "name": "03. Captura de insetos",
+  "name": "03. Bug and Water Specialist",
   "icon": "cobblemon:net_ball",
-  "description": "Etapa da jornada Pokémon: Captura de insetos. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Prepare four Net Balls for Bug- and Water-type capture expeditions.",
   "dependencies": "capture_02",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [

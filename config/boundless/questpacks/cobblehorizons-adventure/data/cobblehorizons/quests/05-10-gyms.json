@@ -2,13 +2,13 @@
   "category": "gyms",
   "sub-category": "gyms",
   "id": "gyms_10",
-  "name": "10. Mestre de recuperação",
+  "name": "10. Championship Recovery",
   "icon": "cobblemon:max_revive",
-  "description": "Etapa da jornada Pokémon: Mestre de recuperação. Prepare seu time e complete este objetivo para avançar.",
+  "description": "Obtain a Max Revive before facing the strongest trainers in the pack.",
   "dependencies": "gyms_09",
   "optional": "false",
   "lock_after_dependency": "true",
-  "hidden_under_dependency": "true",
+  "hidden_under_dependency": "false",
   "auto_complete": "false",
   "completion": {
     "complete": [
