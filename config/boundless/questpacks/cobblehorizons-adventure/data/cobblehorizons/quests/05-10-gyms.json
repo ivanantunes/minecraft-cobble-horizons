@@ -1,0 +1,31 @@
+{
+  "category": "gyms",
+  "sub-category": "gyms",
+  "id": "gyms_10",
+  "name": "10. Mestre de recuperação",
+  "icon": "cobblemon:max_revive",
+  "description": "Etapa da jornada Pokémon: Mestre de recuperação. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "gyms_09",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:max_revive",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 90
+  }
+}

@@ -2,6 +2,20 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0-rc4] — 2026-08-11
+
+### Modrinth-native quest campaign and title-screen cleanup
+
+- Added Inmis 2.8.1, a Fabric backpack mod with `B` as the default quick-open key.
+
+- Removed FTB Quests, FTB Library and FTB Teams because those downloads cannot be published as a fully Modrinth-native MRPack.
+- Added Boundless: Quests `1.21.1-fabric-10`, distributed from Modrinth for Fabric 1.21.1.
+- Rebuilt the Adventure Guide as an enabled Boundless quest pack with 66 linked Pokémon quests across easy, medium, difficult and hardcore progression categories.
+- Disabled Boundless' generic built-in quest set; only the CobbleHorizons campaign is shown by default.
+- Updated the title and Options layouts to apply their button design at layout scope, preserving unmodified Cobblemon interfaces.
+- Disabled the optional ModernFix title-screen branding line to remove the unwanted yellow message.
+- Rebuilt the release candidate as `CobbleHorizons-1.1.0-rc4.mrpack`.
+
 ## [1.1.0-rc3] — 2026-08-11
 
 ### Stable quest migration and menu polish

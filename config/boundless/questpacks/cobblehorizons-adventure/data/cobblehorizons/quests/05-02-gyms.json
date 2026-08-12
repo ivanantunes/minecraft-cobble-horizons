@@ -1,0 +1,31 @@
+{
+  "category": "gyms",
+  "sub-category": "gyms",
+  "id": "gyms_02",
+  "name": "02. Especialista especial",
+  "icon": "cobblemon:choice_specs",
+  "description": "Etapa da jornada Pokémon: Especialista especial. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "gyms_01",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:choice_specs",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 74
+  }
+}

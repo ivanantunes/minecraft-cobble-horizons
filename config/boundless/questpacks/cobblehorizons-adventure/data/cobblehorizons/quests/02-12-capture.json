@@ -1,0 +1,31 @@
+{
+  "category": "capture",
+  "sub-category": "capture",
+  "id": "capture_12",
+  "name": "12. Bola de luxo",
+  "icon": "cobblemon:luxury_ball",
+  "description": "Etapa da jornada Pokémon: Bola de luxo. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "capture_11",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:luxury_ball",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 64
+  }
+}

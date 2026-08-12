@@ -1,0 +1,31 @@
+{
+  "category": "legend",
+  "sub-category": "legend",
+  "id": "legend_06",
+  "name": "06. Energia ardente",
+  "icon": "cobblemon:magmarizer",
+  "description": "Etapa da jornada Pokémon: Energia ardente. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "legend_05",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:magmarizer",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 92
+  }
+}

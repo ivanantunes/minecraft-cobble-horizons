@@ -1,0 +1,31 @@
+{
+  "category": "evolution",
+  "sub-category": "evolution",
+  "id": "evolution_01",
+  "name": "01. Pedra de fogo",
+  "icon": "cobblemon:fire_stone",
+  "description": "Etapa da jornada Pokémon: Pedra de fogo. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "training_12",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:fire_stone",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 62
+  }
+}

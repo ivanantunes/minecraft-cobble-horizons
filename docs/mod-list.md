@@ -1,6 +1,6 @@
-# Included Content — CobbleHorizons 1.1.0 RC3
+# Included Content — CobbleHorizons 1.1.0 RC4
 
-The release manifest contains **69 mods, 2 datapacks, 2 resource packs and 3 shader packs** for Minecraft 1.21.1 and Fabric Loader 0.19.3.
+The release manifest contains **67 mods, 2 datapacks, 2 resource packs and 3 shader packs** for Minecraft 1.21.1 and Fabric Loader 0.19.3.
 
 ## Core
 
@@ -59,14 +59,13 @@ The release manifest contains **69 mods, 2 datapacks, 2 resource packs and 3 sha
 | Jade | 15.10.6 |
 | EMI | 1.1.24 |
 | Mouse Tweaks | 2.26 |
+| Inmis | 2.8.1 |
 | MAmbience | 5.5.1 |
 | Sounds | 2.4.22 |
 | Ambient Environment | 18.0.0.2 |
 | Accessories | 1.1.0-beta.53 |
 | Mob Filter | 0.11.2 |
-| FTB Quests | 2101.1.20 |
-| FTB Library | 2101.1.29 |
-| FTB Teams | 2101.1.8 |
+| Boundless: Quests | 1.21.1-fabric-10 |
 | Global Packs | 21.0.6 |
 
 ## Performance and graphics
@@ -111,7 +110,7 @@ The release manifest contains **69 mods, 2 datapacks, 2 resource packs and 3 sha
 | Type | Project | Version | Default |
 |---|---|---|---|
 | Datapack | RCT Badges — Cobblemon Pokémon Badges | 1.1.2 | Included |
-| Datapack | CobbleHorizons Adventure Milestones | 1.1.0 RC3 | Required |
+| Quest pack | CobbleHorizons Adventure (Boundless) | 1.1.0 RC4 / 66 quests | Enabled |
 | Resource pack | Cobblemon Battle Tracks | 1.2 | Enabled |
 | Resource pack | Faithful 32x | June 2026 / 1.21.1 | Optional |
 | Internal branding | CobbleHorizons Branding | 1.0.0 | Enabled |

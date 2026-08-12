@@ -1,0 +1,31 @@
+{
+  "category": "training",
+  "sub-category": "training",
+  "id": "training_10",
+  "name": "10. Domínio de PP",
+  "icon": "cobblemon:pp_max",
+  "description": "Etapa da jornada Pokémon: Domínio de PP. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "training_09",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:pp_max",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 70
+  }
+}

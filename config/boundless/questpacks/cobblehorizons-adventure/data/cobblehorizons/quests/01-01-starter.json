@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_01",
+  "name": "01. Apricorns para Poké Bolas",
+  "icon": "cobblemon:red_apricorn",
+  "description": "Etapa da jornada Pokémon: Apricorns para Poké Bolas. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:red_apricorn",
+        "count": 8
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 32
+  }
+}

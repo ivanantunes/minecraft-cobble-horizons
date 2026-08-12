@@ -1,0 +1,31 @@
+{
+  "category": "training",
+  "sub-category": "training",
+  "id": "training_02",
+  "name": "02. Doces de experiência M",
+  "icon": "cobblemon:exp_candy_m",
+  "description": "Etapa da jornada Pokémon: Doces de experiência M. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "training_01",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:exp_candy_m",
+        "count": 8
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 54
+  }
+}

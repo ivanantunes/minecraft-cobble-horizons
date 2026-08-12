@@ -1,0 +1,8 @@
+{
+  "id": "starter",
+  "category": "starter",
+  "icon": "cobblemon:poke_ball",
+  "name": "Primeira Jornada",
+  "order": 1,
+  "default_open": true
+}

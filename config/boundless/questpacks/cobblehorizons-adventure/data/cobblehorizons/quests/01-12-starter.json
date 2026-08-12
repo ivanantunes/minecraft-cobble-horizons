@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_12",
+  "name": "12. Bolsa de expedição",
+  "icon": "minecraft:barrel",
+  "description": "Objetivo hardcore: tenha 1x minecraft:barrel. Complete a etapa para avançar na Jornada CobbleHorizons.",
+  "dependencies": "starter_11",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "minecraft:barrel",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "minecraft:experience_bottle",
+        "count": 5
+      }
+    ],
+    "exp": "points",
+    "count": 46
+  }
+}

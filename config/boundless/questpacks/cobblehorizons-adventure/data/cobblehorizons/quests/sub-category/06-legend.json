@@ -1,0 +1,8 @@
+{
+  "id": "legend",
+  "category": "legend",
+  "icon": "cobblemon:master_ball",
+  "name": "Horizonte Lendário",
+  "order": 6,
+  "default_open": true
+}

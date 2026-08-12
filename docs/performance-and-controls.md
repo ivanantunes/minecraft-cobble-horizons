@@ -20,14 +20,14 @@ Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use stable, conserva
 | Send selected Pokémon | `R` |
 | Xaero's World Map | `M` |
 | Cobblemon Summary | `V` |
-| CobbleHorizons Adventure Guide | `J` |
+| CobbleHorizons Quest Book | `[` |
 | Iris shader selection | `F7` |
 | Iris shader reload | `F8` |
 | Iris shader toggle | `F9` |
 
 EMI and Jade retain their context-sensitive recipe and usage shortcuts. These operate inside inventory or overlay contexts.
 
-The Adventure Guide key does not conflict with the curated defaults. FTB Quests checks existing advancement progress, so completed milestones remain detectable after opening the guide.
+The Quest Book key does not conflict with the curated defaults. Boundless loads the bundled CobbleHorizons campaign on first launch; the inventory button is also enabled by default.
 
 ## Shader profiles
 

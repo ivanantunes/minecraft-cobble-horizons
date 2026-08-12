@@ -1,0 +1,31 @@
+{
+  "category": "training",
+  "sub-category": "training",
+  "id": "training_12",
+  "name": "12. Escolha de combate",
+  "icon": "cobblemon:choice_band",
+  "description": "Etapa da jornada Pokémon: Escolha de combate. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "training_11",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:choice_band",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 74
+  }
+}

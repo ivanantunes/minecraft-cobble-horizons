@@ -1,0 +1,31 @@
+{
+  "category": "evolution",
+  "sub-category": "evolution",
+  "id": "evolution_02",
+  "name": "02. Pedra de água",
+  "icon": "cobblemon:water_stone",
+  "description": "Etapa da jornada Pokémon: Pedra de água. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "evolution_01",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:water_stone",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 64
+  }
+}

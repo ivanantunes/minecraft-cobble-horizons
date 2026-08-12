@@ -1,0 +1,8 @@
+{
+  "id": "capture",
+  "category": "capture",
+  "icon": "cobblemon:great_ball",
+  "name": "Captura e Pesquisa",
+  "order": 2,
+  "default_open": true
+}

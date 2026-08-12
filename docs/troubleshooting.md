@@ -16,7 +16,7 @@ Do not edit FancyMenu layouts while Minecraft is running.
 
 ## Background appears behind gameplay interfaces
 
-RC1 incorrectly applied the FancyMenu wallpaper globally. RC3 restricts it and the custom button theme to the title screen and main Options screen. The loading wallpaper remains controlled by Drippy Loading Screen. Import RC3 into a clean instance; copying only `options.txt` does not replace FancyMenu layouts.
+RC1 incorrectly applied the FancyMenu wallpaper globally. RC4 restricts it and the custom button theme to the title screen and main Options screen. The loading wallpaper remains controlled by Drippy Loading Screen. Import RC4 into a clean instance; copying only `options.txt` does not replace FancyMenu layouts.
 
 ## Resource packs are not enabled
 
@@ -26,13 +26,13 @@ Faithful 32x is intentionally disabled by default.
 
 ## The Adventure Guide does not open
 
-Press `J` in a world, not from the title screen. Confirm FTB Quests, FTB Library and FTB Teams are installed and that no personal key binding has replaced `J`. The guide is also available from the FTB sidebar in the inventory.
+Press `[` in a world, not from the title screen. Confirm that **Boundless: Quests** is installed and that no personal key binding has replaced `[`. The Quest Book is also available from the inventory button.
 
 ## The campaign is missing or a quest did not update
 
 Confirm `config/ftbquests/quests/chapters/cobblehorizons_adventure.snbt` exists and that Global Packs is installed. Run `/datapack list` to confirm the CobbleHorizons milestone and RCT badge packs are enabled.
 
-RC3 tracks actual RCT gym-leader victories rather than badge items. Existing completed advancements are detected automatically, but a fresh world remains the recommended RC validation environment.
+RC4 uses stable collection objectives across the complete campaign. A fresh world remains the recommended RC validation environment.
 
 ## Vanilla mobs still exist
 

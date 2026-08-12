@@ -1,0 +1,31 @@
+{
+  "category": "capture",
+  "sub-category": "capture",
+  "id": "capture_11",
+  "name": "11. Caçador de raros",
+  "icon": "cobblemon:ultra_ball",
+  "description": "Etapa da jornada Pokémon: Caçador de raros. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "capture_10",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:ultra_ball",
+        "count": 4
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 62
+  }
+}

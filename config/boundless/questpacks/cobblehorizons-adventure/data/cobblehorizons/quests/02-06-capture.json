@@ -1,0 +1,31 @@
+{
+  "category": "capture",
+  "sub-category": "capture",
+  "id": "capture_06",
+  "name": "06. Área selvagem",
+  "icon": "cobblemon:safari_ball",
+  "description": "Etapa da jornada Pokémon: Área selvagem. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "capture_05",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:safari_ball",
+        "count": 3
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 52
+  }
+}

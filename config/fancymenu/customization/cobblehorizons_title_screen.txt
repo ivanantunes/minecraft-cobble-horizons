@@ -2,7 +2,7 @@ type = fancymenu_layout
 
 layout-meta {
  identifier = title_screen
- render_custom_elements_behind_vanilla = false
+ render_custom_elements_behind_vanilla = true
  last_edited_time = 1786414400532
  is_enabled = true
  randommode = false
@@ -58,8 +58,8 @@ element {
  widget_active_state_requirement_container_identifier = cobblehorizons-title-button-template-active
  [loading_requirement_container_meta:cobblehorizons-title-button-template-active] = [groups:][instances:]
  is_template = true
- template_apply_width = false
- template_apply_height = false
+ template_apply_width = true
+ template_apply_height = true
  template_apply_posx = false
  template_apply_posy = false
  template_apply_opacity = false
@@ -85,8 +85,8 @@ element {
  anchor_point = mid-centered
  x = -100
  y = 0
- width = 200
- height = 20
+ width = 210
+ height = 24
  stretch_x = false
  stretch_y = false
  stay_on_screen = true

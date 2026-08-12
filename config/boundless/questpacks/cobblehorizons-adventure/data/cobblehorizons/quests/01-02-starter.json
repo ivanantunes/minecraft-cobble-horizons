@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_02",
+  "name": "02. Poké Bolas iniciais",
+  "icon": "cobblemon:poke_ball",
+  "description": "Etapa da jornada Pokémon: Poké Bolas iniciais. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_01",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:poke_ball",
+        "count": 5
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 34
+  }
+}

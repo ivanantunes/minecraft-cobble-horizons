@@ -1,0 +1,16 @@
+{
+  "enableBuiltinQuestPack": false,
+  "enableQuestSearchBox": true,
+  "enableQuestToasts": true,
+  "enableDescriptionColors": true,
+  "autoClaimQuestRewards": false,
+  "enableQuestScrolls": false,
+  "spawnWithQuestBook": true,
+  "hideQuestBookInInventory": false,
+  "questBookInventoryButtonPosition": "beside_recipe_book",
+  "centerInventoryWithQuestPanel": true,
+  "filterDisplayMode": "tabs",
+  "disableCategories": false,
+  "disableQuestPinning": false,
+  "pinnedQuestHudPosition": "bottom_left"
+}

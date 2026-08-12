@@ -1,0 +1,31 @@
+{
+  "category": "evolution",
+  "sub-category": "evolution",
+  "id": "evolution_07",
+  "name": "07. Pedra do amanhecer",
+  "icon": "cobblemon:dawn_stone",
+  "description": "Etapa da jornada Pokémon: Pedra do amanhecer. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "evolution_06",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:dawn_stone",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 74
+  }
+}

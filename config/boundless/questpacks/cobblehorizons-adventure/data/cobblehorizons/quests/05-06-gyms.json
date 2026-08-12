@@ -1,0 +1,30 @@
+{
+  "category": "gyms",
+  "sub-category": "gyms",
+  "id": "gyms_06",
+  "name": "06. Primeira insígnia",
+  "icon": "cobblemon:assault_vest",
+  "description": "Etapa da jornada Pokémon: Primeira insígnia. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "gyms_05",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "achieve": "cobblehorizons:quests/first_gym_badge"
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:ultra_ball",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 82
+  }
+}

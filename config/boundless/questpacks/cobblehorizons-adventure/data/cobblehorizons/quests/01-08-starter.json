@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_08",
+  "name": "08. Captura em cavernas",
+  "icon": "cobblemon:dusk_ball",
+  "description": "Etapa da jornada Pokémon: Captura em cavernas. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_07",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:dusk_ball",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 46
+  }
+}

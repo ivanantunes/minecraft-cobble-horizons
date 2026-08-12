@@ -1,0 +1,31 @@
+{
+  "category": "evolution",
+  "sub-category": "evolution",
+  "id": "evolution_08",
+  "name": "08. Pedra do crepúsculo",
+  "icon": "cobblemon:dusk_stone",
+  "description": "Etapa da jornada Pokémon: Pedra do crepúsculo. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "evolution_07",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:dusk_stone",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 76
+  }
+}

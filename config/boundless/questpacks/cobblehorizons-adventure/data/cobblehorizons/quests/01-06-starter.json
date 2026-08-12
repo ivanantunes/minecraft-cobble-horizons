@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_06",
+  "name": "06. Parceiro bem cuidado",
+  "icon": "cobblemon:super_potion",
+  "description": "Etapa da jornada Pokémon: Parceiro bem cuidado. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_05",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:super_potion",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 3
+      }
+    ],
+    "exp": "points",
+    "count": 42
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "category": "capture",
+  "sub-category": "capture",
+  "id": "capture_10",
+  "name": "10. Captura de pesca",
+  "icon": "cobblemon:lure_ball",
+  "description": "Etapa da jornada Pokémon: Captura de pesca. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "capture_09",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:lure_ball",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 60
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_11",
+  "name": "11. Alquimia simples",
+  "icon": "minecraft:glass_bottle",
+  "description": "Objetivo difícil: tenha 3x minecraft:glass_bottle. Complete a etapa para avançar na Jornada CobbleHorizons.",
+  "dependencies": "starter_10",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "minecraft:glass_bottle",
+        "count": 3
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "minecraft:experience_bottle",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 43
+  }
+}

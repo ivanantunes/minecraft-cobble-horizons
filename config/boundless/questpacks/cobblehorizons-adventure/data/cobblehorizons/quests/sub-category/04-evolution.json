@@ -1,0 +1,8 @@
+{
+  "id": "evolution",
+  "category": "evolution",
+  "icon": "cobblemon:fire_stone",
+  "name": "Evolução e Formas",
+  "order": 4,
+  "default_open": true
+}

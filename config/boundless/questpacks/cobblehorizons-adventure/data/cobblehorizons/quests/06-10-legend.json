@@ -1,0 +1,31 @@
+{
+  "category": "legend",
+  "sub-category": "legend",
+  "id": "legend_10",
+  "name": "10. Campeão CobbleHorizons",
+  "icon": "cobblemon:master_ball",
+  "description": "Etapa da jornada Pokémon: Campeão CobbleHorizons. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "legend_09",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:master_ball",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 100
+  }
+}

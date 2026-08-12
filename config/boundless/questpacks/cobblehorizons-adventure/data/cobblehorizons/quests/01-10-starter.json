@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_10",
+  "name": "10. Laço de amizade",
+  "icon": "cobblemon:soothe_bell",
+  "description": "Etapa da jornada Pokémon: Laço de amizade. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_09",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:soothe_bell",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 50
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_09",
+  "name": "09. Reserva de treinamento",
+  "icon": "cobblemon:exp_candy_s",
+  "description": "Etapa da jornada Pokémon: Reserva de treinamento. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_08",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:exp_candy_s",
+        "count": 4
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 48
+  }
+}

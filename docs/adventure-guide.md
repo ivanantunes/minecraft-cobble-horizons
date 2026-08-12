@@ -1,49 +1,39 @@
 # CobbleHorizons Adventure Guide
 
-CobbleHorizons 1.1.0 introduces a curated in-game campaign that gives players direction without turning the open world into a fixed linear map.
+CobbleHorizons 1.1.0 RC4 introduces a curated in-game campaign that gives players direction without turning the open world into a fixed linear map.
 
-Press **J** after entering a world or use the FTB sidebar button in the inventory. Open **CobbleHorizons Adventure** and follow the unlocked path. Rewards are claimed directly from completed quest nodes.
+Press **`[`** after entering a world, or use the Boundless button in the inventory. The pack starts with the quest book available and uses the Modrinth-distributed **Boundless: Quests** mod. Open **CobbleHorizons Adventure** and follow the connected path. Rewards are claimed directly from completed quests.
 
 ## Campaign
 
-| Stage | Objective | Main lesson |
+The campaign has **66 connected Pokémon objectives** grouped into six categories. The objectives cover Poké Balls, healing, capture specializations, training candies, evolution items, gym milestones and legendary preparation; completing each one unlocks the next.
+
+| Category | Difficulty | Focus |
 |---:|---|---|
-| 1 | Field Essentials | Choose a starter and obtain a Poké Ball |
-| 2 | Your First Catch | Study and capture a wild Pokémon |
-| 3 | Begin Field Research | Obtain a Pokédex and begin documenting species |
-| 4 | Test Your Strategy | Defeat an NPC trainer |
-| 5 | Build a Balanced Team | Assemble a six-Pokémon party with varied roles |
-| 6 | A Stronger Form | Evolve a Pokémon |
-| 7 | Recovery Routine | Use a fully charged Healing Machine |
-| 8 | Your First Gym Badge | Find and defeat any gym leader |
-| 9 | Rising Challenger | Collect three gym badges |
-| 10 | Gym Veteran | Collect eight gym badges |
-| 11 | Mega Breakthrough | Mega Evolve a compatible Pokémon |
-| 12 | A Legendary Call | Craft the Arc Phone |
-| 13 | Legendary Encounter | Complete a legendary monument ritual |
-| 14 | The Elite Gauntlet | Defeat all tracked Elite Four-class trainers |
-| 15 | Champion of the Horizon | Defeat all tracked Champion-class trainers |
+| Primeiros Passos | Fácil | Abrigo, ferramentas, comida e sobrevivência inicial |
+| Exploração | Fácil / médio | Navegação, cavernas, biomas, viagem e portal |
+| Jornada de Treinador | Médio | Poké Bolas, preparação de batalha, pesquisa e arenas |
+| Base e Recursos | Médio | Oficina, armazenamento, encantamentos, fazenda e redstone |
+| Desafios | Difícil | Nether, combate, equipamentos e tesouros perigosos |
+| Horizonte Lendário | Hardcore | Netherite, End, Dragon, Wither, beacon e legado final |
 
 ## Progression philosophy
 
-- Gym order remains open because structures and leaders are discovered through world exploration.
-- Rewards provide supplies and small training boosts, not complete teams or free progression.
-- The campaign uses achievements already emitted by Cobblemon, Radical Cobblemon Trainers, Mega Showdown and Legendary Monuments.
-- Badge objectives recognize every badge supplied by the included RCT Badges datapack.
-- The final stage does not end the world. Research, collecting, breeding, building and legendary hunting remain available.
+- The progression begins accessible and becomes demanding only after the player has established a base and team.
+- Rewards provide experience bottles and small progression help, not complete teams or free endgame gear.
+- Objectives intentionally use stable item IDs, making them reliable in singleplayer and in a Modrinth-imported instance.
+- The final stage does not end the world. Research, collecting, breeding, building, gyms and legendary hunting remain available.
 
 ## Important behavior
 
-Quest progression is saved per world. A fresh world is recommended when validating a new release candidate.
-
-RC3 uses FTB Quests advancement tasks. Existing advancements can be detected automatically. Gym stages track actual victories against the included RCT gym leaders rather than counting badge items in the inventory.
+Quest progression is saved per world. A fresh world is recommended when validating a new release candidate. The campaign is shipped at `config/boundless/questpacks/cobblehorizons-adventure`; it is enabled by default and does not depend on FTB mods or CurseForge downloads.
 
 ## RC testing checklist
 
 1. Import the MRPack as a new Modrinth instance.
-2. Create a new world and confirm that the Adventure Guide opens with `J`.
-3. Confirm that **CobbleHorizons Adventure** contains 15 connected quest nodes.
-4. Complete **Field Essentials**, obtain a Poké Ball, and verify completion and reward delivery.
-5. Continue through **Your First Catch** and **Begin Field Research**.
-6. Confirm that the RCT Badges datapack appears under the world's datapack list.
+2. Create a new world and confirm that the Quest Book opens with `[`.
+3. Confirm that **CobbleHorizons Adventure** contains six category tabs and 66 connected quests.
+4. Complete **Apricorns para Poké Bolas** with red apricorns and verify the reward delivery.
+5. Continue to **Poké Bolas iniciais** and confirm the dependency unlocks correctly.
+6. Confirm that no FTB Quests, FTB Library, FTB Teams or JustQuests mod is present.
 7. Report the pack version, operating system, reproduction steps and a `latest.log` link for any failure.

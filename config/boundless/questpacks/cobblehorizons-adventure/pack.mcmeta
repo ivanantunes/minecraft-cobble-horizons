@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "CobbleHorizons Adventure Campaign"
+  },
+  "boundless": {
+    "enabled": true,
+    "icon_path": "cobblemon:poke_ball"
+  }
+}

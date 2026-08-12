@@ -1,0 +1,31 @@
+{
+  "category": "capture",
+  "sub-category": "capture",
+  "id": "capture_01",
+  "name": "01. Great Balls",
+  "icon": "cobblemon:great_ball",
+  "description": "Etapa da jornada Pokémon: Great Balls. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_10",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:great_ball",
+        "count": 6
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 42
+  }
+}

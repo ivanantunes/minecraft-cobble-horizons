@@ -1,0 +1,31 @@
+{
+  "category": "training",
+  "sub-category": "training",
+  "id": "training_04",
+  "name": "04. Doce raro",
+  "icon": "cobblemon:rare_candy",
+  "description": "Etapa da jornada Pokémon: Doce raro. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "training_03",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:rare_candy",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 2
+      }
+    ],
+    "exp": "points",
+    "count": 58
+  }
+}

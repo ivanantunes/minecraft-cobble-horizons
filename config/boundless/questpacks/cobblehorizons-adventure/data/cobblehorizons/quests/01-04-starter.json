@@ -1,0 +1,31 @@
+{
+  "category": "starter",
+  "sub-category": "starter",
+  "id": "starter_04",
+  "name": "04. Remédio de status",
+  "icon": "cobblemon:antidote",
+  "description": "Etapa da jornada Pokémon: Remédio de status. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "starter_03",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:antidote",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 2
+      }
+    ],
+    "exp": "points",
+    "count": 38
+  }
+}

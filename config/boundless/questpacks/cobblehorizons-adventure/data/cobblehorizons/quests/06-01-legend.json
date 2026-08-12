@@ -1,0 +1,31 @@
+{
+  "category": "legend",
+  "sub-category": "legend",
+  "id": "legend_01",
+  "name": "01. Preparação lendária",
+  "icon": "cobblemon:master_ball",
+  "description": "Etapa da jornada Pokémon: Preparação lendária. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "gyms_10",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:master_ball",
+        "count": 1
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:exp_candy_m",
+        "count": 1
+      }
+    ],
+    "exp": "points",
+    "count": 82
+  }
+}

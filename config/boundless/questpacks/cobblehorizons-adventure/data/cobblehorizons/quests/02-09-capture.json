@@ -1,0 +1,31 @@
+{
+  "category": "capture",
+  "sub-category": "capture",
+  "id": "capture_09",
+  "name": "09. Captura de nível",
+  "icon": "cobblemon:level_ball",
+  "description": "Etapa da jornada Pokémon: Captura de nível. Prepare seu time e complete este objetivo para avançar.",
+  "dependencies": "capture_08",
+  "optional": "false",
+  "lock_after_dependency": "true",
+  "hidden_under_dependency": "true",
+  "auto_complete": "false",
+  "completion": {
+    "complete": [
+      {
+        "collect": "cobblemon:level_ball",
+        "count": 2
+      }
+    ]
+  },
+  "reward": {
+    "items": [
+      {
+        "item": "cobblemon:poke_ball",
+        "count": 4
+      }
+    ],
+    "exp": "points",
+    "count": 58
+  }
+}
