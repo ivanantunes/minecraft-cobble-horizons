@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/journey_starter",
+  "display": {
+    "icon": {
+      "id": "cobblemon:pokedex_red"
+    },
+    "title": {
+      "text": "Field Pokédex",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Pokédex.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:pokedex_red",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/journey_starter": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 50,
+    "function": "cobblehorizons:quest_rewards/utility_pokedex"
+  }
+}

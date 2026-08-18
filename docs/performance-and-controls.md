@@ -10,13 +10,17 @@
 | Graphics | Fancy | Preserves the intended presentation |
 | Mipmaps | 4 | Reduces distant texture shimmer |
 | Shaders | Disabled | Safest first launch |
+| Language | English (US) | Official player-facing baseline |
 
-Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use stable, conservative settings. Experimental rendering flags and aggressive threading changes remain disabled.
+These defaults are shipped through `config/defaultoptions/extra/options.txt`.
+
+Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use conservative settings intended to prioritize compatibility.
 
 ## Curated controls
 
 | Action | Key |
 |---|---|
+| Open CobbleHorizons quests (QuestZ) | `L` |
 | Send selected Pokémon | `R` |
 | Xaero's World Map | `M` |
 | Cobblemon Summary | `V` |
@@ -24,7 +28,7 @@ Sodium, Lithium, ImmediatelyFast, FerriteCore and ModernFix use stable, conserva
 | Iris shader reload | `F8` |
 | Iris shader toggle | `F9` |
 
-EMI and Jade retain their context-sensitive recipe and usage shortcuts. These operate inside inventory or overlay contexts.
+QuestZ registers `L` as its default quest-screen key. Personal key changes in an existing instance can override it.
 
 ## Shader profiles
 
@@ -48,10 +52,20 @@ The tested active stack is:
 4. Fabric resources
 5. Vanilla resources
 
-Faithful 32x is installed but optional. Keep CobbleHorizons Branding at higher priority when enabling it.
+Faithful 32x is installed by the release but optional. Keep CobbleHorizons Branding at higher priority when enabling it.
+
+## Title-screen presentation
+
+CobbleHorizons uses FancyMenu for the main interface and a first-party branding resource pack for Minecraft title textures.
+
+The final 1.1.0 layout does not render the old extra logo element above the buttons, avoiding the duplicated-logo effect.
+
+The branding resource pack also replaces the vanilla yellow rotating splash with an invisible entry.
 
 ## Pokémon-first spawn policy
 
-Vanilla mobs created through natural generation, chunk generation, spawners, patrols, reinforcements, jockeys and trial spawners are suppressed. Cobblemon Pokémon, trainers and modded NPCs remain unaffected.
+Vanilla mobs created through natural generation, chunk generation, spawners, patrols, reinforcements, jockeys and trial spawners are suppressed.
 
-Villagers, wandering traders, iron and snow golems, the Ender Dragon and the Wither are explicit exceptions. Existing mobs in older worlds are not deleted automatically.
+Cobblemon Pokémon, trainers and modded NPCs remain unaffected.
+
+Villagers, wandering traders, iron and snow golems, the Ender Dragon and the Wither are intentional exceptions. Existing mobs already saved in older worlds are not deleted automatically.

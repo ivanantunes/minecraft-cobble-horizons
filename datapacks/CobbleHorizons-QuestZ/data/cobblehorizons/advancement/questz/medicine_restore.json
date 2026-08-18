@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/medicine_hyper",
+  "display": {
+    "icon": {
+      "id": "cobblemon:full_restore"
+    },
+    "title": {
+      "text": "Complete Recovery",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Full Restore.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:full_restore",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/medicine_hyper": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 90,
+    "function": "cobblehorizons:quest_rewards/medicine_restore"
+  }
+}

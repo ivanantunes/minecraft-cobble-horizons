@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/medicine_potion",
+  "display": {
+    "icon": {
+      "id": "cobblemon:super_potion"
+    },
+    "title": {
+      "text": "Advanced Medicine",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 4 Super Potions.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:super_potion",
+            "count": {
+              "min": 4
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/medicine_potion": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 65,
+    "function": "cobblehorizons:quest_rewards/medicine_super"
+  }
+}

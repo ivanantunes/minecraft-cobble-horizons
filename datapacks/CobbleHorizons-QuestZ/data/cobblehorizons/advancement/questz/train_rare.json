@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/train_candy_l",
+  "display": {
+    "icon": {
+      "id": "cobblemon:rare_candy"
+    },
+    "title": {
+      "text": "Rare Candy Reserve",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 3 Rare Candies.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:rare_candy",
+            "count": {
+              "min": 3
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_candy_l": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 90,
+    "function": "cobblehorizons:quest_rewards/train_rare"
+  }
+}

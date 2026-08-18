@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/train_level25",
+  "display": {
+    "icon": {
+      "id": "cobblemon:lucky_egg"
+    },
+    "title": {
+      "text": "Lucky Egg Training",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Lucky Egg item.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:lucky_egg",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_level25": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 75,
+    "function": "cobblehorizons:quest_rewards/held_luckyegg"
+  }
+}

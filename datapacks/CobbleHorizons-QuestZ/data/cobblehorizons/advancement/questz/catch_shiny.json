@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/catch_30",
+  "display": {
+    "icon": {
+      "id": "cobblemon:luxury_ball"
+    },
+    "title": {
+      "text": "A Different Color",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch a Shiny Pokémon.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_shiny_pokemon",
+      "conditions": {
+        "count": 1,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/catch_30": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 220,
+    "function": "cobblehorizons:quest_rewards/catch_shiny"
+  }
+}

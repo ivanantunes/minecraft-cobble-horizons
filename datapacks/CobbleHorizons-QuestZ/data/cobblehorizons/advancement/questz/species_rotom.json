@@ -1,0 +1,34 @@
+{
+  "parent": "cobblehorizons:questz/type_electric",
+  "display": {
+    "icon": {
+      "id": "cobblemon:quick_ball"
+    },
+    "title": {
+      "text": "Species Hunt: Rotom",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch a Rotom.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 120,
+    "function": "cobblehorizons:quest_rewards/species_rotom"
+  }
+}

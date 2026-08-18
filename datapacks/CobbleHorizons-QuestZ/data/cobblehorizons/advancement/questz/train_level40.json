@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/train_level25",
+  "display": {
+    "icon": {
+      "id": "cobblemon:exp_candy_l"
+    },
+    "title": {
+      "text": "Veteran Partner",
+      "color": "white"
+    },
+    "description": {
+      "text": "Raise a Pokémon to level 40.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:level_up",
+      "conditions": {
+        "level": 40,
+        "has_evolved": false,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_level25": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 120,
+    "function": "cobblehorizons:quest_rewards/train_level40"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/evolve_05",
+  "display": {
+    "icon": {
+      "id": "cobblemon:prism_scale"
+    },
+    "title": {
+      "text": "Prism Scale",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Prism Scale.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:prism_scale",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/evolve_05": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 80,
+    "function": "cobblehorizons:quest_rewards/evoitem_prism_scale"
+  }
+}

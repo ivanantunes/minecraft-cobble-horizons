@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:pokedex_red"
+    },
+    "title": {
+      "text": "CobbleHorizons",
+      "color": "aqua",
+      "bold": true
+    },
+    "description": {
+      "text": "Build your team, master capture, battle, evolve, and chase rare Pok\u00e9mon.",
+      "color": "white"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "start": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "start"
+    ]
+  ]
+}

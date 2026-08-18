@@ -1,0 +1,9 @@
+{
+  "maxTextWidth": 180,
+  "minTextWidth": 150,
+  "questDisplayDepth": 18,
+  "showRootRequirements": false,
+  "questAdvancementNamespaceIds": [
+    "questz"
+  ]
+}

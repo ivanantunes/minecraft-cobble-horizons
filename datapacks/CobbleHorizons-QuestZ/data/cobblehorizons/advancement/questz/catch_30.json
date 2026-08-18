@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/catch_15",
+  "display": {
+    "icon": {
+      "id": "cobblemon:luxury_ball"
+    },
+    "title": {
+      "text": "Seasoned Collector",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch 30 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 30,
+        "type": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/catch_15": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 130,
+    "function": "cobblehorizons:quest_rewards/catch_30"
+  }
+}

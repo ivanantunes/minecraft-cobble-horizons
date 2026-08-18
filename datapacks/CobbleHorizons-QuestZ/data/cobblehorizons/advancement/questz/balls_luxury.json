@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/balls_friend",
+  "display": {
+    "icon": {
+      "id": "cobblemon:luxury_ball"
+    },
+    "title": {
+      "text": "Luxury Capture Kit",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 4 Luxury Balls.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:luxury_ball",
+            "count": {
+              "min": 4
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/balls_friend": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 90,
+    "function": "cobblehorizons:quest_rewards/balls_luxury"
+  }
+}

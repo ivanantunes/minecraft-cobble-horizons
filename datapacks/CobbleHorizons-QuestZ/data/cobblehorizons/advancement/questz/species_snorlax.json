@@ -1,0 +1,34 @@
+{
+  "parent": "cobblehorizons:questz/catch_30",
+  "display": {
+    "icon": {
+      "id": "cobblemon:heavy_ball"
+    },
+    "title": {
+      "text": "Species Hunt: Snorlax",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch a Snorlax.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 120,
+    "function": "cobblehorizons:quest_rewards/species_snorlax"
+  }
+}

@@ -1,0 +1,14 @@
+# CobbleHorizons 1.1.0
+# Loads bundled datapacks automatically in every new and existing world.
+config_version = 4
+enable_system_global_packs = false
+log_pack_ids = false
+
+[resourcepacks]
+	required = []
+	enable_builtin = []
+
+[datapacks]
+	required = ["datapacks/"]
+	optional = []
+	enable_builtin = []

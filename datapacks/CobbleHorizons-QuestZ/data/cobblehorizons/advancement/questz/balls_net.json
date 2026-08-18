@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/balls_great",
+  "display": {
+    "icon": {
+      "id": "cobblemon:net_ball"
+    },
+    "title": {
+      "text": "Bug & Water Kit",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 6 Net Balls.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:net_ball",
+            "count": {
+              "min": 6
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/balls_great": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 65,
+    "function": "cobblehorizons:quest_rewards/balls_net"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/stone_fire",
+  "display": {
+    "icon": {
+      "id": "cobblemon:leaf_stone"
+    },
+    "title": {
+      "text": "Leaf Stone Research",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Leaf Stone.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:leaf_stone",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/stone_fire": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 65,
+    "function": "cobblehorizons:quest_rewards/stone_leaf"
+  }
+}

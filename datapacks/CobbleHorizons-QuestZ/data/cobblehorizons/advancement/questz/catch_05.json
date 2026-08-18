@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/journey_first_catch",
+  "display": {
+    "icon": {
+      "id": "cobblemon:great_ball"
+    },
+    "title": {
+      "text": "Rookie Collector",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch 5 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 5,
+        "type": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/journey_first_catch": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 60,
+    "function": "cobblehorizons:quest_rewards/catch_05"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/journey_first_catch",
+  "display": {
+    "icon": {
+      "id": "cobblemon:exp_candy_s"
+    },
+    "title": {
+      "text": "Rising Partner",
+      "color": "white"
+    },
+    "description": {
+      "text": "Raise a Pokémon to level 15.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:level_up",
+      "conditions": {
+        "level": 15,
+        "has_evolved": false,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/journey_first_catch": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 55,
+    "function": "cobblehorizons:quest_rewards/train_level15"
+  }
+}

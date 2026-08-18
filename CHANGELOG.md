@@ -2,6 +2,85 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0] — 2026-08-17
+
+### QuestZ stabilization, progression gating and final release packaging
+
+- Replaced the temporary Boundless quest implementation with QuestZ 1.0.1 and a first-party advancement-based CobbleHorizons datapack.
+- Finalized 93 active gameplay quests plus the CobbleHorizons root entry, all player-facing content in English.
+- Added real prerequisite predicates to active non-root quests so later objectives cannot complete before their intended progression point.
+- Standardized the opening progression as **Choose Your Partner → Red Apricorn Research (8) → A New Friend**.
+- Audited capture, evolution, battle, inventory and reward criteria for invalid JSON, missing parents, broken reward functions and progression cycles.
+- Hid and disabled 12 Species Hunt templates after species-specific capture filtering proved unreliable and could complete multiple future quests from a generic capture.
+- Removed the duplicate title-screen logo overlay while preserving the logo already present in the menu artwork.
+- Replaced the vanilla yellow rotating splash text with an invisible branding entry.
+- Kept the custom FancyMenu button layouts, title screen, loading screen and CobbleHorizons Branding presentation.
+- Rebuilt the release using the import-safe MRPack packaging approach after a previous rebuild triggered `Cannot read properties of undefined (reading 'then')` in the Modrinth App.
+- Updated repository documentation to reflect QuestZ, the current quest count, the `L` quest key, source-control policy and final 1.1.0 release state.
+
+
+## [1.1.0-rc5] — 2026-08-12
+
+### Stable inventory, English campaign and scoped button theme
+
+- Disabled Boundless' broken inventory widget integration on Fabric 1.21.1, preventing the `addRenderableWidget` reflection crash when opening the player inventory.
+- Kept the standalone Quest Book available through the `[` key and the supplied Quest Book item.
+- Rewrote all 66 quests and all six category names in English.
+- Replaced the last two vanilla starter objectives with a Pokédex and Healing Machine progression step; every quest objective is now Pokémon/Cobblemon-focused.
+- Made dependent quests visible while keeping them locked until their prerequisites are complete.
+- Corrected the title-screen render order so custom button textures render above the vanilla button background.
+- Hardened the screen-local Options button template without applying it to gameplay or Cobblemon interfaces.
+- Added a reproducible campaign normalization tool and rebuilt the release as `CobbleHorizons-1.1.0-rc5.mrpack`.
+
+## [1.1.0-rc4] — 2026-08-11
+
+### Modrinth-native quest campaign and title-screen cleanup
+
+- Added Inmis 2.8.1, a Fabric backpack mod with `B` as the default quick-open key.
+
+- Removed FTB Quests, FTB Library and FTB Teams because those downloads cannot be published as a fully Modrinth-native MRPack.
+- Added Boundless: Quests `1.21.1-fabric-10`, distributed from Modrinth for Fabric 1.21.1.
+- Rebuilt the Adventure Guide as an enabled Boundless quest pack with 66 linked Pokémon quests across easy, medium, difficult and hardcore progression categories.
+- Disabled Boundless' generic built-in quest set; only the CobbleHorizons campaign is shown by default.
+- Updated the title and Options layouts to apply their button design at layout scope, preserving unmodified Cobblemon interfaces.
+- Disabled the optional ModernFix title-screen branding line to remove the unwanted yellow message.
+- Rebuilt the release candidate as `CobbleHorizons-1.1.0-rc4.mrpack`.
+
+## [1.1.0-rc3] — 2026-08-11
+
+### Stable quest migration and menu polish
+
+- Removed JustQuests 0.2.3 after its player mixin prevented Minecraft 1.21.1 from starting.
+- Migrated the complete 15-stage Adventure Guide to FTB Quests 2101.1.20.
+- Added the matching FTB Library 2101.1.29 and FTB Teams 2101.1.8 dependencies.
+- Replaced badge inventory checks with reliable RCT gym-leader milestones for one, three and eight victories.
+- Kept Global Packs 21.0.6 because it loads the RCT badge and CobbleHorizons milestone datapacks in every world.
+- Added layout-scoped FancyMenu button templates to the title and Options screens.
+- Kept global FancyMenu backgrounds and button styles disabled so gameplay and Cobblemon interfaces remain clean.
+- Rebuilt and validated the release candidate as `CobbleHorizons-1.1.0-rc3.mrpack`.
+
+## [1.1.0-rc2] — 2026-08-11
+
+### Interface isolation correction
+
+- Restricted the CobbleHorizons wallpaper to the title screen, Options screen and loading screen.
+- Removed global FancyMenu backgrounds and button overrides from gameplay and mod interaction screens.
+- Added JustQuests 0.2.3 and Global Packs 21.0.6 to the RC2 manifest. JustQuests was removed again in RC3 after startup testing exposed an incompatible mixin.
+- Rebuilt the release candidate after the quest interface failed to load in RC1.
+
+## [1.1.0-rc1] — 2026-08-11
+
+### Adventure Guide release candidate
+
+- Added a 15-stage in-game CobbleHorizons campaign, opened with `J`.
+- Added guided objectives for Poké Ball crafting, catching, Pokédex research, trainer battles, team building, evolution, healing, gym badges, Mega Evolution, legendary monuments, the Elite Four and Champions.
+- Added balanced automatic rewards intended to support progression without replacing exploration or training.
+- Added JustQuests 0.2.3 as the lightweight datapack-driven quest interface.
+- Added Global Packs 21.0.6 so the Adventure Guide and RCT badge datapacks load automatically in every world.
+- Suppressed JustQuests' generic built-in quest set so only the curated CobbleHorizons campaign is presented.
+- Added the external Adventure Guide documentation and RC testing checklist.
+- Kept Minecraft 1.21.1, Fabric Loader 0.19.3, Cobblemon 1.7.3 and all 1.0.0 gameplay defaults unchanged.
+
 ## [1.0.0] — 2026-08-11
 
 ### First public release

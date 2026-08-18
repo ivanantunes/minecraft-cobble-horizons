@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/balls_beast",
+  "display": {
+    "icon": {
+      "id": "cobblemon:master_ball"
+    },
+    "title": {
+      "text": "Master Capture Protocol",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Master Ball.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:master_ball",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/balls_beast": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 300,
+    "function": "cobblehorizons:quest_rewards/balls_master"
+  }
+}
