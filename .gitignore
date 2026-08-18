@@ -1,4 +1,4 @@
-# Minecraft
+# Minecraft runtime
 .minecraft/
 saves/
 logs/
@@ -6,7 +6,7 @@ crash-reports/
 screenshots/
 server-resource-packs/
 
-# Launchers and runtime
+# Launchers and local instances
 .modrinth/
 .curseforge/
 run/
@@ -14,18 +14,28 @@ runtime/
 instance/
 local/
 
-# Temporary and generated files
+# Local client state
+/options.txt
+servers.dat
+usercache.json
+
+# Build and release artifacts
+releases/
+dist/
+build/
+*.mrpack
+*.jar
+*.zip
+
+# First-party CobbleHorizons archive intentionally tracked
+!resourcepacks/CobbleHorizons-Branding.zip
+
+# Temporary/generated files
 *.tmp
 *.temp
 *.log
 *.class
-*.jar
 *.bak
-*.zip
-*.mrpack
-
-!resourcepacks/CobbleHorizons-*.zip
-!releases/CobbleHorizons-*.mrpack
 
 # Editors and operating systems
 .idea/

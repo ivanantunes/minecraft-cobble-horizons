@@ -2,6 +2,23 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.1.0] — 2026-08-17
+
+### QuestZ stabilization, progression gating and final release packaging
+
+- Replaced the temporary Boundless quest implementation with QuestZ 1.0.1 and a first-party advancement-based CobbleHorizons datapack.
+- Finalized 93 active gameplay quests plus the CobbleHorizons root entry, all player-facing content in English.
+- Added real prerequisite predicates to active non-root quests so later objectives cannot complete before their intended progression point.
+- Standardized the opening progression as **Choose Your Partner → Red Apricorn Research (8) → A New Friend**.
+- Audited capture, evolution, battle, inventory and reward criteria for invalid JSON, missing parents, broken reward functions and progression cycles.
+- Hid and disabled 12 Species Hunt templates after species-specific capture filtering proved unreliable and could complete multiple future quests from a generic capture.
+- Removed the duplicate title-screen logo overlay while preserving the logo already present in the menu artwork.
+- Replaced the vanilla yellow rotating splash text with an invisible branding entry.
+- Kept the custom FancyMenu button layouts, title screen, loading screen and CobbleHorizons Branding presentation.
+- Rebuilt the release using the import-safe MRPack packaging approach after a previous rebuild triggered `Cannot read properties of undefined (reading 'then')` in the Modrinth App.
+- Updated repository documentation to reflect QuestZ, the current quest count, the `L` quest key, source-control policy and final 1.1.0 release state.
+
+
 ## [1.1.0-rc5] — 2026-08-12
 
 ### Stable inventory, English campaign and scoped button theme

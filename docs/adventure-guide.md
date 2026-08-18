@@ -1,40 +1,90 @@
 # CobbleHorizons Adventure Guide
 
-CobbleHorizons 1.1.0 RC5 introduces a curated in-game campaign that gives players direction without turning the open world into a fixed linear map.
+CobbleHorizons 1.1.0 uses **QuestZ 1.0.1** for its in-game progression system.
 
-Press **`[`** after entering a world, or use the supplied Quest Book item. The inventory-side button is intentionally disabled because Boundless 1.21.1-Fabric-10 crashes while injecting that widget on Minecraft 1.21.1. The standalone book remains fully available. Open **CobbleHorizons Adventure** and follow the connected path.
+Open the quest screen with **`L`** after entering a world.
 
-## Campaign
+## Campaign status
 
-The campaign has **66 connected Pokémon objectives in English** grouped into six categories. Every quest is visible in the book; quests with unfinished prerequisites are shown as locked rather than hidden. The objectives cover Poké Balls, healing, Pokédex research, capture specializations, training, evolution items, gym milestones and legendary preparation.
+The current campaign contains:
 
-| Category | Difficulty | Focus |
-|---:|---|---|
-| Primeiros Passos | Fácil | Abrigo, ferramentas, comida e sobrevivência inicial |
-| Exploração | Fácil / médio | Navegação, cavernas, biomas, viagem e portal |
-| Jornada de Treinador | Médio | Poké Bolas, preparação de batalha, pesquisa e arenas |
-| Base e Recursos | Médio | Oficina, armazenamento, encantamentos, fazenda e redstone |
-| Desafios | Difícil | Nether, combate, equipamentos e tesouros perigosos |
-| Horizonte Lendário | Hardcore | Netherite, End, Dragon, Wither, beacon e legado final |
+- **93 active gameplay quests**;
+- **1 root advancement** used to anchor the quest tree;
+- **12 Species Hunt quests hidden and disabled** until species-specific capture filtering is reintroduced safely.
 
-## Progression philosophy
+All active player-facing quests are in English.
 
-- The progression begins accessible and becomes demanding only after the player has established a base and team.
-- Rewards provide experience bottles and small progression help, not complete teams or free endgame gear.
-- Objectives intentionally use stable item IDs, making them reliable in singleplayer and in a Modrinth-imported instance.
-- The final stage does not end the world. Research, collecting, breeding, building, gyms and legendary hunting remain available.
+## Opening progression
 
-## Important behavior
+The beginning of the campaign is deliberately ordered:
 
-Quest progression is saved per world. A fresh world is recommended when validating a new release candidate. The campaign is shipped at `config/boundless/questpacks/cobblehorizons-adventure`; it is enabled by default and does not depend on FTB mods or CurseForge downloads. The inventory widget is disabled, but the standalone Quest Book is not.
+1. **Choose Your Partner** — choose a starter Pokémon.
+2. **Red Apricorn Research** — carry 8 Red Apricorns.
+3. **A New Friend** — catch your first Pokémon.
 
-## RC testing checklist
+The campaign then opens into multiple Pokémon-focused branches.
 
-1. Import the MRPack as a new Modrinth instance.
-2. Create a new world and confirm that the Quest Book opens with `[`.
-3. Confirm that **CobbleHorizons Adventure** contains six English category tabs and 66 visible quests.
-4. Complete **Apricorn Fieldwork** with red apricorns and verify the reward delivery.
-5. Continue to **First Poke Ball Kit** and confirm the dependency unlocks correctly.
-6. Confirm that no FTB Quests, FTB Library, FTB Teams or JustQuests mod is present.
-7. Open the player inventory and confirm it does not crash.
-8. Report the pack version, operating system, reproduction steps and a `latest.log` link for any failure.
+## Main quest branches
+
+| Branch | Examples |
+|---|---|
+| Apricorn research | Red, Yellow, Green, Blue, Pink, Black and White Apricorns |
+| Poké Balls | Poké Ball, Great Ball, Ultra Ball and specialized ball progression |
+| Capture milestones | 5, 15, 30 and 60 captures, plus shiny capture |
+| Type challenges | Fire, Water, Grass, Electric, Psychic, Ghost, Dragon, Dark, Steel and Fairy capture goals |
+| Training | Level milestones, candies and Rare Candy progression |
+| Battles | Battle wins and Pokémon defeat milestones |
+| Evolution | First evolution, evolution counts, stones and held evolution items |
+| Medicine | Potions, restores and revives |
+| Held items | Leftovers, Choice items, Lucky Egg, Eviolite and other battle items |
+| Fishing | First fishing milestones and Pokémon fishing |
+| Utility | Pokédex and Healing Machine progression |
+| Endgame preparation | Advanced items and the Horizon Elite objective |
+
+## Prerequisite protection
+
+QuestZ uses Minecraft advancements as the underlying quest data.
+
+CobbleHorizons adds a real prerequisite predicate to every active non-root quest. A later quest cannot complete simply because the player accidentally performs its objective before reaching it.
+
+This is separate from the visual `parent` relationship: the parent organizes the quest tree, while the prerequisite predicate enforces the progression.
+
+## Species Hunt status
+
+The following Species Hunt templates are currently hidden and use `minecraft:impossible`:
+
+- Beldum
+- Dratini
+- Eevee
+- Gastly
+- Gible
+- Larvitar
+- Magikarp
+- Pikachu
+- Ralts
+- Riolu
+- Rotom
+- Snorlax
+
+They were disabled because a generic capture could incorrectly complete multiple species-specific quests in the previous implementation.
+
+They should only be re-enabled after one species-specific quest is validated against the exact Cobblemon version used by the pack.
+
+## World progress
+
+Quest completion is stored as advancement progress inside the world.
+
+For release validation, use a **fresh world**. Reusing an old test world can preserve completed advancements from an earlier release and make a corrected quest appear to complete immediately.
+
+## Release testing checklist
+
+1. Import the latest MRPack into a new Modrinth instance.
+2. Create a new world.
+3. Press `L` and confirm the CobbleHorizons quest tree opens.
+4. Choose a starter and confirm only **Choose Your Partner** completes.
+5. Carry 8 Red Apricorns and confirm **Red Apricorn Research** completes.
+6. Catch one Pokémon and confirm only the intended first-capture progression completes.
+7. Confirm future capture, type and item quests do not complete early.
+8. Confirm the 12 Species Hunt quests are not visible.
+9. Confirm quest rewards are delivered without missing-function errors.
+10. Report the pack version, operating system, reproduction steps and `latest.log` for any failure.

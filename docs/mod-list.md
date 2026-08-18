@@ -1,6 +1,15 @@
-# Included Content — CobbleHorizons 1.1.0 RC5
+# Included Content — CobbleHorizons 1.1.0
 
-The release manifest contains **67 mods, 2 datapacks, 2 resource packs and 3 shader packs** for Minecraft 1.21.1 and Fabric Loader 0.19.3.
+The 1.1.0 release manifest contains **68 mods, 1 externally distributed datapack, 2 externally distributed resource packs and 3 shader packs**.
+
+The release also includes the first-party **CobbleHorizons QuestZ datapack** and **CobbleHorizons Branding** resource pack, bringing the effective totals to **2 datapacks and 3 resource packs**.
+
+Target platform:
+
+- Minecraft 1.21.1
+- Fabric Loader 0.19.3
+- Java 21
+- Cobblemon 1.7.3
 
 ## Core
 
@@ -65,7 +74,7 @@ The release manifest contains **67 mods, 2 datapacks, 2 resource packs and 3 sha
 | Ambient Environment | 18.0.0.2 |
 | Accessories | 1.1.0-beta.53 |
 | Mob Filter | 0.11.2 |
-| Boundless: Quests | 1.21.1-fabric-10 |
+| QuestZ | 1.0.1 |
 | Global Packs | 21.0.6 |
 
 ## Performance and graphics
@@ -105,17 +114,25 @@ The release manifest contains **67 mods, 2 datapacks, 2 resource packs and 3 sha
 | Resourceful Lib | 3.0.12 |
 | YetAnotherConfigLib | 3.8.2 |
 
-## Datapack, resource packs and shaders
+## Datapacks, resource packs and shaders
 
-| Type | Project | Version | Default |
+| Type | Project | Version / status | Default |
 |---|---|---|---|
-| Datapack | RCT Badges — Cobblemon Pokémon Badges | 1.1.2 | Included |
-| Quest pack | CobbleHorizons Adventure (Boundless) | 1.1.0 RC5 / 66 English Pokémon quests | Enabled |
+| Datapack | RCT Badges — Cobblemon Pokémon Badges | 0.15 + 1.1.2 | Included by release manifest |
+| First-party datapack | CobbleHorizons QuestZ | 93 active gameplay quests + root | Enabled |
 | Resource pack | Cobblemon Battle Tracks | 1.2 | Enabled |
-| Resource pack | Faithful 32x | June 2026 / 1.21.1 | Optional |
-| Internal branding | CobbleHorizons Branding | 1.0.0 | Enabled |
+| Resource pack | Faithful 32x | 1.21.1 | Optional |
+| First-party resource pack | CobbleHorizons Branding | 1.1.0 source state | Enabled |
 | Shader | MakeUp Ultra Fast | 9.0c | Optional |
 | Shader | Complementary Reimagined | r5.8.1 | Optional |
 | Shader | BSL | 8.3 | Optional |
 
-Third-party projects remain subject to their respective licenses. The MRPack references official distribution URLs and hashes.
+## Source-control note
+
+Third-party mod JARs, datapack ZIPs, resource-pack ZIPs and shader archives are **not part of the source repository**.
+
+They are distributed through the MRPack manifest from their official project locations.
+
+The repository tracks only first-party CobbleHorizons content and configuration, including the QuestZ datapack and CobbleHorizons Branding.
+
+Third-party projects remain subject to their respective licenses.
