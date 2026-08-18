@@ -1,8 +1,0 @@
-{
-  "id": "capture",
-  "category": "capture",
-  "icon": "cobblemon:great_ball",
-  "name": "Capture and Research",
-  "order": 2,
-  "default_open": true
-}

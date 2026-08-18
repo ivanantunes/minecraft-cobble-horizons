@@ -94,7 +94,6 @@ soundCategory_player:0.8
 soundCategory_ambient:0.65
 soundCategory_voice:0.8
 key_key.cobblemon.summary:key.keyboard.v
-key_key.ftbquests.quests:key.keyboard.j
 key_iris.keybind.shaderPackSelection:key.keyboard.f7
 key_iris.keybind.reload:key.keyboard.f8
 key_iris.keybind.toggleShaders:key.keyboard.f9

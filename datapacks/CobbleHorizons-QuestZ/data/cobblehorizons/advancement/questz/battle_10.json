@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/train_level25",
+  "display": {
+    "icon": {
+      "id": "cobblemon:choice_band"
+    },
+    "title": {
+      "text": "Battle Apprentice",
+      "color": "white"
+    },
+    "description": {
+      "text": "Win 10 Pokémon battles.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:battles_won",
+      "conditions": {
+        "count": 10,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_level25": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 90,
+    "function": "cobblehorizons:quest_rewards/battle_10"
+  }
+}

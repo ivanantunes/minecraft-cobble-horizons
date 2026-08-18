@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/train_level15",
+  "display": {
+    "icon": {
+      "id": "cobblemon:exp_candy_m"
+    },
+    "title": {
+      "text": "Battle Ready",
+      "color": "white"
+    },
+    "description": {
+      "text": "Raise a Pokémon to level 25.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:level_up",
+      "conditions": {
+        "level": 25,
+        "has_evolved": false,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_level15": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 80,
+    "function": "cobblehorizons:quest_rewards/train_level25"
+  }
+}

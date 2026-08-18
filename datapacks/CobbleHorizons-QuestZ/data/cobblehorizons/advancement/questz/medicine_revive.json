@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/medicine_super",
+  "display": {
+    "icon": {
+      "id": "cobblemon:revive"
+    },
+    "title": {
+      "text": "Back Into Battle",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 2 Revives.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:revive",
+            "count": {
+              "min": 2
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/medicine_super": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 75,
+    "function": "cobblehorizons:quest_rewards/medicine_revive"
+  }
+}

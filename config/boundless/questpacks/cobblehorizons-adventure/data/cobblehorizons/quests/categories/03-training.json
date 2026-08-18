@@ -1,7 +1,0 @@
-{
-  "id": "training",
-  "icon": "cobblemon:exp_candy_m",
-  "name": "Training and Battle",
-  "order": 3,
-  "dependency": ""
-}

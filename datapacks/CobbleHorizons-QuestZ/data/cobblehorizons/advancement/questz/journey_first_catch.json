@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/apricorn_red",
+  "display": {
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "title": {
+      "text": "A New Friend",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch your first Pokémon.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 1,
+        "type": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/apricorn_red": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 50,
+    "function": "cobblehorizons:quest_rewards/journey_first_catch"
+  }
+}

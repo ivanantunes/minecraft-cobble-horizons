@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/catch_05",
+  "display": {
+    "icon": {
+      "id": "cobblemon:ultra_ball"
+    },
+    "title": {
+      "text": "Growing Collection",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch 15 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 15,
+        "type": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/catch_05": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 90,
+    "function": "cobblehorizons:quest_rewards/catch_15"
+  }
+}

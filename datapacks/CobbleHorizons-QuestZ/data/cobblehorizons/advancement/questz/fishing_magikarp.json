@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/fishing_first",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dive_ball"
+    },
+    "title": {
+      "text": "Classic Catch",
+      "color": "white"
+    },
+    "description": {
+      "text": "Reel in a Magikarp with a Poké Rod.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:reel_in_pokemon",
+      "conditions": {
+        "species": "cobblemon:magikarp",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/fishing_first": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 130,
+    "function": "cobblehorizons:quest_rewards/fishing_magikarp"
+  }
+}

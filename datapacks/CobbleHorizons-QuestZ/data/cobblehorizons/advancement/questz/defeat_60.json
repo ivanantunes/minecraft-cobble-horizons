@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/defeat_25",
+  "display": {
+    "icon": {
+      "id": "cobblemon:assault_vest"
+    },
+    "title": {
+      "text": "Wild Battle Veteran",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat 60 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:pokemon_defeated",
+      "conditions": {
+        "count": 60,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/defeat_25": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 180,
+    "function": "cobblehorizons:quest_rewards/defeat_60"
+  }
+}

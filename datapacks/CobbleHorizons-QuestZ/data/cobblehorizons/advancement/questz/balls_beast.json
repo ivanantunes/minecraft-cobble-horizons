@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/catch_60",
+  "display": {
+    "icon": {
+      "id": "cobblemon:beast_ball"
+    },
+    "title": {
+      "text": "Beyond Ordinary",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 3 Beast Balls.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:beast_ball",
+            "count": {
+              "min": 3
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/catch_60": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 150,
+    "function": "cobblehorizons:quest_rewards/balls_beast"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "id": "gyms",
-  "category": "gyms",
-  "icon": "cobblemon:assault_vest",
-  "name": "Gyms and Competition",
-  "order": 5,
-  "default_open": true
-}

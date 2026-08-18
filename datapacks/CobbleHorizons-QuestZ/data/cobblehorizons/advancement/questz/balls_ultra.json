@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/balls_great",
+  "display": {
+    "icon": {
+      "id": "cobblemon:ultra_ball"
+    },
+    "title": {
+      "text": "Ultra Ball Stockpile",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 8 Ultra Balls.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:ultra_ball",
+            "count": {
+              "min": 8
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/balls_great": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 80,
+    "function": "cobblehorizons:quest_rewards/balls_ultra"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "parent": "cobblehorizons:questz/evolve_first",
+  "display": {
+    "icon": {
+      "id": "cobblemon:shiny_stone"
+    },
+    "title": {
+      "text": "Evolution Researcher",
+      "color": "white"
+    },
+    "description": {
+      "text": "Evolve 5 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:pokemon_evolved",
+      "conditions": {
+        "count": 5,
+        "species": "any",
+        "evolution": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/evolve_first": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 130,
+    "function": "cobblehorizons:quest_rewards/evolve_05"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/utility_healer",
+  "display": {
+    "icon": {
+      "id": "cobblemon:potion"
+    },
+    "title": {
+      "text": "Field Medicine",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 6 Potions.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:potion",
+            "count": {
+              "min": 6
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/utility_healer": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 50,
+    "function": "cobblehorizons:quest_rewards/medicine_potion"
+  }
+}

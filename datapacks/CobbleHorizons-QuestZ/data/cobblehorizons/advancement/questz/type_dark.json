@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/type_grass",
+  "display": {
+    "icon": {
+      "id": "cobblemon:reaper_cloth"
+    },
+    "title": {
+      "text": "Dark Type Hunter",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch 5 Dark-type Pokémon.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 5,
+        "type": "dark",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/type_grass": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 85,
+    "function": "cobblehorizons:quest_rewards/type_dark"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/stone_water",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dawn_stone"
+    },
+    "title": {
+      "text": "Dawn Stone Research",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Dawn Stone.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:dawn_stone",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/stone_water": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 65,
+    "function": "cobblehorizons:quest_rewards/stone_dawn"
+  }
+}

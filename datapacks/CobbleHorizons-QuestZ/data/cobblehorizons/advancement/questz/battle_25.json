@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/battle_10",
+  "display": {
+    "icon": {
+      "id": "cobblemon:choice_specs"
+    },
+    "title": {
+      "text": "Battle Specialist",
+      "color": "white"
+    },
+    "description": {
+      "text": "Win 25 Pokémon battles.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:battles_won",
+      "conditions": {
+        "count": 25,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/battle_10": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 130,
+    "function": "cobblehorizons:quest_rewards/battle_25"
+  }
+}

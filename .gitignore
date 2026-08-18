@@ -23,6 +23,8 @@ local/
 *.bak
 *.zip
 *.mrpack
+
+!resourcepacks/CobbleHorizons-*.zip
 !releases/CobbleHorizons-*.mrpack
 
 # Editors and operating systems

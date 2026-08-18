@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/catch_60",
+  "display": {
+    "icon": {
+      "id": "cobblemon:master_ball"
+    },
+    "title": {
+      "text": "Horizon Elite",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry a Master Ball and prove you are ready for the rarest encounters.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:master_ball",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/catch_60": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 350,
+    "function": "cobblehorizons:quest_rewards/horizon_elite"
+  }
+}

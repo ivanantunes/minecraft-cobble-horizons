@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/catch_30",
+  "display": {
+    "icon": {
+      "id": "cobblemon:master_ball"
+    },
+    "title": {
+      "text": "Horizon Collector",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch 60 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 60,
+        "type": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/catch_30": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 220,
+    "function": "cobblehorizons:quest_rewards/catch_60"
+  }
+}

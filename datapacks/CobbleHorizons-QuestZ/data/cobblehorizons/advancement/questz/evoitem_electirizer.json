@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/evoitem_metal_coat",
+  "display": {
+    "icon": {
+      "id": "cobblemon:electirizer"
+    },
+    "title": {
+      "text": "Electirizer",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Electirizer.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:electirizer",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/evoitem_metal_coat": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 80,
+    "function": "cobblehorizons:quest_rewards/evoitem_electirizer"
+  }
+}

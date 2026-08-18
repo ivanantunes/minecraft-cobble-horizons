@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/balls_basic",
+  "display": {
+    "icon": {
+      "id": "cobblemon:great_ball"
+    },
+    "title": {
+      "text": "Great Ball Stockpile",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 12 Great Balls.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:great_ball",
+            "count": {
+              "min": 12
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/balls_basic": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 60,
+    "function": "cobblehorizons:quest_rewards/balls_great"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "cobblehorizons:questz/root",
+  "display": {
+    "icon": {
+      "id": "cobblemon:pokedex_red"
+    },
+    "title": {
+      "text": "Choose Your Partner",
+      "color": "white"
+    },
+    "description": {
+      "text": "Choose your starter Pokémon and begin your CobbleHorizons journey.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:pick_starter",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/root": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 40,
+    "function": "cobblehorizons:quest_rewards/journey_starter"
+  }
+}

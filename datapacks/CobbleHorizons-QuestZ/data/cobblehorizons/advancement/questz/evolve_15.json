@@ -1,0 +1,47 @@
+{
+  "parent": "cobblehorizons:questz/evolve_05",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dawn_stone"
+    },
+    "title": {
+      "text": "Evolution Expert",
+      "color": "white"
+    },
+    "description": {
+      "text": "Evolve 15 Pokémon.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:pokemon_evolved",
+      "conditions": {
+        "count": 15,
+        "species": "any",
+        "evolution": "any",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/evolve_05": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 220,
+    "function": "cobblehorizons:quest_rewards/evolve_15"
+  }
+}

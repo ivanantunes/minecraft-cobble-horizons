@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/train_level15",
+  "display": {
+    "icon": {
+      "id": "cobblemon:soothe_bell"
+    },
+    "title": {
+      "text": "Friendship Training",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a Friendship item.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:soothe_bell",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_level15": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 75,
+    "function": "cobblehorizons:quest_rewards/held_soothe"
+  }
+}

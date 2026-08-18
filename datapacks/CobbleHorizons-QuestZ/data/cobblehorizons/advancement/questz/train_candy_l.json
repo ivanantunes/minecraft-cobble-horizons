@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/train_candy_m",
+  "display": {
+    "icon": {
+      "id": "cobblemon:exp_candy_l"
+    },
+    "title": {
+      "text": "Large Candy Reserve",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 4 Large Exp. Candies.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:exp_candy_l",
+            "count": {
+              "min": 4
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_candy_m": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 75,
+    "function": "cobblehorizons:quest_rewards/train_candy_l"
+  }
+}

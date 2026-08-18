@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/evolve_05",
+  "display": {
+    "icon": {
+      "id": "cobblemon:kings_rock"
+    },
+    "title": {
+      "text": "King's Rock",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a King's Rock.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:kings_rock",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/evolve_05": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 80,
+    "function": "cobblehorizons:quest_rewards/evoitem_kings_rock"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/pp_up",
+  "display": {
+    "icon": {
+      "id": "cobblemon:pp_max"
+    },
+    "title": {
+      "text": "Maximum Move Endurance",
+      "color": "white"
+    },
+    "description": {
+      "text": "Obtain a PP Max.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:pp_max",
+            "count": {
+              "min": 1
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/pp_up": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 120,
+    "function": "cobblehorizons:quest_rewards/pp_max"
+  }
+}

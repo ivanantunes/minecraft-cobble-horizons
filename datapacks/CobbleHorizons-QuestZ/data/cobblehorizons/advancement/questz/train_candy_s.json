@@ -1,0 +1,52 @@
+{
+  "parent": "cobblehorizons:questz/train_level15",
+  "display": {
+    "icon": {
+      "id": "cobblemon:exp_candy_s"
+    },
+    "title": {
+      "text": "Small Candy Reserve",
+      "color": "white"
+    },
+    "description": {
+      "text": "Carry 8 Small Exp. Candies.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:exp_candy_s",
+            "count": {
+              "min": 8
+            }
+          }
+        ],
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/train_level15": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 55,
+    "function": "cobblehorizons:quest_rewards/train_candy_s"
+  }
+}

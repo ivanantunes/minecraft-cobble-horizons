@@ -1,8 +1,0 @@
-{
-  "id": "training",
-  "category": "training",
-  "icon": "cobblemon:exp_candy_m",
-  "name": "Training and Battle",
-  "order": 3,
-  "default_open": true
-}

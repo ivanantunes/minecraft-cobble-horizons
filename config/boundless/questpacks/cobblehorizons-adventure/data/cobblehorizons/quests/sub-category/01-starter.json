@@ -1,8 +1,0 @@
-{
-  "id": "starter",
-  "category": "starter",
-  "icon": "cobblemon:poke_ball",
-  "name": "Trainer's First Journey",
-  "order": 1,
-  "default_open": true
-}

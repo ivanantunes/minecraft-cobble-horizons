@@ -1,0 +1,34 @@
+{
+  "parent": "cobblehorizons:questz/type_dragon",
+  "display": {
+    "icon": {
+      "id": "cobblemon:ultra_ball"
+    },
+    "title": {
+      "text": "Species Hunt: Gible",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch a Gible.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 120,
+    "function": "cobblehorizons:quest_rewards/species_gible"
+  }
+}

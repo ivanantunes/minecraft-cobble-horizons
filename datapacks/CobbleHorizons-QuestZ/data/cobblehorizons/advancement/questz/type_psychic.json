@@ -1,0 +1,46 @@
+{
+  "parent": "cobblehorizons:questz/type_fire",
+  "display": {
+    "icon": {
+      "id": "cobblemon:shiny_stone"
+    },
+    "title": {
+      "text": "Psychic Type Hunter",
+      "color": "white"
+    },
+    "description": {
+      "text": "Catch 5 Psychic-type Pokémon.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_pokemon",
+      "conditions": {
+        "count": 5,
+        "type": "psychic",
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/type_fire": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 85,
+    "function": "cobblehorizons:quest_rewards/type_psychic"
+  }
+}
