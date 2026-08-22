@@ -1,8 +1,13 @@
-# Included Content — CobbleHorizons 1.1.0
+# Included Content — CobbleHorizons 1.2.0
 
-The 1.1.0 release manifest contains **68 mods, 1 externally distributed datapack, 2 externally distributed resource packs and 3 shader packs**.
+The 1.2.0 MRPack manifest contains:
 
-The release also includes the first-party **CobbleHorizons QuestZ datapack** and **CobbleHorizons Branding** resource pack, bringing the effective totals to **2 datapacks and 3 resource packs**.
+- **68 mods**;
+- **1 externally distributed datapack**;
+- **3 externally distributed resource packs**;
+- **3 shader packs**.
+
+The overrides add two first-party datapacks and one first-party resource pack, for effective totals of **3 datapacks** and **4 resource packs**.
 
 Target platform:
 
@@ -114,25 +119,48 @@ Target platform:
 | Resourceful Lib | 3.0.12 |
 | YetAnotherConfigLib | 3.8.2 |
 
-## Datapacks, resource packs and shaders
+## Datapacks
 
-| Type | Project | Version / status | Default |
-|---|---|---|---|
-| Datapack | RCT Badges — Cobblemon Pokémon Badges | 0.15 + 1.1.2 | Included by release manifest |
-| First-party datapack | CobbleHorizons QuestZ | 93 active gameplay quests + root | Enabled |
-| Resource pack | Cobblemon Battle Tracks | 1.2 | Enabled |
-| Resource pack | Faithful 32x | 1.21.1 | Optional |
-| First-party resource pack | CobbleHorizons Branding | 1.1.0 source state | Enabled |
-| Shader | MakeUp Ultra Fast | 9.0c | Optional |
-| Shader | Complementary Reimagined | r5.8.1 | Optional |
-| Shader | BSL | 8.3 | Optional |
+| Type | Project | Status |
+|---|---|---|
+| External | RCT Badges — Cobblemon Pokémon Badges | Distributed by MRPack manifest |
+| First-party | CobbleHorizons QuestZ | 107 active gameplay quests + root; 12 Species Hunts disabled |
+| First-party | CobbleHorizons Progression | CobbleHorizons League RCT series, key trainer overrides and migration helper |
+
+## Resource packs
+
+| Type | Project | Status |
+|---|---|---|
+| First-party | CobbleHorizons | Branding, UI identity, six original music tracks and visual adjustments |
+| External | Cobblemon Battle Tracks | Battle-music resource pack |
+| External | Cobblemon Interface | v1.6.0 |
+| External | Cobblemon Interface: Modded | v1.9.4 |
+
+Faithful 32x is **not** part of 1.2.0.
+
+## Shaders
+
+| Project | Version | Default use |
+|---|---|---|
+| MakeUp Ultra Fast | 9.0c | Optional |
+| Complementary Reimagined | r5.8.1 | Optional |
+| BSL | 8.3 | Optional |
+
+## First-party music
+
+`CobbleHorizons.zip` includes:
+
+- Horizon Menu
+- Routes and Fields
+- Quiet Town
+- Starlit Research
+- Caves and Ruins
+- Beyond the Horizon
+
+Battle Tracks remains responsible for its own battle-music content.
 
 ## Source-control note
 
-Third-party mod JARs, datapack ZIPs, resource-pack ZIPs and shader archives are **not part of the source repository**.
+Third-party JARs, datapack ZIPs, resource-pack ZIPs and shader archives are release dependencies and should not be mirrored into normal Git history.
 
-They are distributed through the MRPack manifest from their official project locations.
-
-The repository tracks only first-party CobbleHorizons content and configuration, including the QuestZ datapack and CobbleHorizons Branding.
-
-Third-party projects remain subject to their respective licenses.
+The source repository tracks first-party configuration, datapacks, project assets/documentation and the first-party CobbleHorizons resource pack.

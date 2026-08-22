@@ -1,39 +1,31 @@
 {
-  "parent": "cobblehorizons:questz/catch_60",
+  "parent": "cobblehorizons:questz/league_champion",
   "display": {
     "icon": {
       "id": "cobblemon:master_ball"
     },
     "title": {
       "text": "Horizon Elite",
-      "color": "white"
+      "color": "light_purple"
     },
     "description": {
-      "text": "Carry a Master Ball and prove you are ready for the rarest encounters.",
+      "text": "League complete. Legendary research, Mega progression, shiny hunting and rare collection now form your post-game.",
       "color": "gray"
     },
     "frame": "challenge",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
     "complete": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:tick",
       "conditions": {
-        "items": [
-          {
-            "items": "cobblemon:master_ball",
-            "count": {
-              "min": 1
-            }
-          }
-        ],
         "player": {
           "type_specific": {
             "type": "minecraft:player",
             "advancements": {
-              "cobblehorizons:questz/catch_60": true
+              "cobblehorizons:questz/league_champion": true
             }
           }
         }
@@ -46,7 +38,7 @@
     ]
   ],
   "rewards": {
-    "experience": 350,
+    "experience": 1000,
     "function": "cobblehorizons:quest_rewards/horizon_elite"
   }
 }

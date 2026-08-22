@@ -1,2 +1,2 @@
 tellraw @s {"text":"Quest complete: High Grade Medicine","color":"aqua"}
-give @s cobblemon:ultra_ball 1
+cobbledollars give @s 1000

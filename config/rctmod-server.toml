@@ -153,7 +153,7 @@
 	#this value may also be set to one of the special series ids "empty" (i.e. no series) or "freeroam".
 	#Note that when setting the initial series to "freeroam" it is usually a good idea to also disable
 	#'freeroamRequiresCompletedSeries'.
-	initialSeries = "empty"
+initialSeries = "cobblehorizons"
 	#━━━━━━━━━━
 	#The freeroam series will grant a level cap of 100 and allows players to pause the progression of their
 	#current series. If this option is enabled, players must have completed any other series first to gain

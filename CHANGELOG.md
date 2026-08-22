@@ -2,6 +2,53 @@
 
 All notable changes to CobbleHorizons are documented here.
 
+## [1.2.0] — 2026-08-22
+
+### League progression, identity overhaul, keybind stabilization and long-play balance
+
+#### Progression
+
+- Added the first-party **CobbleHorizons League** RCT series.
+- Ordered the League as Brock → Misty → Lt. Surge → Erika → Sabrina → Koga → Blaine → Clair → Lorelei → Bruno → Agatha → Lance → Champion Terry.
+- Set the initial player level cap to 15, relative cap to 0 and disabled overleveling.
+- Added the designed cap sequence `15 → 27 → 34 → 44 → 59 → 68 → 76 → 81 → 85` as the player advances through the required opponents.
+- Added `/function cobblehorizons:progression/migrate_1_2_all_online` as a migration helper for online players/worlds moving to the 1.2 progression series.
+- Added League quest nodes through all eight gyms, Elite Four and Champion, followed by the Horizon Elite postgame objective.
+- Expanded the QuestZ campaign to **107 active gameplay quests + 1 root advancement**.
+- Kept the 12 Species Hunt templates hidden/disabled because species-specific capture filtering is still not reliable enough for the exact Cobblemon 1.7.3 setup.
+
+#### Trainer and world balance
+
+- Prevented the eight Gym Leaders, Elite Four and Champion identities used by CobbleHorizons progression from spawning naturally (`spawnWeightFactor = 0`).
+- Kept ordinary RCT trainers available as world encounters.
+- Restored natural spawning for **cow, pig, chicken and sheep** so early survival has food, leather, wool and feathers without requiring a village.
+- Continued suppressing other world-generated vanilla mobs through Mob Filter while preserving villagers, wandering traders, iron/snow golems, Ender Dragon and Wither.
+- Reduced reward-chain side effects from legacy `inventory_changed` quests by converting the 17 main reward-sink quests to CobbleDollars, preventing multi-step item reward cascades.
+
+#### Controls
+
+- Added proper Default Options key defaults through `config/defaultoptions/keybindings.txt` instead of relying on key lines in `options.txt`.
+- Resolved gameplay key conflicts between Cobblemon, Inmis, Xaero, Iris, Jade and utility/debug bindings.
+- Kept core gameplay keys compact (`R`, `V`, `N`, `K`, `B`, `H`, `M`, `G`, `Y`, `Z`) and moved configuration functions to `F6–F10`.
+- Unbound unnecessary Cobblemon debug, FancyMenu/Drippy development, Iris wireframe and secondary Xaero shortcuts.
+
+#### Resource packs, UI and music
+
+- Merged the old `CobbleHorizons-Branding.zip` and `CobbleHorizons-Identity.zip` into one first-party `CobbleHorizons.zip` resource pack.
+- Removed Faithful 32x from the release.
+- Added Cobblemon Interface v1.6.0 and Cobblemon Interface: Modded v1.9.4 through official Modrinth distribution.
+- Fixed Default Options native configuration location to `config/defaultoptions/options.txt`.
+- Configured Global Packs to require the intended CobbleHorizons/interface/resource-pack stack.
+- Expanded FancyMenu world-loading customization to cover the generic message/loading flow in addition to the existing loading layouts.
+- Added six original CobbleHorizons music tracks: Horizon Menu, Routes and Fields, Quiet Town, Starlit Research, Caves and Ruins, and Beyond the Horizon.
+- Preserved Cobblemon Battle Tracks for battle music.
+
+#### Validation
+
+- Kept Minecraft 1.21.1, Fabric Loader 0.19.3, Cobblemon 1.7.3 and Java 21 as the release baseline.
+- Validated MRPack ZIP integrity after each correction pass.
+- Preserved the established progression/quest source except for the explicit 1.2 League, spawn and reward-balance changes described above.
+
 ## [1.1.0] — 2026-08-17
 
 ### QuestZ stabilization, progression gating and final release packaging

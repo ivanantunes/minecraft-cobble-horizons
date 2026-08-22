@@ -1,95 +1,121 @@
-# Installation and Updates
+# Installation and Updates — CobbleHorizons 1.2.0
 
 ## Requirements
 
-- Modrinth App
+- Modrinth App (recommended)
 - Java 21
 - 6 GB of allocated memory
-- A legitimate Minecraft: Java Edition account
+- Minecraft: Java Edition
 
-Use 8 GB only when needed for heavier shader presets or unusually long sessions. Allocating substantially more memory is normally unnecessary.
+Use 8 GB only when heavier shader profiles or unusually long sessions justify it. More memory is not automatically better.
 
 ## Fresh installation
 
 1. Open the CobbleHorizons GitHub **Releases** page.
-2. Download the latest `CobbleHorizons-*.mrpack`.
-3. Open the file with the Modrinth App.
-4. Import it as a **new instance**.
-5. Allocate 6 GB of memory.
+2. Download the current `CobbleHorizons-*.mrpack`.
+3. Import it into the Modrinth App as a **new instance**.
+4. Allocate 6 GB RAM.
+5. Confirm Java 21 is selected.
 6. Start the game.
 
-A fresh import applies English (US), the tested resource-pack order, balanced graphics, curated controls, QuestZ progression and disabled-by-default shaders.
+A fresh instance is the supported baseline for validating defaults.
 
-## Updating
+## Updating from an older release
 
 Worlds are not stored inside the MRPack.
 
-1. Back up the `saves` folder from your current instance.
+1. Back up the old instance, especially `saves/`.
 2. Import the new MRPack as a separate instance.
-3. Start it once and reach the title screen.
+3. Start the new instance once and reach the title screen.
 4. Close Minecraft.
 5. Copy only the worlds you want to keep into the new instance.
-6. Keep the new instance's mods, config and bundled defaults.
+6. Keep the new instance's `config`, mods and packaged defaults.
 
-Do not copy an old root `options.txt` when validating a release. CobbleHorizons ships its official client defaults through Default Options.
+Do not copy the old root `options.txt` into the new instance when validating a release.
 
-### Quest update note
+## Default Options in 1.2.0
 
-QuestZ progress is stored in each world's advancement data. When validating changes to the quest tree, a fresh world is strongly recommended.
+The correct packaged defaults are:
 
-An old world can preserve advancement completions from previous release candidates.
+- `config/defaultoptions/options.txt` — regular client options;
+- `config/defaultoptions/keybindings.txt` — curated key mappings.
 
-## Visual profiles
+The old `config/defaultoptions/extra/options.txt` layout is no longer used for Minecraft's native `options.txt` defaults.
 
-Press `F7` to open Iris shader selection.
+`defaultoptions.journal.json` is runtime state and must **not** be distributed in the source or release overrides.
 
-| Profile | Recommendation |
+## Resource packs
+
+Global Packs requires the release's interface/identity stack so a clean instance does not depend only on a pre-existing personal `options.txt`.
+
+The 1.2.0 release includes:
+
+- first-party `CobbleHorizons.zip`;
+- Cobblemon Battle Tracks;
+- Cobblemon Interface v1.6.0;
+- Cobblemon Interface: Modded v1.9.4;
+- Cobbreeding's built-in Pasture Fix resources.
+
+Faithful 32x was removed from the 1.2.0 release.
+
+## Shaders
+
+Shaders are optional.
+
+| Key | Action |
 |---|---|
-| MakeUp Ultra Fast 9.0c | Integrated graphics and lower-end systems |
-| Complementary Reimagined r5.8.1 | Recommended balanced profile |
-| BSL 8.3 | Stronger GPUs and screenshots |
+| `F7` | Open shader selection |
+| `F8` | Reload shaders |
+| `F9` | Toggle shaders |
 
-Shaders are disabled on first launch.
+Bundled profiles:
 
-Faithful 32x is installed by the release but disabled by default. If enabled, keep CobbleHorizons Branding at higher priority.
+- MakeUp Ultra Fast 9.0c;
+- Complementary Reimagined r5.8.1;
+- BSL 8.3.
 
-## Resource-pack defaults
+On macOS, the top-row function keys may require `Fn` depending on system keyboard settings.
 
-The tested active stack includes:
+## Updating worlds from pre-1.2 progression
 
-1. CobbleHorizons Branding
-2. Cobblemon Battle Tracks
-3. Cobbreeding Pasture Fix
-4. Fabric resources
-5. Vanilla resources
+The 1.2.0 release uses the `cobblehorizons` RCT series.
 
-Faithful 32x remains optional.
+For an existing world where players need to be moved onto that series, the pack includes:
 
-## macOS installation note
+`/function cobblehorizons:progression/migrate_1_2_all_online`
 
-CobbleHorizons previously encountered a Modrinth App extraction failure involving nested ZIP content (`unexpected BufError`).
+Back up the world before migration. A fresh world remains the preferred validation environment.
 
-Use the official release MRPack rather than manually rebuilding or recompressing the pack if testing on macOS.
+## Exporting a release from Modrinth App
 
-## Modrinth import error
+When exporting the project source/test instance, include only content that belongs in the release. Do not carry runtime state into the MRPack.
 
-A previous rebuild produced:
+Common folders that belong in the export when they contain project content:
 
-`Cannot read properties of undefined (reading 'then')`
+- `config/`
+- `datapacks/`
+- `resourcepacks/`
+- `shaderpacks/`
 
-The working release packaging was rebuilt using the known-good MRPack structure instead of regenerating the archive layout from scratch.
+The Modrinth App should handle normally installed mods through the manifest. Include raw `mods/` only when there are manually installed files that cannot be represented by the manifest and you have permission to redistribute them.
 
-If this error appears with an official release:
+Do **not** export runtime/personal state such as:
 
-1. delete the failed partial instance;
-2. re-download the MRPack;
-3. update/restart the Modrinth App;
-4. import the official file again.
+- `saves/`
+- `logs/`
+- `crash-reports/`
+- `xaero/`
+- `showdown/`
+- `fancymenu_data/`
+- `defaultoptions.journal.json`
+- personal root `options.txt`
+- `usercache.json`
+- local caches/download folders.
 
-Do not unzip and re-zip the MRPack manually.
+## macOS notes
 
-## Verifying CobbleHorizons 1.1.0
+CobbleHorizons has been tested on both Windows and macOS during the 1.2 cycle.
 
-SHA-256 of the 1.1.0 MRPack included in the source archive used for this documentation update:
+If a function key appears not to work on macOS, test `Fn + F-key` or enable standard F1/F2/etc. behavior in macOS keyboard settings before changing the modpack keybind.
 
-`22607851083c015ce5f6beea040269a9f8840ad1aa49094ecdbde77ec6546aa4`
+If a fresh instance behaves differently from an upgraded instance, treat the fresh instance as the release baseline and report both results.

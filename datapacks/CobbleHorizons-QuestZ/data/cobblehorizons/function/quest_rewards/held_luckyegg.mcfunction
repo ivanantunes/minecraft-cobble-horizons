@@ -1,2 +1,2 @@
 tellraw @s {"text":"Quest complete: Lucky Egg Training","color":"aqua"}
-give @s cobblemon:super_potion 1
+cobbledollars give @s 750

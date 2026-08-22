@@ -1,11 +1,11 @@
-# CobbleHorizons 1.1.0
+# CobbleHorizons 1.2.0
 # Loads bundled datapacks automatically in every new and existing world.
 config_version = 4
 enable_system_global_packs = false
 log_pack_ids = false
 
 [resourcepacks]
-	required = []
+	required = ["resourcepacks/Cobblemon Interface v1.6.0.zip", "resourcepacks/Cobblemon Interface Modded v1.9.4.zip", "resourcepacks/Battle Tracks v1.2.zip", "resourcepacks/CobbleHorizons.zip"]
 	enable_builtin = []
 
 [datapacks]

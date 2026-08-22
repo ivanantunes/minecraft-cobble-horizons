@@ -10,7 +10,11 @@
           "minecraft:iron_golem",
           "minecraft:snow_golem",
           "minecraft:ender_dragon",
-          "minecraft:wither"
+          "minecraft:wither",
+          "minecraft:cow",
+          "minecraft:pig",
+          "minecraft:chicken",
+          "minecraft:sheep"
         ]
       }
     },
@@ -18,7 +22,9 @@
       "name": "Disable world-generated vanilla mobs",
       "what": "DISALLOW_SPAWN",
       "when": {
-        "entityId": ["minecraft:*"],
+        "entityId": [
+          "minecraft:*"
+        ],
         "spawnType": [
           "NATURAL",
           "CHUNK_GENERATION",

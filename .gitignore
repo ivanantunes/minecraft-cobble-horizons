@@ -1,50 +1,52 @@
-# Minecraft runtime
-.minecraft/
+# macOS / OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Minecraft runtime state
 saves/
 logs/
 crash-reports/
 screenshots/
-server-resource-packs/
+downloads/
+xaero/
+showdown/
+fancymenu_data/
+moddata/
+data/
+defaultconfigs/
+backups/
 
-# Launchers and local instances
-.modrinth/
-.curseforge/
-run/
-runtime/
-instance/
-local/
-
-# Local client state
+# Personal/runtime files
 /options.txt
-servers.dat
-usercache.json
+/servers.dat
+/servers.dat_old
+/usercache.json
+/usernamecache.json
+/defaultoptions.journal.json
+/emi.json
 
-# Build and release artifacts
-releases/
-dist/
-build/
+# Third-party binary/runtime dependency folders
+mods/
+shaderpacks/
+
+# Third-party archives in source directories
+resourcepacks/*.zip
+!resourcepacks/CobbleHorizons.zip
+datapacks/*.zip
+
+# Generated releases
 *.mrpack
-*.jar
-*.zip
+*.sha256
+*.sha256.txt
 
-# First-party CobbleHorizons archive intentionally tracked
-!resourcepacks/CobbleHorizons-Branding.zip
-
-# Temporary/generated files
+# Temporary archives/build output
+build/
+dist/
+tmp/
 *.tmp
-*.temp
-*.log
-*.class
-*.bak
-
-# Editors and operating systems
-.idea/
-.vscode/
-*.iml
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Superseded notes
-*-PATCH-NOTES.txt
-*-FINAL-FIX.txt
