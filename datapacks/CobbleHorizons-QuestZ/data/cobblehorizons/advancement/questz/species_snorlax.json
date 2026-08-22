@@ -9,7 +9,7 @@
       "color": "white"
     },
     "description": {
-      "text": "Catch a Snorlax.",
+      "text": "Catch a Snorlax. Disabled in 1.2.0: Cobblemon 1.7.3 has no reliable species filter on catch_pokemon.",
       "color": "gray"
     },
     "frame": "goal",

@@ -1,4 +1,4 @@
 # CobbleHorizons default options
 defaultDifficulty = "NORMAL"
-defaultResourcePacks = [ "file/CobbleHorizons-Branding.zip", "file/Battle Tracks v1.2.zip", "cobbreeding:pasturefix" ]
+defaultResourcePacks = [ "file/Cobblemon Interface v1.6.0.zip", "file/Cobblemon Interface Modded v1.9.4.zip", "file/Battle Tracks v1.2.zip", "file/CobbleHorizons.zip", "cobbreeding:pasturefix" ]
 lockDifficulty = false

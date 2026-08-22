@@ -1,63 +1,100 @@
-# Repository Structure
+# Repository Structure — CobbleHorizons 1.2.0
 
-The CobbleHorizons Git repository is the **source of the modpack**, not a mirror of every third-party download.
+The CobbleHorizons Git repository is the **source/configuration of the modpack**, not a mirror of every third-party download.
 
-## Tracked source
+## Recommended tracked layout
 
 ```text
 CobbleHorizons/
-├── config/                         # Curated mod and client defaults
+├── config/                              # Curated mod/client defaults
+│   └── defaultoptions/
+│       ├── options.txt                  # Native Minecraft defaults
+│       └── keybindings.txt              # Curated key mappings
 ├── datapacks/
-│   └── CobbleHorizons-QuestZ/      # First-party quest datapack
+│   ├── CobbleHorizons-QuestZ/           # First-party quest campaign
+│   └── CobbleHorizons-Progression/      # First-party RCT League overrides
 ├── resourcepacks/
-│   └── CobbleHorizons-Branding.zip # First-party branding pack
-├── docs/                           # Project documentation
-├── imgs/                           # README/project images
+│   └── CobbleHorizons.zip               # First-party identity/music/UI pack
+├── docs/
+├── imgs/
 ├── README.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
+├── CREDITS.md
 ├── LICENSE.md
 ├── .gitignore
 └── icon.png
 ```
 
+The exact repository may include additional first-party scripts/assets, but the same source-control rules apply.
+
+## Track
+
+- curated configuration;
+- first-party datapacks;
+- first-party resource-pack assets/archive;
+- documentation;
+- project-owned images/branding;
+- validation/build scripts.
+
 ## Do not commit third-party binaries
 
-The source repository should not contain:
+Do not store these in normal Git history:
 
-- mod `.jar` files;
-- third-party datapack `.zip` files;
-- third-party resource-pack `.zip` files;
+- `mods/*.jar`;
+- third-party datapack ZIPs;
+- third-party resource-pack ZIPs;
 - shader archives;
-- generated `.mrpack` files;
-- worlds, logs, screenshots, crash reports or personal client state.
+- generated `.mrpack` files.
 
-Examples intentionally excluded from source control:
+The MRPack manifest should reference third-party content from its proper distribution source.
 
-- `RCT-Badges-CobblemonPokemonBadges-0.15+1.1.2.zip`
-- `Battle Tracks v1.2.zip`
-- `Faithful 32x - 1.21.1.zip`
+## Runtime files to exclude
 
-These are release dependencies and are referenced by the MRPack manifest.
+Do not commit:
 
-## First-party archive exception
+- `saves/`;
+- `logs/`;
+- `crash-reports/`;
+- `screenshots/`;
+- `downloads/`;
+- `xaero/`;
+- `showdown/`;
+- `fancymenu_data/`;
+- `moddata/`;
+- root `options.txt`;
+- `defaultoptions.journal.json`;
+- `usercache.json`;
+- personal launcher/runtime files.
 
-`resourcepacks/CobbleHorizons-Branding.zip` is authored for CobbleHorizons and is therefore allowed in the repository.
+## Default Options
 
-A future build pipeline may move this to an unpacked source directory and generate the ZIP automatically.
+The project-owned defaults are now correctly stored at:
 
-## Releases
+```text
+config/defaultoptions/options.txt
+config/defaultoptions/keybindings.txt
+```
 
-Generated `.mrpack` files belong on **GitHub Releases**, not in normal Git history.
+Do not replace this with a tracked root-level `options.txt`.
 
-This keeps repository history small and makes source changes reviewable.
+`config/defaultoptions/extra/` should only be used for extra third-party configuration files that Default Options needs to copy into the instance root; it is not the location for Minecraft's native options defaults.
 
-## Default client options
+## First-party resource pack
 
-Do not commit a personal root-level `options.txt`.
+Version 1.2.0 uses one unified first-party archive:
 
-The official CobbleHorizons defaults live at:
+`resourcepacks/CobbleHorizons.zip`
 
-`config/defaultoptions/extra/options.txt`
+The old `CobbleHorizons-Branding.zip` and `CobbleHorizons-Identity.zip` should not be present in the 1.2 source tree.
 
-That file is part of the modpack source because Default Options applies it when a fresh instance is created.
+## GitHub Releases
+
+Put generated `.mrpack` artifacts and optional checksum files on **GitHub Releases**, not in normal source commits.
+
+Recommended release assets:
+
+- `CobbleHorizons-1.2.0.mrpack`
+- `CobbleHorizons-1.2.0.sha256.txt` (optional but useful)
+
+This keeps Git history small and reviewable.

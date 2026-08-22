@@ -1,5 +1,5 @@
 {
-  "parent": "cobblehorizons:questz/journey_starter",
+  "parent": "cobblehorizons:questz/journey_first_catch",
   "display": {
     "icon": {
       "id": "cobblemon:pokedex_red"
@@ -33,7 +33,7 @@
           "type_specific": {
             "type": "minecraft:player",
             "advancements": {
-              "cobblehorizons:questz/journey_starter": true
+              "cobblehorizons:questz/journey_first_catch": true
             }
           }
         }

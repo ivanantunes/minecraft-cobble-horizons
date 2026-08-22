@@ -11,3 +11,34 @@ net.minecraft.client.gui.screens.PauseScreen {
 
 de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
+
+net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.DirectJoinServerScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.EditServerScreen {
+}
+
+net.minecraft.client.gui.screens.LevelLoadingScreen {
+}
+
+net.minecraft.client.gui.screens.ReceivingLevelScreen {
+}
+
+
+net.minecraft.client.gui.screens.GenericMessageScreen {
+}
+
+net.minecraft.client.gui.screens.GenericWaitingScreen {
+}
+
+net.minecraft.client.gui.screens.ProgressScreen {
+}

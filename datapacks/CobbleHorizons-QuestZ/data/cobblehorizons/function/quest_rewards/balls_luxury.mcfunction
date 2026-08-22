@@ -1,2 +1,2 @@
 tellraw @s {"text":"Quest complete: Luxury Capture Kit","color":"aqua"}
-give @s cobblemon:rare_candy 1
+cobbledollars give @s 1000
