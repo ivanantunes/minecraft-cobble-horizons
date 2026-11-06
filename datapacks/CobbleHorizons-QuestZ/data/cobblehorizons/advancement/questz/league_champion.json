@@ -1,0 +1,56 @@
+{
+  "parent": "cobblehorizons:questz/league_lance",
+  "display": {
+    "icon": {
+      "id": "cobblemon:master_ball"
+    },
+    "title": {
+      "text": "CobbleHorizons Champion",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat Champion Terry and complete the official CobbleHorizons League.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "champion_terry_01b8"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_lance": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 1500,
+    "function": "cobblehorizons:quest_rewards/league_champion"
+  }
+}

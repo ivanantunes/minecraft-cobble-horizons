@@ -1,0 +1,56 @@
+{
+  "parent": "cobblehorizons:questz/league_surge",
+  "display": {
+    "icon": {
+      "id": "cobblemon:leaf_stone"
+    },
+    "title": {
+      "text": "Gym IV — Erika",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat Leader Erika. Victory unlocks Sabrina and raises the level cap to 59.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "leader_erika_01a1"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_surge": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 300,
+    "function": "cobblehorizons:quest_rewards/league_erika"
+  }
+}

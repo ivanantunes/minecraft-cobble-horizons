@@ -1,0 +1,17 @@
+{
+  "type": "leader",
+  "requiredDefeats": [
+    [
+      "leader_brock_019e"
+    ]
+  ],
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "series": [
+    "radicalred",
+    "cobblehorizons"
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0.0
+}

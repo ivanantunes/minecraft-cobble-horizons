@@ -1,0 +1,57 @@
+{
+  "parent": "cobblehorizons:questz/league_agatha",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dragon_scale"
+    },
+    "title": {
+      "text": "Elite Four IV — Lance",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat either Elite Four Lance variant and earn the right to challenge the Champion.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "elite_four_lance_0056",
+          "elite_four_lance_0057"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_agatha": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 850,
+    "function": "cobblehorizons:quest_rewards/league_lance"
+  }
+}

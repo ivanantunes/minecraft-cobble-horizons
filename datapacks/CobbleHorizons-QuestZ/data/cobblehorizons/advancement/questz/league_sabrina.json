@@ -1,0 +1,56 @@
+{
+  "parent": "cobblehorizons:questz/league_erika",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dawn_stone"
+    },
+    "title": {
+      "text": "Gym V — Sabrina",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat Leader Sabrina. Victory unlocks Koga and raises the level cap to 68.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "leader_sabrina_01a4"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_erika": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 350,
+    "function": "cobblehorizons:quest_rewards/league_sabrina"
+  }
+}

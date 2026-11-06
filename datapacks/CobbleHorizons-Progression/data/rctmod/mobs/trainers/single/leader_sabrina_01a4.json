@@ -1,0 +1,17 @@
+{
+  "type": "leader",
+  "requiredDefeats": [
+    [
+      "leader_erika_01a1"
+    ]
+  ],
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "series": [
+    "radicalred",
+    "cobblehorizons"
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0.0
+}

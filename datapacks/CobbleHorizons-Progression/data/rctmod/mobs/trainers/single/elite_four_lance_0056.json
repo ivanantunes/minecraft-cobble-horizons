@@ -1,0 +1,18 @@
+{
+  "type": "e4",
+  "requiredDefeats": [
+    [
+      "elite_four_agatha_0053",
+      "elite_four_agatha_0054"
+    ]
+  ],
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "series": [
+    "radicalred",
+    "cobblehorizons"
+  ],
+  "optional": true,
+  "spawnWeightFactor": 0.0
+}

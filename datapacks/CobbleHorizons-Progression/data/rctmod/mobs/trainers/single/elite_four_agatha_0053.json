@@ -1,0 +1,18 @@
+{
+  "type": "e4",
+  "requiredDefeats": [
+    [
+      "elite_four_bruno_0050",
+      "elite_four_bruno_0051"
+    ]
+  ],
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "series": [
+    "radicalred",
+    "cobblehorizons"
+  ],
+  "optional": true,
+  "spawnWeightFactor": 0.0
+}

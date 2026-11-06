@@ -1,0 +1,56 @@
+{
+  "parent": "cobblehorizons:questz/league_brock",
+  "display": {
+    "icon": {
+      "id": "cobblemon:water_stone"
+    },
+    "title": {
+      "text": "Gym II — Misty",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat Leader Misty. Victory unlocks Lt. Surge and raises the level cap to 34.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "leader_misty_019f"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_brock": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 200,
+    "function": "cobblehorizons:quest_rewards/league_misty"
+  }
+}

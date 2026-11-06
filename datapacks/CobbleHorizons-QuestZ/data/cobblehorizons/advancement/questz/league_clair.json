@@ -1,0 +1,56 @@
+{
+  "parent": "cobblehorizons:questz/league_blaine",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dragon_scale"
+    },
+    "title": {
+      "text": "Gym VIII — Clair",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat Leader Clair. With eight major victories, the Elite Four opens and the level cap rises to 85.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "leader_clair_004a"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_blaine": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 600,
+    "function": "cobblehorizons:quest_rewards/league_clair"
+  }
+}
