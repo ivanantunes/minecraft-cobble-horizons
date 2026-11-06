@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/horizon_elite",
+  "display": {
+    "icon": {
+      "id": "cobblemon:choice_specs"
+    },
+    "title": {
+      "text": "Champion's First Match",
+      "color": "gold"
+    },
+    "description": {
+      "text": "Win a Pokémon battle after becoming the CobbleHorizons Champion.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:battles_won",
+      "conditions": {
+        "count": 1,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/horizon_elite": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 300,
+    "function": "cobblehorizons:quest_rewards/research_champion_first_battle"
+  }
+}
