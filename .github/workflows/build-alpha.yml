@@ -1,0 +1,65 @@
+name: Build experimental CobbleHorizons 1.3.0 MRPack
+
+on:
+  push:
+    branches:
+      - feature/1.3.0-living-horizons
+    paths:
+      - scripts/build_alpha_mrpack.py
+      - scripts/resolve_modrinth_addon.py
+      - tests/test_build_alpha.py
+      - config/cobbledollars/default_shop.json
+      - datapacks/**
+      - .github/workflows/build-alpha.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  alpha-mrpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Download SHA-256 pinned v1.2.0 baseline
+        run: |
+          curl --fail --silent --show-error --location --retry 3 \
+            https://github.com/ivanantunes/minecraft-cobble-horizons/releases/download/v1.2.0/CobbleHorizons.1.2.0.mrpack \
+            -o /tmp/cobblehorizons-v1.2.0.mrpack
+          echo "fccfeb290946191c30f6c5e2783fc90e3564e04b36d3794d8c666d73ce57a40a  /tmp/cobblehorizons-v1.2.0.mrpack" | sha256sum -c -
+      - name: Resolve official Outbreaks 1.1.2 metadata and dependencies
+        run: |
+          python scripts/resolve_modrinth_addon.py \
+            --project cobblemon-outbreaks --version 1.1.2 \
+            --baseline /tmp/cobblehorizons-v1.2.0.mrpack \
+            --output /tmp/outbreak-candidate.json
+      - name: Build CobbleHorizons 1.3.0-alpha.1 MRPack
+        run: |
+          python scripts/build_alpha_mrpack.py \
+            --baseline /tmp/cobblehorizons-v1.2.0.mrpack \
+            --repo . --addon-spec /tmp/outbreak-candidate.json \
+            --output dist/CobbleHorizons-1.3.0-alpha.1.mrpack \
+            --report dist/alpha-build-report.json
+      - name: Strict validation of generated alpha package
+        run: |
+          python scripts/validate_pack.py --source . \
+            --mrpack dist/CobbleHorizons-1.3.0-alpha.1.mrpack \
+            --output dist/alpha-audit.json
+      - name: Attach experimental release candidate for manual testing
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CobbleHorizons-1.3.0-alpha.1-NOT-FOR-RELEASE
+          path: |
+            dist/CobbleHorizons-1.3.0-alpha.1.mrpack
+            dist/alpha-build-report.json
+            dist/alpha-audit.json
+          retention-days: 14
+
+# Do NOT upload this artifact to Modrinth until fresh-world, server and
+# 1.2.0 world migration checks have passed in-game.
