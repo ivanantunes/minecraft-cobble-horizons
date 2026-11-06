@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 import zipfile
 from collections import Counter
@@ -147,7 +146,7 @@ def validate_source(source: Path) -> tuple[list[dict], dict]:
         issues.append(finding("error", "QUEST_ROOT_MISSING", str(datapacks), "QuestZ root not found"))
 
     progression = datapacks / "CobbleHorizons-Progression"
-    if progression.is_dir() and not list(progression.rglob("data/*")):
+    if progression.is_dir() and not any(p.is_file() for p in (progression / "data").rglob("*")):
         issues.append(finding("error", "PROGRESSION_DATA_MISSING", str(progression),
                               "Progression pack contains no data; compare against v1.2.0 release"))
     elif not progression.is_dir():
