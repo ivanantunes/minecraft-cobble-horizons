@@ -63,7 +63,7 @@ def resolve(project_slug: str, version_number: str, game: str, loader: str):
         "game_versions": version.get("game_versions", []),
         "loaders": version.get("loaders", []),
         "dependencies": version.get("dependencies", []),
-        "file": {"filename": primary["filename"], "url": url,
+        "file": {"filename": primary["filename"], "url": url, "size": primary["size"],
                  "hashes": {"sha512": hashes["sha512"], "sha1": hashes["sha1"]}},
     }
 
