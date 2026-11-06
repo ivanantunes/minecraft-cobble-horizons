@@ -116,6 +116,26 @@ post-unlock event timing.
 - Badge-gated shops are optional and must have a tested implementation; do not
   promise them with plain static JSON alone.
 
+## Alpha 1 technical milestone — completed 2026-11-06
+
+- Restored 47 missing first-party source files from the SHA-256-pinned v1.2.0 MRPack.
+- Enabled strict source and archive validation; the historical 1.2.0 baseline passes.
+- Added two preliminary Horizon Research quests (Champion battle and Shiny catch).
+- Expanded CobbleDollars `default_shop.json` with Medicine (6 offers) and
+  Evolution Stones (9 offers); kept original shop offers/prices unchanged.
+- Inspected Modrinth Outbreaks `1.1.2` (`nxE2RfXE`, `Rlt9c9kz`) directly
+  through both its API version metadata and SHA-verified Fabric JAR.
+  All declared required Modrinth projects are present in the 1.2.0 manifest.
+- Added a pinned MRPack alpha builder; its first successful candidate contains
+  **76 Modrinth manifest files**, 122 advancements (110 active including root),
+  397 ZIP entries and **zero strict validator findings**.
+- Alpha archives are uploaded to GitHub Actions as test artifacts, not released.
+- See `docs/compatibility-1.3.0.md` and `docs/alpha-1.3.0-test-plan.md`.
+
+**Still blocked:** no verified gameplay client/server test, no migration
+playtest and no proven spawn/quest semantics for Outbreaks or postgame.
+Do not label the alpha as release-ready.
+
 ## Phase 3 — Pre-release checks
 
 1. Validate first-party JSONs, advancements, parent references, cycles,
