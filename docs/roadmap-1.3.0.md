@@ -45,11 +45,19 @@ The `master` tree inspected on 2026-11-06 contains:
    the release. Binary-identical ZIP bytes are not required if metadata/order
    changes, but effective content must agree.
 
-**Gate:** strict `python scripts/validate_pack.py --source .` passes with zero
-errors; the official v1.2.0 archive passes an integrity audit; League advancement
-and RCT series behavior are confirmed in-game.
+**Recovery status (2026-11-06):** complete at source-file level.
+The official v1.2.0 release archive has SHA-256
+`fccfeb290946191c30f6c5e2783fc90e3564e04b36d3794d8c666d73ce57a40a`.
+The verified restore added **47 previously untracked first-party files**:
+14 QuestZ advancements, 14 reward functions, and 19 progression files.
+The other 213 first-party files were byte-identical to GitHub (0 conflicts).
+The restored source now includes the complete League, trainer overrides,
+RCT series and migration command. Strict JSON, advancement and archive
+validation passes on the recovered baseline.
 
-The temporary CI `--audit-only` option must be **removed** before RC approval.
+**Remaining gate:** verify League and RCT behavior *in-game* and confirm that
+the release pack imports correctly on a clean Modrinth instance. The strict
+source/MRPack CI check is enabled without `--audit-only`.
 
 ## Phase 1 — Compatibility and update matrix
 
@@ -78,6 +86,12 @@ matrix, saved-world migration tests and independent go/no-go decision.
   default. Use a conservative configuration and measure performance.
 
 ### Horizon Research postgame (first-party)
+
+**Initial alpha implementation:** `research_champion_first_battle` and
+`research_shiny_first` are new QuestZ nodes under `horizon_elite`, each
+using an existing Cobblemon trigger and paying CobbleDollars rather than items.
+These are structurally checked by CI, but still need gameplay validation for
+post-unlock event timing.
 
 - Preserve `horizon_elite` as the existing post-Champion achievement/gate.
 - Add new postgame chapters under new IDs; never replace already-granted
@@ -129,8 +143,10 @@ matrix, saved-world migration tests and independent go/no-go decision.
 
 ## Known constraints
 
-- The GitHub connector does not return release-asset binary contents. Direct
-  comparison remains pending until the `.mrpack` is made available to the
-  workspace; its metadata and existence are not proof of internal contents.
+- Binary recovery is performed by the checksum-pinned GitHub Actions
+  `restore-v1.2-sources.yml` workflow. The restorer never overwrites existing
+  source and records which files matched or were recovered.
+- Code-level validation does not prove in-game spawn, progression, economy
+  or saved-world migration behavior.
 - Avoid altering live 1.2.0 content or uploading a Modrinth file during
   development. Only tested release artifacts belong in a final release.
