@@ -75,7 +75,7 @@ def pack_addon_entry(spec: dict, manifest: dict) -> dict:
         "hashes": hashes,
         "env": {"client": "required", "server": "required"},
         "downloads": [obj["url"]],
-        "fileSize": 0,  # replaced after verifying exact remote file size in future
+        "fileSize": obj["size"],
     }
 
 
@@ -103,8 +103,6 @@ def build(base: Path, repo: Path, spec: dict, target: Path,
                 or manifest.get("dependencies", {}).get("fabric-loader") != "0.19.3"):
             raise ValueError("Unexpected Minecraft/Fabric baseline")
         addition = pack_addon_entry(spec, manifest)
-        # Modrinth v1 manifests require a valid size. Candidate workflow
-        # obtains the exact size from the official download during packaging.
         if addition["fileSize"] <= 0:
             raise ValueError("Official addon file size not provided")
         manifest["files"].append(addition)
@@ -138,14 +136,10 @@ def main() -> int:
     parser.add_argument("--baseline", type=Path, required=True)
     parser.add_argument("--repo", type=Path, default=Path("."))
     parser.add_argument("--addon-spec", type=Path, required=True)
-    parser.add_argument("--addon-size", type=int, required=True,
-                        help="Exact official file size obtained from Modrinth HEAD or GET")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--report", type=Path, default=Path("alpha-build-report.json"))
     args = parser.parse_args()
     spec = json.loads(args.addon_spec.read_text(encoding="utf-8"))
-    # Exact file length is verified by CI against its downloaded SHA-512 hash.
-    spec["file"]["size"] = args.addon_size
     result = build(args.baseline, args.repo.resolve(), spec, args.output)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(result, indent=2) + "\n")
