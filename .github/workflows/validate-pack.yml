@@ -1,0 +1,36 @@
+name: CobbleHorizons datapack audit
+
+on:
+  push:
+    branches:
+      - master
+      - "feature/**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests for release validator
+        run: python -m unittest discover -s tests -v
+      - name: Audit first-party datapacks (existing 1.2 source gaps are expected)
+        run: python scripts/validate_pack.py --source . --audit-only --output audit-report.json
+      - name: Publish machine-readable source audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobblehorizons-source-audit
+          path: audit-report.json
+          if-no-files-found: warn
+
+# IMPORTANT:
+# --audit-only is a temporary discovery step while recovering the v1.2.0
+# release datapacks. Before tagging v1.3.0 replace it with strict validation:
+# python scripts/validate_pack.py --source . --mrpack release.mrpack
