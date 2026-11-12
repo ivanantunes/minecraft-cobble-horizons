@@ -1,4 +1,4 @@
-# Manual test plan — CobbleHorizons 1.3.0-alpha.2 (Cobblemon 1.8.4)
+# Manual test plan — CobbleHorizons 1.3.0-alpha.2.1 (QuestZ compatibility hotfix)
 
 **Status:** test build only. Never overwrite an existing world or publish this
 artifact directly to Modrinth.
@@ -7,8 +7,8 @@ artifact directly to Modrinth.
 
 1. Open [GitHub Actions: experimental alpha MRPack](https://github.com/ivanantunes/minecraft-cobble-horizons/actions/workflows/build-alpha-1.8.4.yml).
 2. Open the latest **successful** run on `feature/1.3.0-living-horizons`.
-3. Download the `CobbleHorizons-1.3.0-alpha.2-1.8.4-NOT-FOR-RELEASE` artifact ZIP.
-4. Extract the archive and import only `CobbleHorizons-1.3.0-alpha.2-Cobblemon-1.8.4.mrpack`
+3. Download the `CobbleHorizons-1.3.0-alpha.2.1-QUESTZ-FIX-TEST` artifact ZIP.
+4. Extract the archive and import only `CobbleHorizons-1.3.0-alpha.2.1-QuestZ-Fix.mrpack`
    into a **new** Modrinth App instance.
 5. Use Java 21 and initially allocate 6 GB RAM.
 
@@ -25,11 +25,30 @@ testing, preserve `latest.log`, and fix the manifest before testing gameplay.
 Check the installed version of Fabric Language Kotlin requires Loader >=0.19.5.
 Do not interpret a successful MRPack ZIP check as a successful game launch.
 
+## QuestZ compatibility test (alpha.2.1)
+
+QuestZ was inadvertently upgraded from 1.0.1 to 1.1.1 in alpha.2.
+QuestZ 1.1.1 expects native chapter files under `config/questz/default`,
+but CobbleHorizons currently uses 122 Minecraft advancements under
+`datapacks/CobbleHorizons-QuestZ`. The new alpha restores the QuestZ
+1.0.1 file entry exactly from the verified published v1.2.0 manifest.
+
+- [ ] Open the QuestZ screen and confirm the existing CobbleHorizons quest tree is visible.
+- [ ] Verify the root, starter, first capture and first trainer objectives.
+- [ ] Advance one starter/capture criterion in a **new test world**.
+- [ ] Verify the relevant XP/CobbleDollars reward triggers once.
+- [ ] Test that two new Horizon Research nodes are gated behind Horizon Elite.
+- [ ] Compare the book UI to 1.2.0. Report missing trees or unexpected completions.
+- [ ] Test a **copy** of an existing 1.2.0 save, ensuring saved advancements remain.
+
+Do not remove advancement datapacks or run destructive reset commands while
+testing. The alpha remains **unverified in-game**, despite static CI passing.
+
 ## A. Clean installation / world (mandatory)
 
 - [ ] MRPack imports without the previously observed Modrinth import exception.
 - [ ] Minecraft starts and opens a brand-new survival world without a crash.
-- [ ] Cobblemon 1.8.4, Fabric Loader 0.19.5, RCT, QuestZ and Outbreaks 1.1.2 are present.
+- [ ] Cobblemon 1.8.4, Fabric Loader 0.19.5, RCT, **QuestZ 1.0.1** and Outbreaks 1.1.2 are present.
 - [ ] All expected resource packs, menus, keybindings, and music work.
 - [ ] Press `L` and verify the QuestZ book loads with the existing campaign.
 - [ ] Starter → Apricorns → first capture → First Challenger progression works.
