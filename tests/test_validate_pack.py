@@ -91,6 +91,35 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual([], issues)
         self.assertEqual(1, stats["manifest_files"])
 
+    def test_new_questz_cannot_read_legacy_advancements_without_chapters(self):
+        file = self.root / "legacy.mrpack"
+        manifest = {
+            "formatVersion": 1, "game": "minecraft",
+            "dependencies": {"minecraft": "1.21.1", "fabric-loader": "0.19.5"},
+            "files": [{
+                "path": "mods/questz-1.1.1.jar",
+                "hashes": {"sha512": "f" * 128},
+                "downloads": ["https://cdn.modrinth.com/data/q1Xo6imm/versions/example/questz-1.1.1.jar"],
+            }]
+        }
+        with zipfile.ZipFile(file, "w") as archive:
+            archive.writestr("modrinth.index.json", json.dumps(manifest))
+            archive.writestr(
+                "overrides/datapacks/CobbleHorizons-QuestZ/data/cobblehorizons/advancement/questz/root.json",
+                "{}"
+            )
+        issues, _ = validate_mrpack(file)
+        self.assertIn("QUESTZ_FORMAT_INCOMPATIBLE", [issue["code"] for issue in issues])
+        manifest["files"][0]["path"] = "mods/questz-1.0.1+1.21.1.jar"
+        with zipfile.ZipFile(file, "w") as archive:
+            archive.writestr("modrinth.index.json", json.dumps(manifest))
+            archive.writestr(
+                "overrides/datapacks/CobbleHorizons-QuestZ/data/cobblehorizons/advancement/questz/root.json",
+                "{}"
+            )
+        issues, _ = validate_mrpack(file)
+        self.assertNotIn("QUESTZ_FORMAT_INCOMPATIBLE", [issue["code"] for issue in issues])
+
     def test_duplicate_zip_entries_are_detected(self):
         import warnings
         archive_path = self.root / "duplicate.mrpack"
