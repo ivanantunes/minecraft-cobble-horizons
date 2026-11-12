@@ -1,0 +1,17 @@
+{
+  "type": "e4",
+  "requiredDefeats": [
+    [
+      "leader_clair_004a"
+    ]
+  ],
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "series": [
+    "radicalred",
+    "cobblehorizons"
+  ],
+  "optional": true,
+  "spawnWeightFactor": 0.0
+}

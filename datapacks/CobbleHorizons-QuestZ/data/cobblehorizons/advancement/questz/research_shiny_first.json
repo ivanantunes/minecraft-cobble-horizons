@@ -1,0 +1,45 @@
+{
+  "parent": "cobblehorizons:questz/horizon_elite",
+  "display": {
+    "icon": {
+      "id": "cobblemon:luxury_ball"
+    },
+    "title": {
+      "text": "Shiny Field Research",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "Catch a Shiny Pokémon after becoming the CobbleHorizons Champion.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "complete": {
+      "trigger": "cobblemon:catch_shiny_pokemon",
+      "conditions": {
+        "count": 1,
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/horizon_elite": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "complete"
+    ]
+  ],
+  "rewards": {
+    "experience": 600,
+    "function": "cobblehorizons:quest_rewards/research_shiny_first"
+  }
+}

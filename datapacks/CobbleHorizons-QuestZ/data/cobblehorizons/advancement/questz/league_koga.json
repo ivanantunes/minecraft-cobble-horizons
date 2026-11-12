@@ -1,0 +1,56 @@
+{
+  "parent": "cobblehorizons:questz/league_sabrina",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dusk_stone"
+    },
+    "title": {
+      "text": "Gym VI — Koga",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat Leader Koga. Victory unlocks Blaine and raises the level cap to 76.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "leader_koga_01a2"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_sabrina": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 400,
+    "function": "cobblehorizons:quest_rewards/league_koga"
+  }
+}

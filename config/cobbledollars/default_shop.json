@@ -220,5 +220,75 @@
         "price": "250000"
       }
     ]
+  },
+  {
+    "name": "Medicine",
+    "offers": [
+      {
+        "item": "cobblemon:potion",
+        "price": "2500"
+      },
+      {
+        "item": "cobblemon:super_potion",
+        "price": "6000"
+      },
+      {
+        "item": "cobblemon:hyper_potion",
+        "price": "12000"
+      },
+      {
+        "item": "cobblemon:revive",
+        "price": "15000"
+      },
+      {
+        "item": "cobblemon:full_restore",
+        "price": "25000"
+      },
+      {
+        "item": "cobblemon:max_revive",
+        "price": "50000"
+      }
+    ]
+  },
+  {
+    "name": "Evolution Stones",
+    "offers": [
+      {
+        "item": "cobblemon:fire_stone",
+        "price": "18000"
+      },
+      {
+        "item": "cobblemon:water_stone",
+        "price": "18000"
+      },
+      {
+        "item": "cobblemon:thunder_stone",
+        "price": "18000"
+      },
+      {
+        "item": "cobblemon:leaf_stone",
+        "price": "18000"
+      },
+      {
+        "item": "cobblemon:moon_stone",
+        "price": "24000"
+      },
+      {
+        "item": "cobblemon:dawn_stone",
+        "price": "24000"
+      },
+      {
+        "item": "cobblemon:dusk_stone",
+        "price": "24000"
+      },
+      {
+        "item": "cobblemon:shiny_stone",
+        "price": "24000"
+      },
+      {
+        "item": "cobblemon:sun_stone",
+        "price": "24000"
+      }
+    ]
   }
 ]

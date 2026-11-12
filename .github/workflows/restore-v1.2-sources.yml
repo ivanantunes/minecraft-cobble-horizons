@@ -1,0 +1,49 @@
+name: Restore first-party sources from v1.2.0
+
+on:
+  push:
+    branches:
+      - feature/1.3.0-living-horizons
+    paths:
+      - .github/workflows/restore-v1.2-sources.yml
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch v1.2.0 published archive
+        run: |
+          curl --fail --location --silent --show-error --retry 3 \
+            https://github.com/ivanantunes/minecraft-cobble-horizons/releases/download/v1.2.0/CobbleHorizons.1.2.0.mrpack \
+            -o /tmp/cobblehorizons-v1.2.0.mrpack
+      - name: Restore only absent first-party text source (SHA-256 pinned)
+        run: |
+          python scripts/restore_v1_2_sources.py /tmp/cobblehorizons-v1.2.0.mrpack \
+            --repo . --apply --output baseline-restore-report.json
+      - name: Commit missing first-party source to feature branch
+        run: |
+          git add -- datapacks/CobbleHorizons-QuestZ datapacks/CobbleHorizons-Progression
+          if git diff --cached --quiet; then
+            echo "No new first-party files to commit"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "fix(progress): restore missing 1.2 first-party sources from release"
+            git push origin HEAD:feature/1.3.0-living-horizons
+          fi
+      - name: Upload release source provenance
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v1.2.0-source-recovery
+          path: baseline-restore-report.json
+          if-no-files-found: warn

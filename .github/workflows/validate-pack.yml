@@ -1,0 +1,42 @@
+name: CobbleHorizons datapack audit
+
+on:
+  push:
+    branches:
+      - master
+      - "feature/**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests for release validator
+        run: python -m unittest discover -s tests -v
+      - name: Download pinned 1.2.0 baseline for MRPack validation
+        run: |
+          curl --fail --location --silent --show-error --retry 3 \
+            https://github.com/ivanantunes/minecraft-cobble-horizons/releases/download/v1.2.0/CobbleHorizons.1.2.0.mrpack \
+            -o /tmp/cobblehorizons-v1.2.0.mrpack
+          echo "fccfeb290946191c30f6c5e2783fc90e3564e04b36d3794d8c666d73ce57a40a  /tmp/cobblehorizons-v1.2.0.mrpack" | sha256sum --check
+      - name: Strict first-party and MRPack integrity validation
+        run: |
+          python scripts/validate_pack.py --source . \
+            --mrpack /tmp/cobblehorizons-v1.2.0.mrpack --output audit-report.json
+      - name: Publish machine-readable source audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobblehorizons-source-audit
+          path: audit-report.json
+          if-no-files-found: warn
+
+# This checks source consistency and the pinned published 1.2.0 package.
+# Before publishing 1.3.0 also run the same command on the FINAL 1.3 MRPack.

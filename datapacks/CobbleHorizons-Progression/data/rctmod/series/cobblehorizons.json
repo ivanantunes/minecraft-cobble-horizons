@@ -1,0 +1,9 @@
+{
+  "title": "CobbleHorizons League",
+  "description": "The official CobbleHorizons progression: eight Gym Leaders, the Elite Four and the Champion.",
+  "difficulty": 8,
+  "initialLevelCap": 15,
+  "relativeLevelCap": 0,
+  "requiredSeries": [],
+  "hideTrainerIdentities": false
+}

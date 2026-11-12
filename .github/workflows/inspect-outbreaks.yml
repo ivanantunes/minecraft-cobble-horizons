@@ -1,0 +1,40 @@
+name: Check Outbreaks candidate compatibility
+
+on:
+  push:
+    branches:
+      - feature/1.3.0-living-horizons
+    paths:
+      - scripts/resolve_modrinth_addon.py
+      - .github/workflows/inspect-outbreaks.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-outbreaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch pinned CobbleHorizons v1.2.0 MRPack
+        run: |
+          curl --fail --silent --show-error --location --retry 3 \
+            https://github.com/ivanantunes/minecraft-cobble-horizons/releases/download/v1.2.0/CobbleHorizons.1.2.0.mrpack \
+            -o /tmp/cobblehorizons-v1.2.0.mrpack
+          echo "fccfeb290946191c30f6c5e2783fc90e3564e04b36d3794d8c666d73ce57a40a  /tmp/cobblehorizons-v1.2.0.mrpack" | sha256sum -c -
+      - name: Check Modrinth version and declared dependencies
+        run: |
+          python scripts/resolve_modrinth_addon.py --project cobblemon-outbreaks \
+            --version 1.1.2 --baseline /tmp/cobblehorizons-v1.2.0.mrpack \
+            --output outbreak-candidate.json
+      - name: Publish verified candidate metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: outbreak-candidate-modrinth
+          path: outbreak-candidate.json
+          if-no-files-found: warn

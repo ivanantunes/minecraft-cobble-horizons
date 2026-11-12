@@ -1,0 +1,30 @@
+{
+  "type": "champ",
+  "requiredDefeats": [
+    [
+      "elite_four_lorelei_004d",
+      "elite_four_lorelei_004e"
+    ],
+    [
+      "elite_four_bruno_0050",
+      "elite_four_bruno_0051"
+    ],
+    [
+      "elite_four_agatha_0053",
+      "elite_four_agatha_0054"
+    ],
+    [
+      "elite_four_lance_0056",
+      "elite_four_lance_0057"
+    ]
+  ],
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "series": [
+    "radicalred",
+    "cobblehorizons"
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0.0
+}

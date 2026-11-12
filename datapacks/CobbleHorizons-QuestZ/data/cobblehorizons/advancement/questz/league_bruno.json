@@ -1,0 +1,57 @@
+{
+  "parent": "cobblehorizons:questz/league_lorelei",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_ingot"
+    },
+    "title": {
+      "text": "Elite Four II — Bruno",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat either Elite Four Bruno variant.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "elite_four_bruno_0050",
+          "elite_four_bruno_0051"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_lorelei": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 750,
+    "function": "cobblehorizons:quest_rewards/league_bruno"
+  }
+}

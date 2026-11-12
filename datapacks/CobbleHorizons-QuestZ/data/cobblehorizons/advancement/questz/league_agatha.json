@@ -1,0 +1,57 @@
+{
+  "parent": "cobblehorizons:questz/league_bruno",
+  "display": {
+    "icon": {
+      "id": "cobblemon:dusk_stone"
+    },
+    "title": {
+      "text": "Elite Four III — Agatha",
+      "color": "white"
+    },
+    "description": {
+      "text": "Defeat either Elite Four Agatha variant.",
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "trainer_ids": [
+          "elite_four_agatha_0053",
+          "elite_four_agatha_0054"
+        ]
+      }
+    },
+    "prerequisite": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "cobblehorizons:questz/league_bruno": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat"
+    ],
+    [
+      "prerequisite"
+    ]
+  ],
+  "rewards": {
+    "experience": 800,
+    "function": "cobblehorizons:quest_rewards/league_agatha"
+  }
+}
