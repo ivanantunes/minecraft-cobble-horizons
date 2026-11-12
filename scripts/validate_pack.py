@@ -196,6 +196,27 @@ def validate_mrpack(file: Path) -> tuple[list[dict], dict]:
                 for item in items:
                     if not isinstance(item, dict) or not item.get("path") or not item.get("hashes"):
                         issues.append(finding("error", "MANIFEST_FILE_INVALID", str(file), str(item)[:100]))
+                # QuestZ 1.1+ loads chapter definitions from config/questz/default.
+                # The 1.2.0 CobbleHorizons campaign is advancement-backed and
+                # requires the legacy QuestZ 1.0.1 until a real migration exists.
+                questz_jars = [p for p in paths if isinstance(p, str)
+                               and p.startswith("mods/questz-") and p.endswith(".jar")]
+                legacy_advancements = any(
+                    n.startswith("overrides/datapacks/CobbleHorizons-QuestZ/")
+                    and "/advancement/" in n and n.endswith(".json") for n in names
+                )
+                new_chapters = any(
+                    n.startswith("overrides/config/questz/default/") and n.endswith(".json")
+                    for n in names
+                )
+                if legacy_advancements and questz_jars and not new_chapters and not all(
+                    "questz-1.0.1" in p for p in questz_jars
+                ):
+                    issues.append(finding(
+                        "error", "QUESTZ_FORMAT_INCOMPATIBLE", str(file),
+                        "Advancement-based CobbleHorizons quests require QuestZ 1.0.1; "
+                        f"found {questz_jars}, but no native QuestZ chapters"
+                    ))
                 stats["manifest_files"] = len(items)
                 stats["minecraft"] = deps.get("minecraft")
                 stats["fabric_loader"] = deps.get("fabric-loader")
