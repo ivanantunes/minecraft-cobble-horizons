@@ -9,6 +9,7 @@ on:
       - scripts/build_questz_hotfix.py
       - scripts/build_alpha_mrpack.py
       - docs/migration-1.8.4-upload-inventory.json
+      - docs/alpha2-shaderpack-pins.json
       - config/cobbledollars/default_shop.json
       - datapacks/**
       - .github/workflows/build-alpha-1.8.4.yml
