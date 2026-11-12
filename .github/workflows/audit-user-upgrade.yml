@@ -3,7 +3,7 @@ name: Audit user-updated Cobblemon 1.8.4 modpack
 on:
   push:
     branches:
-      - experiment/1.3.0-cobblemon-1.8.4
+      - feature/1.3.0-living-horizons
     paths:
       - scripts/audit_user_upgrade.py
       - docs/migration-1.8.4-upload-inventory.json
