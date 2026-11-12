@@ -1,24 +1,35 @@
-# Manual test plan — CobbleHorizons 1.3.0-alpha.1
+# Manual test plan — CobbleHorizons 1.3.0-alpha.2 (Cobblemon 1.8.4)
 
 **Status:** test build only. Never overwrite an existing world or publish this
 artifact directly to Modrinth.
 
 ## Getting the alpha
 
-1. Open [GitHub Actions: experimental alpha MRPack](https://github.com/ivanantunes/minecraft-cobble-horizons/actions/workflows/build-alpha.yml).
+1. Open [GitHub Actions: experimental alpha MRPack](https://github.com/ivanantunes/minecraft-cobble-horizons/actions/workflows/build-alpha-1.8.4.yml).
 2. Open the latest **successful** run on `feature/1.3.0-living-horizons`.
-3. Download the `CobbleHorizons-1.3.0-alpha.1-NOT-FOR-RELEASE` artifact ZIP.
-4. Extract the archive and import only `CobbleHorizons-1.3.0-alpha.1.mrpack`
+3. Download the `CobbleHorizons-1.3.0-alpha.2-1.8.4-NOT-FOR-RELEASE` artifact ZIP.
+4. Extract the archive and import only `CobbleHorizons-1.3.0-alpha.2-Cobblemon-1.8.4.mrpack`
    into a **new** Modrinth App instance.
 5. Use Java 21 and initially allocate 6 GB RAM.
 
 The Actions artifact ZIP itself is **not** the importable MRPack.
 
+**Important for alpha.2:** use a NEW instance on Java 21 and do not press
+"Update all mods". The 1.8.4 migration drops Nests & Dens 1.3.3 and its
+configuration; old worlds containing its blocks, structures or entities must
+only be opened in backed-up copies. There is no verified safe rollback from
+1.8.4 to 1.7.3 for a migrated save.
+
+**Startup acceptance gate:** if Fabric reports any incompatible mod, stop
+testing, preserve `latest.log`, and fix the manifest before testing gameplay.
+Check the installed version of Fabric Language Kotlin requires Loader >=0.19.5.
+Do not interpret a successful MRPack ZIP check as a successful game launch.
+
 ## A. Clean installation / world (mandatory)
 
 - [ ] MRPack imports without the previously observed Modrinth import exception.
 - [ ] Minecraft starts and opens a brand-new survival world without a crash.
-- [ ] Cobblemon 1.7.3, RCT, QuestZ and Outbreaks 1.1.2 are present.
+- [ ] Cobblemon 1.8.4, Fabric Loader 0.19.5, RCT, QuestZ and Outbreaks 1.1.2 are present.
 - [ ] All expected resource packs, menus, keybindings, and music work.
 - [ ] Press `L` and verify the QuestZ book loads with the existing campaign.
 - [ ] Starter → Apricorns → first capture → First Challenger progression works.
@@ -43,7 +54,7 @@ For fast testing, use an operator account and built-in commands:
 - [ ] Defeating/capturing outbreak Pokémon advances counts correctly.
 - [ ] Outbreak completes or times out; no orphaned Pokémon remain.
 - [ ] Stopping an outbreak cleans up without affecting wild Pokémon.
-- [ ] Normal wild spawns, legends, monuments, nests and dens still function.
+- [ ] Normal wild spawns, legends and monuments still function. Nests & Dens 1.3.3 has been removed for incompatibility with Cobblemon 1.8.4.
 - [ ] No obvious runaway shiny rewards or high-IV economy exploits.
 - [ ] Game FPS, server tick rate and memory remain acceptable versus v1.2.0.
 - [ ] Restart and reload do not duplicate or stall active outbreaks.
@@ -89,7 +100,15 @@ Back up the entire v1.2.0 instance, especially `saves/`, before starting.
 - [ ] Player data survives restart and return to v1.2.0 copy unchanged.
 - [ ] The new instance does not overwrite the original backup.
 
-## E. Dedicated server and release gates (mandatory)
+## E. Cobblemon 1.8 migration-specific checks
+
+- [ ] Verify built-in Cobblemon TMs coexist safely with SimpleTMs 2.3.3, including crafting, inventory persistence and recipes.
+- [ ] Confirm no references to removed Nests & Dens 1.3.3 remain in the fresh instance.
+- [ ] Verify RCT 0.19.2-beta and Rad Gyms 0.5.2 load the existing trainer series without loss of the level caps.
+- [ ] Ensure shiny/alpha mechanics and new 1.8.4 data do not cause incorrect old quest completion.
+- [ ] Check Mega Showdown's behavior and capture log warnings/errors after game start.
+
+## F. Dedicated server and release gates (mandatory)
 
 - [ ] Dedicated server starts with correct server-side dependencies installed.
 - [ ] Multiple players can join without incompatible client-only mod failures.
