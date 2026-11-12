@@ -120,6 +120,21 @@ def build(baseline: Path, repo: Path, target: Path) -> dict:
         if manifest["dependencies"] != {"minecraft": "1.21.1", "fabric-loader": "0.19.3"}:
             raise ValueError("Unexpected baseline version")
         non_mods = [f for f in manifest["files"] if not f["path"].startswith("mods/")]
+        # Preserve the user's ALREADY-TESTED updated shader versions rather
+        # than silently restoring v1.2-era shader packs.
+        shader_data = json.loads((repo / "docs/alpha2-shaderpack-pins.json").read_text())
+        shader_pins = shader_data["shaderpacks"]
+        if len(shader_pins) != 3 or len({p["path"] for p in shader_pins}) != 3:
+            raise ValueError("Expected exactly three pinned alpha.2 shaderpacks")
+        for pin in shader_pins:
+            if not pin["path"].startswith("shaderpacks/"):
+                raise ValueError("Invalid pinned shader path")
+            if not pin["downloads"][0].startswith("https://cdn.modrinth.com/data/"):
+                raise ValueError("Invalid pinned shader download URL")
+            if len(pin["hashes"]["sha512"]) != 128:
+                raise ValueError("Missing SHA-512 in shader pins")
+        non_mods = [f for f in non_mods if not f["path"].startswith("shaderpacks/")]
+        non_mods.extend(shader_pins)
         manifest["files"] = non_mods + mod_entries(versions, version_ids, manifest)
         if len(manifest["files"]) != 75:
             raise ValueError("Expected 75 Modrinth entries (68 mods + 7 resources)")
