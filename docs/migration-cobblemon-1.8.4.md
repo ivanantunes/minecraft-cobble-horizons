@@ -1,6 +1,6 @@
 # CobbleHorizons experimental migration to Cobblemon 1.8.4
 
-Status: **test only — do not merge into stable 1.3.0 or publish on Modrinth**.
+Status: **test-only compatibility work in the single development branch** `feature/1.3.0-living-horizons`. Do not merge into `master` or publish on Modrinth before runtime validation.
 
 The user-exported `CobbleHorizons 1.3.0 Alpha 1.0.0.mrpack` was
 analyzed on 2026-11-12. Its Modrinth index contains 76 file entries
@@ -56,8 +56,8 @@ It is suitable for **fresh-instance testing**, not a proven release.
 - **Do not upgrade existing worlds in place.** Disabling Nests & Dens
   may remove structures, blocks, items or dimension data used in old
   saves. Keep an untouched backup and use a world copy.
-- Do not change `feature/1.3.0-living-horizons` or `master` based
-  only on static compatibility checks.
+- Keep all 1.8.4 work on `feature/1.3.0-living-horizons`; do not change
+  `master` based only on static compatibility checks.
 
 ## Audit evidence
 
